@@ -1,0 +1,23 @@
+# Retos
+# Cada línea es un reto que debe cumplir quien saca la carta.
+#
+# Hay 3 secciones: NORMAL, MODO FUTBOL y MODO DISCO.
+# - MODO FUTBOL solo aparece si el modo fútbol está activado.
+# - MODO DISCO aparece siempre: poco si el modo disco está apagado,
+#   y mucho (siendo mayoría, pero sin tapar del todo las normales) si está activado.
+# Las que ya están abajo son las que hoy vienen incluidas en la app.
+
+## NORMAL
+Haz 10 sentadillas antes de seguir.
+Imita a otro jugador por 30 segundos.
+Deja que el grupo te maquille o peine por 1 minuto.
+Habla con acento random hasta tu próximo turno.
+Cuenta un secreto vergonzoso (nivel bajo).
+
+## MODO FUTBOL
+Haz jueguitos con lo que tengas a mano, 10 toques sin que se caiga.
+Atajá un "penal" de papel o cumples una prenda.
+
+## MODO DISCO
+Baila como estrella de los 80 por 30 segundos.
+Enséñale un paso de baile a quien tienes al lado.

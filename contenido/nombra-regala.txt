@@ -1,0 +1,22 @@
+# Nombra y regala
+# Cada línea es un desafío de nombrar cosas y repartir tragos.
+#
+# Hay 3 secciones: NORMAL, MODO FUTBOL y MODO DISCO.
+# - MODO FUTBOL solo aparece si el modo fútbol está activado.
+# - MODO DISCO aparece siempre: poco si el modo disco está apagado,
+#   y mucho (siendo mayoría, pero sin tapar del todo las normales) si está activado.
+# Las que ya están abajo son las que hoy vienen incluidas en la app.
+
+## NORMAL
+Nombra 3 películas y regala un trago por cada una a quien quieras.
+Nombra 3 canciones y reparte los tragos entre el grupo.
+Nombra 3 series y reparte tragos entre el grupo.
+Nombra 3 países y regala un trago por cada uno.
+
+## MODO FUTBOL
+Nombra 3 jugadores de fútbol y regala un trago por cada uno.
+Nombra 3 equipos de fútbol y reparte tragos.
+
+## MODO DISCO
+Nombra 3 canciones para bailar y reparte tragos.
+Nombra 3 DJs o artistas de fiesta y reparte tragos.

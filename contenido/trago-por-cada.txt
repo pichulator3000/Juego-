@@ -1,0 +1,23 @@
+# 1 trago por cada...
+# Cada línea es una frase del tipo "1 trago por cada ___".
+#
+# Hay 3 secciones: NORMAL, MODO FUTBOL y MODO DISCO.
+# - MODO FUTBOL solo aparece si el modo fútbol está activado.
+# - MODO DISCO aparece siempre: poco si el modo disco está apagado,
+#   y mucho (siendo mayoría, pero sin tapar del todo las normales) si está activado.
+# Las que ya están abajo son las que hoy vienen incluidas en la app.
+
+## NORMAL
+1 trago por cada persona en la sala con la que hayas hablado hoy.
+1 trago por cada país que hayas visitado.
+1 trago por cada red social que tengas instalada.
+1 trago por cada ex pareja que esté en la sala.
+1 trago por cada año que llevas viviendo en tu casa actual.
+
+## MODO FUTBOL
+1 trago por cada mundial que hayas visto completo.
+1 trago por cada camiseta de fútbol que tengas.
+
+## MODO DISCO
+1 trago por cada vez que hayas ido a una disco este año.
+1 trago por cada canción de reggaetón que te sepas completa.

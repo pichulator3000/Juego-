@@ -1,0 +1,641 @@
+<title>RONDA — el juego de la previa</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#150C2B" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<style>
+  :root{
+    --ink:#150C2B;
+    --ink-2:#1E1240;
+    --surface:#211539;
+    --surface-2:#2C1B4C;
+    --line: rgba(248,244,255,.12);
+    --pink:#FF3D8F;
+    --lime:#D8FF3E;
+    --cyan:#2FE6C4;
+    --violet:#8B5CF6;
+    --cloud:#F8F4FF;
+    --muted:#B6A6DA;
+
+    --font-display: ui-rounded, "SF Pro Rounded", -apple-system, "Segoe UI", sans-serif;
+    --font-body: -apple-system, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+  }
+
+  *{ box-sizing:border-box; -webkit-tap-highlight-color: transparent; }
+  html,body{ height:100%; }
+  body{
+    margin:0;
+    min-height:100dvh;
+    background: radial-gradient(120% 60% at 50% -10%, var(--surface-2), var(--ink) 55%);
+    color:var(--cloud);
+    font-family: var(--font-body);
+    overflow-x:hidden;
+    overscroll-behavior-y:none;
+    position:relative;
+  }
+
+  /* ambient blobs — part of the product's own atmosphere, not device chrome */
+  .blob{ position:fixed; border-radius:50%; filter: blur(70px); opacity:.3; pointer-events:none; z-index:0; }
+  .blob-a{ width:60vw; height:60vw; max-width:420px; max-height:420px; background:var(--pink); top:-14%; left:-18%; }
+  .blob-b{ width:55vw; height:55vw; max-width:380px; max-height:380px; background:var(--cyan); bottom:-16%; right:-16%; }
+  .blob-c{ width:40vw; height:40vw; max-width:300px; max-height:300px; background:var(--violet); bottom:22%; left:-8%; opacity:.22; }
+  @media (prefers-reduced-motion: no-preference){
+    .blob-a{ animation: float-a 22s ease-in-out infinite; }
+    .blob-b{ animation: float-b 26s ease-in-out infinite; }
+    .blob-c{ animation: float-c 19s ease-in-out infinite; }
+  }
+  @keyframes float-a{ 0%,100%{ transform:translate(0,0);} 50%{ transform:translate(6vw,5vh);} }
+  @keyframes float-b{ 0%,100%{ transform:translate(0,0);} 50%{ transform:translate(-5vw,-6vh);} }
+  @keyframes float-c{ 0%,100%{ transform:translate(0,0);} 50%{ transform:translate(4vw,-4vh);} }
+
+  /* ============ app shell — real page, sized for iPhone safe areas ============ */
+  .app-shell{
+    position:relative; z-index:1;
+    width:100%; max-width:480px; margin:0 auto;
+    min-height:100dvh;
+    display:flex; flex-direction:column;
+    padding-top: max(28px, env(safe-area-inset-top));
+    padding-bottom: max(22px, env(safe-area-inset-bottom));
+    padding-left: max(20px, env(safe-area-inset-left));
+    padding-right: max(20px, env(safe-area-inset-right));
+  }
+
+  .app{ flex:1; }
+
+  /* ============ shared type ============ */
+  .brand{ font-family: var(--font-display); font-weight:900; letter-spacing:-.02em; font-size:34px; line-height:1;
+    background: linear-gradient(100deg, var(--pink), var(--lime) 85%);
+    -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .tagline{ font-size:13px; color:var(--muted); margin-top:4px; }
+  .section-label{ font-family:var(--font-display); font-weight:700; font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin: 22px 0 10px; display:flex; align-items:center; gap:6px; }
+  .section-label .count{ font-family:var(--font-mono); background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:1px 8px; font-size:11px; color:var(--cloud); font-weight:500; letter-spacing:0; text-transform:none; }
+
+  /* ============ player chips ============ */
+  .player-form{ display:flex; gap:8px; margin-top:8px; }
+  .player-form input{
+    flex:1; min-width:0; background:var(--surface); border:1px solid var(--line); border-radius:14px;
+    padding:11px 14px; color:var(--cloud); font-size:16px; font-family:var(--font-body);
+  }
+  .player-form input::placeholder{ color:var(--muted); }
+  .player-form input:focus-visible{ outline:2px solid var(--pink); outline-offset:1px; }
+  .add-btn{
+    width:44px; height:44px; border-radius:14px; border:none; flex-shrink:0;
+    background: linear-gradient(135deg, var(--pink), var(--violet));
+    color:#fff; font-size:20px; font-weight:700; display:flex; align-items:center; justify-content:center;
+  }
+  .add-btn:active{ transform:scale(.94); }
+  .add-btn:focus-visible{ outline:2px solid var(--lime); outline-offset:2px; }
+
+  .players-grid{ display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+  .chip{
+    display:flex; align-items:center; gap:7px; background:var(--surface); border:1px solid var(--line);
+    border-radius:24px; padding:6px 10px 6px 6px; font-size:14px;
+  }
+  .chip .avatar{ width:24px; height:24px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:800; color:#150C2B; flex-shrink:0; }
+  .chip button{ background:none; border:none; color:var(--muted); font-size:15px; line-height:1; padding:2px; }
+  .chip button:focus-visible{ outline:2px solid var(--pink); border-radius:50%; }
+  .empty-hint{ font-size:13px; color:var(--muted); margin-top:10px; }
+
+  /* ============ mode cards ============ */
+  .mode-card{
+    display:flex; align-items:center; gap:12px; background:var(--surface); border:1px solid var(--line);
+    border-radius:18px; padding:14px; margin-bottom:10px;
+  }
+  .mode-icon{ width:42px; height:42px; border-radius:13px; display:flex; align-items:center; justify-content:center; font-size:21px; flex-shrink:0; }
+  .mode-icon.futbol{ background: radial-gradient(circle at 30% 30%, var(--cyan), #17a98b); }
+  .mode-icon.disco{ background: conic-gradient(from 0deg, var(--pink), var(--violet), var(--cyan), var(--lime), var(--pink)); }
+  .mode-copy{ flex:1; min-width:0; }
+  .mode-copy strong{ display:block; font-size:15px; }
+  .mode-copy span{ display:block; font-size:12.5px; color:var(--muted); margin-top:1px; }
+
+  .switch{ position:relative; width:48px; height:28px; flex-shrink:0; }
+  .switch input{ position:absolute; inset:0; opacity:0; margin:0; cursor:pointer; }
+  .switch .track{ position:absolute; inset:0; border-radius:16px; background:var(--surface-2); border:1px solid var(--line); transition:background .2s; }
+  .switch .thumb{ position:absolute; top:2px; left:2px; width:22px; height:22px; border-radius:50%; background:var(--cloud); transition:transform .2s; box-shadow:0 2px 4px rgba(0,0,0,.3); }
+  .switch input:checked + .track{ background:var(--cyan); }
+  .switch input:checked + .track + .thumb{ transform:translateX(20px); }
+  .switch.disco input:checked + .track{ background: conic-gradient(from 0deg, var(--pink), var(--violet), var(--cyan), var(--lime), var(--pink)); }
+  @media (prefers-reduced-motion: no-preference){
+    .switch.disco input:checked + .track{ animation: spin-hue 3s linear infinite; }
+  }
+  @keyframes spin-hue{ to{ filter: hue-rotate(360deg); } }
+  .switch input:focus-visible + .track{ outline:2px solid var(--lime); outline-offset:2px; }
+
+  /* ============ segmented control ============ */
+  .segmented{ display:flex; background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:4px; gap:4px; }
+  .segmented button{
+    flex:1; border:none; background:transparent; color:var(--muted); font-family:var(--font-body); font-weight:600;
+    font-size:14px; padding:9px 0; border-radius:10px; transition:background .15s, color .15s;
+  }
+  .segmented button.active{ background: linear-gradient(135deg, var(--pink), var(--violet)); color:#fff; }
+  .segmented button:focus-visible{ outline:2px solid var(--lime); outline-offset:2px; }
+  .card-copy{ font-size:12.5px; color:var(--muted); margin-top:8px; }
+
+  /* ============ start button ============ */
+  .start-btn{
+    width:100%; margin-top:26px; border:none; border-radius:18px; padding:16px;
+    font-family:var(--font-display); font-weight:800; font-size:17px; color:#150C2B;
+    background: linear-gradient(100deg, var(--lime), var(--cyan));
+    box-shadow: 0 10px 24px -8px rgba(216,255,62,.5);
+  }
+  .start-btn:disabled{ opacity:.35; box-shadow:none; }
+  .start-btn:not(:disabled):active{ transform:scale(.98); }
+  .start-btn:focus-visible{ outline:2px solid var(--cloud); outline-offset:2px; }
+  .start-hint{ text-align:center; font-size:12px; color:var(--muted); margin-top:8px; }
+
+  /* ============ play screen ============ */
+  .topbar{ display:flex; align-items:center; justify-content:space-between; padding-top:4px; }
+  .icon-btn{ width:34px; height:34px; border-radius:10px; background:var(--surface); border:1px solid var(--line); color:var(--cloud); font-size:15px; display:flex; align-items:center; justify-content:center; }
+  .icon-btn:focus-visible{ outline:2px solid var(--pink); outline-offset:2px; }
+  .round-badge{ font-family:var(--font-mono); font-size:12px; color:var(--muted); background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:5px 10px; font-variant-numeric:tabular-nums; }
+  .mode-flags{ display:flex; gap:6px; }
+  .mode-flags span{ width:28px; height:28px; border-radius:9px; background:var(--surface); border:1px solid var(--line); display:flex; align-items:center; justify-content:center; font-size:13px; opacity:.35; }
+  .mode-flags span.on{ opacity:1; }
+
+  .rail{ display:flex; gap:10px; overflow-x:auto; padding:16px 2px 4px; scrollbar-width:none; }
+  .rail::-webkit-scrollbar{ display:none; }
+  .rail-player{ display:flex; flex-direction:column; align-items:center; gap:5px; flex-shrink:0; opacity:.5; transition:opacity .2s, transform .2s; }
+  .rail-player.current{ opacity:1; transform:scale(1.08); }
+  .rail-player .avatar{ width:38px; height:38px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:800; color:#150C2B; }
+  .rail-player.current .avatar{ box-shadow:0 0 0 2px var(--ink), 0 0 0 4px var(--pink); }
+  .rail-player small{ font-size:10px; color:var(--muted); max-width:44px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+
+  .stage-wrap{ margin-top:18px; perspective:1200px; }
+  .turn-label{ text-align:center; font-size:13px; color:var(--muted); }
+  .turn-name{ text-align:center; font-family:var(--font-display); font-weight:800; font-size:23px; margin-top:2px; text-wrap:balance; }
+
+  .flip-card{ position:relative; width:100%; aspect-ratio:3/3.9; margin-top:16px; transform-style:preserve-3d; transition:transform .6s cubic-bezier(.2,.8,.2,1); }
+  .flip-card.flipped{ transform:rotateY(180deg); }
+  @media (prefers-reduced-motion: reduce){ .flip-card{ transition:none; } }
+  .face{ position:absolute; inset:0; border-radius:26px; backface-visibility:hidden; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:22px; text-align:center; overflow-y:auto; scrollbar-width:none; }
+  .face::-webkit-scrollbar{ display:none; }
+  .face-front{
+    background: radial-gradient(120% 100% at 50% 0%, var(--surface-2), var(--surface));
+    border:1px solid var(--line);
+  }
+  .face-front .mark{ font-family:var(--font-display); font-size:44px; font-weight:900; color:var(--muted); opacity:.5; }
+  .face-front .tap-hint{ margin-top:10px; font-size:13px; color:var(--muted); font-weight:600; }
+  .face-back{ transform:rotateY(180deg); color:#150C2B; }
+  .face-back.cat-nunca{ background: linear-gradient(160deg, var(--violet), #5B3FD6); color:#fff; }
+  .face-back.cat-retos{ background: linear-gradient(160deg, var(--pink), #d61e73); color:#fff; }
+  .face-back.cat-juegos{ background: linear-gradient(160deg, var(--cyan), #12b596); }
+  .face-back.cat-cultura{ background: linear-gradient(160deg, var(--lime), #a8d61e); }
+  .face-back.cat-trago{ background: linear-gradient(155deg, var(--pink), var(--violet)); color:#fff; }
+  .face-back.cat-regala{ background: linear-gradient(155deg, var(--cyan), var(--lime)); }
+  .face-back.cat-espia-word{ background: linear-gradient(160deg, var(--lime), #a8d61e); }
+  .face-back.cat-espia-spy{ background: linear-gradient(160deg, var(--pink), #93104f); color:#fff; }
+  .cat-badge{ font-family:var(--font-mono); font-size:11px; letter-spacing:.08em; text-transform:uppercase; background:rgba(0,0,0,.18); padding:4px 10px; border-radius:20px; }
+  .cat-emoji{ font-size:32px; margin-top:14px; }
+  .challenge-text{ font-family:var(--font-display); font-weight:700; font-size:19px; margin-top:12px; text-wrap:balance; line-height:1.25; }
+  .challenge-sub{ font-family:var(--font-body); font-weight:500; font-size:13px; margin-top:10px; text-wrap:balance; line-height:1.45; opacity:.85; }
+
+  .play-actions{ display:grid; gap:9px; margin-top:18px; }
+  .play-actions.hidden{ display:none; }
+  .btn-primary{ border:none; border-radius:16px; padding:14px; font-family:var(--font-display); font-weight:800; font-size:15px; color:#150C2B; background:linear-gradient(100deg, var(--lime), var(--cyan)); }
+  .btn-primary:active{ transform:scale(.98); }
+  .btn-ghost{ border:1px solid var(--line); background:var(--surface); border-radius:16px; padding:12px; font-family:var(--font-body); font-weight:600; font-size:14px; color:var(--cloud); }
+  .btn-ghost:active{ transform:scale(.98); }
+  .btn-primary:focus-visible, .btn-ghost:focus-visible{ outline:2px solid var(--pink); outline-offset:2px; }
+  .tap-target{ background:none; border:none; padding:0; width:100%; display:block; }
+</style>
+
+<div class="blob blob-a"></div>
+<div class="blob blob-b"></div>
+<div class="blob blob-c"></div>
+
+<div class="app-shell">
+  <div class="app" id="app"></div>
+</div>
+
+<script>
+(function(){
+  var AVATAR_COLORS = ['var(--pink)','var(--lime)','var(--cyan)','var(--violet)'];
+
+  var DECK = {
+    nunca: {
+      label: 'Nunca nunca', icon: '🙊', cls: 'cat-nunca',
+      items: [
+        'Nunca nunca... le mentí a mis papás para salir.',
+        'Nunca nunca... lloré viendo una película.',
+        'Nunca nunca... me hice el enfermo para faltar a algo.',
+        'Nunca nunca... stalkeé a un ex en redes sociales.',
+        'Nunca nunca... me quedé dormido en clases o en el trabajo.'
+      ],
+      futbol: [
+        'Nunca nunca... hice un escándalo por un partido de fútbol.',
+        'Nunca nunca... falté a algo importante por ver un partido.'
+      ],
+      disco: [
+        'Nunca nunca... bailé arriba de una mesa o silla.',
+        'Nunca nunca... me quedé bailando solo en la pista.'
+      ]
+    },
+    retos: {
+      label: 'Reto', icon: '🔥', cls: 'cat-retos',
+      items: [
+        'Haz 10 sentadillas antes de seguir.',
+        'Imita a otro jugador por 30 segundos.',
+        'Deja que el grupo te maquille o peine por 1 minuto.',
+        'Habla con acento random hasta tu próximo turno.',
+        'Cuenta un secreto vergonzoso (nivel bajo).'
+      ],
+      futbol: [
+        'Haz jueguitos con lo que tengas a mano, 10 toques sin que se caiga.',
+        'Atajá un "penal" de papel o cumples una prenda.'
+      ],
+      disco: [
+        'Baila como estrella de los 80 por 30 segundos.',
+        'Enséñale un paso de baile a quien tienes al lado.'
+      ]
+    },
+    cultura: {
+      label: 'Cultura general', icon: '🧠', cls: 'cat-cultura',
+      items: [
+        'Nombra 3 capitales de países sudamericanos en 10 segundos o toma.',
+        'Nombra 3 elementos de la tabla periódica o toma.',
+        '¿En qué año llegó el hombre a la luna? Si fallas, tomas.',
+        'Nombra los 3 poderes del Estado o toma.',
+        'Nombra 3 huesos del cuerpo humano en 10 segundos o toma.'
+      ],
+      futbol: [
+        '¿Cuántos jugadores tiene un equipo de fútbol en la cancha? Si fallas, tomas.',
+        'Nombra 3 selecciones que hayan sido campeonas del mundo o toma.'
+      ],
+      disco: [
+        'Nombra 3 décadas de la música disco o toma.',
+        '¿En qué década nació el reggaetón? Si fallas, tomas.'
+      ]
+    },
+    trago: {
+      label: '1 trago por cada', icon: '🥃', cls: 'cat-trago',
+      items: [
+        '1 trago por cada persona en la sala con la que hayas hablado hoy.',
+        '1 trago por cada país que hayas visitado.',
+        '1 trago por cada red social que tengas instalada.',
+        '1 trago por cada ex pareja que esté en la sala.',
+        '1 trago por cada año que llevas viviendo en tu casa actual.'
+      ],
+      futbol: [
+        '1 trago por cada mundial que hayas visto completo.',
+        '1 trago por cada camiseta de fútbol que tengas.'
+      ],
+      disco: [
+        '1 trago por cada vez que hayas ido a una disco este año.',
+        '1 trago por cada canción de reggaetón que te sepas completa.'
+      ]
+    },
+    regala: {
+      label: 'Nombra y regala', icon: '🎁', cls: 'cat-regala',
+      items: [
+        'Nombra 3 películas y regala un trago por cada una a quien quieras.',
+        'Nombra 3 canciones y reparte los tragos entre el grupo.',
+        'Nombra 3 series y reparte tragos entre el grupo.',
+        'Nombra 3 países y regala un trago por cada uno.'
+      ],
+      futbol: [
+        'Nombra 3 jugadores de fútbol y regala un trago por cada uno.',
+        'Nombra 3 equipos de fútbol y reparte tragos.'
+      ],
+      disco: [
+        'Nombra 3 canciones para bailar y reparte tragos.',
+        'Nombra 3 DJs o artistas de fiesta y reparte tragos.'
+      ]
+    },
+    juegos: {
+      label: 'Juego', icon: '🎲', cls: 'cat-juegos',
+      items: [
+        { icon:'🎲', name:'Cacho Humano', needsCards:false, rules:'Cada uno dice una acción que haya hecho. Empiecen a apostar cuántos del grupo también la hicieron, subiendo la apuesta como en el dudo. Si dudan y se equivocan, toman.' },
+        { icon:'🤥', name:'Mentiroso', needsCards:false, rules:'Alguien parte diciendo "te puedo decir 1 de los ___". Los demás suben la apuesta (2, 3...) hasta que alguien dude. Si mintió, toma; si no mintió, toma quien dudó.' },
+        { icon:'🕵️', name:'Espía', needsCards:false, rules:'Pásense el teléfono en el orden que indique la pantalla. Cuando aparezca tu nombre, tócalo para dar vuelta la pantalla y ver la palabra secreta — todos la verán, menos el espía.' },
+        { icon:'🚗', name:'Cultura Chupística', needsCards:false, rules:'Alguien elige un tema (ej: marcas de auto) y todos van nombrando uno por uno sin repetir. El primero que no pueda seguir, toma.' },
+        { icon:'🂡', name:'Blackjack (1 mano)', needsCards:true, rules:'1 contra 1: uno hace de casa. Se reparte una sola mano, sin pedir más cartas. El que pierde mata la piscola. Si la casa se pasa de 21, gana el jugador. Empate: repiten la mano.' },
+        { icon:'⚔️', name:'Guerra de Cartas', needsCards:true, rules:'Todos revelan una carta al mismo tiempo. Gana la carta más alta (A es la más alta). El que pierde toma los tragos acumulados. Si empatan: guerra — 3 cartas boca abajo y se revela la 4ta, el perdedor toma el doble.' },
+        { icon:'🔮', name:'Calendario Maya', needsCards:true, rules:'Armen anillos de cartas boca abajo: 2 al centro (matar la piscola si fallas), 8 en el anillo interior (3-4 tragos) y 16 en el exterior (5-6 tragos). Por turno, elige una carta y adivina negra o roja antes de darla vuelta. Si aciertas, los tragos se acumulan para el siguiente; si fallas, tomas todo lo acumulado.' },
+        { icon:'🚌', name:'Busecito', needsCards:true, rules:'Un jugador se sube al "bus" y no se baja hasta ganar. Debe acertar 4 cartas seguidas: ¿negra o roja?, ¿mayor o menor?, ¿adentro o afuera del rango anterior?, ¿qué pinta? Si falla en cualquier fase, se queda en el bus y vuelve a empezar desde cero.' },
+        { icon:'🏇', name:'Carrera de Caballos', needsCards:true, rules:'Cada jugador elige una pinta. Se ponen 5 cartas boca abajo como trampas y un As de cada pinta como caballo. Van revelando cartas del mazo: si sale tu pinta, tu caballo avanza; si choca con una trampa de su pinta, retrocede. El primero en cruzar las 5 trampas gana — los demás toman según su posición.' }
+      ]
+    }
+  };
+
+  var ESPIA_WORDS = [
+    'playa', 'piscina', 'zapatilla', 'Hitler', 'Terremoto', 'Condón',
+    'Lubricante', '(Uno de los jugadores)', 'Motel', 'Rene puente', 'Gaspi', 'Anuel'
+  ];
+
+  var state = {
+    players: [],
+    futbol: false,
+    disco: false,
+    cards: null,
+    screen: 'setup',
+    turn: 0,
+    round: 1,
+    flipped: false,
+    card: null,
+    espia: null
+  };
+
+  var app = document.getElementById('app');
+
+  function initials(name){ return name.trim().slice(0,1).toUpperCase(); }
+  function esc(s){ return s.replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+
+  function canStart(){ return state.players.length >= 2 && state.cards !== null; }
+
+  function shuffle(arr){
+    var a = arr.slice();
+    for (var i = a.length - 1; i > 0; i--){
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = a[i]; a[i] = a[j]; a[j] = tmp;
+    }
+    return a;
+  }
+
+  // Mezcla normal + fútbol + disco. Fútbol solo entra si el modo está activo.
+  // Disco nunca queda del todo fuera: si el modo está apagado igual se cuela
+  // en poca medida; si está prendido, domina pero deja pasar algunas normales.
+  function weightedPick(cat){
+    var entries = [];
+    cat.items.forEach(function(t){ entries.push({ text: t, w: 1 }); });
+    if (state.futbol && cat.futbol){
+      cat.futbol.forEach(function(t){ entries.push({ text: t, w: 1 }); });
+    }
+    if (cat.disco){
+      var discoWeight = state.disco ? 3 : 0.2;
+      cat.disco.forEach(function(t){ entries.push({ text: t, w: discoWeight }); });
+    }
+    var total = entries.reduce(function(sum, e){ return sum + e.w; }, 0);
+    var r = Math.random() * total;
+    for (var i = 0; i < entries.length; i++){
+      r -= entries[i].w;
+      if (r <= 0) return entries[i].text;
+    }
+    return entries[entries.length - 1].text;
+  }
+
+  function drawChallenge(){
+    var keys = Object.keys(DECK);
+    var catKey = keys[Math.floor(Math.random() * keys.length)];
+    var cat = DECK[catKey];
+
+    if (catKey === 'juegos'){
+      var pool = cat.items.filter(function(g){ return !g.needsCards || state.cards === 'si'; });
+      var game = pool[Math.floor(Math.random() * pool.length)];
+      state.card = { cat: catKey, icon: game.icon, text: game.name, sub: game.rules, isSpy: game.name === 'Espía' };
+      return;
+    }
+
+    var text = weightedPick(cat);
+    state.card = { cat: catKey, icon: cat.icon, text: text, sub: null, isSpy: false };
+  }
+
+  function startEspia(){
+    var word = ESPIA_WORDS[Math.floor(Math.random() * ESPIA_WORDS.length)];
+    if (word === '(Uno de los jugadores)'){
+      var randomPlayer = state.players[Math.floor(Math.random() * state.players.length)];
+      word = randomPlayer.name;
+    }
+    var order = shuffle(state.players.map(function(_, i){ return i; }));
+    var spyIndex = order[Math.floor(Math.random() * order.length)];
+    state.espia = { word: word, spyIndex: spyIndex, order: order, step: 0, revealed: false };
+  }
+
+  function renderSetup(){
+    var chips = state.players.map(function(p, i){
+      return '<div class="chip">' +
+        '<span class="avatar" style="background:' + p.color + '">' + esc(initials(p.name)) + '</span>' +
+        '<span>' + esc(p.name) + '</span>' +
+        '<button data-action="remove-player" data-idx="' + i + '" aria-label="Quitar ' + esc(p.name) + '">✕</button>' +
+        '</div>';
+    }).join('');
+
+    app.innerHTML =
+      '<div class="brand">RONDA</div>' +
+      '<div class="tagline">el juego de la previa</div>' +
+
+      '<div class="section-label">Jugadores <span class="count">' + state.players.length + '</span></div>' +
+      '<form class="player-form" data-action="add-player-form">' +
+        '<input id="player-input" type="text" placeholder="Nombre del jugador" maxlength="16" autocomplete="off" />' +
+        '<button class="add-btn" type="submit" aria-label="Agregar jugador">＋</button>' +
+      '</form>' +
+      '<div class="players-grid">' + chips + '</div>' +
+      (state.players.length < 2 ? '<div class="empty-hint">Agrega al menos 2 jugadores para empezar.</div>' : '') +
+
+      '<div class="section-label">Modos de juego</div>' +
+      '<div class="mode-card">' +
+        '<div class="mode-icon futbol">⚽</div>' +
+        '<div class="mode-copy"><strong>Modo Fútbol</strong><span>Suma retos con balón, penales y datos futboleros.</span></div>' +
+        '<label class="switch"><input type="checkbox" data-action="toggle-futbol" ' + (state.futbol ? 'checked' : '') + ' /><span class="track"></span><span class="thumb"></span></label>' +
+      '</div>' +
+      '<div class="mode-card">' +
+        '<div class="mode-icon disco">🪩</div>' +
+        '<div class="mode-copy"><strong>Modo Disco</strong><span>Baile, canciones y retos para prender la pista.</span></div>' +
+        '<label class="switch disco"><input type="checkbox" data-action="toggle-disco" ' + (state.disco ? 'checked' : '') + ' /><span class="track"></span><span class="thumb"></span></label>' +
+      '</div>' +
+
+      '<div class="section-label">¿Tienen un mazo de cartas a mano?</div>' +
+      '<div class="segmented">' +
+        '<button data-action="set-cards" data-value="si" class="' + (state.cards === 'si' ? 'active' : '') + '">Sí</button>' +
+        '<button data-action="set-cards" data-value="no" class="' + (state.cards === 'no' ? 'active' : '') + '">No</button>' +
+      '</div>' +
+      '<div class="card-copy">' + (state.cards === 'si' ? 'Sumamos Blackjack, Guerra de Cartas, Calendario Maya, Busecito y Carrera de Caballos al mazo.' : state.cards === 'no' ? 'Sin problema, esos juegos no van a salir.' : 'Elige una opción para continuar.') + '</div>' +
+
+      '<button class="start-btn" data-action="start" ' + (canStart() ? '' : 'disabled') + '>Empezar</button>' +
+      (canStart() ? '' : '<div class="start-hint">Faltan jugadores o falta responder sobre las cartas.</div>');
+  }
+
+  function renderEspiaStage(){
+    var e = state.espia;
+
+    if (e.step >= e.order.length){
+      return (
+        '<div class="stage-wrap">' +
+          '<div class="face face-back cat-juegos" style="position:static; transform:none; aspect-ratio:3/2.2;">' +
+            '<span class="cat-badge">Espía</span>' +
+            '<div class="cat-emoji">🕵️</div>' +
+            '<div class="challenge-text">¡Todos vieron su carta!</div>' +
+            '<div class="challenge-sub">Empiecen a hacer preguntas para descubrir quién es el espía.</div>' +
+          '</div>' +
+          '<div class="play-actions">' +
+            '<button class="btn-primary" data-action="finish-espia">Listo, siguiente turno</button>' +
+          '</div>' +
+        '</div>'
+      );
+    }
+
+    var player = state.players[e.order[e.step]];
+    var isSpy = e.order[e.step] === e.spyIndex;
+    var backFace = isSpy
+      ? '<div class="face face-back cat-espia-spy"><span class="cat-badge">Espía</span><div class="cat-emoji">🕵️</div><div class="challenge-text">Eres el espía</div><div class="challenge-sub">No conoces la palabra. Disimula y trata de descubrirla sin que te pillen.</div></div>'
+      : '<div class="face face-back cat-espia-word"><span class="cat-badge">Palabra secreta</span><div class="cat-emoji">🔎</div><div class="challenge-text">' + esc(e.word) + '</div><div class="challenge-sub">No la digas en voz alta. El espía no la sabe.</div></div>';
+
+    return (
+      '<div class="stage-wrap">' +
+        '<div class="turn-label">Pásale el teléfono a</div>' +
+        '<div class="turn-name">' + esc(player.name) + '</div>' +
+
+        '<button class="tap-target" data-action="reveal-espia" aria-label="Toca cuando tengas el teléfono">' +
+          '<div class="flip-card ' + (e.revealed ? 'flipped' : '') + '">' +
+            '<div class="face face-front">' +
+              '<div class="mark">🤫</div>' +
+              '<div class="tap-hint">Toca cuando tengas el teléfono en tus manos</div>' +
+            '</div>' +
+            backFace +
+          '</div>' +
+        '</button>' +
+
+        '<div class="play-actions ' + (e.revealed ? '' : 'hidden') + '">' +
+          '<button class="btn-primary" data-action="next-espia-step">Listo, pasar el teléfono</button>' +
+        '</div>' +
+      '</div>'
+    );
+  }
+
+  function renderPlay(){
+    var current = state.players[state.turn];
+    var rail = state.players.map(function(p, i){
+      return '<div class="rail-player ' + (i === state.turn ? 'current' : '') + '">' +
+        '<span class="avatar" style="background:' + p.color + '">' + esc(initials(p.name)) + '</span>' +
+        '<small>' + esc(p.name) + '</small>' +
+        '</div>';
+    }).join('');
+
+    var topbar =
+      '<div class="topbar">' +
+        '<button class="icon-btn" data-action="back-setup" aria-label="Volver a jugadores">‹</button>' +
+        '<span class="round-badge">Turno ' + state.round + '</span>' +
+        '<span class="mode-flags">' +
+          '<span class="' + (state.futbol ? 'on' : '') + '" title="Modo fútbol">⚽</span>' +
+          '<span class="' + (state.disco ? 'on' : '') + '" title="Modo disco">🪩</span>' +
+          '<span class="' + (state.cards === 'si' ? 'on' : '') + '" title="Con cartas">🃏</span>' +
+        '</span>' +
+      '</div>';
+
+    if (state.espia){
+      app.innerHTML = topbar + renderEspiaStage();
+      return;
+    }
+
+    var backFace = '';
+    if (state.card){
+      var meta = DECK[state.card.cat];
+      backFace =
+        '<div class="face face-back ' + meta.cls + '">' +
+          '<span class="cat-badge">' + meta.label + '</span>' +
+          '<div class="cat-emoji">' + state.card.icon + '</div>' +
+          '<div class="challenge-text">' + esc(state.card.text) + '</div>' +
+          (state.card.sub ? '<div class="challenge-sub">' + esc(state.card.sub) + '</div>' : '') +
+        '</div>';
+    } else {
+      backFace = '<div class="face face-back cat-nunca"></div>';
+    }
+
+    var doneAction = (state.card && state.card.isSpy) ? 'start-espia' : 'next-turn';
+    var doneLabel = (state.card && state.card.isSpy) ? 'Empezar ronda de Espía' : 'Listo, siguiente turno';
+
+    app.innerHTML = topbar +
+      '<div class="rail">' + rail + '</div>' +
+
+      '<div class="stage-wrap">' +
+        '<div class="turn-label">Turno de</div>' +
+        '<div class="turn-name">' + esc(current.name) + '</div>' +
+
+        '<button class="tap-target" data-action="reveal" aria-label="Toca para revelar el reto">' +
+          '<div class="flip-card ' + (state.flipped ? 'flipped' : '') + '">' +
+            '<div class="face face-front">' +
+              '<div class="mark">?</div>' +
+              '<div class="tap-hint">Toca para revelar tu reto</div>' +
+            '</div>' +
+            backFace +
+          '</div>' +
+        '</button>' +
+
+        '<div class="play-actions ' + (state.flipped ? '' : 'hidden') + '">' +
+          '<button class="btn-primary" data-action="' + doneAction + '">' + doneLabel + '</button>' +
+        '</div>' +
+      '</div>';
+  }
+
+  function render(){
+    if (state.screen === 'setup') renderSetup();
+    else renderPlay();
+  }
+
+  app.addEventListener('submit', function(e){
+    if (e.target.matches('[data-action="add-player-form"]')){
+      e.preventDefault();
+      var input = document.getElementById('player-input');
+      var name = input.value.trim();
+      if (!name || state.players.length >= 12) return;
+      state.players.push({ name: name, color: AVATAR_COLORS[state.players.length % AVATAR_COLORS.length] });
+      render();
+      var again = document.getElementById('player-input');
+      if (again) again.focus();
+    }
+  });
+
+  app.addEventListener('change', function(e){
+    if (e.target.matches('[data-action="toggle-futbol"]')){ state.futbol = e.target.checked; render(); }
+    if (e.target.matches('[data-action="toggle-disco"]')){ state.disco = e.target.checked; render(); }
+  });
+
+  app.addEventListener('click', function(e){
+    var t = e.target.closest('[data-action]');
+    if (!t) return;
+    var action = t.getAttribute('data-action');
+
+    if (action === 'remove-player'){
+      state.players.splice(Number(t.getAttribute('data-idx')), 1);
+      render();
+    } else if (action === 'set-cards'){
+      state.cards = t.getAttribute('data-value');
+      render();
+    } else if (action === 'start'){
+      if (!canStart()) return;
+      state.screen = 'play';
+      state.turn = 0;
+      state.round = 1;
+      state.flipped = false;
+      state.card = null;
+      state.espia = null;
+      render();
+    } else if (action === 'back-setup'){
+      state.screen = 'setup';
+      state.espia = null;
+      render();
+    } else if (action === 'reveal'){
+      if (state.flipped) return;
+      drawChallenge();
+      state.flipped = true;
+      render();
+    } else if (action === 'next-turn'){
+      state.turn = (state.turn + 1) % state.players.length;
+      state.round += 1;
+      state.flipped = false;
+      state.card = null;
+      render();
+    } else if (action === 'start-espia'){
+      startEspia();
+      render();
+    } else if (action === 'reveal-espia'){
+      if (state.espia.revealed) return;
+      state.espia.revealed = true;
+      render();
+    } else if (action === 'next-espia-step'){
+      state.espia.step += 1;
+      state.espia.revealed = false;
+      render();
+    } else if (action === 'finish-espia'){
+      state.espia = null;
+      state.turn = (state.turn + 1) % state.players.length;
+      state.round += 1;
+      state.flipped = false;
+      state.card = null;
+      render();
+    }
+  });
+
+  render();
+})();
+</script>

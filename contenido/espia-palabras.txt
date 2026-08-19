@@ -1,0 +1,17 @@
+# Palabras para el juego Espía
+# Una palabra o frase corta por línea. En cada ronda se elige una al azar
+# y se les muestra a todos los jugadores menos al espía.
+# Bórralos y reemplázalos por los tuyos.
+
+playa
+piscina
+zapatilla
+Hitler
+Terremoto
+Condon
+Lubricante
+(Uno de los jugadores)
+Motel
+Rene puente
+Gaspi
+Anuel

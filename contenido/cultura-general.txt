@@ -1,0 +1,23 @@
+# Cultura general
+# Cada línea es una pregunta o desafío de cultura general. Si fallas, tomas.
+#
+# Hay 3 secciones: NORMAL, MODO FUTBOL y MODO DISCO.
+# - MODO FUTBOL solo aparece si el modo fútbol está activado.
+# - MODO DISCO aparece siempre: poco si el modo disco está apagado,
+#   y mucho (siendo mayoría, pero sin tapar del todo las normales) si está activado.
+# Las que ya están abajo son las que hoy vienen incluidas en la app.
+
+## NORMAL
+Nombra 3 capitales de países sudamericanos en 10 segundos o toma.
+Nombra 3 elementos de la tabla periódica o toma.
+¿En qué año llegó el hombre a la luna? Si fallas, tomas.
+Nombra los 3 poderes del Estado o toma.
+Nombra 3 huesos del cuerpo humano en 10 segundos o toma.
+
+## MODO FUTBOL
+¿Cuántos jugadores tiene un equipo de fútbol en la cancha? Si fallas, tomas.
+Nombra 3 selecciones que hayan sido campeonas del mundo o toma.
+
+## MODO DISCO
+Nombra 3 décadas de la música disco o toma.
+¿En qué década nació el reggaetón? Si fallas, tomas.

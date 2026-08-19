@@ -1,0 +1,24 @@
+# Frases para Nunca Nunca
+# Cada línea es una frase que empieza con "Nunca nunca...". Quien la haya
+# hecho, toma.
+#
+# Hay 3 secciones: NORMAL, MODO FUTBOL y MODO DISCO.
+# - MODO FUTBOL solo aparece si el modo fútbol está activado.
+# - MODO DISCO aparece siempre: poco si el modo disco está apagado,
+#   y mucho (siendo mayoría, pero sin tapar del todo las normales) si está activado.
+# Las que ya están abajo son las que hoy vienen incluidas en la app.
+
+## NORMAL
+Nunca nunca... le mentí a mis papás para salir.
+Nunca nunca... lloré viendo una película.
+Nunca nunca... me hice el enfermo para faltar a algo.
+Nunca nunca... stalkeé a un ex en redes sociales.
+Nunca nunca... me quedé dormido en clases o en el trabajo.
+
+## MODO FUTBOL
+Nunca nunca... hice un escándalo por un partido de fútbol.
+Nunca nunca... falté a algo importante por ver un partido.
+
+## MODO DISCO
+Nunca nunca... bailé arriba de una mesa o silla.
+Nunca nunca... me quedé bailando solo en la pista.

@@ -1,0 +1,8 @@
+# Temas para el juego Mentiroso
+# Cada línea es un tema sobre el que alguien dice "te puedo decir 1 de los ___".
+# Los demás suben la apuesta (2, 3...) hasta que alguien dude.
+# Bórralos y reemplázalos por los tuyos.
+
+presidentes de Chile
+países de Sudamérica
+películas de Pixar

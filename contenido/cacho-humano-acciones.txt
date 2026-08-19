@@ -1,0 +1,8 @@
+# Acciones para Cacho Humano
+# Cada línea es una acción que la gente puede haber hecho o no (estilo "he hecho...").
+# Se dice la acción y el grupo apuesta cuántos la han hecho, como en el dudo.
+# Bórralos y reemplázalos por los tuyos.
+
+He llorado viendo una película
+He mentido para no ir a un evento
+He bailado solo en mi pieza
