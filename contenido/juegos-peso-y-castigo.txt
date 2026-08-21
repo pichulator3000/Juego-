@@ -1,0 +1,56 @@
+# Probabilidad de aparición y tragos de castigo, por juego
+#
+# PESO: número relativo que controla qué tan seguido sale ese juego cuando
+# toca la categoría Juegos. Todos parten iguales (10) salvo que se indique
+# lo contrario. Súbelo para que salga más seguido, bájalo para que salga
+# menos. No tienen que sumar 100 ni nada — es solo peso relativo entre ellos.
+#
+# CASTIGO: cuántos tragos toma quien pierde. Solo lleva un número fijo en
+# los juegos "por reglas" (los que tienen una forma objetiva de determinar
+# quién pierde: los 5 juegos de cartas). Los juegos sociales (Cacho Humano,
+# Mentiroso, Espía, Cultura Chupística) dependen de lo que decida el grupo
+# en el momento, así que no tienen un número fijo — se deja a criterio.
+#
+# Esto todavía no está conectado a la app (hoy los 9 juegos salen con la
+# misma probabilidad, y el castigo es el que dice cada carta). Avísame
+# cuando quieras que lo conecte.
+
+## Juegos sociales (sin castigo fijo)
+
+Cacho Humano
+PESO: 4
+CASTIGO: 6 tragos — quien pierde la apuesta toma.
+
+Mentiroso
+PESO: 4
+CASTIGO: 6 tragos — quien mintió (si lo pillan) o quien dudó mal, toma.
+
+Espía
+PESO: 2
+CASTIGO: definir que el espía tome 6 tragos si lo descubren, que tome el grupo entero 6 tragos si no lo descubre.
+
+Cultura Chupística
+PESO: 4
+CASTIGO: 6 tragos — quien no puede seguir el tema, toma.
+
+## Juegos por reglas (con castigo fijo)
+
+Blackjack (1 mano)
+PESO: 2
+CASTIGO: el que pierde mata la piscola (toma todo su trago). Empate: repiten la mano, no toma nadie.
+
+Guerra de Cartas
+PESO: 3
+CASTIGO: Matar. Si hay guerra (empate), se repite.
+
+Calendario Maya
+PESO: 1
+CASTIGO: depende del anillo donde falles — centro: mata la piscola (trago completo). Anillo interior: 3-4 tragos. Anillo exterior: 5-6 tragos.
+
+Busecito
+PESO: 1
+CASTIGO: no hay trago por fallar una fase (te quedas en el bus y repites desde cero). Si quieres agregarle castigo, puedes definir que el resto del grupo tome 1 trago cada vez que alguien falla, para que no sea solo el del bus quien sufre.
+
+Carrera de Caballos
+PESO: 1
+CASTIGO: según el lugar en que termine tu caballo — 1er lugar: no toma. 2do: 2 tragos. 3ro: 3 tragos. 4to: 4 tragos. Último: 5 tragos (ajusta la escala si juegan con menos de 4 personas).

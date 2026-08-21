@@ -1,5 +1,7 @@
 # Cultura general
-# Cada línea es una pregunta o desafío de cultura general. Si fallas, tomas.
+# Cada pregunta va en una línea, y la línea siguiente que empieza con "R:"
+# es la respuesta que se puede revelar con el botón "Mostrar respuesta".
+# Si fallas la pregunta, tomas.
 #
 # Hay 3 secciones: NORMAL, MODO FUTBOL y MODO DISCO.
 # - MODO FUTBOL solo aparece si el modo fútbol está activado.
@@ -9,15 +11,24 @@
 
 ## NORMAL
 Nombra 3 capitales de países sudamericanos en 10 segundos o toma.
+R: Por ejemplo: Santiago, Lima, Bogotá, Quito, Montevideo, Buenos Aires, Asunción, La Paz, Caracas.
 Nombra 3 elementos de la tabla periódica o toma.
+R: Por ejemplo: Hidrógeno, Oxígeno, Carbono, Oro, Hierro, Sodio, Helio.
 ¿En qué año llegó el hombre a la luna? Si fallas, tomas.
+R: 1969, misión Apollo 11.
 Nombra los 3 poderes del Estado o toma.
+R: Ejecutivo, Legislativo y Judicial.
 Nombra 3 huesos del cuerpo humano en 10 segundos o toma.
+R: Por ejemplo: fémur, cráneo, costilla, húmero, tibia, columna vertebral.
 
 ## MODO FUTBOL
 ¿Cuántos jugadores tiene un equipo de fútbol en la cancha? Si fallas, tomas.
+R: 11 jugadores por equipo.
 Nombra 3 selecciones que hayan sido campeonas del mundo o toma.
+R: Por ejemplo: Brasil, Alemania, Argentina, Italia, Francia, Uruguay, España, Inglaterra.
 
 ## MODO DISCO
 Nombra 3 décadas de la música disco o toma.
+R: La disco nació en los 70 y se extendió por los 80; su revival llega hasta hoy.
 ¿En qué década nació el reggaetón? Si fallas, tomas.
+R: A fines de los 90, en Puerto Rico y Panamá.

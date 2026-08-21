@@ -188,6 +188,7 @@
   .cat-emoji{ font-size:32px; margin-top:14px; }
   .challenge-text{ font-family:var(--font-display); font-weight:700; font-size:19px; margin-top:12px; text-wrap:balance; line-height:1.25; }
   .challenge-sub{ font-family:var(--font-body); font-weight:500; font-size:13px; margin-top:10px; text-wrap:balance; line-height:1.45; opacity:.85; }
+  .answer-block{ margin-top:14px; padding-top:14px; border-top:1px dashed rgba(0,0,0,.18); }
 
   .play-actions{ display:grid; gap:9px; margin-top:18px; }
   .play-actions.hidden{ display:none; }
@@ -595,19 +596,19 @@
     cultura: {
       label: 'Cultura general', icon: '🧠', cls: 'cat-cultura',
       items: [
-        'Nombra 3 capitales de países sudamericanos en 10 segundos o toma.',
-        'Nombra 3 elementos de la tabla periódica o toma.',
-        '¿En qué año llegó el hombre a la luna? Si fallas, tomas.',
-        'Nombra los 3 poderes del Estado o toma.',
-        'Nombra 3 huesos del cuerpo humano en 10 segundos o toma.'
+        { text: 'Nombra 3 capitales de países sudamericanos en 10 segundos o toma.', answer: 'Por ejemplo: Santiago, Lima, Bogotá, Quito, Montevideo, Buenos Aires, Asunción, La Paz, Caracas.' },
+        { text: 'Nombra 3 elementos de la tabla periódica o toma.', answer: 'Por ejemplo: Hidrógeno, Oxígeno, Carbono, Oro, Hierro, Sodio, Helio.' },
+        { text: '¿En qué año llegó el hombre a la luna? Si fallas, tomas.', answer: '1969, misión Apollo 11.' },
+        { text: 'Nombra los 3 poderes del Estado o toma.', answer: 'Ejecutivo, Legislativo y Judicial.' },
+        { text: 'Nombra 3 huesos del cuerpo humano en 10 segundos o toma.', answer: 'Por ejemplo: fémur, cráneo, costilla, húmero, tibia, columna vertebral.' }
       ],
       futbol: [
-        '¿Cuántos jugadores tiene un equipo de fútbol en la cancha? Si fallas, tomas.',
-        'Nombra 3 selecciones que hayan sido campeonas del mundo o toma.'
+        { text: '¿Cuántos jugadores tiene un equipo de fútbol en la cancha? Si fallas, tomas.', answer: '11 jugadores por equipo.' },
+        { text: 'Nombra 3 selecciones que hayan sido campeonas del mundo o toma.', answer: 'Por ejemplo: Brasil, Alemania, Argentina, Italia, Francia, Uruguay, España, Inglaterra.' }
       ],
       disco: [
-        'Nombra 3 décadas de la música disco o toma.',
-        '¿En qué década nació el reggaetón? Si fallas, tomas.'
+        { text: 'Nombra 3 décadas de la música disco o toma.', answer: 'La disco nació en los 70 y se extendió por los 80; su revival llega hasta hoy.' },
+        { text: '¿En qué década nació el reggaetón? Si fallas, tomas.', answer: 'A fines de los 90, en Puerto Rico y Panamá.' }
       ]
     },
     trago: {
@@ -676,6 +677,7 @@
     round: 1,
     flipped: false,
     card: null,
+    answerShown: false,
     espia: null
   };
 
@@ -698,23 +700,29 @@
   // Mezcla normal + fútbol + disco. Fútbol solo entra si el modo está activo.
   // Disco nunca queda del todo fuera: si el modo está apagado igual se cuela
   // en poca medida; si está prendido, domina pero deja pasar algunas normales.
+  // Cada entrada puede ser un string simple o un objeto { text, answer }
+  // para las preguntas que tienen una respuesta que se puede revelar.
+  function toEntry(item){
+    return (typeof item === 'string') ? { text: item, answer: null } : item;
+  }
+
   function weightedPick(cat){
     var entries = [];
-    cat.items.forEach(function(t){ entries.push({ text: t, w: 1 }); });
+    cat.items.forEach(function(it){ entries.push({ item: toEntry(it), w: 1 }); });
     if (state.futbol && cat.futbol){
-      cat.futbol.forEach(function(t){ entries.push({ text: t, w: 1 }); });
+      cat.futbol.forEach(function(it){ entries.push({ item: toEntry(it), w: 1 }); });
     }
     if (cat.disco){
       var discoWeight = state.disco ? 3 : 0.2;
-      cat.disco.forEach(function(t){ entries.push({ text: t, w: discoWeight }); });
+      cat.disco.forEach(function(it){ entries.push({ item: toEntry(it), w: discoWeight }); });
     }
     var total = entries.reduce(function(sum, e){ return sum + e.w; }, 0);
     var r = Math.random() * total;
     for (var i = 0; i < entries.length; i++){
       r -= entries[i].w;
-      if (r <= 0) return entries[i].text;
+      if (r <= 0) return entries[i].item;
     }
-    return entries[entries.length - 1].text;
+    return entries[entries.length - 1].item;
   }
 
   function drawChallenge(){
@@ -725,12 +733,12 @@
     if (catKey === 'juegos'){
       var pool = cat.items.filter(function(g){ return !g.needsCards || state.cards === 'si'; });
       var game = pool[Math.floor(Math.random() * pool.length)];
-      state.card = { cat: catKey, icon: game.icon, text: game.name, sub: game.rules, isSpy: game.name === 'Espía' };
+      state.card = { cat: catKey, icon: game.icon, text: game.name, sub: game.rules, answer: null, isSpy: game.name === 'Espía' };
       return;
     }
 
-    var text = weightedPick(cat);
-    state.card = { cat: catKey, icon: cat.icon, text: text, sub: null, isSpy: false };
+    var entry = weightedPick(cat);
+    state.card = { cat: catKey, icon: cat.icon, text: entry.text, sub: null, answer: entry.answer || null, isSpy: false };
   }
 
   function startEspia(){
@@ -868,6 +876,7 @@
           '<div class="cat-emoji">' + state.card.icon + '</div>' +
           '<div class="challenge-text">' + esc(state.card.text) + '</div>' +
           (state.card.sub ? '<div class="challenge-sub">' + esc(state.card.sub) + '</div>' : '') +
+          (state.card.answer && state.answerShown ? '<div class="answer-block"><span class="cat-badge">Respuesta</span><div class="challenge-sub">' + esc(state.card.answer) + '</div></div>' : '') +
         '</div>';
     } else {
       backFace = '<div class="face face-back cat-nunca"></div>';
@@ -875,6 +884,9 @@
 
     var doneAction = (state.card && state.card.isSpy) ? 'start-espia' : 'next-turn';
     var doneLabel = (state.card && state.card.isSpy) ? 'Empezar ronda de Espía' : 'Listo, siguiente turno';
+    var showAnswerBtn = (state.card && state.card.answer && !state.answerShown)
+      ? '<button class="btn-ghost" data-action="show-answer">Mostrar respuesta</button>'
+      : '';
 
     app.innerHTML = topbar +
       '<div class="rail">' + rail + '</div>' +
@@ -894,6 +906,7 @@
         '</button>' +
 
         '<div class="play-actions ' + (state.flipped ? '' : 'hidden') + '">' +
+          showAnswerBtn +
           '<button class="btn-primary" data-action="' + doneAction + '">' + doneLabel + '</button>' +
         '</div>' +
       '</div>';
@@ -940,6 +953,7 @@
       state.round = 1;
       state.flipped = false;
       state.card = null;
+      state.answerShown = false;
       state.espia = null;
       render();
     } else if (action === 'back-setup'){
@@ -950,12 +964,17 @@
       if (state.flipped) return;
       drawChallenge();
       state.flipped = true;
+      state.answerShown = false;
+      render();
+    } else if (action === 'show-answer'){
+      state.answerShown = true;
       render();
     } else if (action === 'next-turn'){
       state.turn = (state.turn + 1) % state.players.length;
       state.round += 1;
       state.flipped = false;
       state.card = null;
+      state.answerShown = false;
       render();
     } else if (action === 'start-espia'){
       startEspia();
@@ -974,6 +993,7 @@
       state.round += 1;
       state.flipped = false;
       state.card = null;
+      state.answerShown = false;
       render();
     }
   });

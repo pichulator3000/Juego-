@@ -8,15 +8,16 @@
 # Las que ya están abajo son las que hoy vienen incluidas en la app.
 
 ## NORMAL
-Nombra 3 películas y regala un trago por cada una a quien quieras.
-Nombra 3 canciones y reparte los tragos entre el grupo.
-Nombra 3 series y reparte tragos entre el grupo.
-Nombra 3 países y regala un trago por cada uno.
+Nombra  películas y regala un trago por cada una a quien quieras.
+Nombra  canciones y reparte los tragos entre el grupo.
+Nombra  series y reparte tragos entre el grupo.
+Nombra  países y regala un trago por cada uno.
 
 ## MODO FUTBOL
-Nombra 3 jugadores de fútbol y regala un trago por cada uno.
-Nombra 3 equipos de fútbol y reparte tragos.
+Nombra  jugadores que hayan jugado en colocolo y la U y regala un trago por cada uno.
+Nombra  equipos campeones de premier y regala un trago por cada uno.
+Nombra  jugadores que jugaron el mundial 2010 por chile y regala un trago por cada uno.
 
 ## MODO DISCO
-Nombra 3 canciones para bailar y reparte tragos.
-Nombra 3 DJs o artistas de fiesta y reparte tragos.
+Nombra  canciones para bailar y reparte tragos.
+Nombra  DJs o artistas de fiesta y reparte tragos.
