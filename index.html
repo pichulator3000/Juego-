@@ -198,8 +198,8 @@
   .face-back.cat-espia-spy{ background: linear-gradient(160deg, var(--pink), #93104f); color:#fff; }
   .cat-badge{ font-family:var(--font-mono); font-size:11px; letter-spacing:.08em; text-transform:uppercase; background:rgba(0,0,0,.18); padding:4px 10px; border-radius:20px; }
   .cat-emoji{ font-size:32px; margin-top:14px; }
-  .who-photo{ width:172px; height:172px; border-radius:50%; overflow:hidden; margin:14px auto 0; position:relative; background:rgba(0,0,0,.15); border:4px solid rgba(255,255,255,.55); flex-shrink:0; }
-  .who-photo img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .who-photo{ width:172px; height:172px; border-radius:18px; overflow:hidden; margin:14px auto 0; position:relative; background:rgba(0,0,0,.15); border:4px solid rgba(255,255,255,.55); flex-shrink:0; }
+  .who-photo img{ width:100%; height:100%; object-fit:cover; object-position:center top; display:block; }
   .who-photo-fallback{ position:absolute; inset:0; display:none; align-items:center; justify-content:center; font-size:60px; }
   .challenge-text{ font-family:var(--font-display); font-weight:700; font-size:19px; margin-top:12px; text-wrap:balance; line-height:1.25; }
   .challenge-sub{ font-family:var(--font-body); font-weight:500; font-size:13px; margin-top:10px; text-wrap:balance; line-height:1.45; opacity:.85; }
@@ -675,26 +675,26 @@
         { text: '¿Cuál es la lengua materna más hablada del mundo? Si fallas, tomas', answer: 'El chino mandarín' },
         { text: '¿Quién fue el primer ser humano en viajar al espacio? Si fallas, tomas', answer: 'Yuri Gagarin' },
         { text: '¿Cuál es el río más caudaloso del mundo? Si fallas, tomas', answer: 'El Amazonas' },
-        { text: '¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/c/cb/Francesco_Melzi_-_Portrait_of_Leonardo.png', answer: 'Leonardo da Vinci' },
-        { text: '¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/f/fc/260202-D-PM193-2205_SECWAR_Arsenal_of_Freedom_Tour_-_Florida_%283x4_cropped_on_Bezos_and_rotated%29.jpg', answer: 'Jeff Bezos' },
-        { text: '¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/2/26/Cristiano_Ronaldo_Croatia_v_Portugal_2_July_2026-075_%28cropped%29.jpg', answer: 'Cristiano Ronaldo' },
-        { text: '¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/2/2f/Guests_at_the_2026_Met_Gala_209_%28cropped%29.jpg', answer: 'Serena Williams' },
-        { text: '¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/2/28/Albert_Einstein_Head_cleaned.jpg', answer: 'Albert Einstein' },
-        { text: '¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/d/df/Marcelo_%22Chino%22_Rios.jpg', answer: 'Marcelo Ríos' },
-        { text: '¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/0/06/Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg', answer: 'Frida Kahlo' },
-        { text: '¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/5/5e/Elon_Musk_-_54820081119_%28cropped%29.jpg', answer: 'Elon Musk' },
-        { text: '¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/c/c8/Marie_Curie_c._1920s.jpg', answer: 'Marie Curie' },
-        { text: '¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg', answer: 'Isaac Newton' },
-        { text: '¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg', answer: 'Vincent van Gogh' },
-        { text: '¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/2/21/William_Shakespeare_by_John_Taylor%2C_edited.jpg', answer: 'William Shakespeare' },
-        { text: '¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/5/50/Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg', answer: 'Napoleón Bonaparte' },
-        { text: '¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/5/57/Abraham_Lincoln_1863_Portrait_%283x4_cropped%29.jpg', answer: 'Abraham Lincoln' },
-        { text: '¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Steve_Jobs_Headshot_2010_%28cropped_4%29.jpg/600px-Steve_Jobs_Headshot_2010_%28cropped_4%29.jpg', answer: 'Steve Jobs' },
-        { text: '¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Bill_Gates_at_the_European_Commission_-_P067383-987995_%28cropped%29_5.jpg', answer: 'Bill Gates' },
-        { text: '¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/c/c8/Leo_Messi_Argentina_v_Egypt_7_July_2026-1.jpg', answer: 'Lionel Messi' },
-        { text: '¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Usain_Bolt_smiling_Berlin_2009.JPG', answer: 'Usain Bolt' },
-        { text: '¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Muhammad_Ali_NYWTS.jpg', answer: 'Muhammad Ali' },
-        { text: '¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/6/64/Gabriela_Mistral_1945.jpg', answer: 'Gabriela Mistral' }
+        { text: 'Por 6 tragos, ¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/c/cb/Francesco_Melzi_-_Portrait_of_Leonardo.png', answer: 'Leonardo da Vinci' },
+        { text: 'Por 6 tragos, ¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/f/fc/260202-D-PM193-2205_SECWAR_Arsenal_of_Freedom_Tour_-_Florida_%283x4_cropped_on_Bezos_and_rotated%29.jpg', answer: 'Jeff Bezos' },
+        { text: 'Por 6 tragos, ¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/2/26/Cristiano_Ronaldo_Croatia_v_Portugal_2_July_2026-075_%28cropped%29.jpg', answer: 'Cristiano Ronaldo' },
+        { text: 'Por 6 tragos, ¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/2/2f/Guests_at_the_2026_Met_Gala_209_%28cropped%29.jpg', answer: 'Serena Williams' },
+        { text: 'Por 6 tragos, ¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/2/28/Albert_Einstein_Head_cleaned.jpg', answer: 'Albert Einstein' },
+        { text: 'Por 6 tragos, ¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/d/df/Marcelo_%22Chino%22_Rios.jpg', answer: 'Marcelo Ríos' },
+        { text: 'Por 6 tragos, ¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/0/06/Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg', answer: 'Frida Kahlo' },
+        { text: 'Por 6 tragos, ¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/5/5e/Elon_Musk_-_54820081119_%28cropped%29.jpg', answer: 'Elon Musk' },
+        { text: 'Por 6 tragos, ¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/c/c8/Marie_Curie_c._1920s.jpg', answer: 'Marie Curie' },
+        { text: 'Por 6 tragos, ¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg', answer: 'Isaac Newton' },
+        { text: 'Por 6 tragos, ¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg', answer: 'Vincent van Gogh' },
+        { text: 'Por 6 tragos, ¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/2/21/William_Shakespeare_by_John_Taylor%2C_edited.jpg', answer: 'William Shakespeare' },
+        { text: 'Por 6 tragos, ¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/5/50/Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg', answer: 'Napoleón Bonaparte' },
+        { text: 'Por 6 tragos, ¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/5/57/Abraham_Lincoln_1863_Portrait_%283x4_cropped%29.jpg', answer: 'Abraham Lincoln' },
+        { text: 'Por 6 tragos, ¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Steve_Jobs_Headshot_2010_%28cropped_4%29.jpg/600px-Steve_Jobs_Headshot_2010_%28cropped_4%29.jpg', answer: 'Steve Jobs' },
+        { text: 'Por 6 tragos, ¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Bill_Gates_at_the_European_Commission_-_P067383-987995_%28cropped%29_5.jpg', answer: 'Bill Gates' },
+        { text: 'Por 6 tragos, ¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/c/c8/Leo_Messi_Argentina_v_Egypt_7_July_2026-1.jpg', answer: 'Lionel Messi' },
+        { text: 'Por 6 tragos, ¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Usain_Bolt_smiling_Berlin_2009.JPG', answer: 'Usain Bolt' },
+        { text: 'Por 6 tragos, ¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Muhammad_Ali_NYWTS.jpg', answer: 'Muhammad Ali' },
+        { text: 'Por 6 tragos, ¿Quién es?', special: 'who-is-it', image: 'https://upload.wikimedia.org/wikipedia/commons/6/64/Gabriela_Mistral_1945.jpg', answer: 'Gabriela Mistral' }
       ],
       futbol: [
         { text: '¿Cuántos jugadores tiene un equipo de fútbol en la cancha? Si fallas, tomas', answer: '11 jugadores por equipo' },
