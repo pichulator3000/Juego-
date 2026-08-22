@@ -39,5 +39,5 @@ TIMEOUT (esta carta aparecerá al rededor de la carta 28, y deberá tener la des
 BOOKER T (debe aparecer al rededor de la ronda 30, solo debe aparecer en modo disco, debe la carta tener colores tipo negro rojo y naranjo pero difuso en el fondo y vibrar las letras)
 1 trago por cada país que has visitado
 REY K (Esta carta debe aparecer máximo 4 veces con separación de varios turnos entremedio, la idea es que salgan 4 y a la cuarta se acaba el juego. Debera decir si es primer, segundo, tercer o cuarto rey, siempre deberá la carta ser una 	carta K de la baraja de cartas, el primer rey pregunta Como se mata? el segundo pregunta donde se mata? y el tercero pregunta con quien se mata? el cuarto hace que maten la piscola o el trago. muy importante diseño de la carta y que salga una animación correspondiente a la epicidad de la carta)
-A las 3, el que piensa en el numero mas bajo gana, pero ojo, si se repite pierden ambos, el que gana regala X tragos.
+A las 3, el que piensa en el numero mas bajo gana, pero ojo, si se repite pierden ambos, el que gana regala X tragos (no debe aparecer tanto esta carta).
 

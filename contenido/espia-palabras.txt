@@ -14,7 +14,6 @@ Terremoto
 Motel
 Anuel
 Ex de (jugador aleatorio)
-Pareja de (jugador aleatorio)
 Mama de (jugador aleatorio)
 Hermano de (jugador aleatorio)
 FEN
@@ -185,3 +184,9 @@ Los molles
 La LEO
 Kelly
 Joaquin Soto
+Amalia Nualart
+Profe leo
+Nestor
+La Wood
+Pendejo Beckdorf
+
