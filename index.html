@@ -168,6 +168,19 @@
   .mode-copy strong{ display:block; font-size:15px; }
   .mode-copy span{ display:block; font-size:12.5px; color:var(--muted); margin-top:1px; }
 
+  /* ============ configurador de tragos (ajustes) ============ */
+  .drink-config{ display:flex; flex-direction:column; gap:8px; background:var(--surface); border:1px solid var(--line); border-radius:var(--r-lg); padding:6px 14px; box-shadow:var(--shadow-sm); }
+  .drink-row{ display:flex; align-items:center; justify-content:space-between; gap:12px; padding:10px 0; border-bottom:1px solid var(--line); }
+  .drink-row:last-child{ border-bottom:none; }
+  .drink-row span{ font-size:13.5px; color:var(--cloud); }
+  .drink-input{
+    width:56px; flex-shrink:0; text-align:center; background:var(--surface-2); border:1px solid var(--line);
+    border-radius:10px; padding:8px 4px; color:var(--cloud); font-family:var(--font-mono); font-size:15px;
+    font-variant-numeric:tabular-nums; transition:border-color .18s ease;
+  }
+  .drink-input:focus-visible{ outline:2px solid var(--pink); outline-offset:1px; border-color:var(--pink); }
+  .drink-input::-webkit-inner-spin-button{ opacity:1; }
+
   .switch{ position:relative; width:48px; height:28px; flex-shrink:0; }
   .switch input{ position:absolute; inset:0; opacity:0; margin:0; cursor:pointer; z-index:1; }
   .switch .track{ position:absolute; inset:0; border-radius:16px; background:var(--surface-2); border:1px solid var(--line); transition:background .25s ease; }
@@ -1172,6 +1185,9 @@
     futbol: false,
     disco: false,
     culturaEnabled: true,
+    // Configurador de tragos (Ajustes) — controla los números que usan
+    // randomDrinkCount(), randomNuncaDrinks(), discoDouble() y el saludo.
+    drinkConfig: { greeting: 4, eventMin: 2, eventMax: 8, nuncaMin: 3, nuncaMax: 5, maxDrinks: 8 },
     cards: null,
     screen: 'setup',
     turn: 0,
@@ -1270,28 +1286,34 @@
     return Object.assign({ cat:null, icon:null, text:null, sub:null, answer:null, isSpy:false, special:null, rounds:null, topics:null, image:null }, fields);
   }
 
-  // 8 tragos es el techo absoluto de la app — el x2 de modo disco nunca lo
-  // pasa, solo acerca los números chicos a ese techo.
-  var MAX_DRINKS = 8;
-  function discoDouble(n){ return state.disco ? Math.min(n * 2, MAX_DRINKS) : n; }
+  // El tope de state.drinkConfig.maxDrinks es el techo absoluto de la app —
+  // el x2 de modo disco nunca lo pasa, solo acerca los números chicos a ese
+  // techo. Todo esto se puede ajustar desde Ajustes > Configurador de tragos.
+  function discoDouble(n){ return state.disco ? Math.min(n * 2, state.drinkConfig.maxDrinks) : n; }
 
-  // 2 a 8 tragos: entre más tragos, menos probable (peso decreciente).
-  // En modo disco todos los tragos van x2 — de inicio, de las cartas, todos.
-  var DRINK_WEIGHTS = [7,6,5,4,3,2,1]; // para 2,3,4,5,6,7,8
-  function randomDrinkCount(){
-    var total = DRINK_WEIGHTS.reduce(function(a,b){ return a+b; }, 0);
+  // Elige un número al azar entre min y max, dando menos probabilidad a los
+  // números más altos (peso decreciente) — usado por Evento aleatorio y
+  // Nunca nunca, cada uno con su propio rango configurable.
+  function weightedRandomInRange(min, max){
+    if (max <= min) return min;
+    var span = max - min + 1;
+    var total = 0, i;
+    for (i = 0; i < span; i++) total += (span - i);
     var r = Math.random() * total;
-    var n = 2;
-    for (; n <= 8; n++){
-      r -= DRINK_WEIGHTS[n-2];
-      if (r <= 0) break;
+    for (i = 0; i < span; i++){
+      r -= (span - i);
+      if (r <= 0) return min + i;
     }
-    return discoDouble(n);
+    return min;
+  }
+
+  function randomDrinkCount(){
+    return discoDouble(weightedRandomInRange(state.drinkConfig.eventMin, state.drinkConfig.eventMax));
   }
 
   // Dobla el número inicial de "N trago(s) por cada ..." cuando el modo
   // disco está activo (no toca ningún otro número dentro del texto, como
-  // años o cantidades de respuestas de trivia), siempre tope 8.
+  // años o cantidades de respuestas de trivia), siempre respetando el tope.
   function applyDiscoDrinks(text){
     if (!state.disco) return text;
     return text.replace(/^(\d+)(\s*tragos?\s+por\s+cada)/i, function(m, num, rest){
@@ -1299,11 +1321,10 @@
     });
   }
 
-  // Nunca nunca no traía tragos definidos — 3 a 5 al azar (x2 en disco,
-  // como el resto de los tragos de la app, con el mismo tope de 8).
+  // Nunca nunca no traía tragos definidos — al azar dentro de su rango
+  // configurable (x2 en disco, con el mismo tope que el resto de la app).
   function randomNuncaDrinks(){
-    var n = 3 + Math.floor(Math.random() * 3);
-    return discoDouble(n);
+    return discoDouble(weightedRandomInRange(state.drinkConfig.nuncaMin, state.drinkConfig.nuncaMax));
   }
 
   function resolveEvent(template){
@@ -1393,7 +1414,7 @@
 
     if (!sp.greetingShown){
       sp.greetingShown = true;
-      state.card = makeCard({ cat: 'evento', icon: '🥂', text: 'Para empezar, todos ' + discoDouble(4) + ' tragos', special: 'greeting' });
+      state.card = makeCard({ cat: 'evento', icon: '🥂', text: 'Para empezar, todos ' + discoDouble(state.drinkConfig.greeting) + ' tragos', special: 'greeting' });
       return;
     }
 
@@ -1623,6 +1644,12 @@
       (canStart() ? '' : '<div class="start-hint">Faltan jugadores o falta responder sobre las cartas.</div>');
   }
 
+  function drinkRow(label, field){
+    return '<label class="drink-row"><span>' + esc(label) + '</span>' +
+      '<input class="drink-input" type="number" inputmode="numeric" min="1" max="30" ' +
+      'data-action="set-drink-config" data-field="' + field + '" value="' + state.drinkConfig[field] + '" /></label>';
+  }
+
   function renderAjustes(){
     app.innerHTML =
       '<div class="setup-top">' +
@@ -1637,7 +1664,18 @@
         '<div class="mode-copy"><strong>Cultura general</strong><span>Preguntas, trivia y "¿Quién es?" con fotos.</span></div>' +
         '<label class="switch"><input type="checkbox" data-action="toggle-cultura" ' + (state.culturaEnabled ? 'checked' : '') + ' /><span class="track"></span><span class="thumb"></span></label>' +
       '</div>' +
-      '<div class="card-copy">' + (state.culturaEnabled ? 'Las tarjetas de Cultura general pueden salir en la partida.' : 'Cultura general está apagada: esas tarjetas no van a salir.') + '</div>';
+      '<div class="card-copy">' + (state.culturaEnabled ? 'Las tarjetas de Cultura general pueden salir en la partida.' : 'Cultura general está apagada: esas tarjetas no van a salir.') + '</div>' +
+
+      '<div class="section-label">Configurador de tragos</div>' +
+      '<div class="drink-config">' +
+        drinkRow('Tragos para empezar', 'greeting') +
+        drinkRow('Evento aleatorio — mínimo', 'eventMin') +
+        drinkRow('Evento aleatorio — máximo', 'eventMax') +
+        drinkRow('Nunca nunca — mínimo', 'nuncaMin') +
+        drinkRow('Nunca nunca — máximo', 'nuncaMax') +
+        drinkRow('Tope máximo (con modo disco x2)', 'maxDrinks') +
+      '</div>' +
+      '<div class="card-copy">Estos números controlan el saludo inicial, los "X tragos" de Evento aleatorio, el rango de Nunca nunca, y el techo que nunca pasa el x2 del modo disco (tampoco en Trago por cada).</div>';
   }
 
   function renderEspiaStage(){
@@ -1839,10 +1877,29 @@
     }
   });
 
+  // Evita que un mínimo quede por sobre su máximo (o viceversa) al escribir
+  // un número suelto en el configurador de tragos.
+  function clampDrinkConfig(){
+    var d = state.drinkConfig;
+    d.greeting = Math.max(1, Math.min(30, d.greeting || 1));
+    d.maxDrinks = Math.max(1, Math.min(30, d.maxDrinks || 1));
+    d.eventMin = Math.max(1, Math.min(30, d.eventMin || 1));
+    d.eventMax = Math.max(d.eventMin, Math.min(30, d.eventMax || d.eventMin));
+    d.nuncaMin = Math.max(1, Math.min(30, d.nuncaMin || 1));
+    d.nuncaMax = Math.max(d.nuncaMin, Math.min(30, d.nuncaMax || d.nuncaMin));
+  }
+
   app.addEventListener('change', function(e){
     if (e.target.matches('[data-action="toggle-futbol"]')){ state.futbol = e.target.checked; render(); }
     if (e.target.matches('[data-action="toggle-disco"]')){ state.disco = e.target.checked; render(); }
     if (e.target.matches('[data-action="toggle-cultura"]')){ state.culturaEnabled = e.target.checked; render(); }
+    if (e.target.matches('[data-action="set-drink-config"]')){
+      var field = e.target.getAttribute('data-field');
+      var val = parseInt(e.target.value, 10);
+      if (!isNaN(val)) state.drinkConfig[field] = val;
+      clampDrinkConfig();
+      render();
+    }
   });
 
   app.addEventListener('click', function(e){
