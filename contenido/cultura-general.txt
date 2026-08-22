@@ -7,28 +7,189 @@
 # - MODO FUTBOL solo aparece si el modo fútbol está activado.
 # - MODO DISCO aparece siempre: poco si el modo disco está apagado,
 #   y mucho (siendo mayoría, pero sin tapar del todo las normales) si está activado.
-# Las que ya están abajo son las que hoy vienen incluidas en la app.
+#
+# Esta sección se puede apagar entera desde Ajustes (switch de Cultura general).
+#
+# Este archivo es un espejo de lo que ya está en el index — se sincronizó
+# de vuelta acá para que puedas seguir editando y agregando desde el txt.
 
 ## NORMAL
-Nombra 3 capitales de países sudamericanos en 10 segundos o toma.
-R: Por ejemplo: Santiago, Lima, Bogotá, Quito, Montevideo, Buenos Aires, Asunción, La Paz, Caracas.
-Nombra 3 elementos de la tabla periódica o toma.
-R: Por ejemplo: Hidrógeno, Oxígeno, Carbono, Oro, Hierro, Sodio, Helio.
-¿En qué año llegó el hombre a la luna? Si fallas, tomas.
-R: 1969, misión Apollo 11.
-Nombra los 3 poderes del Estado o toma.
-R: Ejecutivo, Legislativo y Judicial.
-Nombra 3 huesos del cuerpo humano en 10 segundos o toma.
-R: Por ejemplo: fémur, cráneo, costilla, húmero, tibia, columna vertebral.
+¿Cuál es el hueso más pequeño del cuerpo humano?
+R: El estribo, dentro del oído
+¿En qué año cayó el Muro de Berlín?
+R: 1989
+¿Quién escribió "Cien años de soledad"?
+R: Gabriel García Márquez
+¿Cuál es la capital de Australia? (no es Sídney)
+R: Canberra
+¿Qué país tiene más husos horarios en su territorio?
+R: Francia (12, contando sus territorios de ultramar)
+¿En qué año se fundó la ONU?
+R: 1945
+¿Cuál es el elemento químico más abundante en el universo?
+R: El hidrógeno
+¿Quién pintó "El grito"?
+R: Edvard Munch
+¿Cuál es el país más grande del mundo por superficie?
+R: Rusia
+¿Cuántos huesos tiene el cuerpo humano adulto?
+R: 206
+¿Quién escribió "Don Quijote de la Mancha"?
+R: Miguel de Cervantes
+¿Cuál es el océano más grande del mundo?
+R: El Pacífico
+¿En qué año inventó Gutenberg la imprenta de tipos móviles?
+R: Alrededor de 1440
+¿Cuál es la montaña más alta del mundo?
+R: El monte Everest
+¿Qué elemento químico tiene el símbolo "Au"?
+R: Oro
+¿En qué año llegó Cristóbal Colón a América?
+R: 1492
+¿Cuál es el desierto más grande del mundo?
+R: La Antártida (como desierto polar; el Sahara es el más grande de los cálidos)
+¿Quién compuso la Novena Sinfonía?
+R: Ludwig van Beethoven
+¿Cuántos países tiene el continente africano?
+R: 54
+¿En qué año se firmó la Declaración de Independencia de Estados Unidos?
+R: 1776
+¿Cuál es el metal más abundante en la corteza terrestre?
+R: El aluminio
+¿Qué faraón mandó construir la Gran Pirámide de Guiza?
+R: Keops (Jufu)
+¿En qué año cayó Constantinopla ante los otomanos?
+R: 1453
+¿Cuál es la moneda oficial de Japón?
+R: El yen
+¿Quién pintó el techo de la Capilla Sixtina?
+R: Miguel Ángel
+¿En qué siglo vivió Leonardo da Vinci?
+R: Entre los siglos XV y XVI (1452–1519)
+¿Cuántos huesos tiene la mano humana, contando la muñeca?
+R: 27
+¿En qué país se inventó el papel?
+R: China
+¿En qué año se proclamó oficialmente la independencia de Chile?
+R: 1818
+¿Cuál es la lengua materna más hablada del mundo?
+R: El chino mandarín
+¿Quién fue el primer ser humano en viajar al espacio?
+R: Yuri Gagarin
+¿Cuál es el río más caudaloso del mundo?
+R: El Amazonas
+¿Cuál es el país más poblado del mundo?
+R: India
+¿En qué año terminó la Segunda Guerra Mundial?
+R: 1945
+¿Quién pintó "La noche estrellada"?
+R: Vincent van Gogh
+¿Cuál es el planeta más grande del sistema solar?
+R: Júpiter
+¿Cuál es la capital de Canadá? (no es Toronto)
+R: Ottawa
+¿Quién escribió "Romeo y Julieta"?
+R: William Shakespeare
+¿Cuál es el idioma oficial de Brasil?
+R: Portugués
+¿En qué año cayó el Imperio Romano de Occidente?
+R: 476 d.C.
+¿Quién fue la primera mujer en ganar un Premio Nobel?
+R: Marie Curie (Física, 1903)
+¿Cuál es el lago más profundo del mundo?
+R: El lago Baikal, en Rusia
+¿Cuál es la capital de Egipto?
+R: El Cairo
+¿Quién compuso "Las cuatro estaciones"?
+R: Antonio Vivaldi
+¿Cuál es el volcán más alto de Chile?
+R: El Ojos del Salado
+¿En qué año comenzó la Revolución Francesa?
+R: 1789
+¿Cuál es el animal terrestre más grande del mundo?
+R: El elefante africano
+¿Quién pintó "Las Meninas"?
+R: Diego Velázquez
+¿Cuál es la moneda oficial de Reino Unido?
+R: La libra esterlina
+¿En qué año llegó el ser humano a la Luna por primera vez?
+R: 1969, misión Apollo 11
+¿Cuál es el desierto más árido del mundo (sin contar la Antártida)?
+R: El desierto de Atacama
+¿Quién escribió "1984"?
+R: George Orwell
+¿Cuál es el único metal líquido a temperatura ambiente?
+R: El mercurio
+¿En qué año se firmó el Tratado de Maastricht, que creó la Unión Europea?
+R: 1993
+¿Cuál es el hueso más largo del cuerpo humano?
+R: El fémur
+¿Quién fue el primer emperador de Roma?
+R: Augusto
+¿Cuál es la capital de Rusia?
+R: Moscú
+¿En qué año se hundió el Titanic?
+R: 1912
+¿Quién pintó el "Guernica"?
+R: Pablo Picasso
+¿Cuál es el mamífero más grande del mundo?
+R: La ballena azul
+¿En qué siglo vivió Napoleón Bonaparte?
+R: Entre los siglos XVIII y XIX (1769–1821)
+¿Cuáles son las capitales de Sudáfrica? (tiene tres)
+R: Pretoria, Ciudad del Cabo y Bloemfontein
+¿Quién descubrió la penicilina?
+R: Alexander Fleming
+¿Cuál es el continente más pequeño del mundo?
+R: Oceanía
+¿En qué año empezó la Primera Guerra Mundial?
+R: 1914
+¿Quién fue el primer chileno en ganar un Premio Nobel?
+R: Gabriela Mistral (Literatura, 1945)
+¿Cuál es el punto más profundo de los océanos?
+R: La Fosa de las Marianas
+¿Quién pintó "La última cena"?
+R: Leonardo da Vinci
+¿Cuál es la capital de Nueva Zelanda? (no es Auckland)
+R: Wellington
+¿Quién escribió "La Odisea"?
+R: Homero
+¿Cuál es el país más pequeño del mundo?
+R: Ciudad del Vaticano
+¿Qué elemento químico tiene el símbolo "Fe"?
+R: El hierro
 
 ## MODO FUTBOL
-¿Cuántos jugadores tiene un equipo de fútbol en la cancha? Si fallas, tomas.
-R: 11 jugadores por equipo.
-Nombra 3 selecciones que hayan sido campeonas del mundo o toma.
-R: Por ejemplo: Brasil, Alemania, Argentina, Italia, Francia, Uruguay, España, Inglaterra.
+¿Cuántos jugadores tiene un equipo de fútbol en la cancha?
+R: 11 jugadores por equipo
+Nombra 3 selecciones que hayan sido campeonas del mundo o toma
+R: Por ejemplo: Brasil, Alemania, Argentina, Italia, Francia, Uruguay, España, Inglaterra
 
 ## MODO DISCO
-Nombra 3 décadas de la música disco o toma.
-R: La disco nació en los 70 y se extendió por los 80; su revival llega hasta hoy.
-¿En qué década nació el reggaetón? Si fallas, tomas.
-R: A fines de los 90, en Puerto Rico y Panamá.
+Nombra 3 décadas de la música disco o toma
+R: La disco nació en los 70 y se extendió por los 80; su revival llega hasta hoy
+¿En qué década nació el reggaetón?
+R: A fines de los 90, en Puerto Rico y Panamá
+
+## ¿QUIÉN ES? (con foto — ver contenido/fotos-famosos/LEEME.md para las URLs y licencias)
+# La pregunta siempre sale como "Por 6 tragos, ¿Quién es?" con la foto de la persona.
+Leonardo da Vinci
+Jeff Bezos
+Cristiano Ronaldo
+Serena Williams
+Albert Einstein
+Marcelo Ríos
+Frida Kahlo
+Elon Musk
+Marie Curie
+Isaac Newton
+Vincent van Gogh
+William Shakespeare
+Napoleón Bonaparte
+Abraham Lincoln
+Steve Jobs
+Bill Gates
+Lionel Messi
+Usain Bolt
+Muhammad Ali
+Gabriela Mistral
