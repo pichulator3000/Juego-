@@ -8,16 +8,109 @@
 # Las que ya están abajo son las que hoy vienen incluidas en la app.
 
 ## NORMAL
-1 trago por cada persona en la sala con la que hayas hablado hoy.
+2 trago por cada persona que hayas besado este año.
 1 trago por cada país que hayas visitado.
 1 trago por cada red social que tengas instalada.
 1 trago por cada ex pareja que esté en la sala.
-1 trago por cada año que llevas viviendo en tu casa actual.
+2 trago por cada persona que viva en tu casa actual.
 
-## MODO FUTBOL
-1 trago por cada mundial que hayas visto completo.
-1 trago por cada camiseta de fútbol que tengas.
+## MODO FUTBOL 
+(algunos tienen un () que es la respuesta y debe ir abajo, si sale solo () sin numero entonces no poner nada de respuesta)
+1 trago por cada mundial que hayas vivido.
+1 trago por cada liga de tu equipo.
+1 trago por cada final que perdió tu equipo ()
+1 trago por cada descenso de tu equipo ()
+1 trago por cada Copa Chile que ganó tu equipo ()
+1 trago por cada Supercopa de Chile que ganó tu equipo ()
+1 trago por cada campeonato nacional que ganó tu equipo ()
+1 trago por cada clásico que ganó tu equipo en una final ()
+1 trago por cada Libertadores que ganó Colo-Colo (1)
+1 trago por cada final de Libertadores que perdió un equipo chileno ()
+1 trago por cada semifinal de Libertadores que jugó un equipo chileno ()
+1 trago por cada título internacional que ganó un equipo chileno (1)
+1 trago por cada descenso de Colo-Colo (0)
+1 trago por cada descenso de Universidad de Chile ()
+1 trago por cada descenso de Universidad Católica ()
+1 trago por cada título de Primera División que ganó Colo-Colo (34)
+1 trago por cada título de Primera División que ganó Universidad de Chile (18)
+1 trago por cada título de Primera División que ganó Universidad Católica (16)
+1 trago por cada Copa América que ganó Chile (2)
+1 trago por cada final de Copa América que perdió Chile (1)
+1 trago por cada chileno que ganó la Champions (1)
+1 trago por cada chileno que ganó la Libertadores ()
+1 trago por cada chileno que ganó una liga de las cinco grandes ()
+1 trago por cada chileno que jugó en el Real Madrid (1)
+1 trago por cada chileno que jugó en el Barcelona (2)
+1 trago por cada chileno que jugó en el Manchester United (1)
+1 trago por cada chileno que jugó en el Inter de Milán (3)
+1 trago por cada chileno que jugó en la Premier League ()
+1 trago por cada chileno que jugó en La Liga ()
+1 trago por cada chileno que jugó en Serie A ()
+1 trago por cada Champions que ganó el Real Madrid (15)
+1 trago por cada Champions que ganó el Milan (7)
+1 trago por cada Champions que ganó el Liverpool (6)
+1 trago por cada Champions que ganó el Barcelona (5)
+1 trago por cada Champions que ganó el Bayern (6)
+1 trago por cada Premier League que ganó el Manchester United (13)
+1 trago por cada Premier League que ganó el Manchester City (8)
+1 trago por cada Premier League que ganó el Liverpool (2)
+1 trago por cada Liga que ganó el Real Madrid (36)
+1 trago por cada Liga que ganó el Barcelona (29)
+1 trago por cada Serie A que ganó la Juventus (36)
+1 trago por cada Serie A que ganó el Milan (19)
+1 trago por cada Liga que ganó Messi con el Barcelona (10)
+1 trago por cada Champions que ganó Messi (4)
+1 trago por cada Balón de Oro que ganó Messi (8)
+1 trago por cada Champions que ganó Cristiano Ronaldo (5)
+1 trago por cada Balón de Oro que ganó Cristiano Ronaldo (5)
+1 trago por cada Premier League que ganó Cristiano Ronaldo (3)
+1 trago por cada Champions que ganó Zidane (1)
+1 trago por cada Champions que ganó Iniesta (4)
+1 trago por cada Champions que ganó Xavi (4)
+1 trago por cada Champions que ganó Modrić (6)
+1 trago por cada Balón de Oro que ganó Ronaldo Nazário (2)
+1 trago por cada Balón de Oro que ganó Ronaldinho (1)
+1 trago por cada Balón de Oro que ganó Zidane (1)
+1 trago por cada Mundial que ganó Brasil (5)
+1 trago por cada Mundial que ganó Alemania (4)
+1 trago por cada Mundial que ganó Italia (4)
+1 trago por cada Mundial que ganó Argentina (3)
+1 trago por cada Mundial que ganó Francia (2)
+1 trago por cada Copa América que ganó Argentina (16)
+1 trago por cada Copa América que ganó Brasil (9)
+1 trago por cada Eurocopa que ganó España (4)
+1 trago por cada Eurocopa que ganó Alemania (3)
+1 trago por cada Eurocopa que ganó Italia (2)
+1 trago por cada Eurocopa que ganó Francia (2)
+1 trago por cada Mundial que ganó Maradona (1)
+1 trago por cada Mundial que ganó Pelé (3)
+1 trago por cada Mundial que ganó Messi (1)
+1 trago por cada Champions que ganó Guardiola como entrenador (3)
+1 trago por cada Champions que ganó Ancelotti como entrenador (5)
+1 trago por cada Premier League que ganó Guardiola (6)
+1 trago por cada Liga que ganó Guardiola con el Barcelona (3)
+1 trago por cada Liga que ganó Mourinho en las cinco grandes ligas (6)
+1 trago por cada Champions que ganó Mourinho como entrenador (2)
+1 trago por cada Champions que ganó Ancelotti como jugador o entrenador (5)
+1 trago por cada triplete que ganó el Barcelona (2)
+1 trago por cada triplete que ganó el Manchester United (1)
+1 trago por cada triplete que ganó el Manchester City (1)
+1 trago por cada triplete que ganó el Bayern (2)
+1 trago por cada triplete que ganó el Inter (1)
+1 trago por cada Champions que ganó un equipo inglés (15)
+1 trago por cada Champions que ganó un equipo español (20)
+1 trago por cada Champions que ganó un equipo italiano (12)
+1 trago por cada Champions que ganó un equipo alemán (8)
+1 trago por cada Balón de Oro que ganó un jugador del Barcelona (12)
+1 trago por cada Balón de Oro que ganó un jugador del Real Madrid (12)
+1 trago por cada Balón de Oro que ganó un jugador del Milan (8)
+1 trago por cada Balón de Oro que ganó un jugador del Manchester United (4)
+1 trago por cada ... que pueda nombrar (un jugador aleatorio del juego).(debe empezar un cronometro de 30 segundos para hacerlo);
+	jugador ganador del Balón de Oro, equipo campeón de Champions, equipo campeón de Libertadores, últimos ganadores en orden de la liga chilena, directores técnicos del fútbol chileno, jugador campeón del Mundial, máximo goleador de Champions, máximo goleador de Libertadores, últimos campeones en orden de la Premier League, últimos campeones en orden de La Liga, últimos campeones en orden de Serie A, ganadores del Mundial en orden, ganadores de la Copa América en orden, ganadores de la Eurocopa en orden, ganadores de la Libertadores en orden, ganadores de la Champions en orden, ganadores de la Europa League en orden, ganadores del Mundial de Clubes en orden, jugadores que ganaron el Balón de Oro, jugadores que ganaron el Mundial, jugadores que ganaron la Champions, jugadores que ganaron la Libertadores, jugadores que jugaron en Barcelona y Real Madrid, jugadores que jugaron en Inter y Milan, jugadores que jugaron en Boca y River, jugadores chilenos que jugaron Champions, jugadores chilenos que jugaron Libertadores, DT campeones de Champions, DT campeones de Libertadores, DT campeones del Mundial, DT campeones de la liga chilena, DT campeones en el equipo del jugador de turno, capitanes de selecciones campeonas del Mundial, capitanes de equipos campeones de Champions, goleadores históricos de Champions, goleadores históricos de Libertadores, goleadores históricos de los Mundiales, equipos que ganaron la Champions más de una vez, equipos que ganaron la Libertadores más de una vez, equipos que ganaron el Mundial de Clubes, países campeones del Mundial, países campeones de Copa América, países campeones de Eurocopa, jugadores que ganaron Mundial y Champions, jugadores que ganaron Mundial y Balón de Oro, jugadores que ganaron Champions y Libertadores, jugadores que jugaron Mundial y Champions, jugadores que jugaron en Chile y Europa, jugadores que jugaron en Chile y Argentina, jugadores que jugaron en Chile y Brasil, jugadores que jugaron en España e Inglaterra, jugadores que jugaron en Italia y España, jugadores que jugaron en Inglaterra e Italia, equipos campeones invictos de sus ligas, equipos que ganaron el triplete, equipos que llegaron a una final de Champions, equipos que llegaron a una final de Libertadores, selecciones que llegaron a una final del Mundial, selecciones que llegaron a una final de Copa América, estadios donde se jugaron finales del Mundial, estadios donde se jugaron finales de Champions, estadios donde se jugaron finales de Libertadores, jugadores que marcaron en una final de Champions, jugadores que marcaron en una final de Libertadores, jugadores que marcaron en una final del Mundial, jugadores que fueron campeones de liga en tres países distintos, jugadores que ganaron Champions con dos equipos distintos, jugadores que ganaron Libertadores con dos equipos distintos, jugadores que fueron goleadores de Champions y Libertadores, jugadores que fueron capitanes de su selección y ganaron Champions, jugadores que ganaron liga en Inglaterra y España, jugadores que ganaron liga en España e Italia, jugadores que jugaron en tres de las cinco grandes ligas, jugadores que jugaron en tres clubes campeones de Champions, jugadores que fueron goleadores de Primera División de Chile, jugadores que fueron goleadores de Copa Libertadores jugando por un club chileno, jugadores que ganaron la liga chilena con dos equipos distintos, jugadores que ganaron Copa Chile con dos equipos distintos, jugadores que fueron campeones de Chile y posteriormente campeones de Libertadores, jugadores que fueron campeones de Chile y posteriormente campeones de Europa, jugadores que jugaron en los tres grandes de Chile, jugadores que fueron campeones con Colo-Colo y Universidad de Chile, jugadores que fueron campeones con Colo-Colo y Universidad Católica, jugadores que jugaron Libertadores por dos clubes chilenos, jugadores que marcaron en un Superclásico y un Clásico Universitario, jugadores chilenos que fueron goleadores en el extranjero, jugadores chilenos que ganaron títulos en Europa, jugadores chilenos que jugaron en tres países distintos, jugadores que fueron campeones de Primera División y Primera B, entrenadores que ganaron la liga chilena con dos equipos distintos, entrenadores chilenos que dirigieron en Europa, entrenadores que dirigieron a la selección chilena y ganaron un título, jugadores que fueron campeones de la liga chilena y Copa Libertadores el mismo año, clubes chilenos que llegaron a semifinales de Libertadores, clubes chilenos que llegaron a semifinales de Sudamericana, jugadores que marcaron en una final internacional con un club chileno, jugadores chilenos que marcaron en una final de Champions, jugadores chilenos que marcaron en una final de Libertadores, jugadores chilenos que fueron capitanes campeones de América, jugadores de la selección chilena que fueron campeones de Champions, jugadores de la selección chilena que fueron campeones de Libertadores.
+
 
 ## MODO DISCO
-1 trago por cada vez que hayas ido a una disco este año.
-1 trago por cada canción de reggaetón que te sepas completa.
+(la idea es que en el modo disco ocurran estos agrupados, que aparezcan todas esas palabras en pantalla puestas una abajo de otra. Si toca este juego, deberán aparecer 10 de las siguientes palabras de forma aleatoria siempre, para que no se repitan los ordenes. La idea es que cuando aparezca este reto en modo disco, aparezca 1 trago por cada, y abajo empezar, y que al apretar se ejecute una cuenta regresiva de 3 segundos y empiece una por una a soltar las palabras con 5 segundos entremedio, todo debe ser frenetico)
+1 trago por cada beso en; Colegio, Universidad, Mall, Cocina ajena, Cama papas, Cama amigo, Cama papas de amigo (toma doble), mirador, Pick up, Pista de baile matrimonio, Plantas, Baño, Baño quimico (toma doble), Uber, Micro, Metro, Pieza de la nana, Restoran, gym, Cine, Adentro del mar, piscina, Jacuzzi, En el extranjero, Avion, Nieve, Barco o derivados, FDG, Bahia inglesa, Preu, UFF PSU, Despensa, Concierto, Tecno, Cama elástica, Carpa, Cancha de tenis u otro deporte, Casita de muñecas, Después de vomitar, Después de terminar (menos de una semana). 
+1 trago por cada Personas; (todos los siguientes, hermano, primo amigo etc ponlos como ambos sexos; amigo/a para que aplique a ambos). Hermano de amigo, Primo amigo, Amigo de hermano, uno + chico, uno + grande, Compañero colegio, Compañero universidad, Ex de un amigo, Provinciano, Extranjero, Muy amigo, Ex, Coloro, Mas bajo que uno, alguien de trabajos, Ayudante, Compartido con amigo, Patas negras (toma doble). 
+

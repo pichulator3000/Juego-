@@ -1,0 +1,37 @@
+# Evento aleatorio
+# Cada línea es un evento instantáneo que se resuelve solo, sin reglas que
+# explicar — aparece directo en la carta, como un reto.
+#
+# Placeholders disponibles (se reemplazan por nombres reales de jugadores
+# al momento de salir la carta):
+#   {jugador}   -> jugador de turno
+#   {jugador1}  -> un jugador al azar
+#   {jugador2}  -> otro jugador al azar, distinto de {jugador1}
+#
+# Este es el juego que más debería aparecer dentro de la categoría Juegos
+# (hoy tiene peso 9 contra 1 de cada uno de los otros 9 juegos, o sea sale
+# más o menos la mitad de las veces que toca la categoría Juegos).
+#
+# Ya está conectado a la app — estos son los que vienen incluidos hoy.
+
+Todos beben 5 tragos
+{jugador} le sirve la siguiente ronda a {jugador2}
+Buffalo! {jugador} debe tomar con la mano contraria hasta su próximo turno
+Todos menos {jugador} beben
+{jugador1} y {jugador2} brindan y toman juntos 5 tragos
+{jugador} elige a alguien para que tome en su lugar la próxima vez que te toque tomar
+{jugador} reparte 8 tragos entre el grupo
+Todos brindan por {jugador}, 5 tragos
+El que propuso jugar esto se termina el vaso
+A las 3 voten, primer hijo hombre o mujer? minoría toma 5
+El primero que muestre una moneda de 10 pesos regala una matada
+{jugador} toma 5
+{jugador} regala 5
+{jugador} nombra 3 canciones de Luis miguel en 20 segundos o termina el vaso
+{jugador} nombra 4 presidentes de chile en 10 segundos o termina el vaso
+{jugador} Pone una regla por una ronda (Cuando le vuelva a tocar a este jugador aparecerá una tarjeta antes que diga Se anula la regla de jugador x)
+{jugador} Elige la siguiente cancion
+{jugador1} te sirve la siguiente ronda!
+3 tragos por cada semestre atrasado en la universidad
+Telefonos a la mesa, primer celular que le llegue notificación se termina el vaso
+

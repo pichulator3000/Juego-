@@ -2,16 +2,186 @@
 # Una palabra o frase corta por línea. En cada ronda se elige una al azar
 # y se les muestra a todos los jugadores menos al espía.
 # Bórralos y reemplázalos por los tuyos.
+# Debe existir una probabilidad del 5% de que a todos les toque espia para variar el juego
+# Si hay mas de 6 jugadores deben haber 2 Espias
+# Los paréntesis se deben interpretar no literal sino como comandos
+# Para modo normal y modo disco son las mismas palabras
 
-playa
-piscina
-zapatilla
+## Modo normal y modo disco
 Hitler
 Terremoto
-Condon
-Lubricante
-(Uno de los jugadores)
+(Uno de los jugadores al azar)
 Motel
-Rene puente
-Gaspi
 Anuel
+Ex de (jugador aleatorio)
+Pareja de (jugador aleatorio)
+Mama de (jugador aleatorio)
+Hermano de (jugador aleatorio)
+FEN
+UAI
+PUC
+Patas negras
+Ozuna
+Tabancura
+Monte tabor
+Los andes
+Laguna
+18
+Vaca
+Sala gente
+Gordo
+
+
+
+## Modo Futbol
+Alexis Sánchez
+Arturo Vidal
+Claudio Bravo
+Gary Medel
+Eduardo Vargas
+Marcelo Salas
+Iván Zamorano
+Elías Figueroa
+Jorge Valdivia
+Esteban Paredes
+Fernando Zampedri
+Mono Sánchez
+Colo-Colo
+Universidad de Chile
+Universidad Católica
+Cobreloa
+Unión Española
+Palestino
+Audax Italiano
+O'Higgins
+Huachipato
+Everton
+Santiago Wanderers
+Coquimbo Unido
+Ñublense
+Cobresal
+Unión La Calera
+Deportes Iquique
+Deportes Concepción
+Rangers
+Magallanes
+Deportes Temuco
+Curicó Unido
+Copa Chile
+Supercopa de Chile
+Campeonato Nacional
+Primera B
+Ascenso
+Descenso
+La Roja
+Generación Dorada
+Bicampeón de América
+Maracanazo
+Gol de chilena
+Pato Yáñez
+Matador
+Bam Bam
+King Arturo
+Niño Maravilla
+Capitán América
+Pitbull
+Mago Valdivia
+Carepato
+Huaso Isla
+Príncipe Charles
+Claudio Borghi
+Jorge Sampaoli
+Marcelo Bielsa
+Manuel Pellegrini
+Juan Antonio Pizzi
+Reinaldo Rueda
+Eduardo Berizzo
+Martín Lasarte
+José Luis Sierra
+Gustavo Quinteros
+Mario Salas
+Pablo Guede
+Jorge Almirón
+Gustavo Álvarez
+Pep Guardiola
+Carlo Ancelotti
+José Mourinho
+Jürgen Klopp
+Sir Alex Ferguson
+Arsène Wenger
+Diego Simeone
+Luis Enrique
+Zinedine Zidane
+Antonio Conte
+Mikel Arteta
+Xabi Alonso
+Unai Emery
+Lionel Messi
+Cristiano Ronaldo
+Pelé
+Diego Maradona
+Ronaldo Nazário
+Ronaldinho
+Neymar
+Luis Suárez
+Luka Modrić
+Andrés Iniesta
+Xavi
+Sergio Ramos
+Mohamed Salah
+Kevin De Bruyne
+Erling Haaland
+Kylian Mbappé
+Vinícius Júnior
+Harry Kane
+Robert Lewandowski
+Thierry Henry
+Zlatan Ibrahimović
+David Beckham
+Wayne Rooney
+Sergio Agüero
+Ángel Di María
+Paolo Maldini
+Andrea Pirlo
+Gianluigi Buffon
+Iker Casillas
+Toni Kroos
+Manuel Neuer
+Champions League
+Copa Libertadores
+Europa League
+Premier League
+La Liga
+Serie A
+Mundial de Clubes
+Mundial
+Copa América
+Eurocopa
+Balón de Oro
+Bota de Oro
+The Best
+Puskás
+La Orejona
+Pichichi
+Premier
+Maracaná
+Wembley
+Santiago Bernabéu
+Camp Nou
+Old Trafford
+Anfield
+San Siro
+Monumental
+Estadio Nacional
+Santa Laura
+La bombonera
+Claro arena
+Ester roa
+
+## Modo cabros
+Domi ascui
+Lourdes
+Los molles
+La LEO
+Kelly
+Joaquin Soto
