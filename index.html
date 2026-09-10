@@ -313,6 +313,7 @@
   @keyframes opus-shimmer{ 0%,100%{ background-position:0% 50%; } 50%{ background-position:100% 50%; } }
 
   .face-back.special-cascada{ background: linear-gradient(160deg, #8FE3FF, #2FBFE6); color:var(--ink); }
+  .face-back.special-espejito{ background: linear-gradient(160deg, #B3E5FC, #4FC3F7); color:#01579B; }
 
   .face-back.special-timeout{ background: linear-gradient(160deg, #1A0505, #3D0A0A 55%, #8C0F0F); color:#fff; }
   @media (prefers-reduced-motion: no-preference){
@@ -1415,7 +1416,7 @@
       "Hitler", "Terremoto", "(Uno de los jugadores al azar)", "Motel", "Anuel",
       "Ex de (jugador aleatorio)", "Mama de (jugador aleatorio)",
       "Hermano de (jugador aleatorio)", "FEN", "UAI", "PUC", "Patas negras", "Ozuna",
-      "Tabancura", "Monte tabor", "Los andes", "Laguna", "18", "Vaca", "Sala gente"
+      "Tabancura", "Monte tabor", "Los andes", "Laguna", "18", "Vaca", "Sala gente", "Guaton Chico", "Testiculo", "Kast", "Boric" 
     ],
     futbol: [
       "Alexis Sánchez", "Arturo Vidal", "Claudio Bravo", "Gary Medel", "Eduardo Vargas", "Marcelo Salas",
@@ -1452,6 +1453,7 @@
       opusShown: false,
       timeoutShown: false,
       bookerShown: false,
+      espejitoShown: false,
       nextCascada: 22,
       reyKCount: 0,
       reyKNextEligible: 20
@@ -1659,13 +1661,15 @@
     cascada: { label: 'Cascada' },
     timeout: { label: 'TIMEOUT' },
     booker: { label: 'Booker T' },
-    'rey-k': { label: 'Rey K' }
+    'rey-k': { label: 'Rey K' },
+    espejito: { label: 'Espejito' }
   };
   var SPECIAL_EVENTS = {
     opus: { minCard: 20, chance: 0.35 },
     timeout: { minCard: 28, chance: 0.35 },
     booker: { minCard: 30, chance: 0.35 },
-    cascada: { every: 22 }
+    cascada: { every: 22 },
+    espejito: { minCard: 15, chance: 0.35 }
   };
   var REY_K_ORDINALES = ['Primer', 'Segundo', 'Tercer', 'Cuarto'];
   var REY_K_PREGUNTAS = ['¿Cómo se mata?', '¿Dónde se mata?', '¿Con quién se mata?', '¡Se acabó! Todos matan la piscola o el trago'];
@@ -1735,6 +1739,13 @@
     if (!sp.opusShown && sp.cardsDrawn >= opusCfg.minCard && Math.random() < opusCfg.chance){
       sp.opusShown = true;
       state.card = makeCard({ cat: 'evento', icon: '💿', text: 'OPUS', special: 'opus' });
+      return;
+    }
+
+    var espCfg = SPECIAL_EVENTS.espejito;
+    if (!sp.espejitoShown && sp.cardsDrawn >= espCfg.minCard && Math.random() < espCfg.chance){
+      sp.espejitoShown = true;
+      state.card = makeCard({ cat: 'evento', icon: '🪞', text: 'Espejito rebotín', sub: 'La próxima vez que te toque tomar puedes desviar los tragos a alguien más.', special: 'espejito' });
       return;
     }
 
