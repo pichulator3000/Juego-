@@ -301,6 +301,8 @@
   .face-back.cat-evento{ background: linear-gradient(120deg, var(--cat-evento-1), var(--cat-evento-2) 55%, var(--cat-evento-3)); }
   .face-back.cat-espia-word{ background: linear-gradient(160deg, var(--cat-impostor-word-1), var(--cat-impostor-word-2)); }
   .face-back.cat-espia-spy{ background: linear-gradient(160deg, var(--cat-impostor-spy-1), var(--cat-impostor-spy-2)); color:#fff; }
+  .face-back.cat-papu{ background: linear-gradient(160deg, var(--pink), var(--pink-deep)); color:#fff; }
+  
 
   /* ============ cartas especiales de evento ============ */
   .face-back.special-opus{
@@ -392,7 +394,7 @@
   @media (prefers-reduced-motion: no-preference){
     .who-photo{ animation: emoji-in .45s var(--ease-spring) both .05s; }
   }
-  .who-photo img{ width:100%; height:100%; object-fit:cover; object-position:center top; display:block; }
+  .who-photo img{ width:100%; height:100%; object-fit:contain; object-position:center; display:block; }
   .who-photo-fallback{ position:absolute; inset:0; display:none; align-items:center; justify-content:center; font-size:60px; }
   .challenge-text{ font-family:var(--font-gothic); font-weight:700; text-transform:uppercase; letter-spacing:.01em; font-size:var(--text-lg); margin-top:12px; text-wrap:balance; line-height:1.3; }
   .challenge-sub{ font-family:var(--font-body); font-weight:500; font-size:var(--text-sm); margin-top:10px; text-wrap:balance; line-height:1.5; opacity:.85; }
@@ -429,6 +431,14 @@
   .btn-primary:focus-visible, .btn-ghost:focus-visible{ outline:2px solid var(--pink); outline-offset:2px; }
   .tap-target{ background:none; border:none; padding:0; width:100%; display:block; }
   .tap-target:active{ transform:none; }
+  .rosco-letter { font-family:var(--font-display); font-size:86px; font-weight:900; color:var(--cyan); text-align:center; line-height:1; margin-bottom:4px; }
+  .rosco-timer { font-family:var(--font-mono); font-size:38px; font-weight:700; color:var(--lime); text-align:center; margin-bottom:14px; font-variant-numeric:tabular-nums; }
+  .rosco-actions { display:grid; grid-template-columns:1fr 1.2fr 1fr; gap:8px; margin-top:20px; }
+  .rosco-actions button { padding:14px 4px; font-weight:800; border-radius:var(--r-sm); border:none; font-family:var(--font-display); font-size:14px; transition:transform .1s; }
+  .rosco-actions button:active { transform:scale(0.94); }
+  .btn-acerto { background:var(--lime); color:var(--ink); }
+  .btn-pasa { background:var(--cyan); color:var(--ink); }
+  .btn-error { background:var(--pink); color:#fff; }
 </style>
 
 <div class="blob blob-a"></div>
@@ -1130,9 +1140,8 @@
         { text: 'En Succession, ¿quién mata accidentalmente al camarero? Si fallas, tomas', answer: 'Kendall Roy' },
         { text: 'En Succession, ¿quién compra Waystar Royco? Si fallas, tomas', answer: 'Lukas Matsson' },
         { text: 'En Toy Story, ¿qué objeto utiliza Woody para comunicarse con Buzz cuando están atrapados en la casa de Sid? Si fallas, tomas', answer: 'Walkie-talkie' },
-        { text: 'En Toy Story 2, ¿qué personaje coleccionista roba a Woody? Si fallas, tomas', answer: 'Al McWhiggin' },
-        { text: 'En Toy Story 3, ¿qué personaje termina convirtiéndose en el nuevo líder de Sunnyside? Si fallas, tomas', answer: 'Lotso' },
-        { text: 'En Monsters, Inc., ¿cómo se llama realmente Boo? Si fallas, tomas', answer: 'Mary' },
+        { text: 'En Toy Story 2, ¿qué personaje coleccionista roba a Woody? Si fallas, tomas', answer: 'Al El Pollo' },
+        { text: 'En Toy Story 3, ¿qué personaje es inicialmente el líder de Sunnyside? Si fallas, tomas', answer: 'Lotso' },
         { text: 'En Buscando a Nemo, ¿qué tipo de pez es Gill? Si fallas, tomas', answer: 'Ídolo moro' },
         { text: 'En Los Increíbles, ¿qué nombre tiene el villano que originalmente se llamaba Buddy Pine? Si fallas, tomas', answer: 'Síndrome' },
         { text: 'En Los Increíbles, ¿qué poder tiene Frozone? Si fallas, tomas', answer: 'Hielo' },
@@ -1143,12 +1152,12 @@
         { text: 'En Coco, ¿qué relación tiene Héctor con Miguel? Si fallas, tomas', answer: 'Bisabuelo' },
         { text: 'En Coco, ¿qué canción interpreta Miguel para Mamá Coco? Si fallas, tomas', answer: 'Recuérdame' },
         { text: 'En Coco, ¿quién fue responsable de la muerte de Héctor? Si fallas, tomas', answer: 'Ernesto de la Cruz' },
-        { text: 'En Cars, ¿qué número lleva Lightning McQueen? Si fallas, tomas', answer: '95' },
+        { text: 'En Cars, ¿qué número lleva el Rayo McQueen? Si fallas, tomas', answer: '95' },
         { text: 'En Cars, ¿qué tipo de vehículo es Mater? Si fallas, tomas', answer: 'Grúa' },
         { text: 'En Cars, ¿qué ciudad queda convertida en el hogar temporal de Lightning? Si fallas, tomas', answer: 'Radiator Springs' },
         { text: 'En WALL-E, ¿qué significa la letra E en el nombre WALL-E? Si fallas, tomas', answer: 'Earth' },
         { text: 'En Toy Story, ¿qué frase dice Buzz Lightyear al presentarse? Si fallas, tomas', answer: 'Al infinito y más allá' },
-        { text: 'En Buscando a Dory, ¿qué problema de memoria tiene Dory? Si fallas, tomas', answer: 'Pérdida de memoria' },
+        { text: 'En Buscando a Nemo, ¿qué problema  tiene Dory? Si fallas, tomas', answer: 'Pérdida de memoria' },
         { text: 'En Soul, ¿qué instrumento toca Joe Gardner? Si fallas, tomas', answer: 'Piano' },
         { text: 'En Intensamente, ¿qué emoción es expulsada accidentalmente del centro de control junto con Alegría? Si fallas, tomas', answer: 'Tristeza' },
         { text: 'En Intensamente, ¿qué recuerdo provoca que Alegría descubra la importancia de Tristeza? Si fallas, tomas', answer: 'Hockey' },
@@ -1158,15 +1167,12 @@
         { text: 'En El Rey León, ¿qué animal provoca la estampida que mata a Mufasa? Si fallas, tomas', answer: 'Ñus' },
         { text: 'En El Rey León, ¿qué personaje mata finalmente a Scar? Si fallas, tomas', answer: 'Hienas' },
         { text: 'En Aladdín, ¿qué identidad falsa utiliza Aladdin para entrar al palacio? Si fallas, tomas', answer: 'Príncipe Ali' },
-        { text: 'En Aladdín, ¿qué objeto necesita Jafar para entrar en la Cueva de las Maravillas? Si fallas, tomas', answer: 'Lámpara' },
+        { text: 'En Aladdín, ¿qué objeto necesita Jafar que esta en la Cueva de las Maravillas? Si fallas, tomas', answer: 'Lámpara' },
         { text: 'En La Sirenita, ¿qué objeto utiliza Ariel para guardar su voz después del trato con Úrsula? Si fallas, tomas', answer: 'Collar' },
         { text: 'En La Bella y la Bestia, ¿qué personaje es transformado en una tetera? Si fallas, tomas', answer: 'Señora Potts' },
         { text: 'En Mulán, ¿qué identidad adopta Mulán para entrar al ejército? Si fallas, tomas', answer: 'Ping' },
-        { text: 'En Mulán, ¿qué ancestro envía a Mushu para proteger a Mulán? Si fallas, tomas', answer: 'Gran Ancestro' },
         { text: 'En Hércules, ¿quién secuestra a Hércules cuando es un bebé? Si fallas, tomas', answer: 'Hades' },
-        { text: 'En Hércules, ¿qué objeto utiliza Hércules para recuperar su fuerza divina? Si fallas, tomas', answer: 'Pacto' },
         { text: 'En Tarzán, ¿qué animal mata a los padres de Tarzán? Si fallas, tomas', answer: 'Leopardo' },
-        { text: 'En Pocahontas, ¿qué personaje dispara accidentalmente a Kocoum? Si fallas, tomas', answer: 'Thomas' },
         { text: 'En Zootopia, ¿qué tipo de animal es el alcalde Lionheart? Si fallas, tomas', answer: 'León' },
         { text: 'En Zootopia, ¿qué droga convierte temporalmente a los animales en salvajes? Si fallas, tomas', answer: 'Bulbos nocturnos' },
         { text: 'En Lilo & Stitch, ¿qué número de experimento es Stitch? Si fallas, tomas', answer: '626' },
@@ -1183,8 +1189,6 @@
         { text: 'En Grease, ¿cómo se llama el rebelde protagonista masculino interpretado por John Travolta? Si fallas, tomas', answer: 'Danny Zuko' },
         { text: 'En Mujer Bonita (Pretty Woman), ¿cuál era la profesión de Vivian antes de que Edward la contratara por una semana? Si fallas, tomas', answer: 'Prostituta' },
         { text: 'En Mamma Mia!, ¿cuántos posibles padres invita Sophie a su boda en secreto? Si fallas, tomas', answer: 'Tres' },
-        { text: 'En Como si fuera la primera vez (50 First Dates), ¿en qué estado de EE. UU. transcurre la historia, rodeados de playa y vida marina? Si fallas, tomas', answer: 'Hawái' },
-        { text: 'En Un Lugar Llamado Notting Hill, ¿a qué se dedica profesionalmente el personaje de Anna Scott (Julia Roberts)? Si fallas, tomas', answer: 'Es actriz' },
         { text: 'En Un Viernes de Locos (Freaky Friday), ¿qué alimento de un restaurante chino provoca que la madre y la hija cambien de cuerpo? Si fallas, tomas', answer: 'Una galleta de la fortuna' },
         { text: 'En El Diablo Viste a la Moda, ¿cómo se llama la famosa revista de moda que dirige la temible Miranda Priestly? Si fallas, tomas', answer: 'Runway' },
         { text: 'En High School Musical, ¿qué deporte juega Troy Bolton, siendo el capitán del equipo de los Wildcats? Si fallas, tomas', answer: 'Básquetbol' },
@@ -1200,7 +1204,89 @@
         { text: '¿Cómo se llamaba el lobo de Jon Snow? Si fallas, tomas', answer: 'Fantasma (Ghost)' },
         { text: '¿Cuál es la persona más seguida en Instagram? Si fallas, tomas', answer: 'Cristiano Ronaldo' },
         { text: '¿Con qué político se relacionó a Marilyn Monroe? Si fallas, tomas', answer: 'John F. Kennedy' },
-        { text: '¿En qué año murió la Reina Isabel II? Si fallas, tomas', answer: '2022' }
+        { text: '¿En qué año murió la Reina Isabel II? Si fallas, tomas', answer: '2022' },
+        { text: 'En StarWars, ¿Qué criaturas viven en los bosques de Endor?', answer: 'Los Ewoks' },
+        { text: 'En StarWars, ¿Quién construyó a C-3PO?', answer: 'Anakin Skywalker' },
+        { text: 'En StarWars, ¿Cuál es el verdadero nombre de pila de la reina Amidala?', answer: 'Padmé' },
+        { text: 'En StarWars, ¿Quién dice "Hazlo o no lo hagas. No existe el intento"?', answer: 'Yoda' },
+        { text: 'En StarWars, ¿Quién es la madre de Anakin Skywalker?', answer: 'Shmi Skywalker' },
+        { text: 'En StarWars, ¿Cómo se llama el Gungan que sirve de guía a Obi-Wan Kenobi y Qui-Gon Jinn en La Amenaza Fantasma?', answer: 'Jar Jar Binks' },
+        { text: 'En StarWars, ¿Quién mató a Mace Windu?', answer: 'Darth Sidious' },
+        { text: 'En StarWars, ¿Qué tipo de soldado se presenta al principio de Rogue One?', answer: 'Soldados de la Muerte (Death Troopers)' },
+        { text: 'En StarWars, ¿Qué parte del cuerpo perdió Anakin en la batalla contra el Conde Dooku?', answer: 'Su brazo derecho' },
+        { text: 'En StarWars, ¿Qué parte del cuerpo perdió Luke en la batalla contra Darth Vader?', answer: 'Su mano derecha' },
+        { text: 'En StarWars, ¿Quién mató a Jabba el Hutt?', answer: 'La princesa Leia' },
+        { text: 'En StarWars, ¿En qué planeta se crió Anakin Skywalker?', answer: 'En Tatooine' },
+        { text: 'En StarWars, ¿Quién mató a Qui-Gon Jinn?', answer: 'Darth Maul' },
+        { text: 'En StarWars, ¿A quién le ganó Han Solo el Halcón Milenario?', answer: 'A Lando Calrissian' },
+        { text: 'En StarWars, ¿Cuál es el nombre de la criatura que originalmente esclavizaba a Anakin y a su madre en Tatooine?', answer: 'Watto' },
+        { text: 'En StarWars, ¿Qué personaje ha aparecido en más películas de Star Wars?', answer: 'C-3PO' },
+        { text: 'En StarWars, ¿De qué color es el sable de luz de Mace Windu?', answer: 'Morado' },
+        { text: 'En StarWars, ¿Cuál es el planeta natal de Luke Skywalker?', answer: 'Tatooine' },
+        { text: 'En StarWars, ¿Qué información importante lleva R2-D2 consigo al principio de Star Wars: Una Nueva Esperanza?', answer: 'Los planos de la Estrella de la Muerte' },
+        { text: 'En Harry Potter, ¿Qué encantamiento ahuyenta a los Dementores?', answer: 'El encantamiento Patronus' },
+        { text: 'En Harry Potter, ¿Cómo se llaman los padres de Harry Potter?', answer: 'Lily y James' },
+        { text: 'En Harry Potter, ¿Cuál es el secreto del profesor Remus Lupin?', answer: 'Es un hombre lobo' },
+        { text: 'En Harry Potter, ¿Qué hechizo le quita instantáneamente la varita a tu oponente?', answer: 'Expelliarmus' },
+        { text: 'En Harry Potter, ¿Cómo se llama la madre de Draco Malfoy?', answer: 'Narcissa Malfoy' },
+        { text: 'En Harry Potter, ¿De qué materia es profesora Minerva McGonagall en el Colegio Hogwarts de Magia y Hechicería?', answer: 'Transformaciones' },
+        { text: 'En Harry Potter, ¿Cómo se llama la gata del conserje de Hogwarts, Argus Filch?', answer: 'Señora Norris' },
+        { text: 'En Harry Potter, ¿Cuántos jugadores hay en un equipo de Quidditch?', answer: '7' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/kz.png', answer: 'Kazajistán' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/bt.png', answer: 'Bután' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/lk.png', answer: 'Sri Lanka' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/al.png', answer: 'Albania' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/sc.png', answer: 'Seychelles' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/ke.png', answer: 'Kenia' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/np.png', answer: 'Nepal' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/hr.png', answer: 'Croacia' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/za.png', answer: 'Sudáfrica' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/jm.png', answer: 'Jamaica' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/si.png', answer: 'Eslovenia' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/sk.png', answer: 'Eslovaquia' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/rs.png', answer: 'Serbia' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/ro.png', answer: 'Rumania' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/bg.png', answer: 'Bulgaria' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/hu.png', answer: 'Hungría' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/cz.png', answer: 'República Checa' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/pl.png', answer: 'Polonia' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/gr.png', answer: 'Grecia' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/tr.png', answer: 'Turquía' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/fi.png', answer: 'Finlandia' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/se.png', answer: 'Suecia' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/dk.png', answer: 'Dinamarca' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/no.png', answer: 'Noruega' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/ch.png', answer: 'Suiza' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/is.png', answer: 'Islandia' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/mt.png', answer: 'Malta' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/vn.png', answer: 'Vietnam' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/th.png', answer: 'Tailandia' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/my.png', answer: 'Malasia' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/id.png', answer: 'Indonesia' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/ph.png', answer: 'Filipinas' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/kr.png', answer: 'Corea del Sur' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/sa.png', answer: 'Arabia Saudita' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/ae.png', answer: 'Emiratos Árabes Unidos' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/ir.png', answer: 'Irán' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/il.png', answer: 'Israel' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/lb.png', answer: 'Líbano' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/pk.png', answer: 'Pakistán' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/jm.png', answer: 'Jamaica' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/cu.png', answer: 'Cuba' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/do.png', answer: 'República Dominicana' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/pr.png', answer: 'Puerto Rico' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/cr.png', answer: 'Costa Rica' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/pa.png', answer: 'Panamá' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/gt.png', answer: 'Guatemala' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/eg.png', answer: 'Egipto' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/ma.png', answer: 'Marruecos' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/ng.png', answer: 'Nigeria' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/ke.png', answer: 'Kenia' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/sn.png', answer: 'Senegal' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/cm.png', answer: 'Camerún' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/mg.png', answer: 'Madagascar' },
+        { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/nz.png', answer: 'Nueva Zelanda' },
+
       ],
       futbol: [
         { text: '¿Cuántos jugadores tiene un equipo de fútbol en la cancha? Si fallas, tomas', answer: '11 jugadores por equipo' },
@@ -1209,6 +1295,102 @@
       disco: [
         { text: 'Nombra 3 décadas de la música disco o toma', answer: 'La disco nació en los 70 y se extendió por los 80; su revival llega hasta hoy' },
         { text: '¿En qué década nació el reggaetón? Si fallas, tomas', answer: 'A fines de los 90, en Puerto Rico y Panamá' }
+      ]
+      , amigos: [
+        { text: '¿Quién de aquí es el que tiene peores gustos musicales? Si fallas en el consenso grupal, tomas.', answer: 'Votación grupal' },
+        { text: 'Imita la cara o gesto típico de (jugador aleatorio). Si adivinan rápido regalas 3 tragos, si no, tomas.', answer: 'Imitación' },
+        { text: '¿A quién de este grupo elegirías para que te defienda en una pelea a golpes? Si la mayoría no está de acuerdo contigo, tomas.', answer: 'Votación grupal' }
+      ],
+      papu: [
+        { text: 'Pregunta exclusiva Papu 1 (Reemplaza por la tuya)', answer: 'Respuesta 1' },
+        { text: 'Pregunta exclusiva Papu 2 (Reemplaza por la tuya)', answer: 'Respuesta 2' }
+      ],
+      historia: [
+        { text: '¿Hace cuánto se extinguieron los dinosaurios?', answer: 'Hace 66 millones de años' },
+        { text: '¿Cuál era el nombre de pila de Che Guevara?', answer: 'Ernesto' },
+        { text: 'Según la Biblia, ¿cuántos años vivió Matusalén?', answer: '969 años' },
+        { text: '¿En qué país nació Adolf Hitler?', answer: 'Austria' },
+        { text: '¿Qué reina británica fue hija de los Reyes Católicos?', answer: 'Catalina de Aragón' },
+        { text: '¿Cuánto duró "La Guerra de los Cien Años"?', answer: '116 años' },
+        { text: '¿Quién fue el último faraón hombre de Egipto?', answer: 'Ramsés III' },
+        { text: '¿Cuál fue la primera civilización humana?', answer: 'La civilización sumeria' },
+        { text: '¿Cuándo empezó la Revolución Rusa?', answer: 'En 1917' },
+        { text: '¿Quién creó el Partido Comunista?', answer: 'Lenin' },
+        { text: '¿Qué famoso líder de Cuba estuvo 49 años en el poder?', answer: 'Fidel Castro' },
+        { text: '¿Cuándo se fundó la OTAN?', answer: 'En 1949' },
+        { text: '¿En qué año se hundió el Titanic?', answer: 'En 1912' },
+        { text: '¿Cuál fue el primer metal que el hombre empleó?', answer: 'El cobre' },
+        { text: '¿Qué personaje fue conocido como el rey de Macedonia?', answer: 'Alejandro Magno' },
+        { text: '¿Alrededor de qué mar vivieron los egipcios, los fenicios, los israelitas, los griegos y los romanos?', answer: 'El mar Mediterráneo' },
+        { text: 'Según la leyenda ¿quiénes fundaron a Roma?', answer: 'Rómulo y Remo' },
+        { text: '¿En qué etapa desaparecieron los dinosaurios?', answer: 'Al final del Cretácico' },
+        { text: '¿Quién descubrió Perú?', answer: 'Francisco Pizarro' },
+        { text: '¿Quién fue el primer emperador romano?', answer: 'César Augusto' },
+        { text: '¿Cuál fue la última dinastía en China?', answer: 'La dinastía Qing' },
+        { text: '¿En qué año fue asesinado John F. Kennedy?', answer: 'En 1963' },
+        { text: '¿Dónde nació Juana de Arco?', answer: 'En Francia' },
+        { text: '¿Qué países fueron los miembros de los Aliados en la Segunda Guerra Mundial?', answer: 'Gran Bretaña, Francia, Rusia, China y Estados Unidos' },
+        { text: 'Después de Lenin, ¿quién fue oficialmente el líder de la Unión Soviética?', answer: 'Stalin' },
+        { text: '¿Qué país de Asia es miembro del Eje en la Segunda Guerra Mundial?', answer: 'Japón' },
+        { text: '¿Con qué nombre se conoce el escándalo que obligó al presidente estadounidense Richard Nixon a dimitir?', answer: 'Watergate' },
+        { text: '¿Qué emperador romano legalizó el cristianismo?', answer: 'Constantino' },
+        { text: '¿Cuál es el nombre de la famosa batalla donde Napoleón Bonaparte fue derrotado?', answer: 'Waterloo' },
+        { text: '¿De qué país se independizó Eslovenia?', answer: 'Yugoslavia' },
+        { text: '¿A qué país pertenece la isla de Creta?', answer: 'Grecia' },
+        { text: '¿Cuál es el país más visitado del mundo?', answer: 'Francia' },
+        { text: '¿Qué cordillera separa Europa de Asia?', answer: 'Los montes Urales' },
+        { text: '¿Qué dos países separa el estrecho de Bering?', answer: 'Rusia y Estados Unidos' },
+        { text: '¿Cuál es la moneda oficial de Japón?', answer: 'El yen' },
+        { text: '¿Qué volcán sepultó la ciudad de Pompeya?', answer: 'El Vesubio' },
+        { text: '¿Cuál era la ciudad más cercana a la central nuclear de Chernóbil?', answer: 'Prípiat' },
+        { text: '¿Cuál es la ciudad más poblada del mundo?', answer: 'Tokio' },
+        { text: '¿Cuál es el estado más grande de Estados Unidos?', answer: 'Alaska' },
+        { text: '¿Qué ciudad tuvo una vez el nombre de Leningrado?', answer: 'San Petersburgo' },
+        { text: '¿Cuál es la capital de Nicaragua?', answer: 'Managua' },
+        { text: '¿En qué lugar está el Taj Mahal?', answer: 'En Agra, en India' },
+        { text: '¿Qué río pasa por París?', answer: 'El Sena' },
+        { text: '¿Cuál es la capital de Turquía?', answer: 'Ankara' },
+        { text: '¿Cuál es la capital de Kenia?', answer: 'Nairobi' },
+        { text: '¿Cómo se llama el desierto más famoso de México?', answer: 'Sonora' },
+        { text: '¿Qué río pasa por Roma?', answer: 'El Tíber' },
+        { text: '¿Tiene Malta salida al mar?', answer: 'Sí' },
+        { text: '¿Cuál es el idioma oficial de Jamaica?', answer: 'El inglés' },
+        { text: '¿Cuál es la capital de Rumania?', answer: 'Bucarest' },
+        { text: '¿Cuál es la capital de Canadá?', answer: 'Ottawa' },
+        { text: '¿Cuál es la capital de Marruecos?', answer: 'Rabat' },
+        { text: '¿Cuál es la capital de Tailandia?', answer: 'Bangkok' },
+        { text: '¿Cuál es la capital de Vietnam?', answer: 'Hanoi' },
+        { text: '¿Cuál es la capital de los Emiratos Árabes Unidos?', answer: 'Abu Dabi' },
+        { text: '¿Cuál es la capital de Islandia?', answer: 'Reikiavik' },
+        { text: '¿Cuál es la capital de Eslovenia?', answer: 'Ljubljana' },
+        { text: '¿Cuál es la capital de Eslovaquia?', answer: 'Bratislava' },
+        { text: '¿Cuál es la capital de Bosnia y Herzegovina?', answer: 'Sarajevo' },
+        { text: '¿Cuál es la capital de Bulgaria?', answer: 'Sofía' },
+        { text: '¿Cuál es la capital de Ucrania?', answer: 'Kiev' },
+        { text: '¿Cuál es la capital de Jamaica?', answer: 'Kingston' },
+        { text: '¿Cuál es la capital de la República Dominicana?', answer: 'Santo Domingo' },
+        { text: '¿Cuál es la capital de Haití?', answer: 'Puerto Príncipe' },
+        { text: '¿Cuál fue la principal actividad económica en Chile entre 1880 y 1930?', answer: 'La industria del salitre' },
+        { text: '¿Quién fue el primer presidente de Chile?', answer: 'Manuel Blanco Encalada' },
+        { text: '¿Quién escribió el himno chileno?', answer: 'Eusebio Lillo' },
+        { text: '¿Cuáles eran los colores de la primera bandera chilena?', answer: 'Azul, blanco y amarillo' },
+        { text: '¿Cuáles son las tres etapas que componen el periodo de la Independencia de Chile, que va desde 1811 a 1823?', answer: 'Patria Vieja (1810-1814), Reconquista (1814-1817) y Patria Nueva (1818-1823)' },
+        { text: '¿Qué presidente de Chile ocupó como lema de campaña "gobernar es educar"?', answer: 'Pedro Aguirre Cerda' },
+        { text: '¿Quién fue presidente de Chile antes de Salvador Allende?', answer: 'Eduardo Frei Montalva' },
+        { text: '¿Cuál fue el movimiento social liderado por estudiantes chilenos que demandaba reformas educativas en 2006?', answer: 'La "Revolución Pingüina"' },
+        { text: '¿Qué tratado puso fin a la Guerra del Pacífico entre Chile y Perú en 1883?', answer: 'El Tratado de Ancón' },
+        { text: '¿Bajo el Gobierno de qué presidente se promulgó la primera ley de reforma agraria en 1962?', answer: 'Jorge Alessandri' },
+        { text: '¿Cuál es el volcán más alto de Chile?', answer: 'El Ojos del Salado' },
+        { text: '¿En qué región de Chile se encuentra el Parque Nacional Torres del Paine, conocido por sus impresionantes paisajes?', answer: 'Región de Magallanes y de la Antártica Chilena' },
+        { text: '¿Cuál es el río más largo de Chile?', answer: 'Río Loa' },
+        { text: '¿En qué región de Chile se encuentra el volcán Villarrica, uno de los más activos del país?', answer: 'Región de la Araucanía' },
+        { text: '¿Qué ciudad portuaria en Chile es conocida como la "Perla del Norte"?', answer: 'Antofagasta' },
+        { text: '¿Qué ciudad chilena se encuentra en la Isla Grande de Chiloé y es famosa por sus casas sobre pilotes y sus iglesias de madera?', answer: 'Castro' },
+        { text: '¿Quién es el autor de la novela "La casa de los espíritus"?', answer: 'Isabel Allende' },
+        { text: '¿Cuál es el nombre real de Gabriela Mistral?', answer: 'Lucila Godoy Alcayaga' },
+        { text: '¿Qué escritor o escritora de Chile escribió "La última niebla" y "La amortajada"?', answer: 'María Luisa Bombal' },
+        { text: '¿Quién es el autor chileno de la novela "Sub terra", que retrata la vida de los mineros del carbón en Lota?', answer: 'Baldomero Lillo' },
+        { text: '¿En qué año se jugó la Copa Mundial de la FIFA en Chile?', answer: '1962' }
       ]
     },
     trago: {
@@ -1444,6 +1626,17 @@
       "Santiago Bernabéu", "Camp Nou", "Old Trafford", "Anfield", "San Siro", "Monumental",
       "Estadio Nacional", "Santa Laura", "La bombonera", "Claro arena", "Ester roa"
     ]
+    , amigos: [
+      "El que peor se porta", "El que paga todo", "El más macabeo",
+      "El que tiene peores gustos", "El/La ex de (jugador aleatorio)"
+    ]
+  };
+
+  var PASAPALABRA_WORDS = {
+    A: [{ text: "Empieza con A. Sustancia líquida, transparente e inodora vital para la supervivencia celular.", answer: "Agua" }],
+    B: [{ text: "Empieza con B. Calzado alto, generalmente de cuero, que resguarda el pie y parte de la pierna.", answer: "Bota" }],
+    C: [{ text: "Empieza con C. Prenda de vestir de tela con cuello, botones delanteros y mangas, que cubre el torso.", answer: "Camisa" }]
+    // Añade el resto del abecedario manteniendo siempre respuestas que solo empiecen con la letra y definiciones cerradas (no ambiguas).
   };
 
   function initSpecials(){
@@ -1466,6 +1659,7 @@
     disco: false,
     culturaEnabled: true,
     includeCulturaInPre: false, // solo para Modo Pre
+    modoAmigos: false,
     // Configurador de tragos (Ajustes) — controla los números que usan
     // randomDrinkCount(), randomNuncaDrinks(), discoDouble() y el saludo.
     drinkConfig: { greeting: 4, eventMin: 2, eventMax: 4, nuncaMin: 2, nuncaMax: 3, maxDrinks: 5 },
@@ -1541,8 +1735,6 @@
 
   function weightedPick(catKey, cat){
     var entries = [];
-    // Un item puede traer su propio peso (ej. { text, weight: 0.3 } para que
-    // salga bastante menos seguido que el resto) — si no trae, pesa 1.
     cat.items.forEach(function(it){ entries.push({ item: toEntry(it), w: (it && typeof it === 'object' && it.weight) || 1 }); });
     if (state.futbol && cat.futbol){
       cat.futbol.forEach(function(it){ entries.push({ item: toEntry(it), w: 1 }); });
@@ -1550,6 +1742,12 @@
     if (cat.disco){
       var discoWeight = state.disco ? 3 : 0.2;
       cat.disco.forEach(function(it){ entries.push({ item: toEntry(it), w: discoWeight }); });
+    }
+    if (state.modoAmigos && cat.amigos){
+      cat.amigos.forEach(function(it){ entries.push({ item: toEntry(it), w: 2 }); });
+    }
+    if (state.modoHistoria && cat.historia){
+      cat.historia.forEach(function(it){ entries.push({ item: toEntry(it), w: 2 }); });
     }
     return pickWithHistory(catKey, entries);
   }
@@ -1712,9 +1910,12 @@
     var sp = state.specials;
 
     // Modo Cultura No General: solo cultura, sin eventos especiales, sin saludo
+    // Modo Cultura No General: solo cultura, sin eventos especiales, sin saludo
     if (state.selectedMode === 'cultura'){
       var cat = DECK.cultura;
-      var entry = weightedPick('cultura', cat);
+      var entry = (state.modoPapu && cat.papu && cat.papu.length > 0) 
+        ? weightedPick('papu', { items: cat.papu }) 
+        : weightedPick('cultura', cat);
       var cardText = entry.text;
       state.card = makeCard({ cat: 'cultura', icon: cat.icon, text: cardText, answer: entry.answer || null, special: entry.special || null, rounds: entry.rounds || null, topics: entry.topics || null, image: entry.image || null });
       return;
@@ -1819,6 +2020,7 @@
   function startEspia(){
     var pool = ESPIA_WORDS.normal.slice();
     if (state.futbol) pool = pool.concat(ESPIA_WORDS.futbol);
+    if (state.modoAmigos && ESPIA_WORDS.amigos) pool = pool.concat(ESPIA_WORDS.amigos);
     var template = pool[Math.floor(Math.random() * pool.length)];
     var word = resolveEspiaWord(template);
 
@@ -1913,11 +2115,107 @@
       }
     }, 1000);
   }
+var roscoTimerInterval = null;
 
-function renderPlayerSetup(){
+  function startRoscoTimer() {
+    if (roscoTimerInterval) clearInterval(roscoTimerInterval);
+    state.rosco.active = true;
+    roscoTimerInterval = setInterval(function(){
+      if (!state.rosco.active) return;
+      state.playerTimers[state.turn]--;
+      
+      if (state.playerTimers[state.turn] <= 0){
+        state.playerTimers[state.turn] = 0;
+        nextRoscoPlayer();
+      } else {
+        // En lugar de hacer un render() completo, solo inyectamos el nuevo número
+        var timerElement = document.querySelector('.rosco-timer');
+        if (timerElement) {
+          timerElement.textContent = state.playerTimers[state.turn] + 's';
+        } else {
+          render();
+        }
+      }
+    }, 1000);
+  }
+
+  function stopRoscoTimer() {
+    state.rosco.active = false;
+    if (roscoTimerInterval) clearInterval(roscoTimerInterval);
+  }
+
+  function advanceRoscoIndex() {
+    var r = state.rosco;
+    var startIdx = r.currentIndex;
+    for (var i = 1; i <= r.questions.length; i++) {
+      var idx = (startIdx + i) % r.questions.length;
+      if (r.questions[idx].status === 'pending') {
+        r.currentIndex = idx;
+        return true;
+      }
+    }
+    return false; 
+  }
+
+  function nextRoscoPlayer() {
+    stopRoscoTimer();
+    state.turn = (state.turn + 1) % state.players.length;
+    advanceRoscoIndex();
+    render();
+  }
+
+  function checkRoscoEnd() {
+    var pending = state.rosco.questions.filter(function(q){ return q.status === 'pending'; }).length;
+    if (pending === 0) {
+      stopRoscoTimer();
+      state.rosco.finished = true;
+      render();
+      return true;
+    }
+    return false;
+  }
+
+  function renderPasapalabraStage() {
+    var r = state.rosco;
+    if (r.finished) {
+       return '<div class="stage-wrap"><div class="face face-back cat-cultura" style="position:static; transform:none; aspect-ratio:3/2.2;"><div class="cat-emoji">🏆</div><div class="challenge-text">¡Rosco Terminado!</div></div><div class="play-actions"><button class="btn-primary" data-action="back-setup">Volver a modos</button></div></div>';
+    }
+    
+    var q = r.questions[r.currentIndex];
+    var timer = state.playerTimers[state.turn];
+    var html = '<div class="stage-wrap"><div class="face face-back cat-juegos" style="position:static; transform:none; aspect-ratio:3/4.2; justify-content:flex-start; padding-top:40px;">';
+    
+    html += '<div class="rosco-timer">' + timer + 's</div>';
+    html += '<div class="rosco-letter">' + q.letter + '</div>';
+
+    if (!r.active) {
+       html += '<div class="challenge-text" style="margin-top:20px;">Turno de ' + esc(state.players[state.turn].name) + '</div>';
+       html += '<div class="challenge-sub">Pásale el teléfono.</div>';
+       html += '</div><div class="play-actions"><button class="btn-primary" data-action="pasa-start">Empezar / Continuar</button></div></div>';
+    } else {
+       html += '<div class="challenge-text" style="font-size:16px; margin-top:10px;">' + esc(q.text) + '</div>';
+       html += '<div class="challenge-sub" style="font-size:14px; margin-top:12px; opacity:1; color:var(--lime);">Rta: ' + esc(q.answer) + '</div>';
+       html += '</div>'; 
+       html += '<div class="rosco-actions">';
+       html += '<button class="btn-error" data-action="pasa-error">✗ Error</button>';
+       html += '<button class="btn-pasa" data-action="pasa-pasapalabra">↻ Pasapalabra</button>';
+       html += '<button class="btn-acerto" data-action="pasa-acerto">✓ Acertó</button>';
+       html += '</div></div>';
+    }
+    return html;
+  }
+window.addPlayerFromForm = function() {
+    var input = document.getElementById('player-input');
+    if (input && input.value.trim()) {
+      var name = input.value.trim();
+      var color = AVATAR_COLORS[state.players.length % AVATAR_COLORS.length];
+      state.players.push({ name: name, color: color });
+      render();
+    }
+  };
+  function renderPlayerSetup(){
     var mode = state.selectedMode;
-    var modeLabels = { pre: 'Modo Pre', disco: 'Modo Disco', cultura: 'Modo Cultura No General' };
-    var modeIcons = { pre: '🍻', disco: '🪩', cultura: '🧠' };
+    var modeLabels = { pre: 'Modo Pre', disco: 'Modo Disco', cultura: 'Modo Cultura No General', pasapalabra: 'Modo Pasapalabra' };
     var chips = state.players.map(function(p, i){
       return '<div class="chip">' +
         '<span class="avatar" style="background:' + p.color + '">' + esc(initials(p.name)) + '</span>' +
@@ -1943,7 +2241,7 @@ function renderPlayerSetup(){
     }
 
     var cardsSegmented = '';
-    var needsCards = (mode === 'pre' || mode === 'disco'); // cultura no usa cartas
+    var needsCards = (mode === 'pre' || mode === 'disco'); 
     if (needsCards){
       cardsSegmented =
         '<div class="section-label" style="margin-top:20px;">¿Tienen un mazo de cartas a mano?</div>' +
@@ -1953,18 +2251,18 @@ function renderPlayerSetup(){
         '</div>' +
         '<div class="card-copy">' + (state.cards === 'si' ? 'Sumamos juegos de cartas (Blackjack, Guerra, Calendario Maya, Busecito, Carrera de Caballos).' : state.cards === 'no' ? 'Sin problema, los juegos de cartas no van a salir.' : 'Elige una opción para continuar.') + '</div>';
     } else {
-      state.cards = 'no'; // forzar no en modo cultura
+      state.cards = 'no'; 
     }
 
     app.innerHTML =
       '<div class="setup-top">' +
         '<button class="icon-btn" data-action="back-mode-select" aria-label="Volver a modos">‹</button>' +
-        '<div class="brand" style="font-size:var(--text-xl);">' + esc(modeLabels[mode]) + '</div>' +
-        '<span style="width:40px;"></span>' +
+        '<div class="brand" style="font-size:var(--text-lg); text-align:center; flex:1; margin:0 10px; line-height:1.1;">' + esc(modeLabels[mode]) + '</div>' +
+        '<button class="icon-btn" data-action="open-ajustes" aria-label="Ajustes">⚙️</button>' +
       '</div>' +
 
       '<div class="section-label">Jugadores <span class="count">' + state.players.length + '</span></div>' +
-      '<form class="player-form" data-action="add-player-form">' +
+      '<form class="player-form" onsubmit="event.preventDefault(); window.addPlayerFromForm();">' +
         '<input id="player-input" type="text" placeholder="Nombre del jugador" maxlength="16" autocomplete="off" />' +
         '<button class="add-btn" type="submit" aria-label="Agregar jugador">＋</button>' +
       '</form>' +
@@ -1977,7 +2275,6 @@ function renderPlayerSetup(){
       '<button class="start-btn" data-action="start" ' + (canStart() ? '' : 'disabled') + '>Empezar</button>' +
       (canStart() ? '' : '<div class="start-hint">Faltan jugadores' + (needsCards ? ' o responder sobre las cartas' : '') + '.</div>');
   }
-
   function drinkRow(label, field){
     return '<label class="drink-row"><span>' + esc(label) + '</span>' +
       '<input class="drink-input" type="number" inputmode="numeric" min="1" max="30" ' +
@@ -1988,8 +2285,8 @@ function renderPlayerSetup(){
     app.innerHTML =
       '<div class="setup-top">' +
         '<button class="icon-btn" data-action="close-ajustes" aria-label="Volver">‹</button>' +
-        '<div class="brand" style="font-size:var(--text-xl);">Ajustes</div>' +
-        '<span style="width:40px;"></span>' +
+        '<div class="brand" style="font-size:var(--text-xl); text-align:center; flex:1; margin:0 10px; line-height:1.1;">Ajustes</div>' +
+        '<div style="width:40px;"></div>' +
       '</div>' +
 
       '<div class="section-label">Categorías</div>' +
@@ -2009,7 +2306,15 @@ function renderPlayerSetup(){
         drinkRow('Nunca nunca — máximo', 'nuncaMax') +
         drinkRow('Tope máximo (con modo disco x2)', 'maxDrinks') +
       '</div>' +
-      '<div class="card-copy">Estos números controlan el saludo inicial, los "X tragos" de Evento aleatorio, el rango de Nunca nunca, y el techo que nunca pasa el x2 del modo disco (tampoco en Trago por cada).</div>';
+      '<div class="card-copy">Estos números controlan el saludo inicial, los "X tragos" de Evento aleatorio, el rango de Nunca nunca, y el techo que nunca pasa el x2 del modo disco (tampoco en Trago por cada).</div>' +
+      '<div class="section-label" style="margin-top:24px;">Zona Privada</div>' +
+      '<div class="drink-config">' +
+        '<label class="drink-row"><span>Trucos</span>' +
+        '<input class="drink-input" type="password" style="width:100px; font-family:sans-serif;" data-action="secret-input" placeholder="***" /></label>' +
+        (state.modoAmigos ? '<div style="color:var(--lime); text-align:center; padding:8px 0; font-weight:bold;">¡Modo Amigos Activado! 🕵️‍♂️</div>' : '') +
+        (state.modoPapu ? '<div style="color:var(--pink); text-align:center; padding:8px 0; font-weight:bold;">¡Modo Papu Activado! 💖</div>' : '') +
+        (state.modoHistoria ? '<div style="color:var(--cyan); text-align:center; padding:8px 0; font-weight:bold;">¡Modo Historia Activado! 📜</div>' : '') +
+      '</div>';
   }
 
   function renderWelcome(){
@@ -2045,6 +2350,13 @@ function renderPlayerSetup(){
             '<div class="mode-block-info">' +
               '<strong>Modo Cultura No General</strong>' +
               '<span>Solo trivia, ¿Quién es? y desafíos de conocimiento</span>' +
+            '</div>' +
+          '</button>' +
+          '<button class="mode-block" data-action="select-mode" data-mode="pasapalabra">' +
+            '<div class="mode-block-icon" style="background:radial-gradient(circle at 30% 30%, var(--violet), var(--violet-deep));">🔠</div>' +
+            '<div class="mode-block-info">' +
+              '<strong>Modo Pasapalabra</strong>' +
+              '<span>El rosco contrarreloj: adivina la palabra para cada letra.</span>' +
             '</div>' +
           '</button>' +
         '</div>' +
@@ -2135,6 +2447,11 @@ function renderPlayerSetup(){
 
     if (state.espia){
       app.innerHTML = topbar + renderEspiaStage();
+      return;
+    }
+
+    if (state.selectedMode === 'pasapalabra'){
+      app.innerHTML = topbar + '<div class="rail">' + rail + '</div>' + renderPasapalabraStage();
       return;
     }
 
@@ -2246,7 +2563,7 @@ function renderPlayerSetup(){
   }
 
   function renderCulturaElimination(turnGlowHtml, topbar, rail){
-    var meta = DECK.cultura;
+    var meta = state.modoPapu ? { label: 'Modo Papu', cls: 'cat-papu' } : DECK.cultura;
     var aliveIndexes = state.players.map(function(_, i){ return i; }).filter(function(i){ return !state.culturaEliminated[i]; });
     var aliveCount = aliveIndexes.length;
 
@@ -2341,16 +2658,29 @@ function renderPlayerSetup(){
     }
   }
 
-  app.addEventListener('submit', function(e){
-    if (e.target.matches('[data-action="add-player-form"]')){
-      e.preventDefault();
-      var input = document.getElementById('player-input');
-      var name = input.value.trim();
-      if (!name || state.players.length >= 12) return;
-      state.players.push({ name: name, color: AVATAR_COLORS[state.players.length % AVATAR_COLORS.length] });
-      render();
-      var again = document.getElementById('player-input');
-      if (again) again.focus();
+  app.addEventListener('input', function(e){
+    if (e.target.matches('[data-action="secret-input"]')){
+      var val = e.target.value.toLowerCase().trim();
+      var changed = false;
+      
+      if (val === 'secreto123') {
+        if (!state.modoAmigos) { state.modoAmigos = true; changed = true; }
+        if (state.modoPapu) { state.modoPapu = false; changed = true; }
+        if (state.modoHistoria) { state.modoHistoria = false; changed = true; }
+      } else if (val === 'modopapu') {
+        if (!state.modoPapu) { state.modoPapu = true; changed = true; }
+        if (state.modoAmigos) { state.modoAmigos = false; changed = true; }
+        if (state.modoHistoria) { state.modoHistoria = false; changed = true; }
+      } else if (val === 'modohistoria') {
+        if (!state.modoHistoria) { state.modoHistoria = true; changed = true; }
+        if (state.modoAmigos) { state.modoAmigos = false; changed = true; }
+        if (state.modoPapu) { state.modoPapu = false; changed = true; }
+      } else {
+        if (state.modoAmigos) { state.modoAmigos = false; changed = true; }
+        if (state.modoPapu) { state.modoPapu = false; changed = true; }
+        if (state.modoHistoria) { state.modoHistoria = false; changed = true; }
+      }
+      if (changed) render();
     }
   });
 
@@ -2409,9 +2739,22 @@ function renderPlayerSetup(){
         state.disco = false;
         state.culturaEnabled = true;
       }
+      else if (mode === 'pasapalabra'){
+        state.futbol = false;
+        state.disco = false;
+        state.culturaEnabled = false;
+      }
       state.screen = 'player-setup';
       state.cards = null;
       renderScreenChange();
+    } else if (action === 'add-player'){
+      var input = document.getElementById('player-input');
+      if (input && input.value.trim()) {
+        var name = input.value.trim();
+        var color = AVATAR_COLORS[state.players.length % AVATAR_COLORS.length];
+        state.players.push({ name: name, color: color });
+        render();
+      }
     } else if (action === 'remove-player'){
       state.players.splice(Number(t.getAttribute('data-idx')), 1);
       render();
@@ -2452,6 +2795,16 @@ function renderPlayerSetup(){
       } else {
         state.playerLives = [];
         state.culturaEliminated = [];
+      }
+      if (state.selectedMode === 'pasapalabra') {
+        var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('');
+        var questions = letters.map(function(l) {
+          var pool = PASAPALABRA_WORDS[l] || [{text: "Empieza con " + l + ": (Sin palabras)", answer: "..."}];
+          var q = pool[Math.floor(Math.random() * pool.length)];
+          return { letter: l, text: q.text, answer: q.answer, status: 'pending' };
+        });
+        state.rosco = { questions: questions, currentIndex: 0, active: false, finished: false };
+        state.playerTimers = state.players.map(function(){ return 120; });
       }
       renderScreenChange();
     } else if (action === 'back-setup'){
@@ -2518,6 +2871,17 @@ function renderPlayerSetup(){
       state.wordDrop = null;
       state.naming = null;
       render();
+      } else if (action === 'pasa-start') {
+      startRoscoTimer();
+      render();
+    } else if (action === 'pasa-acerto') {
+      state.rosco.questions[state.rosco.currentIndex].status = 'correct';
+      if (!checkRoscoEnd()) { advanceRoscoIndex(); render(); }
+    } else if (action === 'pasa-error') {
+      state.rosco.questions[state.rosco.currentIndex].status = 'error';
+      if (!checkRoscoEnd()) { nextRoscoPlayer(); }
+    } else if (action === 'pasa-pasapalabra') {
+      nextRoscoPlayer();
     } else if (action === 'start-espia'){
       startEspia();
       render();
