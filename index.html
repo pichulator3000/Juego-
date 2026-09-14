@@ -470,12 +470,15 @@
     '{jugador} nombra 3 canciones de Luis miguel en 20 segundos o termina el vaso',
     '{jugador} nombra 4 presidentes de chile en 10 segundos o termina el vaso',
     '{jugador} Pone una regla por una ronda',
-    '{jugador} Elige la siguiente cancion',
+    '{jugador}, Probabilidad del 1 al 3 de terminar el vaso vs {jugador2}',
     '{jugador1} te sirve la siguiente ronda!',
-    '3 tragos por cada semestre atrasado en la universidad',
+    '2 tragos por cada semestre atrasado en la universidad',
     'Telefonos a la mesa, primer celular que le llegue notificación se termina el vaso',
     '1 trago por cada país que has visitado',
-    { text: 'A las 3, el que piensa en el número más bajo gana, pero ojo, si se repite pierden ambos, el que gana regala X tragos', weight: 0.3 }
+    '5 tragos si tu primer pelon fue antes de tener celular',
+    '2 trago por cada pelon con alguien de tu colegio (si es verbo cuenta villa maria y asi)',
+    '',
+    'A las 3, el que piensa en el número más bajo gana, pero ojo, si se repite pierden ambos, el que gana regala X tragos'
   ];
 
   // Las cartas especiales (OPUS, Cascada, TIMEOUT, Booker T, Rey K) no
@@ -823,10 +826,9 @@
         "Yo nunca me he masturbado con un condon puesto",
         "Yo nunca lo he hecho con los ojos tapados por algo",
         "Yo nunca he perdido el equilibrio mientras lo hacia",
-        "Yo nunca he pensado que alguien presente podria salir del armario",
+        "Yo nunca he pensado que alguien presente podria salir del closet",
         "Yo nunca estuve a punto de liarme con alguien hasta que otra persona me interrumpio",
         "Yo nunca he entrado en un puticlub",
-        "Yo nunca he querido entrar en un puticlub pero por una razon u otra no lo hice",
         "Yo nunca enviado/recibido fotos desnudas por accidente",
         "A mi nunca me ha puesto mas hacerlo con los padres cerca",
         "Yo nunca he tenido que asegurarme de hacerlo en silencio para que no nos oyeran los padres",
@@ -843,7 +845,7 @@
       ],
       disco: [
         'Nunca nunca... bailé arriba de una mesa o silla',
-        'Nunca nunca... me quedé bailando solo en la pista'
+        'Nunca nunca... tire en la disco (o baño)'
       ]
     },
     retos: {
@@ -1235,6 +1237,108 @@
         { text: '¿Qué artista lanzó el álbum Songs in the Key of Life en 1976?', answer: 'Stevie Wonder' },
         { text: '¿En qué programa de telerrealidad británico se formó One Direction en 2010, después de que los cinco miembros se presentaran a las audiciones como solistas?', answer: 'The X Factor' },
         { text: '¿Qué grupo fue la primera banda de rock en ganar el Grammy a la Canción del Año desde 2007, por su éxito "We Are Young" en 2013?', answer: 'Fun' },
+        { text: '¿Qué componente mecánico mezcla el aire y el combustible en los motores de combustión antiguos?', answer: 'Carburador' },
+        { text: '¿Qué pieza transforma el movimiento lineal de los pistones en movimiento circular continuo?', answer: 'Cigüeñal' },
+        { text: '¿Qué mecanismo se encarga de acoplar y desacoplar el motor de la caja de cambios en un auto manual?', answer: 'Embrague' },
+        { text: '¿Cómo se llama la correa que sincroniza el movimiento del cigüeñal con el árbol de levas?', answer: 'Correa de distribución' },
+        { text: '¿Qué dispositivo utiliza la energía de los gases de escape para comprimir el aire que entra al motor y aumentar su potencia?', answer: 'Turbocompresor' },
+        { text: '¿Qué herramienta se utiliza para medir con precisión centésimas o milésimas de milímetro en piezas mecánicas?', answer: 'Pie de rey (o calibrador Vernier)' },
+        { text: '¿Cuál es la unidad de medida del Sistema Internacional para la resistencia eléctrica?', answer: 'Ohmio' },
+        { text: '¿Qué componente electrónico básico permite que la corriente fluya en una sola dirección?', answer: 'Diodo' },
+        { text: '¿Qué fórmula o principio establece que la corriente es igual al voltaje dividido por la resistencia?', answer: 'Ley de Ohm' },
+        { text: '¿Cómo se llama el dispositivo que tiene la capacidad de almacenar energía en un campo eléctrico interno?', answer: 'Condensador (o capacitor)' },
+        { text: '¿Qué nombre recibe el tipo de corriente eléctrica que invierte constantemente su dirección?', answer: 'Corriente alterna (CA)' },
+        { text: '¿Qué material semiconductor es el más utilizado mundialmente para fabricar microchips y transistores?', answer: 'Silicio' },
+        { text: '¿Cómo se llama el lado derecho de un barco cuando el observador mira hacia adelante?', answer: 'Estribor' },
+        { text: '¿Cómo se llama el lado izquierdo de un barco cuando el observador mira hacia adelante?', answer: 'Babor' },
+        { text: '¿Cuál es la unidad de velocidad estándar que equivale a una milla náutica por hora?', answer: 'Nudo' },
+        { text: '¿Cómo se llama la pieza longitudinal que va de proa a popa y sirve como columna vertebral del esqueleto del barco?', answer: 'Quilla' },
+        { text: '¿Qué nombre recibe el peso sólido o líquido que se coloca en el fondo de la embarcación para darle estabilidad?', answer: 'Lastre' },
+        { text: '¿Cómo se llama la estructura metálica sumergida en la popa que se gira para cambiar la dirección del barco?', answer: 'Timón' },
+        { text: '¿Qué fuerza aerodinámica empuja a un avión hacia arriba y contrarresta la gravedad?', answer: 'Sustentación' },
+        { text: '¿Cómo se llaman las superficies móviles en el borde de salida de las alas que permiten al avión inclinarse o rotar?', answer: 'Alerones' },
+        { text: '¿Qué dispositivo en forma de tubo se utiliza en los aviones para medir la velocidad del aire?', answer: 'Tubo de Pitot' },
+        { text: '¿Qué gas inerte y seguro se utiliza hoy en día para elevar los dirigibles, reemplazando al inflamable hidrógeno?', answer: 'Helio' },
+        { text: 'Si el ayer de mañana es el día de hoy, y el mañana de ayer también es hoy, ¿qué día es el día que está justo en medio del ayer del anteayer y el mañana del pasado mañana?', answer: 'Hoy' },
+        { text: 'Si cinco máquinas tardan cinco minutos en fabricar cinco artefactos, ¿cuánto tiempo tardarían cien máquinas en fabricar cien artefactos?', answer: 'Cinco minutos' },
+        { text: 'Un caracol sube una pared de diez metros de altura. Durante el día sube tres metros, pero por la noche resbala dos metros. ¿Cuántos días exactos tarda en llegar a la cima?', answer: 'Ocho días (al octavo día sube tres y llega a la cima antes de resbalar)' },
+        { text: 'En una carrera de relevos de cuatro personas, el segundo corredor le entrega la posta al tercero, el tercero al cuarto, y el cuarto cruza la meta. ¿Quién recorrió exactamente la mayor distancia acumulada en la pista?', answer: 'El segundo corredor (porque corrió su tramo y además tuvo que cargar la posta estática esperando o avanzando)' },
+        { text: 'Si tienes un reloj de arena que mide exactamente 7 minutos y otro que mide 4 minutos, ¿cómo puedes hacer para medir con precisión exacta un tiempo transcurrido de 9 minutos?', answer: 'Pones ambos en marcha a la vez; cuando se acabe el de 4, lo vuelves a girar inmediatamente. Al acabarse de nuevo, habrán pasado 8 minutos, y te queda 1 minuto exacto en el de 7 para completar los 9.' },
+        { text: 'Si un oso camina cinco kilómetros hacia el sur, cinco kilómetros hacia el este y cinco kilómetros hacia el norte, terminando exactamente en el mismo punto de partida, ¿de qué color es el oso?', answer: 'Blanco (está en el Polo Norte)' },
+        { text: 'Una madre tiene 46 años y su hijo tiene 16 años. ¿Dentro de cuántos años exactos la edad de la madre será exactamente el doble de la edad de su hijo?', answer: '14 años (la madre tendrá 60 y el hijo 30)' },
+        { text: 'Tienes tres cajas cerradas frente a ti: una tiene solo manzanas, otra solo naranjas, y la tercera tiene una mezcla de ambas. Todas tienen etiquetas erróneas. Sacando una sola fruta de una sola caja a ciegas, ¿cómo puedes averiguar el contenido real de todas?', answer: 'Sacando de la caja etiquetada como "Mixta" (como está mal rotulada, lo que salga es lo que tiene esa caja, y por lógica deduces las otras dos)' },
+        { text: 'Si vas en tu auto en una noche de tormenta total y pasas por una parada de autobús donde ves a tres personas esperando: una anciana enferma que necesita ir de urgencia al médico, un viejo amigo que te salvó la vida en el pasado, y la mujer u hombre de tus sueños. Tu auto solo tiene espacio para ti y un pasajero más. ¿A quién subes?', answer: 'Le das las llaves de tu auto a tu amigo para que lleve a la anciana al hospital, y tú te quedas esperando el autobús con la persona de tus sueños.' },
+        { text: 'Un hombre deja su auto estacionado frente a un hotel y al regresar se da cuenta de que está completamente en bancarrota y ha perdido todo su dinero. ¿Por qué ocurrió esto?', answer: 'Estaba jugando al Monopoly' },
+        { text: '¿Cómo se llama el proceso en el que una estrella masiva explota al final de su vida?', answer: 'Supernova' },
+        { text: '¿Cuál es el hueso más largo y pesado de todo el cuerpo humano?', answer: 'Fémur' },
+        { text: '¿Qué escala se utiliza para medir la intensidad o magnitud de los terremotos basándose en su energía liberada?', answer: 'Escala de Richter' },
+        { text: '¿Cómo se denominan los animales que no tienen columna vertebral?', answer: 'Invertebrados' },
+        { text: '¿Qué gas absorben las plantas de la atmósfera durante el proceso de la fotosíntesis?', answer: 'Dióxido de carbono' },
+        { text: '¿Cuál es la capa más externa y delgada de la Tierra, sobre la cual vivimos?', answer: 'Corteza terrestre' },
+        { text: '¿Qué nombre recibe la unión o espacio que hay entre una neurona y otra?', answer: 'Sinapsis' },
+        { text: '¿Qué vitamina produce nuestro cuerpo de manera natural cuando la piel se expone a la luz solar?', answer: 'Vitamina D' },
+        { text: '¿Cómo se llama el cambio de estado cuando un sólido pasa directamente a gas sin convertirse en líquido?', answer: 'Sublimación' },
+        { text: '¿Qué instrumento óptico se utiliza para observar cuerpos celestes lejanos como estrellas y galaxias?', answer: 'Telescopio' },
+        { text: '¿Cómo se llama el proceso de división celular que da como resultado cuatro células hijas con la mitad de cromosomas, utilizado para la reproducción?', answer: 'Meiosis' },
+        { text: '¿Qué tipo de enlaces químicos se forman cuando los átomos comparten pares de electrones?', answer: 'Enlaces covalentes' },
+        { text: '¿Cómo se le llama a la presión que ejerce un líquido sobre las paredes del recipiente que lo contiene y sobre los cuerpos sumergidos en él?', answer: 'Presión hidrostática' },
+        { text: '¿Qué orgánulo celular es conocido como la central energética de la célula porque produce ATP?', answer: 'Mitocondria' },
+        { text: '¿Cuál es el nombre del fenómeno físico por el cual la luz cambia de dirección al pasar oblicuamente de un medio a otro de distinta densidad?', answer: 'Refracción' },
+        { text: '¿Qué componente de la sangre se encarga principal y específicamente de la coagulación para evitar hemorragias?', answer: 'Plaquetas (o trombocitos)' },
+        { text: '¿Cómo se denominan los organismos capaces de fabricar su propio alimento a partir de materia inorgánica?', answer: 'Autótrofos' },
+        { text: '¿Qué ley de la física establece que por cada acción hay una reacción igual y opuesta?', answer: 'Tercera ley de Newton (Principio de acción y reacción)' },
+        { text: '¿Cuál es la glándula endocrina considerada la "maestra" porque regula el funcionamiento de otras glándulas del cuerpo?', answer: 'Hipófisis (o glándula pituitaria)' },
+        { text: '¿Qué nombre recibe la capa de la atmósfera terrestre donde se encuentra la famosa capa de ozono que nos protege de los rayos ultravioleta?', answer: 'Estratosfera' },
+        { text: '¿Cómo se llama la fuerza de resistencia que ejerce un fluido sobre un objeto que se mueve a través de él?', answer: 'Fricción (o resistencia al avance / arrastre)' },
+        { text: '¿Cuál es el proceso biológico mediante el cual las células consumen oxígeno para descomponer la glucosa y obtener energía?', answer: 'Respiración celular' },
+        { text: '¿Qué nombre recibe el punto más cercano a la Tierra en la órbita de un satélite o de la Luna?', answer: 'Perigeo' },
+        { text: '¿Cómo se denominan los enlaces químicos formados por la atracción electrostática entre iones con cargas opuestas?', answer: 'Enlaces iónicos' },
+        { text: '¿Qué científico formuló la teoría de la relatividad general a principios del siglo XX?', answer: 'Albert Einstein' },
+        { text: '¿Cuál es el nombre del vaso sanguíneo principal que transporta sangre oxigenada desde el corazón hacia el resto del cuerpo?', answer: 'Aorta' },
+        { text: '¿Qué término científico se utiliza para describir la tendencia de los cuerpos a mantener su estado de reposo o movimiento?', answer: 'Inercia' },
+        { text: '¿Cómo se llaman los animales que regulan su temperatura corporal utilizando fuentes externas de calor, como el sol?', answer: 'Ectotermos (o de sangre fría)' },
+        { text: '¿Qué nombre recibe el conjunto de todos los ecosistemas de la Tierra que albergan vida?', answer: 'Biósfera' },
+        { text: '¿Cuál es la unidad básica y funcional del sistema nervioso encargado de transmitir impulsos eléctricos?', answer: 'Neurona' },
+        { text: '¿Qué gas es liberado por las plantas al medio ambiente como subproducto del proceso de la fotosíntesis?', answer: 'Oxígeno' },
+        { text: '¿Cómo se llama la propiedad de los fluidos que mide su resistencia a fluir o deformarse?', answer: 'Viscosidad' },
+        { text: '¿Qué nombre recibe la división celular asexual que da origen a dos células hijas genéticamente idénticas?', answer: 'Mitosis' },
+        { text: '¿Cuál es el pH neutro en la escala química de acidez y alcalinidad?', answer: '7' },
+        { text: '¿Qué tipo de radiación electromagnética tiene la longitud de onda más corta y la mayor energía en el espectro?', answer: 'Rayos gamma' },
+        { text: '¿Cómo se denominan los fragmentos de roca espacial que logran atravesar la atmósfera terrestre y chocar con la superficie?', answer: 'Meteoritos' },
+        { text: '¿Qué nombre recibe el punto de fusión en el que un sólido pasa al estado líquido?', answer: 'Punto de fusión' },
+        { text: '¿Cuál es el órgano más grande del cuerpo humano en términos de superficie y peso total?', answer: 'La piel' },
+        { text: '¿Qué ley física establece que la energía no se crea ni se destruye, solo se transforma?', answer: 'Principio de conservación de la energía (Primera ley de la termodinámica)' },
+        { text: '¿Cómo se llaman las células sanguíneas encargadas de transportar el oxígeno desde los pulmones a los tejidos?', answer: 'Glóbulos rojos (o eritrocitos)' },
+        { text: '¿Qué instrumento se utiliza para medir la presión atmosférica?', answer: 'Barómetro' },
+        { text: '¿Cuál es el nombre de la galaxia espiral más cercana a nuestra Vía Láctea?', answer: 'Andrómeda' },
+        { text: '¿Qué tipo de roca se forma a partir del enfriamiento y solidificación del magma o lava?', answer: 'Roca ígnea' },
+        { text: '¿Cómo se llama la parte líquida de la sangre que transporta células, nutrientes y sustancias de desecho?', answer: 'Plasma sanguíneo' },
+        { text: '¿Qué nombre recibe la capa sólida y superficial de la Tierra que incluye la corteza y el manto superior?', answer: 'Litósfera' },
+        { text: '¿Cuál es el hueso ubicado en la parte anterior y central del tórax al que se conectan las costillas?', answer: 'Esternón' },
+        { text: '¿Qué fenómeno óptico descompone la luz blanca en los colores del arcoíris al atravesar un medio como un prisma?', answer: 'Dispersión de la luz' },
+        { text: '¿Cómo se denominan los organismos que obtienen su alimento consumiendo materia orgánica de otros seres vivos?', answer: 'Heterótrofos' },
+        { text: '¿Qué nombre recibe el punto de una órbita en el que un planeta se encuentra más cerca del Sol?', answer: 'Perihelio' },
+        { text: '¿Cuál es el metal líquido a temperatura ambiente más común utilizado tradicionalmente en termómetros?', answer: 'Mercurio' },
+        { text: '¿Qué estructura del ojo humano actúa como lente ajustable para enfocar objetos a diferentes distancias?', answer: 'Cristalino' },
+        { text: '¿Cómo se llama la unidad de medida de la frecuencia en el Sistema Internacional de Unidades?', answer: 'Hercio (o Hertz)' },
+        { text: '¿Qué proceso geológico desplaza lentamente los continentes sobre la superficie terrestre debido a corrientes en el manto?', answer: 'Tectónica de placas' },
+        { text: '¿Cuál es el nombre de la hormona producida por el páncreas encargada de reducir los niveles de glucosa en sangre?', answer: 'Insulina' },
+        { text: '¿Qué nombre recibe el cambio de estado en el que un gas se convierte directamente en líquido?', answer: 'Condensación (o licuación)' },
+        { text: '¿Cómo se llaman las líneas imaginarias en un mapa que unen puntos de igual presión atmosférica?', answer: 'Isobáricas (o isobaras)' },
+        { text: '¿Qué tipo de lente es más gruesa en los bordes que en el centro y diverge los rayos de luz?', answer: 'Lente cóncava (o divergente)' },
+        { text: '¿Cuál es el mineral más duro conocido en la escala de Mohs de dureza?', answer: 'Diamante' },
+        { text: '¿Qué nombre recibe el conjunto de todas las reacciones químicas que ocurren dentro de un organismo vivo?', answer: 'Metabolismo' },
+        { text: '¿Cómo se llaman los extremos de un imán donde la fuerza magnética es más intensa?', answer: 'Polos magnéticos (Norte y Sur)' },
+        { text: '¿Qué capa interior de la Tierra se encuentra en estado líquido y está compuesta principalmente de hierro y níquel?', answer: 'Núcleo externo' },
+        { text: '¿Cuál es la unidad básica de la herencia genética que se encuentra en los cromosomas?', answer: 'Gen' },
+        { text: '¿Qué nombre recibe la velocidad constante que alcanza un objeto al caer a través de un fluido cuando la gravedad se iguala con la resistencia?', answer: 'Velocidad límite (o terminal)' },
+        { text: '¿Cómo se denominan las estrellas que varían su brillo de forma periódica debido a cambios en su estructura interna?', answer: 'Estrellas variables' },
+        { text: '¿Qué vitamina es fundamental para la coagulación sanguínea adecuada y la salud de los huesos?', answer: 'Vitamina K' },
+        { text: '¿Cuál es el gas noble más ligero y el segundo elemento más abundante del universo después del hidrógeno?', answer: 'Helio' },
+        { text: '¿Qué nombre recibe la membrana doble que envuelve y protege el núcleo celular?', answer: 'Envoltura nuclear (o carioteca)' },
+        { text: '¿Cómo se llama el instrumento utilizado para medir magnitudes eléctricas como corriente, voltaje y resistencia?', answer: 'Multímetro (o tester)' },
+        { text: '¿Qué científico propuso las leyes del movimiento y la ley de la gravitación universal?', answer: 'Isaac Newton' },
+        { text: '¿Cuál es el nombre de la válvula cardíaca situada entre la aurícula izquierda y el ventrículo izquierdo?', answer: 'Válvula mitral (o bicúspide)' },
         { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/kz.png', answer: 'Kazajistán' },
         { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/bt.png', answer: 'Bután' },
         { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/lk.png', answer: 'Sri Lanka' },
@@ -1381,7 +1485,6 @@
         { text: 'En Casi Ángeles, ¿Qué dije de Eudamón le corresponde a Thiago?', answer: 'La espada de madera' },
         { text: 'En Casi Ángeles, ¿Qué dije de Eudamón le corresponde a Rama?', answer: 'El boomerang' },
         { text: 'En Casi Ángeles, ¿A quién le pertenecía originalmente la mansión donde funciona la Fundación BB en la primera temporada?', answer: 'Amalia Inchausti' },
-        { text: 'En Casi Ángeles, ¿Qué personaje de La Resistencia se disfraza y utiliza el alias "Caperucita Verde" para infiltrarse y enviar información?', answer: 'Tefi' },
         { text: 'En Casi Ángeles, ¿A qué personaje posee físicamente Juan Cruz en la tercera temporada y que termina trágicamente perdiendo la vida por ello?', answer: 'A Caridad ("La Paisa")' },
         { text: 'En Casi Ángeles, ¿Por qué objeto material los padres de Tacho lo vendieron cuando él era pequeño?', answer: 'Por un televisor' },
         { text: 'En Casi Ángeles, ¿Quién es la madre biológica de Esperanza (Hope) Bauer?', answer: 'Malvina Bedoya Agüero' },
@@ -1973,9 +2076,33 @@
       label: 'Juego', icon: '🎲', cls: 'cat-juegos',
       items: [
         { icon:'🎲', name:'Cacho Humano', needsCards:false, rules:'Cada uno dice una acción que haya hecho. Empiecen a apostar cuántos del grupo también la hicieron, subiendo la apuesta como en el dudo. Si dudan y se equivocan, toman' },
-        { icon:'🤥', name:'Mentiroso', needsCards:false, rules:'Alguien parte diciendo "te puedo decir 1 de los ___". Los demás suben la apuesta (2, 3...) hasta que alguien dude. Si mintió, toma; si no mintió, toma quien dudó', topics: ['Marcas de auto', 'Colegios de chile', 'Universidades de chile', 'Países de Europa', 'Películas que ganaron el oscar', 'Canciones de Bad Bunny', 'Marcas de zapatillas', 'Marcas de cerveza', 'Redes sociales', 'Juegos de deporte'] },
+        { icon:'🤥', name:'Mentiroso', needsCards:false, rules:'Alguien parte diciendo "te puedo decir 1 de los ___". Los demás suben la apuesta (2, 3...) hasta que alguien dude. Si mintió, toma; si no mintió, toma quien dudó', topics: ['Marcas de auto', 'Colegios de chile', 'Universidades de chile', 'Países de Europa', 'Películas que ganaron el oscar', 'Canciones de Bad Bunny', 'Marcas de zapatillas', 'Marcas de cerveza', 'Redes sociales', 'Juegos de deporte', 'Ex del grupo', 'Discos de santiago', 'Discos fuera de santiago', 'Regiones de Chile', 'Drogas', 'Razones para tener sexo (A ponerse creativos los weones)', 'Deportes', 'Series'] },
         { icon:'🎭', name:'Impostor', needsCards:false, rules:'Pásense el teléfono en el orden que indique la pantalla. Cuando aparezca tu nombre, tócalo para dar vuelta la pantalla y ver la palabra secreta — todos la verán, menos el Impostor' },
-        { icon:'🚗', name:'Cultura Chupística', needsCards:false, rules:'Alguien elige un tema y todos van nombrando uno por uno sin repetir. El primero que no pueda seguir, toma', topics: ['Marcas de auto', 'Equipos de fútbol chileno', 'Jugadores de la Roja', 'Estadios de Chile', 'Marcas de piscola/cerveza', 'Discotecas de Santiago', 'Tipos de fernet', 'Marcas de vodka', 'Cócteles clásicos', 'Canciones para la previa'] },
+        { icon:'🚗', name:'Cultura Chupística', needsCards:false, rules:'Alguien elige un tema y todos van nombrando uno por uno sin repetir. El primero que no pueda seguir, toma', topics: ['Marcas de auto', 'Equipos de fútbol chileno', 'Jugadores de la Roja', 'Estadios de Chile', 'Marcas de pisco', 'Discos de Santiago', 'Paises de América', 'Actores', 'Tragos de Bar', 'Canciones de Bad Bunny'] },
+        
+        // --- JUEGOS NUEVOS ---
+        { 
+          icon:'👥', name:'Espalda con Espalda', needsCards:false, weight: 0.2, 
+          rules:'Elige a un jugador y parense espalda con espalda. El grupo hace preguntas. A la cuenta de 3 deben apuntarse a sí mismos o al otro. Si no coinciden, toman 2 tragos.'
+        },
+        { 
+          icon:'⚖️', name:'¿Qué prefieren?', needsCards:false, 
+          rules:'Todo el grupo vota a la cuenta de 3. La minoría toma 2 tragos (si hay empate, toman todos).', 
+          topics: [
+            '¿Saber siempre sin falla cuando alguien te miente? o poder mentir y que nadie nunca se de cuenta?', 
+            '¿Saber cómo vas a morir o cuándo vas a morir?', 
+            '¿Hablar con los animales o dominar todos los idiomas del mundo?', 
+            '¿Comer caca con sabor a torta o torta con sabor a caca?',
+            '¿pillar a tus papás en la cama o que ellos te pillen a ti?',
+            '¿orinarte cada vez que te ríes o excitarte cada vez que lloras?',
+            '¿Poder volar o hacerte invisible?',
+            '¿Estar en la carcel 5 años, o hasta que tu mama le meta un tiro libre a neuer?',
+            '¿Tener un millón de dólares o tener un millón de amigos?',
+            // Agrega más dilemas aquí, siempre entre comillas y separados por comas
+          ] 
+        },
+        // ---------------------
+
         { icon:'🂡', name:'Blackjack (1 mano)', needsCards:true, rules:'1 contra 1: uno hace de casa. Se reparte una sola mano, sin pedir más cartas. El que pierde mata la piscola. Si la casa se pasa de 21, gana el jugador. Empate: repiten la mano' },
         { icon:'⚔️', name:'Guerra de Cartas', needsCards:true, rules:'Todos revelan una carta al mismo tiempo. Gana la carta más alta (A es la más alta). El que pierde toma los tragos acumulados. Si empatan: guerra — 3 cartas boca abajo y se revela la 4ta, el perdedor toma el doble' },
         { icon:'🔮', name:'Calendario Maya', needsCards:true, rules:'Armen anillos de cartas boca abajo: 2 al centro (matar la piscola si fallas), 8 en el anillo interior (3-4 tragos) y 16 en el exterior (5-6 tragos). Por turno, elige una carta y adivina negra o roja antes de darla vuelta. Si aciertas, los tragos se acumulan para el siguiente;  todo lo acumulado' },
@@ -2220,7 +2347,7 @@
 
   // Evento aleatorio es lo que más debe salir; entre el resto (nunca, retos,
   // cultura, trago, regala, juegos) debe variar parejo — por eso pesan igual.
-  var CATEGORY_WEIGHT = { evento: 6, nunca: 1, retos: 1, cultura: 1, trago: 1, regala: 1, juegos: 1 };
+  var CATEGORY_WEIGHT = { evento: 8, nunca: 1, retos: 1, cultura: 1, trago: 1, regala: 1, juegos: 2 };
 
   // "Nombra y regala" y "Retos" están desactivadas. "Trago por cada" solo se
   // activa en modo fútbol; "Cultura general" se puede apagar desde Ajustes.
@@ -2237,11 +2364,11 @@
       if (state.culturaEnabled) keys.push('cultura');
       return keys;
     }
-    // Modo Pre: todas menos deshabilitadas, trago solo si futbol, cultura si enabled o includeCulturaInPre
+    // Modo Pre: todas menos deshabilitadas, trago solo si futbol
     return Object.keys(DECK).filter(function(k){
       if (DISABLED_CATEGORIES.indexOf(k) !== -1) return false;
       if (k === 'trago' && !state.futbol) return false;
-      if (k === 'cultura' && !state.culturaEnabled && !state.includeCulturaInPre) return false;
+      if (k === 'cultura' && !state.culturaEnabled) return false;
       return true;
     });
   }
@@ -2623,13 +2750,13 @@ window.addPlayerFromForm = function() {
     var culturaBtn = '';
     if (mode === 'pre'){
       culturaBtn =
-        '<div class="cultura-toggle" style="margin-top:16px;">' +
-          '<label class="switch" style="margin:0 auto;">' +
-            '<input type="checkbox" data-action="toggle-cultura-pre" ' + (state.includeCulturaInPre ? 'checked' : '') + ' />' +
+        '<div class="cultura-toggle" style="margin-top:16px; display:flex; flex-direction:column; align-items:flex-start;">' +
+          '<label class="switch">' +
+            '<input type="checkbox" data-action="toggle-cultura" ' + (state.culturaEnabled ? 'checked' : '') + ' />' +
             '<span class="track"></span><span class="thumb"></span>' +
           '</label>' +
-          '<div class="card-copy" style="margin-top:8px; text-align:center;">' +
-            (state.includeCulturaInPre
+          '<div class="card-copy" style="margin-top:8px; text-align:left;">' +
+            (state.culturaEnabled
               ? 'Se mezclarán preguntas de Cultura No General en la partida.'
               : 'Activa para añadir trivia y ¿Quién es? de Cultura No General.') +
           '</div>' +
