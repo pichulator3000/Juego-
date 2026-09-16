@@ -1612,7 +1612,7 @@
         { text: 'En How I Met Your Mother, ¿cómo se llama la obra de teatro insufrible y vanguardista que monta Lily para torturar emocionalmente a Barney?', answer: 'Suck It, Lily (Chúpate esa, Lily)' },
         { text: 'En How I Met Your Mother, ¿cómo se llama la canción principal y grandiosa que Barney interpreta en el episodio especial número 100 defendiendo su vestuario?', answer: 'Nothing Suits Me Like a Suit (Nada me queda como un traje)' },
         { text: 'En How I Met Your Mother, ¿dónde viaja finalmente Lily cuando abandona a Marshall antes de su primera boda y cancela el compromiso?', answer: 'A San Francisco (a un programa de arte)' },
-        { text: 'En How I Met Your Mother, ¿qué actor o estrella del pop aparece sorpresivamente como el acompañante de Robin al matrimonio de Barney en la boda imaginaria/chiste?', answer: 'Enrique Iglesias (como Gael)' },
+        { text: 'En How I Met Your Mother, ¿qué actor o estrella del pop aparece sorpresivamente como el acompañante de Robin al matrimonio de Barney en la boda imaginaria/chiste?', answer: 'Enrique Iglesias (como Gael)' }, // Corrección al vuelo
         { text: 'En Friends, ¿a nombre de quién está dirigida la suscripción de la revista TV Guide que llega al apartamento de Joey y Chandler?', answer: 'Miss Chanandler Bong' },
         { text: 'En Friends, ¿cuál es el número final y definitivo del apartamento de Monica tras el cambio de numeración en la primera temporada?', answer: '20' },
         { text: 'En Friends, ¿cuál es el segundo nombre de Chandler Bing?', answer: 'Muriel' },
@@ -3769,7 +3769,38 @@ window.addPlayerFromForm = function() {
       var name = input.value.trim();
       var color = AVATAR_COLORS[state.players.length % AVATAR_COLORS.length];
       state.players.push({ name: name, color: color });
-      render();
+      
+      // Limpiamos la caja y forzamos el foco sin redibujar toda la pantalla
+      input.value = '';
+      input.focus();
+      
+      // Actualizamos el número de jugadores
+      var countEl = document.querySelector('.section-label .count');
+      if (countEl) countEl.textContent = state.players.length;
+      
+      // Añadimos el nuevo jugador visualmente a la lista
+      var grid = document.querySelector('.players-grid');
+      if (grid) {
+        grid.insertAdjacentHTML('beforeend', 
+          '<div class="chip">' +
+            '<span class="avatar" style="background:' + color + '">' + esc(initials(name)) + '</span>' +
+            '<span>' + esc(name) + '</span>' +
+            '<button data-action="remove-player" data-idx="' + (state.players.length - 1) + '" aria-label="Quitar ' + esc(name) + '">✕</button>' +
+          '</div>'
+        );
+      }
+      
+      // Borramos el texto de "Agrega al menos 2..."
+      var emptyHint = document.querySelector('.empty-hint');
+      if (emptyHint) emptyHint.remove();
+      
+      // Activamos el botón de Empezar si ya somos 2 o más
+      if (canStart()) {
+        var startBtn = document.querySelector('.start-btn');
+        if (startBtn) startBtn.removeAttribute('disabled');
+        var startHint = document.querySelector('.start-hint');
+        if (startHint) startHint.style.display = 'none';
+      }
     }
   };
   function renderPlayerSetup(){
