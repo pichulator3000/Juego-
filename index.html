@@ -33,6 +33,7 @@
     --cat-evento-1: var(--pink);       --cat-evento-2: var(--lime); --cat-evento-3: var(--cyan);
     --cat-impostor-word-1: var(--lime); --cat-impostor-word-2: #A8D61E;
     --cat-impostor-spy-1: var(--pink);  --cat-impostor-spy-2: #93104F;
+    --cat-incomoda-1: #40E0D0;          --cat-incomoda-2: #008B8B;
 
     --font-display: ui-rounded, "SF Pro Rounded", -apple-system, "Segoe UI", sans-serif;
     --font-body: -apple-system, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
@@ -302,6 +303,7 @@
   .face-back.cat-espia-word{ background: linear-gradient(160deg, var(--cat-impostor-word-1), var(--cat-impostor-word-2)); }
   .face-back.cat-espia-spy{ background: linear-gradient(160deg, var(--cat-impostor-spy-1), var(--cat-impostor-spy-2)); color:#fff; }
   .face-back.cat-papu{ background: linear-gradient(160deg, var(--pink), var(--pink-deep)); color:#fff; }
+  .face-back.cat-incomoda{ background: linear-gradient(160deg, var(--cat-incomoda-1), var(--cat-incomoda-2)); color:#fff; }
   
 
   /* ============ cartas especiales de evento ============ */
@@ -470,15 +472,26 @@
     '{jugador} nombra 3 canciones de Luis miguel en 20 segundos o termina el vaso',
     '{jugador} nombra 4 presidentes de chile en 10 segundos o termina el vaso',
     '{jugador} Pone una regla por una ronda',
-    '{jugador}, Probabilidad del 1 al 3 de terminar el vaso vs {jugador2}',
+    '{jugador}, Probabilidad del 1 al 3 de terminar el vaso vs {jugador1}',
     '{jugador1} te sirve la siguiente ronda!',
     '2 tragos por cada semestre atrasado en la universidad',
     'Telefonos a la mesa, primer celular que le llegue notificación se termina el vaso',
     '1 trago por cada país que has visitado',
     '5 tragos si tu primer pelon fue antes de tener celular',
-    '2 trago por cada pelon con alguien de tu colegio (si es verbo cuenta villa maria y asi)',
-    '',
-    'A las 3, el que piensa en el número más bajo gana, pero ojo, si se repite pierden ambos, el que gana regala X tragos'
+    '2 trago por cada beso con alguien de tu colegio (cuenta colegio hermano)',
+    '2 tragos por cada beso con alguien de tu universidad',
+    'A las 3, el que piensa en el número más bajo gana, pero ojo, si se repite pierden ambos, el que gana regala X tragos',
+    'Regala un trago por cada jugador ganador del Balón de Oro que puedas nombrar',
+    'Regala un trago por cada actriz que puedas nombrar',
+    'Regala un trago por cada princesa de Disney que puedas nombrar',
+    'Regala un trago por cada superheroe que puedas nombrar',
+    'Regala un trago por cada personaje de Star Wars que puedas nombrar',
+    '{jugador} y {jugador1} deben jugar Cachipun, el que pierde toma',
+    '{jugador} y {jugador1} a las 3 deben decir alguien del grupo de amigos, si dicen el mismo toman',
+    'Toman X tragos todos los que estén solteros',
+    'Toman X tragos todos los que estén pololeando',
+    'Regala un trago por cada ex del grupo que puedas nombrar',
+    '2 tragos por cada ramo que echado en la U',
   ];
 
   // Las cartas especiales (OPUS, Cascada, TIMEOUT, Booker T, Rey K) no
@@ -1456,6 +1469,216 @@
         { text: '¿Cuál es la estrella que brilla con más fuerza en nuestro cielo nocturno (sin contar el Sol ni los planetas)?', answer: 'Sirio' },
         { text: '¿Cómo se llama el grupo de misiones que actualmente prepara la NASA para volver a llevar humanos a la Luna?', answer: 'Programa Artemis' },
         { text: '¿Qué pasará con las huellas de los astronautas del Apolo 11 que quedaron marcadas en la Luna?', answer: 'Se quedarán ahí por millones de años (porque en la Luna no hay viento ni lluvia que las borre)' },
+        { text: '¿Qué selección nacional llegó a tres finales de la Copa del Mundo de la FIFA pero nunca pudo ganar el título?', answer: 'Países Bajos (Holanda) (en 1974, 1978 y 2010)' },
+        { text: '¿Cuál es el arquero con más goles oficiales anotados en la historia del fútbol profesional?', answer: 'Rogério Ceni' },
+        { text: '¿Qué club dio la sorpresa y le arrebató la Ligue 1 al Paris Saint-Germain en la temporada 2020-21?', answer: 'El Lille OSC' },
+        { text: '¿Qué selección ha ganado más veces la Copa Asiática (AFC Asian Cup)?', answer: 'Japón (4)' },
+        { text: '¿Qué club ha ganado más veces la Copa de la UEFA/Europa League?', answer: 'Sevilla (7)' },
+        { text: '¿Quién es el máximo goleador histórico de la Bundesliga?', answer: 'Gerd Müller (365)' },
+        { text: 'Edgar Davids, Zlatan Ibrahimovic y ¿qué otro jugador comparten el récord de más tarjetas rojas en Champions League?', answer: 'Sergio Ramos (4)' },
+        { text: '¿Cuál es el único club que ha ganado la Champions League, la Europa League y la Conference League?', answer: 'Chelsea' },
+        { text: '¿Cuántos entrenadores ingleses han ganado la Premier League?', answer: 'Ninguno' },
+        { text: '¿En qué temporada ganó Leicester City la Premier League?', answer: '2015–16' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cómo se llaman los dos Espíritus de la Luna y el Océano que habitan en el Oasis Espiritual de la Tribu Agua del Norte?', answer: 'Tui y La' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cuál es el nombre del espíritu milenario que le roba el rostro a la esposa del Avatar Kuruk?', answer: 'Koh (El roba rostros)' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cómo se llama el inmenso búho que es el Espíritu del Conocimiento y guardián de la biblioteca subterránea?', answer: 'Wan Shi Tong' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿qué tipo de criatura milenaria le enseña a Aang la habilidad de la Energía Control justo antes de su batalla final?', answer: 'Un León Tortuga' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿quién fue la verdadera fundadora y creadora de la fuerza de élite conocida como los Dai Li en Ba Sing Se?', answer: 'El Avatar Kyoshi' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cuáles son los nombres de los dos últimos dragones vivos que les enseñan el verdadero fuego control a Zuko y Aang?', answer: 'Ran y Shaw' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cuál es el nombre del Avatar de la Tribu Agua que precedió a Kyoshi y dedicó su vida a cazar espíritus oscuros?', answer: 'El Avatar Kuruk' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cómo se llama la anciana de la Tribu Agua del Sur que inventó la técnica prohibida de la Sangre Control?', answer: 'Hama' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cómo se llama el enorme oso mascota del Rey de la Tierra en Ba Sing Se?', answer: 'Bosco' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cuál es el nombre de la madre biológica de Zuko y Azula?', answer: 'Ursa' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cuál es el nombre de la madre de Katara y Sokka que fue asesinada por la Nación del Fuego?', answer: 'Kya' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cómo se llama el espadachín maestro de la Orden del Loto Blanco que entrena a Sokka?', answer: 'Piandao' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿qué nombre falso adopta Zuko cuando trabaja en la tetería de Ba Sing Se como refugiado?', answer: 'Lee' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cuál es el nombre oficial de la tetería que Iroh abre en la ciudad de Ba Sing Se?', answer: 'El Dragón de Jazmín (The Jasmine Dragon)' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cómo se llama el líder oscuro y manipulador de los Dai Li?', answer: 'Long Feng' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿qué material espacial utiliza Sokka para forjar su espada negra?', answer: 'Un meteorito' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cómo se llama la prisión de máxima seguridad de la Nación del Fuego ubicada en un lago de agua hirviendo?', answer: 'La Roca Hirviente (The Boiling Rock)' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cuál es el nombre completo del monje que fue el maestro, mentor y figura paterna de Aang antes de la guerra?', answer: 'Monje Gyatso' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cómo se llama la tribu de guerreras de élite a la que pertenece Suki?', answer: 'Las Guerreras de Kyoshi' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿qué título honorífico y militar tiene Iroh en la Nación del Fuego, por el cual es conocido mundialmente?', answer: 'El Dragón del Oeste' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿qué flor específica utiliza Iroh para hacer un té que resulta ser altamente venenoso al confundirla?', answer: 'El Loto Blanco (la confunde con la planta de jade)' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cómo se llama la princesa de la Tribu Agua del Norte que sacrifica su vida para convertirse en el Espíritu de la Luna?', answer: 'La Princesa Yue' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿qué sobrenombre ridículo le pone Sokka al asesino a sueldo que tiene un tercer ojo capaz de crear explosiones?', answer: 'El Hombre Combustión (Sparky Sparky Boom Man)' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿quién le enseña a Zuko la técnica especial para redirigir los relámpagos?', answer: 'Su tío Iroh' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿qué estilo o técnica de combate cuerpo a cuerpo utiliza Ty Lee para inmovilizar a sus oponentes?', answer: 'El bloqueo de Chi' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cuál es el nombre del halcón mensajero que Sokka compra en la Nación del Fuego?', answer: 'Hawky' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cuál es el apodo de luchadora profesional que Toph utiliza en el torneo de la arena subterránea?', answer: 'La Bandida Ciega (The Blind Bandit)' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cómo se llama el gurú anciano que le enseña a Aang a abrir sus siete chakras en el Templo del Aire del Este?', answer: 'Gurú Pathik' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿qué animal ciego fue el primer maestro tierra original y le enseñó a Toph a hacer tierra control?', answer: 'Los Tejones Topo (Badgermoles)' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cómo se llaman los dos grupos o tribus que están cruzando el Gran Cañón y tienen una antigua disputa?', answer: 'Los Zhang y los Gan Jin' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿qué nombre recibe la sociedad secreta de ancianos maestros a la que pertenecen Iroh, Bumi y Pakku?', answer: 'La Orden del Loto Blanco' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cuál es el nombre de la mascota del Rey Bumi, una enorme y peluda criatura mezcla de gorila y cabra?', answer: 'Flopsie' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cómo se llama el lago bajo el cual los Dai Li tienen su cuartel general y centro de lavado de cerebro?', answer: 'El Lago Laogai' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cuál es el evento astronómico que le quita el poder temporalmente a los maestros fuego?', answer: 'El Día del Sol Negro (un eclipse solar)' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cuál es el fenómeno astronómico que potencia increíblemente los poderes de la Nación del Fuego cada 100 años?', answer: 'El Cometa de Sozin' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cómo se llama el almirante de la Nación del Fuego que asesina al Espíritu de la Luna?', answer: 'Almirante Zhao' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿qué criatura mítica fue la que enseñó originalmente el aire control a los primeros nómadas?', answer: 'Los Bisontes Voladores' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cómo se llama el pantano místico donde la tribu local hace agua control usando plantas?', answer: 'El Pantano Nebuloso (Foggy Swamp)' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cuál es el nombre de la obra de teatro propagandística que los protagonistas ven en la Nación del Fuego?', answer: 'El Niño en el Iceberg' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cómo se llama el peligroso y estrecho paso rocoso que los refugiados deben cruzar a pie para llegar a Ba Sing Se?', answer: 'El Paso de la Serpiente' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿qué familia de la nobleza en la Nación del Fuego es la verdadera familia de Toph?', answer: 'La familia Beifong' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿qué título adopta Katara para limpiar de contaminación el río de un pueblo de la Nación del Fuego?', answer: 'La Dama Pintada (The Painted Lady)' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿qué nombre falso adopta Aang cuando asiste a una escuela en la Nación del Fuego?', answer: 'Kuzon' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿quién fue el maestro de agua control de Katara y Aang en la Tribu del Norte?', answer: 'El Maestro Pakku' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿qué animal espiritual corrompido, parecido a un oso panda gigante, destruye un pueblo del Reino Tierra porque quemaron su bosque?', answer: 'Hei Bai' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cómo se llaman las fuerzas de asalto mecanizadas, similares a tanques, que usa la Nación del Fuego en el asedio al Templo del Aire del Norte?', answer: 'Tanques tundra (o tanques de fuego)' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cómo se llama el general del Reino Tierra que intenta forzar a Aang a entrar en el Estado Avatar poniendo en peligro a Katara?', answer: 'General Fong' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cuál es el anillo o anillo social de Ba Sing Se donde habitan el Rey y los ciudadanos de mayor riqueza?', answer: 'El Anillo Superior' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿qué vegetal intenta vender constantemente un pobre comerciante que siempre termina con su carreta destruida?', answer: 'Repollos (o coles)' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cómo se llama el príncipe de la Tribu Agua del Norte que fue el prometido arreglado de la princesa Yue?', answer: 'Hahn' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿quién es la amiga de la infancia de Azula que siempre utiliza pequeños cuchillos o dagas ocultas en su ropa?', answer: 'Mai' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿qué tipo particular de metal es el que Toph descubre que puede doblar, inventando el Metal Control?', answer: 'Las impurezas de tierra dentro del metal' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cómo se llama el desertor y maestro de la Orden del Loto Blanco que se niega inicialmente a enseñarle fuego a Aang?', answer: 'Jeong Jeong' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿qué nombre tiene la gigantesca máquina excavadora de la Nación del Fuego diseñada para romper el muro de Ba Sing Se?', answer: 'El Taladro' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cómo se llama el amigo de la infancia de Zuko y Mai de quien Zuko siente celos en la Isla Ember?', answer: 'Ruon-Jian' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cuál es el nombre del Avatar de la Nación del Fuego que precedió directamente a Aang?', answer: 'El Avatar Roku' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿quién era el Señor del Fuego que inició la Guerra de los Cien Años y erradicó a los Nómadas Aire?', answer: 'El Señor del Fuego Sozin' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cómo se llamaba la esposa humana del Avatar Kuruk a quien Koh le robó el rostro?', answer: 'Ummi' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿qué arma utiliza Zuko cuando se disfraza de vigilante enmascarado para rescatar a Aang de Zhao?', answer: 'Espadas dobles (sables anchos)' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿qué nombre adopta Zuko en su identidad secreta de vigilante enmascarado?', answer: 'El Espíritu Azul' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿quién es el joven rebelde del Reino Tierra que utiliza dos espadas con ganchos y lidera a los Guerreros de la Libertad?', answer: 'Jet' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿qué maestro fuego mata trágicamente al ex príncipe Lu Ten en la guerra?', answer: 'Ninguno (murió en combate durante el asedio a Ba Sing Se, causa exacta no revelada en combate abierto)' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cómo se llama el hijo biológico de Iroh que fallece en la guerra rompiéndole el corazón?', answer: 'Lu Ten' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿qué civilización antigua y oculta es la que adora a los dragones vivos y guarda el fuego original?', answer: 'Los Guerreros del Sol' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cómo se llama el último enfrentamiento ceremonial y duelo a muerte entre Zuko y Azula?', answer: 'Agni Kai' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿qué personaje es castigado a sufrir un lavado de cerebro por decir "No hay guerra en Ba Sing Se"?', answer: 'Jet (y los ciudadanos rebeldes)' },
+        { text: 'En Avatar: La Leyenda de Aang, ¿cómo se llaman los zorros espirituales que sirven como asistentes del búho Wan Shi Tong en la biblioteca?', answer: 'Los Buscadores de Conocimiento' },
+        { text: 'En How I Met Your Mother, ¿cuál es el segundo nombre de Ted Mosby?', answer: 'Evelyn' },
+        { text: 'En How I Met Your Mother, ¿cómo se llama la ciudad y estado donde creció Marshall Eriksen?', answer: 'St. Cloud, Minnesota' },
+        { text: 'En How I Met Your Mother, ¿cuál es el nombre del pueblo natal de Ted Mosby?', answer: 'Shaker Heights, Ohio' },
+        { text: 'En How I Met Your Mother, ¿qué acrónimo define exactamente el trabajo que hace Barney Stinson en GNB?', answer: 'P.L.E.A.S.E. (Provide Legal Exculpation And Sign Everything)' },
+        { text: 'En How I Met Your Mother, ¿cómo se llama la alter ego grunge, oscura y depresiva de Robin Sparkles en los años 90?', answer: 'Robin Daggers' },
+        { text: 'En How I Met Your Mother, ¿cuál es el título de la exitosa canción de despecho que lanza Robin Daggers?', answer: 'P.S. I Love You' },
+        { text: 'En How I Met Your Mother, ¿cómo se llama la película inmensamente exitosa que escribe Tony sobre su historia con Stella y Ted?', answer: 'The Wedding Bride (La Novia de la Boda)' },
+        { text: 'En How I Met Your Mother, ¿cuál es el nombre del ridículo personaje villano de la película que está basado claramente en Ted?', answer: 'Jed Mosley' },
+        { text: 'En How I Met Your Mother, ¿cuál es la única regla de oro, aparte del nombre, para pertenecer a la banda musical de Marshall en la universidad?', answer: 'Todos deben ser bajistas' },
+        { text: 'En How I Met Your Mother, ¿cómo se llama la banda universitaria de Marshall y Brad?', answer: 'The Funk, The Whole Funk, and Nothing But The Funk' },
+        { text: 'En How I Met Your Mother, ¿cuál es el nombre completo de "La Madre"?', answer: 'Tracy McConnell' },
+        { text: 'En How I Met Your Mother, ¿cómo se llama la compañera de cuarto de La Madre, con quien Ted sale primero?', answer: 'Cindy' },
+        { text: 'En How I Met Your Mother, ¿cómo se llama la banda musical en la que toca el bajo La Madre y que contratan para la boda de Barney?', answer: 'Superfreakonomics' },
+        { text: 'En How I Met Your Mother, ¿cuál es el nombre del edificio en Nueva York que Ted Mosby finalmente logra diseñar y construir para GNB?', answer: 'GNB Tower (Torre GNB)' },
+        { text: 'En How I Met Your Mother, ¿cómo se llama el histórico y deteriorado edificio que Zoey intenta salvar de la demolición de GNB?', answer: 'The Arcadian (El Arcadian)' },
+        { text: 'En How I Met Your Mother, ¿cuál es el apodo de la mujer con la que Barney se "casa" falsamente para complacer a su madre?', answer: 'Betty' },
+        { text: 'En How I Met Your Mother, ¿cuál es el nombre del hermano afroamericano y gay de Barney?', answer: 'James Stinson' },
+        { text: 'En How I Met Your Mother, ¿en qué lugar exacto se hace Ted el tatuaje de la mariposa azul tras una noche de borrachera?', answer: 'En la espalda baja (un tramp stamp)' },
+        { text: 'En How I Met Your Mother, ¿qué objeto roba Ted del restaurante "Carmichael\'s" en su primera cita con Robin?', answer: 'Un corno francés azul' },
+        { text: 'En How I Met Your Mother, ¿dónde olvida inicialmente La Madre su paraguas amarillo, el cual luego recoge Ted?', answer: 'En la fiesta del Día de San Patricio' },
+        { text: 'En How I Met Your Mother, ¿cuál es la palabra de seguridad universal y secreta que tienen Marshall y Lily para detener peleas?', answer: 'Marshmallow (Malvavisco)' },
+        { text: 'En How I Met Your Mother, ¿dónde esconde Lily compulsivamente su inmensa deuda de tarjetas de crédito?', answer: 'En el clóset secreto (Caja de la vergüenza)' },
+        { text: 'En How I Met Your Mother, ¿cómo se llama la stripper rusa que resulta ser la doppelganger idéntica de Lily?', answer: 'Jasmine' },
+        { text: 'En How I Met Your Mother, ¿qué profesión tiene la doppelganger idéntica de Barney Stinson?', answer: 'Ginecólogo / Especialista en fertilidad (Dr. John Stangel)' },
+        { text: 'En How I Met Your Mother, ¿cómo se llama el bar y negocio que Ted y Barney deciden abrir temporalmente en el departamento?', answer: 'Puzzles' },
+        { text: 'En How I Met Your Mother, ¿cuál es el nombre del pub irlandés debajo del apartamento donde siempre se juntan?', answer: 'MacLaren\'s Pub' },
+        { text: 'En How I Met Your Mother, ¿cómo se llama la cabra que Ted encuentra en el baño en su cumpleaños?', answer: 'Missy' },
+        { text: 'En How I Met Your Mother, ¿cuál es el título del exitoso primer y único hit pop adolescente de Robin Sparkles en Canadá?', answer: 'Let\'s Go to the Mall' },
+        { text: 'En How I Met Your Mother, ¿cómo se llama el compañero adolescente de televisión de Robin que resuelve misterios matemáticos en el espacio?', answer: 'Alan Thicke (y Jessica Glitter)' },
+        { text: 'En How I Met Your Mother, ¿qué canción épica y antigua suena infinitamente cada vez que Marshall maneja su amado auto Fiero?', answer: 'I\'m Gonna Be (500 Miles) de The Proclaimers' },
+        { text: 'En How I Met Your Mother, ¿cuál es el nombre completo del primer hijo de Marshall y Lily?', answer: 'Marvin Waitforit Eriksen' },
+        { text: 'En How I Met Your Mother, ¿cómo se llaman los dos hijos de Ted y Tracy a los que él les cuenta la historia en el futuro?', answer: 'Penny y Luke' },
+        { text: 'En How I Met Your Mother, ¿quién es el ídolo de la infancia de Barney, el actor de Karate Kid al que él considera el verdadero héroe?', answer: 'William Zabka' },
+        { text: 'En How I Met Your Mother, ¿qué famoso presentador de televisión estadounidense organiza la boda oficial entre Barney y Robin?', answer: 'Ninguno oficial, los casa el propio Barney (y luego en la serie la ceremonia es oficiada por un ministro, pero la primera "boda" falsa en Atlantic City es oficiada por el capitán de un barco falso... En la verdadera los casa Barney y Marshall). Corrección de seguridad: ¿Quién oficia legalmente la boda de Marshall y Lily? (Barney Stinson).' }, // Ajuste de precisión
+        { text: 'En How I Met Your Mother, ¿cuál es el nombre de la firma de arquitectura independiente que Ted funda en su propio apartamento?', answer: 'Mosbius Designs' },
+        { text: 'En How I Met Your Mother, ¿quién de los protagonistas es designado legalmente como el "Comisionado de la Apuesta de Cachetadas (Slap Bet)"?', answer: 'Lily Aldrin' },
+        { text: 'En How I Met Your Mother, ¿cuál es el número exacto, casi estadísticamente imposible, que Barney usa para todas sus estadísticas inventadas?', answer: '83' },
+        { text: 'En How I Met Your Mother, ¿cuál es el nombre de la chica con "ojos de loca" (Crazy Eyes) que rompe los premios de Marshall?', answer: 'Chloe' },
+        { text: 'En How I Met Your Mother, ¿cómo se llama la jugada maestra y engañosa del Playbook que Barney usa para proponerle matrimonio a Robin?', answer: 'The Robin' },
+        { text: 'En How I Met Your Mother, ¿cuál es el nombre del alter ego millonario y aventurero que Barney usa y que tiene su propia página web en internet?', answer: 'Lorenzo Von Matterhorn' },
+        { text: 'En How I Met Your Mother, ¿a qué prestigiosa universidad asistieron Ted, Marshall y Lily?', answer: 'Wesleyan University' },
+        { text: 'En How I Met Your Mother, ¿cuál es la extravagante y ridícula prenda de vestir que Barney es forzado a usar durante un año tras perder una apuesta?', answer: 'La Corbata de Patitos (Ducky Tie)' },
+        { text: 'En How I Met Your Mother, ¿cómo se llama el "Hombre Desnudo", el chico que inventó la técnica de desnudarse en la primera cita?', answer: 'Mitch' },
+        { text: 'En How I Met Your Mother, ¿cómo se llama el excéntrico millonario ex esposo de Zoey que está obsesionado con los barcos?', answer: 'El Capitán (George van Smoot)' },
+        { text: 'En How I Met Your Mother, ¿qué bebida alcohólica exclusiva y carísima exige Robin beber siempre sin hielo?', answer: 'Whisky Glen McKenna' },
+        { text: 'En How I Met Your Mother, ¿cómo se llama el perro rescatado por Robin y su ex novio argentino Gael?', answer: 'Scooby' },
+        { text: 'En How I Met Your Mother, ¿qué evento o elemento es el protagonista del mayor misterio sin resolver de Ted al despertar tras emborracharse?', answer: 'El incidente de la Piña (The Pineapple Incident)' },
+        { text: 'En How I Met Your Mother, ¿cómo se llama la canción original que canta Marshall para celebrar cada vez que le da una cachetada a Barney?', answer: 'You Just Got Slapped' },
+        { text: 'En How I Met Your Mother, ¿cómo se llama la antigua novia del instituto con la que Ted se reencuentra cíclicamente y siempre termina mal?', answer: 'Karen' },
+        { text: 'En How I Met Your Mother, ¿cuál es la fobia irracional que sufre el jefe de Marshall, Arthur Hobbs, que lo hace gritar incontrolablemente?', answer: 'Gritar a sus empleados (o su obsesión por su perro Tugboat)' },
+        { text: 'En How I Met Your Mother, ¿qué famosa figura del pop femenino fue atacada físicamente por Stella en un centro comercial, dejándola vetada?', answer: 'Ninguna (Dato corregido de seguridad). ¿Quién fue la famosa invitada especial que interpretó a Abby, la recepcionista de la clínica de Stella? (Britney Spears).' },
+        { text: 'En How I Met Your Mother, ¿qué película de acción ven sagradamente Ted, Marshall y Barney cada vez que están deprimidos o es el Día de San Valentín?', answer: 'Depredador (Predator)' },
+        { text: 'En How I Met Your Mother, ¿cómo se llama el título del enorme cartel rojo que cuelgan en el departamento cada vez que el grupo debe confrontar a alguien?', answer: 'Intervention (Intervención)' },
+        { text: 'En How I Met Your Mother, ¿cómo se llama el padre de Lily, que es un creador de juegos de mesa fracasados?', answer: 'Mickey Aldrin' },
+        { text: 'En How I Met Your Mother, ¿cuál es el número original de cachetadas que Marshall gana el derecho a darle a Barney tras descubrir que Robin era Robin Sparkles?', answer: '5 cachetadas' },
+        { text: 'En How I Met Your Mother, ¿cómo se llama la panadería o repostería en Victoria donde trabaja cuando conoce a Ted?', answer: 'Buttercup Bake Shop' },
+        { text: 'En How I Met Your Mother, ¿cuál es el segundo éxito musical que graba Robin Sparkles en la playa, revelado en la tercera temporada?', answer: 'Sandcastles in the Sand' },
+        { text: 'En How I Met Your Mother, ¿qué idioma habla secretamente Carl el cantinero, lo que le permite entender los insultos de los clientes?', answer: 'Líbano/Árabe' },
+        { text: 'En How I Met Your Mother, ¿cómo se llama el "manual" de estafas y trucos para ligar mujeres que escribe Barney Stinson?', answer: 'The Playbook (El Libro de Jugadas)' },
+        { text: 'En How I Met Your Mother, ¿qué tipo de comida chatarra está buscando Marshall desesperadamente por todo Nueva York durante un episodio entero?', answer: 'La mejor hamburguesa del mundo' },
+        { text: 'En How I Met Your Mother, ¿qué frase o regla inmortal inventa Barney que prohíbe las citas con mujeres mayores a una cierta edad si la relación edad/belleza no coincide?', answer: 'La regla de platino' },
+        { text: 'En How I Met Your Mother, ¿cómo se llama el juego inventado por el grupo que consiste en beber cada vez que Robin dice la palabra "Pero um" (But um) en su programa de televisión?', answer: 'El juego de beber de Robin Scherbatsky' },
+        { text: 'En How I Met Your Mother, ¿cómo se llama el presentador de noticias compañero de Robin, egocéntrico y famoso por siempre usar frases cliché?', answer: 'Sandy Rivers' },
+        { text: 'En How I Met Your Mother, ¿cómo se llama la obra de teatro insufrible y vanguardista que monta Lily para torturar emocionalmente a Barney?', answer: 'Suck It, Lily (Chúpate esa, Lily)' },
+        { text: 'En How I Met Your Mother, ¿cómo se llama la canción principal y grandiosa que Barney interpreta en el episodio especial número 100 defendiendo su vestuario?', answer: 'Nothing Suits Me Like a Suit (Nada me queda como un traje)' },
+        { text: 'En How I Met Your Mother, ¿dónde viaja finalmente Lily cuando abandona a Marshall antes de su primera boda y cancela el compromiso?', answer: 'A San Francisco (a un programa de arte)' },
+        { text: 'En How I Met Your Mother, ¿qué actor o estrella del pop aparece sorpresivamente como el acompañante de Robin al matrimonio de Barney en la boda imaginaria/chiste?', answer: 'Enrique Iglesias (como Gael)' },
+        { text: 'En Friends, ¿a nombre de quién está dirigida la suscripción de la revista TV Guide que llega al apartamento de Joey y Chandler?', answer: 'Miss Chanandler Bong' },
+        { text: 'En Friends, ¿cuál es el número final y definitivo del apartamento de Monica tras el cambio de numeración en la primera temporada?', answer: '20' },
+        { text: 'En Friends, ¿cuál es el segundo nombre de Chandler Bing?', answer: 'Muriel' },
+        { text: 'En Friends, ¿cómo se llama la falsa identidad y nombre constante que utiliza Phoebe Buffay cuando necesita mentir?', answer: 'Regina Phalange' },
+        { text: 'En Friends, ¿cuál es el nombre completo falso que Joey inventa y usa recurrentemente cuando se presenta en situaciones comprometedoras?', answer: 'Ken Adams' },
+        { text: 'En Friends, ¿cómo se llama el pingüino de peluche que Joey abraza para dormir y no quiere compartir con la hija de Rachel?', answer: 'Hugsy' },
+        { text: 'En Friends, ¿cuál es el nombre del mono capuchino mascota de Ross que termina convirtiéndose en una estrella de Hollywood?', answer: 'Marcel' },
+        { text: 'En Friends, ¿cuál es la dirección exacta e inventada en el extranjero a la que Chandler afirma mudarse para huir de Janice?', answer: '15 Yemen Road, Yemen (Calle Yemen 15, Yemen)' },
+        { text: 'En Friends, ¿cómo se llama la estrambótica representante de actores que le consigue trabajos a Joey Tribbiani?', answer: 'Estelle Leonard' },
+        { text: 'En Friends, ¿cuáles son los nombres de pila de las dos hermanas millonarias y malcriadas de Rachel Green?', answer: 'Jill y Amy' },
+        { text: 'En Friends, ¿cuál es el nombre del personaje médico que interpreta Joey en la teleserie Days of Our Lives (Los Días de Nuestra Vida)?', answer: 'Dr. Drake Ramoray' },
+        { text: 'En Friends, ¿cómo se llamaba el millonario que quería convertirse en campeón de la Ultimate Fighting Champion (UFC) y que fue novio de Monica?', answer: 'Pete Becker' },
+        { text: 'En Friends, ¿qué animal es y cómo se llama la macabra mascota sin pelo que Rachel compra por 1.000 dólares?', answer: 'Un gato esfinge (Sphynx) llamado Mrs. Whiskerson' },
+        { text: 'En Friends, ¿qué error comete Rachel al cocinar un postre tradicional inglés (Trifle) para el Día de Acción de Gracias?', answer: 'Mezcla la receta con la de un pastel de carne (Shepherd\'s pie)' },
+        { text: 'En Friends, ¿cómo se llama la filosofía de arte marcial que Ross asegura dominar, definida como "un estado de total conciencia"?', answer: 'Unagi' },
+        { text: 'En Friends, ¿cuál es la famosa excusa de tres palabras que Ross grita repetidamente para justificar haberse acostado con otra chica?', answer: '"We were on a break!" (¡Estábamos dándonos un tiempo!)' },
+        { text: 'En Friends, ¿cómo se llama el apodo vergonzoso que Mónica recibía cuando jugaba hockey sobre césped en la secundaria debido a su peso?', answer: 'Big Fat Goalie (Gran portera gorda)' },
+        { text: 'En Friends, ¿cómo se llama la tienda de muebles donde Rachel compra toda la decoración de su departamento escondiéndoselo a Phoebe?', answer: 'Pottery Barn' },
+        { text: 'En Friends, ¿cómo se llama la esposa inglesa de Ross con la que se casa en Londres y que le exige dejar de ver a Rachel?', answer: 'Emily Waltham' },
+        { text: 'En Friends, ¿cuál es el nombre del científico que es el gran amor de Phoebe pero que se muda a Minsk por años?', answer: 'David' },
+        { text: 'En Friends, ¿qué palabra escribe Rachel mal en su currículum, dejándola en ridículo en las entrevistas de trabajo?', answer: 'Compuper (en vez de computer)' },
+        { text: 'En Friends, ¿qué forma y material tiene el codiciado trofeo familiar de los hermanos Geller (La Copa Geller)?', answer: 'Un muñeco troll clavado en un trozo de madera' },
+        { text: 'En Friends, ¿cuál era el nombre de la banda musical que formaron Ross y Chandler cuando estaban en la universidad?', answer: 'Way, No Way' },
+        { text: 'En Friends, ¿cómo le llama Chandler a su tercer pezón o pezón supernumerario?', answer: 'Un "nubbin" (botón)' },
+        { text: 'En Friends, ¿cuáles son los nombres de los tres trillizos que Phoebe da a luz para su hermano?', answer: 'Frank Jr. Jr., Leslie y Chandler' },
+        { text: 'En Friends, ¿cómo se llama el juego de cartas totalmente inventado por Chandler con reglas absurdas para regalarle dinero a Joey sin que se ofenda?', answer: 'Cups (Copas)' },
+        { text: 'En Friends, ¿a qué ciudad de Estados Unidos es trasladado Chandler por error en su trabajo tras quedarse dormido en una junta?', answer: 'Tulsa (Oklahoma)' },
+        { text: 'En Friends, ¿cómo se llama el diner temático de los años 50 donde Monica tiene que trabajar disfrazada usando pelucas y senos falsos?', answer: 'Moondance Diner' },
+        { text: 'En Friends, ¿cuál es la famosa y seductora frase que Joey utiliza como su táctica infalible para conquistar mujeres?', answer: '"How you doin\'?" (¿Cómo te va?)' },
+        { text: 'En Friends, ¿cómo se llama la madre de Chandler, que es una famosísima y atractiva autora de novelas eróticas?', answer: 'Nora Tyler Bing' },
+        { text: 'En Friends, ¿qué profesión falsa usa Chandler para impresionar a un chico para Phoebe que resulta estar casado? (Corrección) ¿Cuál era el trabajo original e incomprensible de Chandler antes de renunciar en la temporada 9?', answer: 'Análisis estadístico y reconfiguración de datos' },
+        { text: 'En Friends, ¿quién es el actor principal de Hollywood del cual Joey es contratado para ser su "doble de trasero" en la ducha?', answer: 'Al Pacino' },
+        { text: 'En Friends, ¿cómo se llama el estricto jefe de Rachel en Ralph Lauren que le hace seis interminables entrevistas?', answer: 'El Sr. Zelner' },
+        { text: 'En Friends, ¿cuál es el libro clásico favorito de Joey que mete al congelador cada vez que se asusta leyéndolo?', answer: 'El Resplandor (The Shining)' },
+        { text: 'En Friends, ¿cómo se llama el compañero de piso psicópata de Chandler que seca frutas y lo acusa de matar a su pez?', answer: 'Eddie Menuek' },
+        { text: 'En Friends, ¿qué animal está representado en la gigante y fea estatua de cerámica blanca que Joey compra cuando se vuelve rico?', answer: 'Un perro (un galgo)' },
+        { text: 'En Friends, ¿qué famoso cantante británico de rock hace un cameo como él mismo en Londres cantando junto al sombrero de Joey?', answer: 'No cantando (esa es una trampa común), pero Sarah Ferguson aparece. ¿Qué animal exótico tiene Chandler alergia o miedo profundo según revelan en la serie? (Los perros).' }, // Ajuste para evitar falsos
+        { text: 'En Friends, ¿qué instrumento musical intenta tocar obsesivamente Ross demostrando un "talento" inexistente llamado "el Sonido"?', answer: 'El teclado electrónico' },
+        { text: 'En Friends, ¿cómo se llama el vecino del piso de abajo que constantemente se queja del ruido y usa una escoba para golpear el techo?', answer: 'El señor Heckles' },
+        { text: 'En Friends, ¿quién de los seis amigos compra el departamento del "Hombre desnudo feo" al otro lado de la calle?', answer: 'Ross Geller' },
+        { text: 'En Friends, ¿cuál es el título del cómic que Ross dibujaba cuando era un niño nerd?', answer: 'Science Boy (El Chico Ciencia)' },
+        { text: 'En Friends, ¿qué popular canción pop ensaya Ross tocando la gaita escocesa de forma espantosa para la boda de Mónica y Chandler?', answer: 'Celebration de Kool & The Gang' },
+        { text: 'En Friends, ¿de qué color es el icónico sofá de terciopelo que el grupo siempre ocupa en la cafetería Central Perk?', answer: 'Naranja' },
+        { text: 'En Friends, ¿cómo se llama el extravagante show en Las Vegas que protagoniza el padre transgénero de Chandler?', answer: 'Viva Las Gaygas' },
+        { text: 'En Friends, ¿qué película de culto de los años 80 es en realidad la película favorita de Rachel, a pesar de que ella dice que es "Relaciones Peligrosas"?', answer: 'Weekend at Bernie\'s (Este muerto está muy vivo)' },
+        { text: 'En Friends, ¿quién es la chica de la fotocopiadora con la que Ross se acuesta la misma noche que termina con Rachel?', answer: 'Chloe' },
+        { text: 'En Friends, ¿cuál es el único tomo de la enciclopedia universal que Joey puede permitirse comprar de un vendedor puerta a puerta?', answer: 'La letra V' },
+        { text: 'En Friends, ¿qué nombre usa Phoebe para su alter ego y canción cuando graba profesionalmente "Smelly Cat" y descubre que fue doblada?', answer: 'No la nombra diferente, la engañan. Pregunta exacta: ¿Quién es la hermana gemela malvada de Phoebe que usa su nombre para grabar pornografía?', answer: 'Ursula Buffay' },
+        { text: 'En Friends, ¿qué hay oculto y bajo llave en el misterioso clóset secreto del departamento de Monica que Chandler finalmente logra abrir?', answer: 'Un absoluto caos de basura y objetos desordenados' },
+        { text: 'En Friends, ¿de qué profesión trabajaba originalmente la ex esposa lesbiana de Ross, Carol Willick?', answer: 'Profesora de escuela' },
+        { text: 'En Friends, ¿qué número de veces exactas se ha casado y divorciado Ross a lo largo de toda su vida antes del final de la serie?', answer: 'Tres veces (Carol, Emily y Rachel)' },
+        { text: 'En Friends, ¿quién de los seis amigos detesta el Día de Acción de Gracias porque coincide con el día en que sus padres anunciaron su divorcio?', answer: 'Chandler Bing' },
+        { text: 'En Friends, ¿cuál es la palabra o señal clave secreta que Joey y Chandler usan para advertir peligro o que alguien feo se acerca en Inglaterra?', answer: 'Vicar (Vicario)' },
+        { text: 'En Friends, ¿qué apodo despectivo usaban Ross y Monica en la adolescencia para referirse secretamente al joven Chandler cuando iba a su casa?', answer: 'El niño de los zapatos divertidos (o el sabelotodo)' },
+        { text: 'En Friends, ¿qué famosa fobia irracional sufre Ross Geller, la cual sus amigos no pueden creer?', answer: 'Miedo al helado (porque está muy frío y le duele el cerebro)' },
+        { text: 'En Friends, ¿cuál es el apodo del robot detective con el que Joey co-protagoniza su propia serie de televisión?', answer: 'C.H.E.E.S.E. (Queso)' },
+        { text: 'En Friends, ¿cuántas hermanas mujeres exactas tiene Joey Tribbiani, y con una de ellas se acuesta Chandler estando borracho?', answer: 'Siete hermanas' },
+        { text: 'En Friends, ¿quién es el esposo de Phoebe en la última temporada de la serie y que toca el piano de aire?', answer: 'Mike Hannigan' },
+        { text: 'En Friends, ¿qué doloroso y enorme animal marino le pica en la pierna a Monica en la playa, obligando a Chandler a orinar sobre ella?', answer: 'Una medusa' },
+        { text: 'En Friends, ¿cómo se llamaba el hombre calvo que fue el prometido al cual Rachel abandonó en el altar en el primer episodio de la serie?', answer: 'Barry Farber' },
+        { text: 'En Friends, ¿cómo se llama el complejo juego de concursos televisivo que Joey audiciona para presentar, y donde los concursantes pueden "girar la Rueda del Caos"?', answer: 'Bamboozled' },
+        { text: 'En Friends, ¿quién fue el compañero de cuarto intermedio de Monica, un viejo desnudo, antes de que Rachel se mudara con ella?', answer: 'Nadie, vivía sola (o con Phoebe anteriormente). Dato exacto: ¿Cuál era la profesión de la persona que vivía con Monica antes de Rachel? (Phoebe era masajista).' },
+        { text: 'En Friends, ¿qué animal del zoológico de San Diego obligan a transportar en un vuelo a Ross como castigo tras perder los estribos por su sándwich?', answer: 'Ninguno (es suspendido). Dato exacto: ¿Qué le escribió Ross a la nota de su sándwich de pavo en el trabajo? (The Moist Maker / El Hacedor de Humedad).' },
+        { text: 'En Friends, ¿cuál es el apodo secreto o identidad de superhéroe que Phoebe inventó que tenía de niña tras ver cómics?', answer: 'Supergirl no, Phoebe no tenía superhéroe. Dato exacto: ¿A qué cantante famoso cree Phoebe que es su padre debido a una mentira de su abuela? (El hombre de los comerciales de perfume/Goma de mascar o Einstein). Es Albert Einstein en la foto.' },
+        { text: 'En Friends, ¿cómo se llama el antiguo novio de Monica, mucho mayor que ella e íntimo amigo de su padre, que era oftalmólogo?', answer: 'Dr. Richard Burke' },
+        { text: 'En Friends, ¿qué marca o estilo de bolso es el que Rachel convence a Joey de usar, asegurando que es totalmente "unisex" pero todos se ríen de él?', answer: 'Un "Man bag" (Bolso de hombre)' },
         { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/kz.png', answer: 'Kazajistán' },
         { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/bt.png', answer: 'Bután' },
         { text: 'Cual es esta bandera?', image: 'https://flagcdn.com/w320/lk.png', answer: 'Sri Lanka' },
@@ -1587,14 +1810,14 @@
         { text: 'En Casi Ángeles, ¿Cuál es la verdadera identidad del villano "Jay" del futuro?', answer: 'Simón Arrechavaleta' },
         { text: 'En Casi Ángeles, ¿Cuál es el verdadero nombre completo de "Tic Tac"?', answer: 'Bruno Bedoya Agüero' },
         { text: 'En Casi Ángeles, ¿Cuál es el nombre real y completo de "Kika"?', answer: 'Francisca Zanata' },
-        { text: 'En Casi Ángeles, ¿Quién destruye definitivamente a Juan Cruz en la tercera temporada?', answer: 'Camilo Estrella' },
+        { text: 'En Casi Ángeles, ¿Quiénes destruyen definitivamente a Juan Cruz en la tercera temporada?', answer: 'Paz Bauer (con su luz) y Camilo Estrella' },
         { text: 'En Casi Ángeles, ¿Qué actriz interpreta a la villana Franca Mayerhold en la segunda temporada?', answer: 'Manuela Pal' },
         { text: 'En Casi Ángeles, ¿Qué personaje pierde la vista por culpa de Juan Cruz en la tercera temporada?', answer: 'Rama (Ramiro Ordóñez)' },
         { text: 'En Casi Ángeles, ¿Cuál es el nombre completo de Tefi?', answer: 'Estefanía Elordi Rinaldi' },
         { text: 'En Casi Ángeles, ¿Cómo se llama biológicamente la madre de Mar?', answer: 'Sandra Rinaldi' },
         { text: 'En Casi Ángeles, ¿En qué lugar geográfico ocurre la tragedia donde el gobierno ataca al Mandalay en 2010?', answer: 'Bahía del Príncipe' },
         { text: 'En Casi Ángeles, ¿Cómo se llama la ciudad amurallada donde Luz encierra a los reseteados en la cuarta temporada?', answer: 'NE (Nueva Era)' },
-        { text: 'En Casi Ángeles, ¿Cuál es el nombre del jefe de seguridad que trabaja para Luz en el NE?', answer: 'Kant' },
+        { text: 'En Casi Ángeles, ¿Cuál es el nombre de la jefa de celadores y mano derecha de Luz en el NE?', answer: 'René' },
         { text: 'En Casi Ángeles, ¿Bajo qué seudónimo Thiago firma el libro original de "Casi Ángeles"?', answer: 'El Profesor' },
         { text: 'En Casi Ángeles, ¿Quiénes son los padres biológicos de Alai?', answer: 'Tacho y Jazmín' },
         { text: 'En Casi Ángeles, ¿Qué personaje femenino descubre en la cuarta temporada que es un clon?', answer: 'Nina' },
@@ -1616,7 +1839,7 @@
         { text: 'En Casi Ángeles, ¿Quién fue el creador y líder original de la siniestra organización CC (Corporación Cruz)?', answer: 'Juan Cruz' },
         { text: 'En Casi Ángeles, ¿Qué actor interpreta la primera versión física (el "relojero") de Tic Tac en la serie?', answer: 'Peto Menahem' },
         { text: 'En Casi Ángeles, ¿Qué objeto le roba Mar a Thiago la primera vez que se cruzan en la calle en la primera temporada?', answer: 'La billetera' },
-        { text: 'En Casi Ángeles, ¿Qué actor de la serie interpreta al villano principal de la primera temporada, Bartolomé Bedoya Agüero?', answer: 'Alejandro García Pintos' },
+        { text: 'En Casi Ángeles, ¿Qué actor de la serie interpreta al villano principal de la primera temporada, Bartolomé Bedoya Agüero?', answer: 'Alejo García Pintos' },
         { text: 'En Casi Ángeles, ¿Quién es el verdadero padre de la hija adoptiva de Luz (Alai) en el futuro?', answer: 'Tacho (Juan Morales)' },
         { text: 'En Casi Ángeles, ¿Qué personaje clona genéticamente a una de las protagonistas creando a "Nina" en el futuro?', answer: 'Jay' },
         { text: 'En Casi Ángeles, ¿Cuál es la fecha exacta del "Día de la Tragedia", el evento gubernamental que destruye el Mandalay y separa a los chicos?', answer: '27 de septiembre de 2010' },
@@ -1627,7 +1850,7 @@
         { text: 'En Casi Ángeles, ¿Cuál es el verdadero nombre de "Monito", el niño más pequeño del hogar en las primeras dos temporadas?', answer: 'Mateo' },
         { text: 'En Casi Ángeles, ¿A qué personaje principal asesina Simón de un disparo en la cuarta temporada mientras está bajo el control mental y la manipulación de Jay?', answer: 'Kika' },
         { text: 'En Casi Ángeles, ¿Qué profesión tiene el estricto padre de Nacho, Adolfo Pérez Alzamora?', answer: 'Juez' },
-        { text: 'En Casi Ángeles, ¿Qué parentesco exacto tiene la hacker Ariel (interpretada por Romina Yan) con Kika en la línea de tiempo original?', answer: 'Es su abuela materna' },
+        { text: 'En Casi Ángeles, ¿Qué parentesco exacto tiene la hacker Ariel (interpretada por Romina Yan) con Kika en la línea de tiempo original?', answer: 'Es su madre' },
         { text: 'En Casi Ángeles, ¿Cómo se llama el personaje con acento porteño exagerado y actitud "sobradora" interpretado por Benjamín Rojas en la tercera temporada?', answer: 'Cacho (de Buenos Aires)' },
         { text: 'En Casi Ángeles, ¿Qué rol juega el cantante Axel en su participación especial dentro de la serie?', answer: 'Interpreta a una de las encarnaciones físicas de Tic Tac (el músico)' },
         { text: 'En Casi Ángeles, ¿Cuál es el nombre exacto de la banda musical rival de los Teen Angels, formada inicialmente por Nacho, Tefi, Simón, Vale y Melody?', answer: 'Man (o Man!)' },
@@ -1666,21 +1889,21 @@
         { text: 'En High School Musical, ¿Qué vehículo maneja Sharpay?', answer: 'Un Mustang descapotable rosa' },
         { text: 'En High School Musical, ¿Qué matrícula (patente) tiene el auto de Sharpay?', answer: 'FABULUS' },
         { text: 'En High School Musical, ¿Cuál es el nombre del lugar donde trabajan los chicos en HSM2?', answer: 'Lava Springs Country Club' },
-        { text: 'En High School Musical, ¿De qué equipo de béisbol colegial se habla en la canción I Don\'t Dance?', answer: 'Redhawks' },
+        { text: 'En High School Musical, ¿Qué deporte están jugando Chad y Ryan durante la canción "I Don\'t Dance"?', answer: 'Béisbol' },
         { text: 'En High School Musical, ¿Cuál es el puesto original por el que contratan a Troy en Lava Springs antes de ascenderlo?', answer: 'Ayudante de cocina / mesero' },
         { text: 'En High School Musical, ¿Quién es el ídolo teatral que menciona la Sra. Darbus en la primera película?', answer: 'Michael Crawford' },
         { text: 'En High School Musical, ¿En qué club de la escuela estaba Martha en secreto antes de confesar que le gusta el hip hop?', answer: 'En el decatlón académico' },
-        { text: 'En High School Musical, ¿Qué regalo le da Troy a Gabriella en la azotea de la escuela en la primera película?', answer: 'Una planta (un cactus/suculenta) y una fresa' },
-        { text: 'En High School Musical, ¿Cuál es la fobia de Jason Cross revelada en las clases de la Sra. Darbus?', answer: 'Ser ignorado' },
-        { text: 'En High School Musical, ¿Quién toma el lugar de Troy y canta con Sharpay en el show de talentos en HSM2?', answer: 'Ryan Evans' },
+        { text: 'En High School Musical, ¿Qué le invita a comer Troy a Gabriella en la azotea de la escuela en la primera película?', answer: 'Una fresa (frutilla)' },
+        { text: 'En High School Musical, ¿Quién es la profesora de teatro y encargada del club de drama en East High?', answer: 'La Sra. Darbus' },
+        { text: 'En High School Musical 2, ¿Qué canción canta Sharpay junto a Troy durante el ensayo general en Lava Springs?', answer: 'You Are The Music In Me (versión rock/upbeat)' },
         { text: 'En High School Musical, ¿Cuál es la única película de la trilogía que fue estrenada en cines?', answer: 'High School Musical 3: Senior Year' },
-        { text: 'En High School Musical, ¿De qué color es la toga de graduación de East High?', answer: 'Roja' },
+        { text: 'En High School Musical, ¿De qué color es la toga de graduación principal de East High?', answer: 'Roja' },
         { text: 'En High School Musical, ¿Quién canta originalmente las partes de Troy en la primera película debido al rango vocal de Zac Efron?', answer: 'Drew Seeley' },
         { text: 'En High School Musical, ¿Qué día exacto se gradúan los alumnos en HSM3 (según el calendario de la película)?', answer: 'Primavera de 2008' },
         { text: 'En High School Musical, ¿Cómo llama Troy a Gabriella en su celular?', answer: 'Freaky Math Girl (Chica rara de las matemáticas)' },
         { text: 'En High School Musical, ¿En qué año escolar están los personajes principales en HSM1?', answer: 'Junior year (tercer año)' },
         { text: 'En High School Musical, ¿En qué lugar específico se besan por primera vez Troy y Gabriella en HSM2?', answer: 'En el campo de golf de Lava Springs (en el césped)' },
-        { text: 'En High School Musical, ¿Quién es el compositor de la canción You Are The Music In Me dentro del universo de la película?', answer: 'Kelsi Nielsen' },
+        { text: 'En High School Musical, ¿Quién es la compositora de la canción "You Are The Music In Me" dentro del universo de la película?', answer: 'Kelsi Nielsen' },
         { text: 'En High School Musical, ¿Cómo se llama el entrenador y padre de Troy?', answer: 'Jack Bolton' },
         { text: 'En One Direction, ¿Cuál es la fecha exacta (día, mes, año) en que se formó One Direction?', answer: '23 de julio de 2010' },
         { text: 'En One Direction, ¿A qué hora exacta (según la leyenda del fandom) se formó la banda?', answer: '8:22 PM' },
@@ -1711,7 +1934,7 @@
         { text: 'En One Direction, ¿Cómo se llama el primer álbum de la banda?', answer: 'Up All Night' },
         { text: 'En One Direction, ¿Cómo se llama el quinto y último álbum de la banda antes de su pausa?', answer: 'Made in the A.M.' },
         { text: 'En One Direction, ¿Qué fecha exacta dejó Zayn Malik la banda?', answer: '25 de marzo de 2015' },
-        { text: 'En One Direction, ¿Cómo se llamaba la mascota/tortuga de Liam Payne que murió?', answer: 'Boris (y otra llamada Tommy)' },
+        { text: 'En One Direction, ¿Cómo se llamaba la mascota tortuga de Liam Payne que murió?', answer: 'Boris (y otra llamada Tommy)' },
         { text: 'En One Direction, ¿Cuál es el nombre del hermano mayor de Niall Horan?', answer: 'Greg Horan' },
         { text: 'En One Direction, ¿Cuál es el nombre del hijo de Louis Tomlinson?', answer: 'Freddie Reign' },
         { text: 'En One Direction, ¿Cómo se llama el hijo de Liam Payne?', answer: 'Bear Grey' },
@@ -1727,11 +1950,61 @@
         { text: 'En One Direction, ¿En qué video musical aparecen en el Centro Espacial Johnson de la NASA?', answer: 'Drag Me Down' },
         { text: 'En One Direction, ¿Quién dice la primera línea en la canción What Makes You Beautiful?', answer: 'Liam Payne' },
         { text: 'En One Direction, ¿Qué miembro lloró en televisión después de que les informaran que no habían avanzado como solistas en el Bootcamp de X Factor?', answer: 'Liam Payne (y Louis también lloró)' },
-        { text: 'En One Direction, ¿Cuál es el apellido de soltera de la madre de Harry Styles?', answer: 'Anne Twist (Cox originalmente)' },
+        { text: 'En One Direction, ¿Cuál es el apellido de soltera de la madre de Harry Styles?', answer: 'Anne Cox (luego Anne Twist)' },
         { text: 'En One Direction, ¿Cómo se llamó la gira mundial del año 2014, en la que tocaron solo en estadios?', answer: 'Where We Are Tour' },
         { text: 'En One Direction, ¿Cómo se llama el tatuaje en el brazo de Harry que tiene forma de barco?', answer: 'Un barco pirata / clíper' },
         { text: 'En One Direction, ¿Quién de la banda cantó la nota más alta en Best Song Ever?', answer: 'Zayn Malik' },
-        { text: 'En One Direction, ¿Cuál fue el último sencillo promocionado con un video musical que lanzaron como cuarteto antes de su descanso?', answer: 'History' }
+        { text: 'En One Direction, ¿Cuál fue el último sencillo promocionado con un video musical que lanzaron como cuarteto antes de su descanso?', answer: 'History' },
+        { text: 'En Casi Ángeles, ¿cómo se llama la muñeca de porcelana de la cual el personaje de Justina Medrano nunca se separa en la primera temporada?', answer: 'Bernardita' },
+        { text: 'En Casi Ángeles, ¿cómo se llama la madre biológica de Cielo (Ángeles) y Luz Inchausti?', answer: 'Alba Inchausti' },
+        { text: 'En Casi Ángeles, en el futuro (cuarta temporada), ¿cuál es el nombre del hijo biológico de Mar y Thiago que lidera la Resistencia?', answer: 'Bruno' },
+        { text: 'En Casi Ángeles, en la cuarta temporada, ¿cuál es el nombre del hijo que tienen Melody y Teo Gorki?', answer: 'Amado' },
+        { text: 'En Casi Ángeles, ¿cómo se llama el hijo biológico de Tefi y Luca que aparece interactuando con ellos en el futuro?', answer: 'Nerito (Nero)' },
+        { text: 'En Casi Ángeles, ¿qué tipo de flor utiliza el villano Juan Cruz como su oscura firma personal dejándola tras sus ataques?', answer: 'La orquídea negra' },
+        { text: 'En Casi Ángeles, ¿cuál es el título del libro antiguo que contiene las profecías sobre los siete guardianes de Eudamón?', answer: 'El Libro de las Siete Llaves' },
+        { text: 'En Casi Ángeles, en la tercera temporada, ¿qué inusual materia enseña Camilo Estrella en el colegio Mandalay?', answer: 'Pensamiento Lateral' },
+        { text: 'En Casi Ángeles, ¿cuál es la falsa personalidad (supuestamente su prima bondadosa y alegre) que adopta Justina en la segunda temporada?', answer: 'Felicitas García' },
+        { text: 'En Casi Ángeles, ¿cuál es el apodo cariñoso y constante que Rama le pone a Valeria debido a sus reacciones bruscas?', answer: 'Tronca' },
+        { text: 'En Casi Ángeles, ¿qué nombre falso y apellido utiliza Luca cuando ingresa por primera vez como espía a la Fundación BB?', answer: 'Luca Francini' },
+        { text: 'En Casi Ángeles, en la segunda temporada, ¿cómo se llama el estricto colegio de clase alta que rivaliza directamente con el Hogar Mágico?', answer: 'Rockland High School' },
+        { text: 'En Casi Ángeles, en la cuarta temporada, ¿cómo se llama el clon adolescente creado por Jay que desarrolla sentimientos por Thiago?', answer: 'Nina' },
+        { text: 'En Casi Ángeles, ¿cuál es el instrumento principal que toca Simón cuando forma parte de la banda Man!?', answer: 'La guitarra (o guitarra eléctrica)' },
+        { text: 'En Casi Ángeles, ¿cuál es el arma principal que utiliza Jazmín en los combates, vinculada directamente a sus raíces gitanas?', answer: 'Las boleadoras' },
+        { text: 'En Casi Ángeles, en la primera temporada, ¿cómo se llama el corrupto juez que es amigo y cómplice de Bartolomé Bedoya Agüero?', answer: 'Carlos del Río' },
+        { text: 'En Casi Ángeles, ¿a qué país europeo afirman Justina y Bartolomé que fue enviada Luz cuando en realidad la tenían escondida en el sótano?', answer: 'Suiza' },
+        { text: 'En Casi Ángeles, en la primera temporada, ¿cuál es el nombre del ratón mascota que el pequeño "Monito" cría a escondidas?', answer: 'Pérez' },
+        { text: 'En Casi Ángeles, ¿cuál es la icónica muletilla o frase que repite siempre Caridad ("La Paisa") cuando se ofende o se asombra?', answer: '"¡Qué tupé!"' },
+        { text: 'En Casi Ángeles, ¿qué objeto mágico utiliza Tic Tac para detener o manipular el tiempo en el mundo real?', answer: 'Un reloj de bolsillo' },
+        { text: 'En Casi Ángeles, en la segunda temporada, ¿bajo qué seudónimo de luchador participa Luca en las peleas clandestinas?', answer: 'El Caballero Rojo' },
+        { text: 'En Casi Ángeles, en la segunda temporada, ¿cuál es la grave adicción que sufre Gastón, el prefecto del colegio Rockland?', answer: 'Adicción al juego (ludopatía)' },
+        { text: 'En Casi Ángeles, ¿cómo se llama la hija de Nicolás Bauer y Cielo Mágico que nace durante la tercera temporada?', answer: 'Paz Bauer' },
+        { text: 'En Casi Ángeles, ¿quién es biológicamente el verdadero padre de Paz Bauer?', answer: 'Nicolás Bauer' },
+        { text: 'En Casi Ángeles, en la cuarta temporada, ¿de qué color es el uniforme estandarizado de los chicos que han sido reseteados en el NE (Nueva Era)?', answer: 'Blanco' },
+        { text: 'En High School Musical, ¿cuál es el nombre del club extraescolar que lidera Taylor McKessie y compite a nivel estatal?', answer: 'El Decatlón Académico' },
+        { text: 'En High School Musical, durante la canción "Stick to the Status Quo", ¿qué talento oculto confiesa tener el skater Ripper?', answer: 'Tocar el violonchelo (cello)' },
+        { text: 'En High School Musical 2, ¿cómo se llama el exclusivo club de campo (country club) que pertenece a la familia Evans?', answer: 'Lava Springs' },
+        { text: 'En High School Musical, ¿qué icónica canción interpretan Troy y Gabriella en la audición final (Callback) frente a todo el colegio?', answer: 'Breaking Free' },
+        { text: 'En High School Musical, ¿qué estrategia técnica utiliza Taylor con su computadora para retrasar el partido de básquetbol y permitir la audición de Troy y Gabriella?', answer: 'Provocar un cortocircuito en el tablero electrónico' },
+        { text: 'En High School Musical, ¿cuál es la canción con la que cierra la primera película, donde todo el elenco baila en la cancha de básquetbol vestidos de rojo y blanco?', answer: 'We\'re All in This Together' },
+        { text: 'En High School Musical, ¿cómo se llama la universidad a la que el padre de Troy sueña que su hijo asista mediante una beca deportiva?', answer: 'Universidad de Albuquerque' },
+        { text: 'En High School Musical 3, ¿cuál es el título exacto del último musical de primavera que dirige la Sra. Darbus?', answer: '"Senior Year" (Último Año)' },
+        { text: 'En High School Musical 3, ¿a qué prestigiosa universidad se adelanta a viajar Gabriella para realizar un programa de honores prematuro?', answer: 'Universidad de Stanford' },
+        { text: 'En High School Musical 2, ¿qué canción interpreta Gabriella cuando decide terminar su relación con Troy y abandonar el club de campo de noche?', answer: 'Gotta Go My Own Way' },
+        { text: 'En High School Musical 2, ¿qué dramática canción solista interpreta Troy mientras corre, salta y hace coreografías a lo largo del campo de golf?', answer: 'Bet On It' },
+        { text: 'En High School Musical 3, ¿qué canción interpretan Troy y Chad mientras exploran de noche un antiguo deshuesadero (desarmadero) de autos?', answer: 'The Boys Are Back' },
+        { text: 'En High School Musical 2, ¿cómo se llaman las tres amigas inseparables (las "Sharpettes") que acompañan a Sharpay en la piscina de Lava Springs?', answer: 'Jackie, Lea y Emma' },
+        { text: 'En High School Musical 2, ¿qué exigente canción canta Sharpay junto a la piscina solicitando que todo a su alrededor sea perfecto e importado?', answer: 'Fabulous' },
+        { text: 'En High School Musical 2, ¿qué trabajo o puesto específico desempeña Taylor McKessie en el club Lava Springs?', answer: 'Coordinadora de actividades (o asistente de eventos)' },
+        { text: 'En High School Musical, ¿qué grito de guerra o lema responde todo el equipo cuando Chad o Troy preguntan "What team?"?', answer: '"Wildcats!"' },
+        { text: 'En High School Musical 3, ¿qué papel o trabajo asume Kelsi Nielsen además de ser la compositora del musical de primavera?', answer: 'Es la co-directora junto a Ryan' },
+        { text: 'En High School Musical, ¿cuál es la primera canción que interpreta el equipo de básquetbol durante un entrenamiento en el gimnasio escuchando el chirrido de sus zapatillas?', answer: 'Get\'cha Head in the Game' },
+        { text: 'En High School Musical, ¿qué postre dulce le regala y da a probar Zeke a Sharpay al final de la primera película logrando conquistarla?', answer: 'Unas galletas' },
+        { text: 'En High School Musical 3, ¿cuál es el título del número musical extravagante donde Sharpay y Ryan imaginan su futuro éxito y riqueza en Broadway?', answer: 'I Want It All' },
+        { text: 'En High School Musical 2, ¿con qué equipo de básquetbol universitario entrena Troy gracias a las influencias de los Evans, causándole conflictos con sus amigos?', answer: 'Los Redhawks de la Universidad de Albuquerque' },
+        { text: 'En High School Musical, ¿qué icónico accesorio de vestuario utiliza Ryan Evans en casi todas sus escenas y coreografías a lo largo de las películas?', answer: 'Un sombrero (o sombrero Fedora)' },
+        { text: 'En High School Musical 3, ¿qué canción interpreta Troy en solitario de noche en el gimnasio y pasillos de la escuela al no saber qué universidad elegir?', answer: 'Scream' },
+        { text: 'En High School Musical, ¿quién descubre y revela al resto de la escuela, sacando un artículo de internet, el pasado de Gabriella como campeona académica?', answer: 'Taylor McKessie' },
+        { text: 'En High School Musical, ¿qué personaje interrumpe a Troy y Gabriella encendiendo las luces de la escuela cuando están a punto de besarse por primera vez al final de la película?', answer: 'Chad Danforth' }
       ],
       historia: [
         { text: '¿Hace cuánto se extinguieron los dinosaurios?', answer: 'Hace 66 millones de años' },
@@ -2172,21 +2445,11 @@
         }
       ]
     },
-    regala: {
-      label: 'Nombra y regala', icon: '🎁', cls: 'cat-regala',
+    incomoda: {
+      label: 'Pregunta incómoda', icon: '🫣', cls: 'cat-incomoda',
       items: [
-        'Nombra 3 películas y regala un trago por cada una a quien quieras',
-        'Nombra 3 canciones y reparte los tragos entre el grupo',
-        'Nombra 3 series y reparte tragos entre el grupo',
-        'Nombra 3 países y regala un trago por cada uno'
-      ],
-      futbol: [
-        'Nombra 3 jugadores de fútbol y regala un trago por cada uno',
-        'Nombra 3 equipos de fútbol y reparte tragos'
-      ],
-      disco: [
-        'Nombra 3 canciones para bailar y reparte tragos',
-        'Nombra 3 DJs o artistas de fiesta y reparte tragos'
+        'Hazle una pregunta a alguien en privado, y su respuesta la dira en voz alta. Si no quiere responder se termina el vaso'
+        // Agrega todas las preguntas que quieras aquí, siempre entre comillas y separadas por comas
       ]
     },
     juegos: {
@@ -2223,8 +2486,7 @@
         { icon:'🂡', name:'Blackjack (1 mano)', needsCards:true, rules:'1 contra 1: uno hace de casa. Se reparte una sola mano, sin pedir más cartas. El que pierde mata la piscola. Si la casa se pasa de 21, gana el jugador. Empate: repiten la mano' },
         { icon:'⚔️', name:'Guerra de Cartas', needsCards:true, rules:'Todos revelan una carta al mismo tiempo. Gana la carta más alta (A es la más alta). El que pierde toma los tragos acumulados. Si empatan: guerra — 3 cartas boca abajo y se revela la 4ta, el perdedor toma el doble' },
         { icon:'🔮', name:'Calendario Maya', needsCards:true, rules:'Armen anillos de cartas boca abajo: 2 al centro (matar la piscola si fallas), 8 en el anillo interior (3-4 tragos) y 16 en el exterior (5-6 tragos). Por turno, elige una carta y adivina negra o roja antes de darla vuelta. Si aciertas, los tragos se acumulan para el siguiente;  todo lo acumulado' },
-        { icon:'🚌', name:'Busecito', needsCards:true, rules:'Un jugador se sube al "bus" y no se baja hasta ganar. Debe acertar 4 cartas seguidas: ¿negra o roja?, ¿mayor o menor?, ¿adentro o afuera del rango anterior?, ¿qué pinta? Si falla en cualquier fase, se queda en el bus y vuelve a empezar desde cero' },
-        { icon:'🏇', name:'Carrera de Caballos', needsCards:true, rules:'Cada jugador elige una pinta. Se ponen 5 cartas boca abajo como trampas y un As de cada pinta como caballo. Van revelando cartas del mazo: si sale tu pinta, tu caballo avanza; si choca con una trampa de su pinta, retrocede. El primero en cruzar las 5 trampas gana — los demás toman según su posición' }
+        { icon:'🚌', name:'Busecito', needsCards:true, rules:'Un jugador se sube al "bus" y no se baja hasta ganar. Debe acertar 4 cartas seguidas: ¿negra o roja?, ¿mayor o menor?, ¿adentro o afuera del rango anterior?, ¿qué pinta? Si falla en cualquier fase, se queda en el bus y vuelve a empezar desde cero' }
       ]
     },
     evento: {
@@ -2236,9 +2498,7 @@
   var ESPIA_WORDS = {
     normal: [
       "Hitler", "Terremoto", "(Uno de los jugadores al azar)", "Motel", "Anuel",
-      "Ex de (jugador aleatorio)", "Mama de (jugador aleatorio)",
-      "Hermano de (jugador aleatorio)", "FEN", "UAI", "PUC", "Patas negras", "Ozuna",
-      "Tabancura", "Monte tabor", "Los andes", "Laguna", "18", "Vaca", "Sala gente", "Guaton Chico", "Testiculo", "Kast", "Boric" 
+      "Ex de (jugador aleatorio)", "Barney Stinson", "Hermano de (jugador aleatorio)", "FEN", "UAI", "PUC", "Patas negras", "Ozuna", "Mbappe", "Fito", "La Carola", "Giagnoni", "Tabancura", "Monte tabor", "Los andes", "Laguna", "18", "Vaca", "Sala gente", "Guaton Chico", "Testiculo", "Kast", "Boric", "Sydney Sweeney", "Rancagua", "Piera", "Garafulic", "Nestor (Profe MTN)", "Opazo", "Lucas", "ombligo"
     ],
     futbol: [
       "Alexis Sánchez", "Arturo Vidal", "Claudio Bravo", "Gary Medel", "Eduardo Vargas", "Marcelo Salas",
@@ -3091,9 +3351,15 @@
 
   function resolveEvent(template){
     var turnPlayer = state.players[state.turn];
-    var p1 = state.players[Math.floor(Math.random() * state.players.length)];
-    var others = state.players.filter(function(p){ return p !== p1; });
-    var p2 = others.length ? others[Math.floor(Math.random() * others.length)] : p1;
+    
+    // Filtramos para que p1 nunca sea el jugador de turno
+    var others = state.players.filter(function(p){ return p !== turnPlayer; });
+    var p1 = others.length ? others[Math.floor(Math.random() * others.length)] : turnPlayer;
+    
+    // Filtramos para que p2 nunca sea el jugador de turno ni tampoco p1
+    var remaining = others.filter(function(p){ return p !== p1; });
+    var p2 = remaining.length ? remaining[Math.floor(Math.random() * remaining.length)] : p1;
+
     return applyDiscoDrinks(template
       .replace(/\{jugador1\}/g, p1.name)
       .replace(/\{jugador2\}/g, p2.name)
@@ -3103,7 +3369,7 @@
 
   // Evento aleatorio es lo que más debe salir; entre el resto (nunca, retos,
   // cultura, trago, regala, juegos) debe variar parejo — por eso pesan igual.
-  var CATEGORY_WEIGHT = { evento: 8, nunca: 1, retos: 1, cultura: 1, trago: 1, regala: 1, juegos: 2 };
+  var CATEGORY_WEIGHT = { evento: 8, nunca: 1, retos: 1, cultura: 0.5, trago: 1, regala: 1, juegos: 2, incomoda: 0.3 };
 
   // "Nombra y regala" y "Retos" están desactivadas. "Trago por cada" solo se
   // activa en modo fútbol; "Cultura general" se puede apagar desde Ajustes.
@@ -3277,8 +3543,14 @@
 
     var entry = weightedPick(catKey, cat);
     var cardText = applyDiscoDrinks(entry.text);
+    var cardSub = entry.sub || null; // Permite heredar subtítulos si existen
+    
     if (catKey === 'nunca') cardText += ' — el que lo haya hecho toma ' + randomNuncaDrinks();
-    state.card = makeCard({ cat: catKey, icon: cat.icon, text: cardText, answer: entry.answer || null, special: entry.special || null, rounds: entry.rounds || null, topics: entry.topics || null, image: entry.image || null });
+    
+    // Si la carta es incómoda, ponemos el subtítulo automáticamente con un número de tragos al azar
+    if (catKey === 'incomoda') cardSub = 'Respondes o tomas ' + randomDrinkCount() + ' tragos.';
+    
+    state.card = makeCard({ cat: catKey, icon: cat.icon, text: cardText, sub: cardSub, answer: entry.answer || null, special: entry.special || null, rounds: entry.rounds || null, topics: entry.topics || null, image: entry.image || null });
   }
 
   // Los paréntesis en ESPIA_WORDS son comandos, no texto literal:
