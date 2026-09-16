@@ -2445,22 +2445,23 @@
         }
       ]
     },
-    incomoda: {
-      label: 'Pregunta incómoda', icon: '🫣', cls: 'cat-incomoda',
-      items: [
-        'Hazle una pregunta a alguien en privado, y su respuesta la dira en voz alta. Si no quiere responder se termina el vaso'
-        // Agrega todas las preguntas que quieras aquí, siempre entre comillas y separadas por comas
-      ]
-    },
     juegos: {
       label: 'Juego', icon: '🎲', cls: 'cat-juegos',
       items: [
         { icon:'🎲', name:'Cacho Humano', needsCards:false, rules:'Cada uno dice una acción que haya hecho. Empiecen a apostar cuántos del grupo también la hicieron, subiendo la apuesta como en el dudo. Si dudan y se equivocan, toman' },
         { icon:'🤥', name:'Mentiroso', needsCards:false, rules:'Alguien parte diciendo "te puedo decir 1 de los ___". Los demás suben la apuesta (2, 3...) hasta que alguien dude. Si mintió, toma; si no mintió, toma quien dudó', topics: ['Marcas de auto', 'Colegios de chile', 'Universidades de chile', 'Países de Europa', 'Películas que ganaron el oscar', 'Canciones de Bad Bunny', 'Marcas de zapatillas', 'Marcas de cerveza', 'Redes sociales', 'Juegos de deporte', 'Ex del grupo', 'Discos de santiago', 'Discos fuera de santiago', 'Regiones de Chile', 'Drogas', 'Razones para tener sexo (A ponerse creativos los weones)', 'Deportes', 'Series'] },
         { icon:'🎭', name:'Impostor', needsCards:false, rules:'Pásense el teléfono en el orden que indique la pantalla. Cuando aparezca tu nombre, tócalo para dar vuelta la pantalla y ver la palabra secreta — todos la verán, menos el Impostor' },
-        { icon:'🚗', name:'Cultura Chupística', needsCards:false, rules:'Alguien elige un tema y todos van nombrando uno por uno sin repetir. El primero que no pueda seguir, toma', topics: ['Marcas de auto', 'Equipos de fútbol chileno', 'Jugadores de la Roja', 'Estadios de Chile', 'Marcas de pisco', 'Discos de Santiago', 'Paises de América', 'Actores', 'Tragos de Bar', 'Canciones de Bad Bunny'] },
+        { icon:'🚗', name:'Cultura Chupística', needsCards:false, rules:'Alguien elige un tema y todos van nombrando uno por uno sin repetir. El primero que no pueda seguir, toma', topics: ['Marcas de auto', 'Equipos de fútbol chileno', 'Marcas de celular', 'Comunas de chile', 'Marcas de pisco', 'Discos de Santiago', 'Paises de América', 'Actores', 'Tragos de Bar', 'Canciones de Bad Bunny', 'Canciones de Michael Jackson' ] },
         
         // --- JUEGOS NUEVOS ---
+        { 
+          icon:'🫣', name:'Pregunta Incómoda', needsCards:false, weight: 0.4, 
+          rules:'Hazle una pregunta a alguien en privado, y su respuesta la dirá en voz alta. Si no quiere responder, se termina el vaso.'
+        },
+        { 
+          icon:'🔢', name:'Juego del Número', needsCards:false, weight: 1, 
+          rules:'Tápatelos ojos. El resto del grupo debe ponerse de acuerdo en secreto en un número del 1 al 100. Abre los ojos y haz preguntas de "Sí" o "No" para adivinarlo. Si te rindes, tomas 3 tragos.'
+        },
         { 
           icon:'👥', name:'Espalda con Espalda', needsCards:false, weight: 0.2, 
           rules:'Elige a un jugador y parense espalda con espalda. El grupo hace preguntas. A la cuenta de 3 deben apuntarse a sí mismos o al otro. Si no coinciden, toman 2 tragos.'
@@ -3369,7 +3370,7 @@
 
   // Evento aleatorio es lo que más debe salir; entre el resto (nunca, retos,
   // cultura, trago, regala, juegos) debe variar parejo — por eso pesan igual.
-  var CATEGORY_WEIGHT = { evento: 8, nunca: 1, retos: 1, cultura: 0.5, trago: 1, regala: 1, juegos: 2, incomoda: 0.3 };
+  var CATEGORY_WEIGHT = { evento: 8, nunca: 1, retos: 1, cultura: 0.5, trago: 1, regala: 1, juegos: 2 };
 
   // "Nombra y regala" y "Retos" están desactivadas. "Trago por cada" solo se
   // activa en modo fútbol; "Cultura general" se puede apagar desde Ajustes.
@@ -3546,9 +3547,6 @@
     var cardSub = entry.sub || null; // Permite heredar subtítulos si existen
     
     if (catKey === 'nunca') cardText += ' — el que lo haya hecho toma ' + randomNuncaDrinks();
-    
-    // Si la carta es incómoda, ponemos el subtítulo automáticamente con un número de tragos al azar
-    if (catKey === 'incomoda') cardSub = 'Respondes o tomas ' + randomDrinkCount() + ' tragos.';
     
     state.card = makeCard({ cat: catKey, icon: cat.icon, text: cardText, sub: cardSub, answer: entry.answer || null, special: entry.special || null, rounds: entry.rounds || null, topics: entry.topics || null, image: entry.image || null });
   }
