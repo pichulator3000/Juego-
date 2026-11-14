@@ -1,0 +1,2816 @@
+# PASAPALABRA — PALABRAS NUEVAS (para revisión, aún NO están en el juego)
+#
+# Formato:  RESPUESTA | texto que verá el jugador
+# Para sacar una palabra, borra su línea. Para cambiar la pista, edita el texto después de la barra.
+# "Contiene la X" se usa solo donde no hay suficientes palabras que empiecen con esa letra (como ya hace la base con W, X, Y, Z).
+# Total: 2756 palabras nuevas.
+
+## A  (101 palabras)
+Abanico | Empieza con A. Objeto plegable que se agita con la mano para darse aire.
+Abecedario | Empieza con A. Serie ordenada de todas las letras de un idioma.
+Abismo | Empieza con A. Profundidad enorme y peligrosa, como la de un precipicio.
+Abrazo | Empieza con A. Gesto de rodear a alguien con los brazos en señal de cariño.
+Abrigo | Empieza con A. Prenda gruesa que se usa sobre la ropa para protegerse del frío.
+Abril | Empieza con A. Cuarto mes del año.
+Aceite | Empieza con A. Líquido graso que se usa para freír y aliñar ensaladas.
+Aceituna | Empieza con A. Fruto pequeño del olivo, verde o negro, que se come como aperitivo.
+Acelga | Empieza con A. Verdura de hojas grandes y verdes con un tallo blanco y carnoso.
+Acera | Empieza con A. Parte lateral de la calle por donde caminan los peatones.
+Acordeón | Empieza con A. Instrumento musical de fuelle con teclado, típico de la cumbia.
+Acróbata | Empieza con A. Artista de circo que hace saltos y piruetas difíciles.
+Acuarela | Empieza con A. Técnica de pintura con colores diluidos en agua.
+Adivinanza | Empieza con A. Juego de palabras en que se describe algo para que otro lo descubra.
+Aguacate | Empieza con A. Fruta verde y cremosa con la que se prepara el guacamole.
+Águila | Empieza con A. Ave rapaz de gran tamaño y vista muy aguda.
+Aguja | Empieza con A. Objeto delgado y puntiagudo con un ojo para pasar el hilo al coser.
+Ajo | Empieza con A. Bulbo de olor fuerte, formado por dientes, usado para condimentar.
+Alacrán | Empieza con A. Arácnido con pinzas y una cola terminada en aguijón venenoso.
+Alambre | Empieza con A. Hilo delgado de metal que se dobla con facilidad.
+Albañil | Empieza con A. Obrero que construye muros y casas con ladrillos y cemento.
+Albóndiga | Empieza con A. Bolita de carne molida que se cocina frita o en salsa.
+Alcachofa | Empieza con A. Hortaliza con forma de piña verde cuyas hojas se comen por la base.
+Alcancía | Empieza con A. Recipiente con una ranura donde se guardan monedas para ahorrar.
+Aldea | Empieza con A. Pueblo muy pequeño, generalmente en el campo.
+Alegría | Empieza con A. Sentimiento de felicidad y buen ánimo.
+Alergia | Empieza con A. Reacción del cuerpo ante el polen, el polvo o ciertos alimentos.
+Alfiler | Empieza con A. Clavito fino de metal que se usa para sujetar telas.
+Alga | Empieza con A. Planta acuática que crece en el mar o en los ríos.
+Algodón | Empieza con A. Fibra blanca y suave que se usa para hacer telas y limpiar heridas.
+Almendra | Empieza con A. Fruto seco ovalado de cáscara dura, usado en repostería.
+Alpaca | Empieza con A. Animal de los Andes parecido a la llama, apreciado por su lana.
+Alumno | Empieza con A. Persona que recibe clases en un colegio o academia.
+Amapola | Empieza con A. Flor silvestre roja de pétalos muy delicados.
+Ambulancia | Empieza con A. Vehículo que traslada enfermos y heridos al hospital.
+Amigo | Empieza con A. Persona con la que se tiene una relación de afecto y confianza.
+Anchoa | Empieza con A. Pescado pequeño en salazón que se pone en pizzas y ensaladas.
+Andén | Empieza con A. Plataforma de una estación donde se espera el tren o el metro.
+Ángel | Empieza con A. Ser espiritual con alas, considerado mensajero de Dios.
+Anguila | Empieza con A. Pez alargado y resbaloso con forma de serpiente.
+Ángulo | Empieza con A. Figura formada por dos líneas que parten de un mismo punto.
+Aniversario | Empieza con A. Día en que se cumplen años de un acontecimiento importante.
+Antena | Empieza con A. Dispositivo que capta o emite ondas de radio y televisión.
+Antifaz | Empieza con A. Máscara que cubre solo los ojos y parte de la cara.
+Antorcha | Empieza con A. Palo con fuego en un extremo que sirve para alumbrar.
+Anzuelo | Empieza con A. Gancho de metal que se usa para pescar.
+Apellido | Empieza con A. Nombre de familia que acompaña al nombre de pila.
+Apetito | Empieza con A. Ganas de comer que se sienten cuando se acerca la hora del almuerzo.
+Apio | Empieza con A. Verdura de tallos largos, verdes y crujientes.
+Apodo | Empieza con A. Nombre informal que se le da a alguien en lugar del suyo.
+Apuesta | Empieza con A. Dinero o cosa que se arriesga en un juego o pronóstico.
+Arándano | Empieza con A. Fruto pequeño, azul oscuro y redondo, rico en antioxidantes.
+Arcoíris | Empieza con A. Arco de colores que aparece en el cielo cuando llueve con sol.
+Ardilla | Empieza con A. Roedor de cola peluda que vive en los árboles y come nueces.
+Arete | Empieza con A. Joya que se lleva colgando de la oreja.
+Armadillo | Empieza con A. Mamífero cubierto por un caparazón de placas que se enrolla en bola.
+Armadura | Empieza con A. Traje de metal que usaban los caballeros para protegerse en batalla.
+Armario | Empieza con A. Mueble con puertas donde se guarda la ropa.
+Arpa | Empieza con A. Instrumento de cuerdas verticales en un marco triangular que se toca con los dedos.
+Arroz | Empieza con A. Cereal de grano pequeño y blanco, base del sushi y la paella.
+Arruga | Empieza con A. Pliegue que aparece en la piel con la edad o en una tela.
+Arteria | Empieza con A. Vaso sanguíneo que lleva la sangre desde el corazón al cuerpo.
+Ascensor | Empieza con A. Aparato que sube y baja personas entre los pisos de un edificio.
+Aspiradora | Empieza con A. Electrodoméstico que absorbe el polvo del suelo.
+Astilla | Empieza con A. Fragmento pequeño y puntiagudo que salta de la madera.
+Atleta | Empieza con A. Deportista que compite en carreras, saltos o lanzamientos.
+Átomo | Empieza con A. Partícula más pequeña de un elemento químico.
+Atún | Empieza con A. Pez grande de carne roja muy consumido en lata.
+Autobús | Empieza con A. Vehículo grande de transporte público con muchos asientos.
+Avellana | Empieza con A. Fruto seco redondo de cáscara marrón, ingrediente de la Nutella.
+Avena | Empieza con A. Cereal que se come en hojuelas, típico del desayuno.
+Avestruz | Empieza con A. Ave más grande del mundo, que no vuela pero corre muy rápido.
+Avispa | Empieza con A. Insecto amarillo y negro con aguijón, parecido a la abeja.
+Azotea | Empieza con A. Techo plano de un edificio por el que se puede caminar.
+Azafrán | Empieza con A. Especia muy cara de color rojo anaranjado, usada en la paella.
+Abdomen | Empieza con A. Parte del cuerpo entre el tórax y la pelvis.
+Abulia | Empieza con A. Falta de voluntad o de energía para hacer cualquier cosa.
+Acérrimo | Empieza con A. Muy tenaz y extremo en sus ideas o gustos.
+Adalid | Empieza con A. Caudillo o líder destacado de un movimiento o grupo.
+Afable | Empieza con A. Agradable, amable y suave en el trato.
+Ágora | Empieza con A. Plaza pública de las antiguas ciudades griegas.
+Albedrío | Empieza con A. Libertad de una persona para decidir y actuar.
+Alcurnia | Empieza con A. Linaje o ascendencia noble de una familia.
+Alegoría | Empieza con A. Representación simbólica de una idea abstracta mediante imágenes.
+Aliciente | Empieza con A. Estímulo o atractivo que anima a hacer algo.
+Ambrosía | Empieza con A. Alimento de los dioses en la mitología griega.
+Anagrama | Empieza con A. Palabra que resulta de reordenar las letras de otra.
+Anaquel | Empieza con A. Tabla horizontal de un estante o alacena.
+Andamio | Empieza con A. Estructura provisional sobre la que trabajan los obreros en altura.
+Anfitrión | Empieza con A. Persona que recibe invitados en su casa.
+Anfibio | Empieza con A. Animal como la rana, que vive tanto en el agua como en la tierra.
+Aquelarre | Empieza con A. Reunión nocturna de brujas.
+Arcano | Empieza con A. Secreto muy reservado y difícil de conocer.
+Arpía | Empieza con A. Ser mitológico con cara de mujer y cuerpo de ave; persona malvada.
+Arrebol | Empieza con A. Color rojizo de las nubes iluminadas por el sol al atardecer.
+Atávico | Empieza con A. Que procede de antepasados lejanos o de costumbres muy antiguas.
+Atisbo | Empieza con A. Señal leve o indicio de algo.
+Atuendo | Empieza con A. Conjunto de prendas que viste una persona.
+Augurio | Empieza con A. Señal que anuncia algo que va a ocurrir.
+Avaro | Empieza con A. Persona que acumula dinero y no quiere gastarlo.
+Ayuno | Empieza con A. Abstinencia total o parcial de comer durante un tiempo.
+
+## B  (101 palabras)
+Bacalao | Empieza con B. Pez de mares fríos muy consumido seco y salado.
+Bache | Empieza con B. Hoyo en el pavimento de una calle o camino.
+Bahía | Empieza con B. Entrada del mar en la costa, más pequeña que un golfo.
+Bajo | Empieza con B. Instrumento de cuerdas graves en una banda de rock.
+Bala | Empieza con B. Proyectil que se dispara con un arma de fuego.
+Balcón | Empieza con B. Plataforma con baranda que sobresale de la fachada de un edificio.
+Balde | Empieza con B. Recipiente con asa para cargar agua.
+Bambi | Empieza con B. Cervatillo protagonista de un clásico animado de Disney.
+Bandera | Empieza con B. Tela con colores y símbolos que representa a un país.
+Bañera | Empieza con B. Recipiente grande del baño donde uno se sumerge para lavarse.
+Barco | Empieza con B. Embarcación grande que navega por el mar.
+Barrio | Empieza con B. Cada una de las zonas en que se divide una ciudad.
+Barro | Empieza con B. Mezcla de tierra y agua.
+Báscula | Empieza con B. Aparato para pesar personas u objetos.
+Basura | Empieza con B. Desperdicios y restos que se tiran.
+Bastón | Empieza con B. Palo que sirve de apoyo para caminar.
+Batería | Empieza con B. Instrumento de percusión formado por tambores y platillos.
+Batido | Empieza con B. Bebida que se hace licuando leche con fruta o helado.
+Baúl | Empieza con B. Caja grande con tapa para guardar ropa u objetos.
+Bautismo | Empieza con B. Sacramento cristiano con el que se recibe a alguien en la Iglesia.
+Bebé | Empieza con B. Niño recién nacido o de muy pocos meses.
+Bellota | Empieza con B. Fruto de la encina y el roble, comida típica de cerdos.
+Berenjena | Empieza con B. Hortaliza alargada de piel morada brillante.
+Beso | Empieza con B. Acción de tocar con los labios en señal de afecto.
+Biberón | Empieza con B. Botella con chupete para alimentar a los bebés.
+Bigote | Empieza con B. Pelo que crece sobre el labio superior.
+Bikini | Empieza con B. Traje de baño femenino de dos piezas.
+Billetera | Empieza con B. Cartera de bolsillo donde se guarda el dinero y las tarjetas.
+Bisonte | Empieza con B. Bóvido salvaje de gran joroba que habitaba las praderas norteamericanas.
+Bizcocho | Empieza con B. Masa dulce y esponjosa horneada, base de muchas tortas.
+Blanco | Empieza con B. Color de la nieve y la leche.
+Bocina | Empieza con B. Aparato que emite un sonido fuerte para avisar, como en los autos.
+Boda | Empieza con B. Ceremonia en la que se casan dos personas.
+Bodega | Empieza con B. Lugar donde se guarda y cría el vino.
+Bolígrafo | Empieza con B. Instrumento para escribir con tinta y una bolita en la punta.
+Bolsillo | Empieza con B. Pequeña bolsa cosida a la ropa para guardar cosas.
+Bombero | Empieza con B. Persona que apaga incendios y rescata personas.
+Bombilla | Empieza con B. Ampolleta de vidrio que da luz eléctrica.
+Bosque | Empieza con B. Terreno extenso poblado de árboles.
+Bostezo | Empieza con B. Abrir la boca sin querer por sueño o aburrimiento.
+Brazalete | Empieza con B. Joya que se lleva alrededor de la muñeca.
+Brújula | Empieza con B. Instrumento con aguja imantada que siempre apunta al norte.
+Buceo | Empieza con B. Actividad de nadar bajo el agua con equipo de oxígeno.
+Búho | Empieza con B. Ave rapaz nocturna de ojos grandes que gira mucho la cabeza.
+Burbuja | Empieza con B. Glóbulo de aire que se forma dentro de un líquido.
+Burro | Empieza con B. Animal de carga parecido al caballo pero más pequeño y de orejas largas.
+Butaca | Empieza con B. Asiento con brazos, como los de un cine o teatro.
+Buzón | Empieza con B. Caja donde se depositan las cartas.
+Bolero | Empieza con B. Género musical romántico de ritmo lento, de origen cubano.
+Boxeador | Empieza con B. Deportista que pelea con guantes sobre un ring.
+Brócoli | Empieza con B. Verdura verde con forma de pequeño árbol.
+Bruma | Empieza con B. Niebla ligera, especialmente sobre el mar.
+Budín | Empieza con B. Postre esponjoso que se cocina en molde.
+Bulldog | Empieza con B. Raza de perro de cara chata y cuerpo robusto.
+Bandoneón | Empieza con B. Instrumento de fuelle protagonista del tango.
+Barniz | Empieza con B. Líquido que se aplica a la madera para protegerla y darle brillo.
+Batman | Empieza con B. Superhéroe de Ciudad Gótica conocido como el Caballero Oscuro.
+Beethoven | Empieza con B. Compositor alemán que siguió creando música después de quedar sordo.
+Bélgica | Empieza con B. País europeo famoso por sus chocolates, gofres y cervezas.
+Bolivia | Empieza con B. País sudamericano sin salida al mar cuya sede de gobierno es La Paz.
+Brasil | Empieza con B. País más grande de Sudamérica, pentacampeón mundial de fútbol.
+Bogotá | Empieza con B. Capital de Colombia, ubicada en la cordillera de los Andes.
+Bacteria | Empieza con B. Microorganismo de una sola célula que puede causar enfermedades.
+Balneario | Empieza con B. Lugar de playa o de aguas termales para vacacionar.
+Barómetro | Empieza con B. Instrumento que mide la presión atmosférica.
+Bazar | Empieza con B. Tienda donde se venden productos variados.
+Bisabuelo | Empieza con B. Padre del abuelo o de la abuela.
+Bitácora | Empieza con B. Diario en que se registran los sucesos de un viaje o proyecto.
+Blasfemia | Empieza con B. Palabra ofensiva contra Dios o lo sagrado.
+Bonanza | Empieza con B. Época de prosperidad; también, tiempo tranquilo en el mar.
+Botánica | Empieza con B. Ciencia que estudia las plantas.
+Bravata | Empieza con B. Amenaza arrogante hecha para intimidar.
+Bucólico | Empieza con B. Relativo al campo y a la vida tranquila de los pastores.
+Burocracia | Empieza con B. Exceso de trámites y papeleo en la administración.
+Burla | Empieza con B. Acción o palabras para ridiculizar a alguien.
+Bastardo | Empieza con B. Hijo nacido fuera del matrimonio.
+Beligerante | Empieza con B. Que está en guerra o tiene una actitud agresiva.
+Benevolencia | Empieza con B. Buena voluntad y comprensión hacia los demás.
+Bisiesto | Empieza con B. Año de 366 días que tiene un 29 de febrero.
+Bisturí | Empieza con B. Cuchillo pequeño y muy afilado que usan los cirujanos.
+Blasón | Empieza con B. Escudo de armas de una familia noble.
+Bochorno | Empieza con B. Calor sofocante; también, vergüenza intensa.
+Bonsái | Empieza con B. Árbol enano cultivado en maceta según una técnica japonesa.
+Borrasca | Empieza con B. Tempestad fuerte con viento y lluvia.
+Boticario | Empieza con B. Antiguamente, persona que preparaba y vendía medicamentos.
+Bravucón | Empieza con B. Persona que presume de valiente sin serlo.
+Brebaje | Empieza con B. Bebida de aspecto o sabor desagradable.
+Bribón | Empieza con B. Persona pícara que engaña o hace travesuras.
+Brío | Empieza con B. Energía, empuje y decisión al hacer algo.
+Bronce | Empieza con B. Aleación de cobre y estaño, también el premio al tercer lugar.
+Buitre | Empieza con B. Ave carroñera de cabeza pelada.
+Bóveda | Empieza con B. Techo curvo en forma de arco.
+Braille | Empieza con B. Sistema de escritura en relieve para personas ciegas.
+Bunker | Empieza con B. Refugio subterráneo fortificado contra bombardeos.
+Buñuelo | Empieza con B. Masa frita esponjosa, a veces rellena o con azúcar.
+Bisagra | Empieza con B. Pieza metálica que permite abrir y cerrar una puerta.
+Bancarrota | Empieza con B. Situación de quiebra económica total.
+Bufete | Empieza con B. Despacho o estudio de un abogado.
+Bálsamo | Empieza con B. Sustancia aromática que alivia o calma un dolor.
+Biombo | Empieza con B. Mampara plegable que sirve para separar ambientes o cambiarse de ropa.
+Barquillo | Empieza con B. Galleta delgada y crujiente enrollada, típica para acompañar el helado.
+
+## C  (101 palabras)
+Caballero | Empieza con C. Hombre noble y educado; también, guerrero medieval con armadura.
+Cabaña | Empieza con C. Casa pequeña y rústica, generalmente de madera.
+Cabello | Empieza con C. Pelo que crece en la cabeza.
+Cacao | Empieza con C. Semilla con la que se fabrica el chocolate.
+Cadera | Empieza con C. Parte del cuerpo donde se une la pierna con el tronco.
+Café | Empieza con C. Bebida oscura y estimulante hecha con granos tostados.
+Calabaza | Empieza con C. Hortaliza grande y naranja típica de Halloween.
+Calcetín | Empieza con C. Prenda que cubre el pie y parte de la pierna.
+Calculadora | Empieza con C. Aparato para hacer operaciones matemáticas.
+Caldo | Empieza con C. Líquido que resulta de hervir carne, pescado o verduras.
+Calor | Empieza con C. Sensación producida por una temperatura alta.
+Calvo | Empieza con C. Persona que ha perdido el pelo de la cabeza.
+Camello | Empieza con C. Animal del desierto con dos jorobas.
+Camión | Empieza con C. Vehículo grande para transportar carga.
+Canasta | Empieza con C. Cesto con asas; también, anotación en el básquetbol.
+Cangrejo | Empieza con C. Crustáceo que camina de lado y tiene dos pinzas.
+Canguro | Empieza con C. Marsupial australiano que salta y lleva a su cría en una bolsa.
+Capitán | Empieza con C. Persona al mando de un barco o de un equipo.
+Caramelo | Empieza con C. Dulce de azúcar derretida y endurecida.
+Cárcel | Empieza con C. Lugar donde se encierra a los presos.
+Carnaval | Empieza con C. Fiesta popular con disfraces, comparsas y desfiles.
+Carpintero | Empieza con C. Persona que trabaja la madera.
+Carta | Empieza con C. Mensaje escrito que se envía en un sobre.
+Cartero | Empieza con C. Persona que reparte el correo.
+Casino | Empieza con C. Local donde se apuesta en juegos de azar.
+Castillo | Empieza con C. Edificio fortificado con torres y murallas.
+Cebolla | Empieza con C. Bulbo que hace llorar al cortarlo.
+Cebra | Empieza con C. Animal africano con rayas blancas y negras.
+Ceja | Empieza con C. Línea de pelo encima del ojo.
+Cementerio | Empieza con C. Lugar donde se entierra a los muertos.
+Cena | Empieza con C. Última comida del día.
+Cenicero | Empieza con C. Recipiente donde se deja la ceniza del cigarrillo.
+Cerdo | Empieza con C. Animal de granja rosado del que se obtiene el jamón.
+Cerveza | Empieza con C. Bebida alcohólica fermentada hecha de cebada y lúpulo.
+Champaña | Empieza con C. Vino espumoso que se descorcha para celebrar.
+Chaqueta | Empieza con C. Prenda con mangas que se pone sobre la camisa.
+Chile | Empieza con C. País largo y angosto entre la cordillera de los Andes y el océano Pacífico.
+Chimenea | Empieza con C. Conducto por donde sale el humo; también, hogar para encender fuego.
+Chiste | Empieza con C. Historia corta que se cuenta para hacer reír.
+Cicatriz | Empieza con C. Marca que queda en la piel después de curarse una herida.
+Cigarro | Empieza con C. Rollo de tabaco que se fuma.
+Cigüeña | Empieza con C. Ave de patas largas que, según la leyenda, trae a los bebés.
+Cisne | Empieza con C. Ave acuática blanca de cuello largo y elegante.
+Cocodrilo | Empieza con C. Reptil grande de mandíbulas poderosas que vive en ríos.
+Codo | Empieza con C. Articulación que une el brazo con el antebrazo.
+Cohete | Empieza con C. Vehículo que se lanza al espacio impulsado por combustión.
+Cojín | Empieza con C. Almohadón que se pone en sillones o sillas.
+Colegio | Empieza con C. Establecimiento donde estudian niños y adolescentes.
+Collar | Empieza con C. Joya que se lleva alrededor del cuello.
+Columpio | Empieza con C. Asiento colgado de cuerdas o cadenas para mecerse.
+Cometa | Empieza con C. Cuerpo celeste con cola luminosa; también, volantín.
+Conejo | Empieza con C. Mamífero de orejas largas que salta y come zanahorias.
+Copa | Empieza con C. Vaso con pie para beber vino; también, trofeo de un torneo.
+Corbata | Empieza con C. Tira de tela que se anuda al cuello de la camisa.
+Cordero | Empieza con C. Cría de la oveja.
+Cordillera | Empieza con C. Cadena de montañas, como los Andes.
+Cosquillas | Empieza con C. Sensación que provoca risa al ser tocado en ciertas partes del cuerpo.
+Costilla | Empieza con C. Cada uno de los huesos curvos que protegen el pecho.
+Cuello | Empieza con C. Parte del cuerpo que une la cabeza con el tronco.
+Cumpleaños | Empieza con C. Aniversario del nacimiento de una persona.
+Cuna | Empieza con C. Camita con barandas para bebés.
+Cupido | Empieza con C. Dios romano del amor que dispara flechas.
+Cachorro | Empieza con C. Cría de perro o de otros mamíferos.
+Cadáver | Empieza con C. Cuerpo de una persona o animal después de morir.
+Caníbal | Empieza con C. Persona que come carne humana.
+Caos | Empieza con C. Desorden y confusión total en que nada sigue una regla.
+Carisma | Empieza con C. Capacidad de atraer y cautivar a los demás.
+Carroña | Empieza con C. Carne podrida de animal muerto.
+Cascada | Empieza con C. Caída de agua desde cierta altura.
+Caudal | Empieza con C. Cantidad de agua que lleva un río; también, riqueza.
+Caverna | Empieza con C. Cavidad profunda bajo tierra o en una montaña.
+Censura | Empieza con C. Control o prohibición de lo que se puede publicar o decir.
+Charlatán | Empieza con C. Persona que habla mucho y engaña con palabrería.
+Clan | Empieza con C. Grupo de familias unidas por un antepasado común.
+Clon | Empieza con C. Copia genéticamente idéntica de un ser vivo.
+Coartada | Empieza con C. Prueba de que un sospechoso estaba en otro lugar al momento del crimen.
+Codicia | Empieza con C. Deseo excesivo de riquezas.
+Colmillo | Empieza con C. Diente puntiagudo entre los incisivos y las muelas.
+Compás | Empieza con C. Instrumento para dibujar circunferencias.
+Conjuro | Empieza con C. Fórmula mágica para invocar o alejar algo.
+Contrabando | Empieza con C. Comercio ilegal de mercancías prohibidas o sin pagar impuestos.
+Coraje | Empieza con C. Valor y decisión para enfrentar el peligro.
+Corsario | Empieza con C. Pirata que actuaba con autorización de un gobierno.
+Crepúsculo | Empieza con C. Claridad que queda en el cielo justo después de la puesta de sol.
+Crisálida | Empieza con C. Fase de la mariposa entre oruga y adulto.
+Cuarentena | Empieza con C. Aislamiento preventivo para evitar contagios.
+Cúpula | Empieza con C. Techo con forma de media esfera.
+Cábala | Empieza con C. Superstición o cálculo para adivinar algo.
+Cacofonía | Empieza con C. Repetición desagradable de sonidos en una frase.
+Calumnia | Empieza con C. Acusación falsa hecha para dañar a alguien.
+Canícula | Empieza con C. Época más calurosa del año.
+Cenit | Empieza con C. Punto más alto del cielo sobre el observador; también, apogeo.
+Cínico | Empieza con C. Que miente o actúa con desvergüenza sin disimularlo.
+Cleptómano | Empieza con C. Persona con el impulso enfermizo de robar.
+Cónclave | Empieza con C. Reunión de cardenales para elegir al Papa.
+Connotación | Empieza con C. Significado secundario o sugerido de una palabra.
+Cornucopia | Empieza con C. Cuerno de la abundancia rebosante de frutas.
+Cráter | Empieza con C. Hoyo en la cima de un volcán o causado por un meteorito.
+Cronómetro | Empieza con C. Reloj que mide con precisión el tiempo transcurrido.
+Croqueta | Empieza con C. Porción de masa empanizada y frita, rellena de jamón, pollo o pescado.
+Cosecha | Empieza con C. Recolección de los frutos del campo cuando están maduros.
+
+## D  (101 palabras)
+Dama | Empieza con D. Mujer distinguida; también, pieza más poderosa del ajedrez.
+Debilidad | Empieza con D. Falta de fuerza o energía.
+Década | Empieza con D. Período de diez años.
+Dedal | Empieza con D. Funda metálica para proteger el dedo al coser.
+Delantal | Empieza con D. Prenda que se pone sobre la ropa para no mancharse al cocinar.
+Delgado | Empieza con D. De poco grosor o de cuerpo flaco.
+Demonio | Empieza con D. Espíritu maligno que, según varias religiones, habita en el infierno.
+Dentadura | Empieza con D. Conjunto de dientes de una boca.
+Descanso | Empieza con D. Pausa para recuperar fuerzas.
+Despertador | Empieza con D. Reloj que suena para despertar a alguien.
+Detergente | Empieza con D. Producto para lavar la ropa o la loza.
+Diadema | Empieza con D. Adorno con forma de arco que se pone en la cabeza.
+Dibujante | Empieza con D. Persona que se dedica a dibujar.
+Diciembre | Empieza con D. Último mes del año.
+Dieta | Empieza con D. Régimen de alimentación, a menudo para bajar de peso.
+Dinero | Empieza con D. Monedas y billetes que se usan para comprar.
+Diploma | Empieza con D. Documento que acredita un título o un premio.
+Divorcio | Empieza con D. Disolución legal de un matrimonio.
+Docena | Empieza con D. Conjunto de doce unidades.
+Dolor | Empieza con D. Sensación molesta en alguna parte del cuerpo.
+Dormitorio | Empieza con D. Habitación donde se duerme.
+Dromedario | Empieza con D. Camello de una sola joroba.
+Dueño | Empieza con D. Persona que posee algo.
+Dálmata | Empieza con D. Raza de perro blanco con manchas negras.
+Danés | Empieza con D. Persona nacida en Dinamarca.
+Dinamarca | Empieza con D. País nórdico cuya capital es Copenhague.
+Disney | Empieza con D. Compañía estadounidense creadora de Mickey Mouse.
+Drácula | Empieza con D. Vampiro más famoso de la literatura, creado por Bram Stoker.
+Delta | Empieza con D. Desembocadura de un río en forma de triángulo.
+Dique | Empieza con D. Muro para contener las aguas.
+Dosis | Empieza con D. Cantidad de medicamento que se toma de una vez.
+Dron | Empieza con D. Aparato volador no tripulado manejado a distancia.
+Duelo | Empieza con D. Combate entre dos personas; también, tristeza por una muerte.
+Duna | Empieza con D. Montaña de arena formada por el viento.
+Delantero | Empieza con D. Jugador de fútbol cuya función principal es hacer goles.
+Defensa | Empieza con D. Jugador que protege su arco del ataque rival.
+Derbi | Empieza con D. Partido entre dos equipos rivales de la misma ciudad.
+Decano | Empieza con D. Miembro más antiguo de un grupo; también, director de una facultad.
+Decapitar | Empieza con D. Cortar la cabeza a una persona, como hacía la guillotina.
+Decrépito | Empieza con D. Muy viejo y en decadencia física.
+Deidad | Empieza con D. Ser divino o dios.
+Delirio | Empieza con D. Trastorno en que se confunde la realidad con la imaginación.
+Demagogia | Empieza con D. Uso de halagos y falsas promesas para ganar el apoyo del pueblo.
+Depredador | Empieza con D. Animal que caza a otros para alimentarse.
+Desafío | Empieza con D. Reto o provocación a competir.
+Desdén | Empieza con D. Indiferencia y desprecio hacia alguien.
+Desfile | Empieza con D. Marcha ordenada de personas en fila, como en un carnaval o una parada militar.
+Desliz | Empieza con D. Error o falta cometida por descuido.
+Destello | Empieza con D. Resplandor breve e intenso.
+Destino | Empieza con D. Fuerza que supuestamente determina lo que va a pasar.
+Diáfano | Empieza con D. Claro, transparente o fácil de entender.
+Diatriba | Empieza con D. Discurso violento y ofensivo contra alguien.
+Diestro | Empieza con D. Que usa preferentemente la mano derecha; hábil.
+Diluvio | Empieza con D. Lluvia muy abundante; inundación bíblica de Noé.
+Diplomático | Empieza con D. Persona que representa a su país ante otro.
+Discordia | Empieza con D. Desacuerdo o enemistad entre personas.
+Disidente | Empieza con D. Persona que se separa de una doctrina o grupo.
+Divagar | Empieza con D. Hablar sin rumbo, apartándose del tema.
+Doctrina | Empieza con D. Conjunto de ideas o creencias de una escuela o religión.
+Donaire | Empieza con D. Gracia y soltura al hablar o moverse.
+Dádiva | Empieza con D. Regalo que se da desinteresadamente.
+Dantesco | Empieza con D. Que causa espanto, como las escenas del infierno de Dante.
+Débil | Empieza con D. Que tiene poca fuerza o resistencia.
+Déspota | Empieza con D. Gobernante que abusa de su poder.
+Detonante | Empieza con D. Hecho que provoca o desencadena algo.
+Devoción | Empieza con D. Fervor religioso o amor intenso por algo.
+Dialecto | Empieza con D. Variedad regional de una lengua.
+Diáspora | Empieza con D. Dispersión de un pueblo por el mundo fuera de su tierra.
+Dictador | Empieza con D. Gobernante que concentra todo el poder sin control democrático.
+Dicha | Empieza con D. Felicidad o buena suerte.
+Difunto | Empieza con D. Persona que ha muerto.
+Diligente | Empieza con D. Cuidadoso, rápido y eficiente en su trabajo.
+Dintel | Empieza con D. Parte superior horizontal de una puerta o ventana.
+Disyuntiva | Empieza con D. Situación en la que hay que elegir entre dos opciones.
+Dócil | Empieza con D. Obediente y fácil de manejar.
+Dramaturgo | Empieza con D. Autor de obras de teatro.
+Dúctil | Empieza con D. Que se puede estirar o moldear con facilidad.
+Dulzura | Empieza con D. Cualidad de ser dulce o afectuoso.
+Dúo | Empieza con D. Composición o grupo musical para dos intérpretes.
+Durmiente | Empieza con D. Que está dormido, como la Bella de los cuentos.
+Desenlace | Empieza con D. Final de una historia, donde se resuelve la trama.
+Deshielo | Empieza con D. Derretimiento de la nieve y el hielo.
+Desván | Empieza con D. Parte más alta de una casa, bajo el techo, usada como trastero.
+Diagnóstico | Empieza con D. Determinación de una enfermedad por sus síntomas.
+Disquete | Empieza con D. Antiguo disco magnético para guardar datos en el computador.
+Doncella | Empieza con D. Mujer joven, especialmente en los cuentos de caballería.
+Dorado | Empieza con D. Que tiene el color brillante del oro.
+Dote | Empieza con D. Bienes que aportaba la novia al matrimonio.
+Druida | Empieza con D. Sacerdote de los antiguos pueblos celtas.
+Duquesa | Empieza con D. Mujer que posee un título nobiliario inmediatamente inferior al de princesa.
+Dínamo | Empieza con D. Máquina que transforma movimiento en energía eléctrica.
+Dátil | Empieza con D. Fruto dulce y alargado de la palmera.
+Despensa | Empieza con D. Lugar de la casa donde se guardan los alimentos.
+Desodorante | Empieza con D. Producto que se aplica en las axilas para evitar el mal olor.
+Diván | Empieza con D. Sofá sin respaldo, típico de la consulta de un psicoanalista.
+Dorsal | Empieza con D. Número que llevan los deportistas en la espalda de la camiseta.
+Dermatólogo | Empieza con D. Médico especialista en la piel.
+Disparo | Empieza con D. Acción de lanzar un proyectil con un arma.
+Diputado | Empieza con D. Miembro elegido de la Cámara Baja del Congreso.
+Dosel | Empieza con D. Cubierta de tela que se coloca sobre una cama o un trono.
+Domador | Empieza con D. Persona que amansa y entrena animales salvajes.
+
+## E  (101 palabras)
+Edad | Empieza con E. Tiempo que ha vivido una persona.
+Educación | Empieza con E. Formación que se recibe en la escuela y en la familia.
+Egipto | Empieza con E. País africano famoso por sus pirámides y el río Nilo.
+Ejercicio | Empieza con E. Actividad física para mantenerse en forma.
+Electricidad | Empieza con E. Energía que hace funcionar los aparatos enchufados.
+Embarazo | Empieza con E. Estado de la mujer que espera un hijo.
+Empanada | Empieza con E. Masa rellena de pino, queso u otros ingredientes, horneada o frita.
+Empleado | Empieza con E. Persona que trabaja para otra a cambio de un sueldo.
+Enamorado | Empieza con E. Persona que siente amor por otra.
+Enchufe | Empieza con E. Dispositivo que conecta un aparato a la corriente eléctrica.
+Encía | Empieza con E. Carne que rodea la base de los dientes.
+Enero | Empieza con E. Primer mes del año.
+Enfermera | Empieza con E. Profesional que cuida a los pacientes en un hospital.
+Ensalada | Empieza con E. Plato frío de verduras crudas aliñadas.
+Equipaje | Empieza con E. Maletas y bolsos que se llevan en un viaje.
+Escarabajo | Empieza con E. Insecto con caparazón duro; también, famoso auto de Volkswagen.
+Escorpión | Empieza con E. Arácnido venenoso con cola curvada; signo del zodiaco.
+Escritorio | Empieza con E. Mesa para escribir o trabajar.
+Esfera | Empieza con E. Cuerpo geométrico perfectamente redondo.
+Espalda | Empieza con E. Parte trasera del cuerpo desde los hombros hasta la cintura.
+Espantapájaros | Empieza con E. Muñeco que se pone en los sembrados para ahuyentar a las aves.
+España | Empieza con E. País europeo cuya capital es Madrid.
+Espárrago | Empieza con E. Hortaliza de tallo verde y alargado.
+Especia | Empieza con E. Sustancia vegetal aromática para condimentar, como la canela.
+Espina | Empieza con E. Púa puntiaguda de algunas plantas; hueso de pescado.
+Esponja | Empieza con E. Objeto poroso que absorbe agua y sirve para lavar.
+Esposa | Empieza con E. Mujer casada respecto de su marido.
+Esquí | Empieza con E. Deporte de deslizarse por la nieve con tablas largas.
+Esquina | Empieza con E. Lugar donde se juntan dos calles.
+Estación | Empieza con E. Cada una de las cuatro partes del año; lugar donde paran los trenes.
+Estadio | Empieza con E. Recinto con graderías donde se juegan partidos.
+Estornudo | Empieza con E. Expulsión violenta y ruidosa de aire por la nariz y la boca.
+Estufa | Empieza con E. Aparato que sirve para calentar una habitación.
+Etiqueta | Empieza con E. Rótulo que indica el precio o datos de un producto.
+Euro | Empieza con E. Moneda oficial de Alemania, Francia, España e Italia, entre otros países.
+Excursión | Empieza con E. Paseo o viaje corto con fines recreativos.
+Exposición | Empieza con E. Muestra pública de obras de arte u objetos.
+Ecuador | Empieza con E. Línea imaginaria que divide la Tierra en dos hemisferios; país sudamericano.
+Einstein | Empieza con E. Físico alemán creador de la teoría de la relatividad.
+Escocia | Empieza con E. País del Reino Unido famoso por sus gaitas y faldas a cuadros.
+Everest | Empieza con E. Montaña más alta del mundo, en el Himalaya.
+Euforia | Empieza con E. Sensación intensa de alegría y entusiasmo.
+Ébano | Empieza con E. Madera negra, dura y muy valiosa.
+Eco | Empieza con E. Repetición de un sonido al rebotar contra una superficie.
+Edén | Empieza con E. Paraíso terrenal donde vivían Adán y Eva.
+Egoísta | Empieza con E. Persona que solo piensa en sí misma.
+Elixir | Empieza con E. Bebida mágica o medicinal con propiedades maravillosas.
+Elogio | Empieza con E. Alabanza que se hace de alguien o algo.
+Embrujo | Empieza con E. Hechizo o encantamiento que se le hace a alguien.
+Emboscada | Empieza con E. Ataque por sorpresa desde un lugar escondido.
+Encrucijada | Empieza con E. Lugar donde se cruzan caminos; situación difícil de decidir.
+Engaño | Empieza con E. Acción de hacer creer algo que no es verdad.
+Epidemia | Empieza con E. Enfermedad que se propaga rápidamente en una población.
+Epílogo | Empieza con E. Parte final que se añade a una obra después de terminada la historia.
+Época | Empieza con E. Período de tiempo con características propias.
+Equilibrio | Empieza con E. Estado de estabilidad en que no se cae hacia ningún lado.
+Erupción | Empieza con E. Expulsión de lava y gases por un volcán.
+Escalofrío | Empieza con E. Temblor del cuerpo por frío o miedo.
+Escándalo | Empieza con E. Hecho que causa indignación y mucho revuelo.
+Escoria | Empieza con E. Lo más vil y despreciable de algo.
+Esfinge | Empieza con E. Figura mitológica con cuerpo de león y cabeza humana.
+Esmero | Empieza con E. Sumo cuidado al hacer algo.
+Espejismo | Empieza con E. Ilusión óptica en el desierto que hace ver agua donde no hay.
+Estampida | Empieza con E. Huida repentina y desordenada de una manada.
+Estratosfera | Empieza con E. Capa de la atmósfera situada sobre la troposfera.
+Estrépito | Empieza con E. Ruido muy fuerte y estruendoso.
+Éxodo | Empieza con E. Salida masiva de un pueblo de su lugar de origen.
+Exilio | Empieza con E. Expulsión o abandono forzado del propio país.
+Expedición | Empieza con E. Viaje organizado para explorar o investigar.
+Extinción | Empieza con E. Desaparición total de una especie.
+Ecléctico | Empieza con E. Que combina elementos de estilos o ideas diferentes.
+Efemérides | Empieza con E. Acontecimientos notables ocurridos en una misma fecha de años anteriores.
+Egregio | Empieza con E. Ilustre e insigne, digno de admiración por sus méritos.
+Elocuencia | Empieza con E. Capacidad de hablar de forma fluida y convincente.
+Embalsamar | Empieza con E. Preparar un cadáver para que no se descomponga.
+Emblema | Empieza con E. Símbolo que representa a un grupo o idea.
+Embrión | Empieza con E. Ser vivo en las primeras etapas de su desarrollo.
+Empírico | Empieza con E. Basado en la experiencia y la observación.
+Enajenado | Empieza con E. Que ha perdido el juicio.
+Encomienda | Empieza con E. Paquete que se envía por correo.
+Endémico | Empieza con E. Propio y exclusivo de un lugar determinado.
+Ermitaño | Empieza con E. Persona que vive en soledad, apartada de la sociedad.
+Erudito | Empieza con E. Persona con conocimientos muy amplios.
+Escarmiento | Empieza con E. Castigo o experiencia que sirve de lección.
+Escéptico | Empieza con E. Que duda de todo o no cree con facilidad.
+Esotérico | Empieza con E. Oculto, reservado o difícil de entender.
+Estoico | Empieza con E. Que soporta el dolor o la adversidad sin quejarse.
+Estupor | Empieza con E. Asombro tan grande que deja sin reacción.
+Etéreo | Empieza con E. Sutil, vaporoso y casi inmaterial.
+Eufemismo | Empieza con E. Palabra suave que reemplaza a otra considerada dura u ofensiva.
+Exhausto | Empieza con E. Agotado por completo, sin ninguna energía para seguir.
+Exiguo | Empieza con E. Escaso o insuficiente para lo que se necesita.
+Exquisito | Empieza con E. De sabor delicioso o de gran refinamiento.
+Éxtasis | Empieza con E. Estado de máxima alegría o arrebato.
+Entelequia | Empieza con E. Cosa irreal que solo existe en la imaginación.
+Emérito | Empieza con E. Jubilado que conserva su título y honores.
+Escalinata | Empieza con E. Escalera amplia y monumental, generalmente exterior.
+Embudo | Empieza con E. Utensilio en forma de cono que sirve para trasvasar líquidos.
+Enredadera | Empieza con E. Planta que trepa por paredes y árboles enrollándose en ellos.
+Esquimal | Empieza con E. Habitante de las zonas árticas que tradicionalmente vivía en iglús.
+Estribo | Empieza con E. Pieza donde el jinete apoya el pie al montar a caballo.
+
+## F  (101 palabras)
+Fábula | Empieza con F. Relato breve con animales que deja una moraleja.
+Factura | Empieza con F. Documento que detalla lo que se compró y su precio.
+Faja | Empieza con F. Prenda ajustada que se pone en la cintura para moldear la figura.
+Falda | Empieza con F. Prenda que cuelga desde la cintura y cubre las piernas.
+Farol | Empieza con F. Lámpara de la calle; también, un engaño para aparentar en el póker.
+Febrero | Empieza con F. Segundo mes del año, el más corto.
+Feria | Empieza con F. Mercado al aire libre; también, fiesta con juegos mecánicos.
+Fideo | Empieza con F. Pasta larga y delgada que se come con salsa.
+Fiebre | Empieza con F. Aumento de la temperatura del cuerpo por una enfermedad.
+Filete | Empieza con F. Trozo de carne o pescado sin hueso.
+Firma | Empieza con F. Nombre y rúbrica que una persona escribe de su puño y letra.
+Flamenco | Empieza con F. Ave rosada de patas largas; también, baile típico andaluz.
+Flan | Empieza con F. Postre de huevo y leche cuajado con caramelo.
+Flaco | Empieza con F. De poca carne o grasa en el cuerpo.
+Florero | Empieza con F. Recipiente donde se ponen flores con agua.
+Fogata | Empieza con F. Fuego que se hace al aire libre con leña.
+Folclore | Empieza con F. Conjunto de tradiciones, música y bailes de un pueblo.
+Fonda | Empieza con F. Local popular de comida; en Chile, carpa típica de las Fiestas Patrias.
+Fontanero | Empieza con F. Persona que arregla cañerías, también llamada gásfiter.
+Fórmula | Empieza con F. Ecuación o receta; también, categoría de autos de carrera.
+Fósforo | Empieza con F. Palito con cabeza que se enciende al frotarlo.
+Fotocopia | Empieza con F. Reproducción en papel de un documento hecha con una máquina.
+Francia | Empieza con F. País europeo cuya capital es París.
+Frasco | Empieza con F. Recipiente de vidrio con tapa.
+Frazada | Empieza con F. Manta gruesa que se pone en la cama para abrigarse.
+Fregadero | Empieza con F. Lavaplatos de la cocina.
+Freno | Empieza con F. Mecanismo para detener un vehículo.
+Frijol | Empieza con F. Legumbre también llamada poroto.
+Frutilla | Empieza con F. Fruta roja con semillitas por fuera, también llamada fresa.
+Fuerza | Empieza con F. Capacidad física para mover algo o resistir.
+Fumador | Empieza con F. Persona que tiene el hábito de fumar.
+Funeral | Empieza con F. Ceremonia de despedida de un difunto.
+Furgoneta | Empieza con F. Vehículo cerrado para transportar mercancías.
+Fusil | Empieza con F. Arma de fuego de cañón largo.
+Fantasía | Empieza con F. Facultad de imaginar cosas que no existen.
+Felicidad | Empieza con F. Estado de plena satisfacción y alegría.
+Felino | Empieza con F. Animal de la familia del gato, como el león o el tigre.
+Fiambre | Empieza con F. Embutido o carne que se come fría, como el jamón.
+Fiel | Empieza con F. Que cumple sus compromisos y no traiciona.
+Finlandia | Empieza con F. País nórdico considerado la tierra de Papá Noel.
+Fiordo | Empieza con F. Entrada estrecha del mar entre montañas, típica de Noruega y la Patagonia.
+Flojo | Empieza con F. Que no tiene ganas de trabajar; perezoso.
+Fosa | Empieza con F. Hoyo excavado en la tierra, como el de una tumba.
+Fracción | Empieza con F. Parte de un todo; número que se escribe como quebrado.
+Frambuesa | Empieza con F. Fruto rojo pequeño y aterciopelado, pariente de la mora.
+Frankenstein | Empieza con F. Monstruo creado por un científico en la novela de Mary Shelley.
+Freud | Empieza con F. Médico austríaco considerado el padre del psicoanálisis.
+Frida | Empieza con F. Nombre de la pintora mexicana Kahlo, famosa por sus autorretratos.
+Futbolista | Empieza con F. Persona que juega fútbol.
+Faraón | Empieza con F. Rey del antiguo Egipto.
+Fachada | Empieza con F. Parte exterior y frontal de un edificio.
+Faena | Empieza con F. Trabajo o tarea; también, labor del torero en la plaza.
+Fallo | Empieza con F. Error; también, decisión de un juez.
+Fanfarrón | Empieza con F. Persona que presume de lo que no es o no tiene.
+Farsa | Empieza con F. Obra cómica; también, engaño o montaje.
+Fatiga | Empieza con F. Cansancio intenso después de un gran esfuerzo.
+Fausto | Empieza con F. Personaje que vende su alma al diablo en la obra de Goethe.
+Fechoría | Empieza con F. Mala acción o travesura grave.
+Fecundo | Empieza con F. Que produce mucho; fértil.
+Féretro | Empieza con F. Caja donde se coloca a un difunto para enterrarlo.
+Feroz | Empieza con F. Salvaje y agresivo, como una fiera.
+Festín | Empieza con F. Banquete abundante y espléndido.
+Fetiche | Empieza con F. Objeto al que se atribuyen poderes mágicos o se le tiene excesiva devoción.
+Fiasco | Empieza con F. Fracaso total y decepcionante.
+Fidelidad | Empieza con F. Lealtad y constancia en los afectos o compromisos.
+Fiera | Empieza con F. Animal salvaje y peligroso.
+Filántropo | Empieza con F. Persona que dona su dinero o su tiempo para ayudar a otros.
+Filibustero | Empieza con F. Pirata que asaltaba los barcos del Caribe en los siglos XVII y XVIII.
+Fisgón | Empieza con F. Persona que curiosea en asuntos ajenos.
+Flagelo | Empieza con F. Látigo; también, calamidad que afecta a muchos.
+Flamante | Empieza con F. Nuevo y reluciente, como recién salido de la tienda.
+Flema | Empieza con F. Calma excesiva; también, mucosidad de las vías respiratorias.
+Florido | Empieza con F. Lleno de flores; también, adornado en exceso.
+Fluvial | Empieza con F. Relativo a los ríos.
+Fogoso | Empieza con F. Ardiente, apasionado e impetuoso.
+Forastero | Empieza con F. Persona que viene de otro lugar.
+Fornido | Empieza con F. Robusto y de mucha fuerza.
+Fortaleza | Empieza con F. Recinto fortificado; también, fuerza y vigor.
+Fortuna | Empieza con F. Suerte; también, gran cantidad de dinero.
+Fragancia | Empieza con F. Olor agradable, como el de un perfume.
+Fraile | Empieza con F. Religioso de ciertas órdenes, como los franciscanos.
+Fratricidio | Empieza con F. Asesinato de un hermano.
+Frenesí | Empieza con F. Exaltación violenta del ánimo.
+Frívolo | Empieza con F. Superficial y poco serio.
+Fructífero | Empieza con F. Que produce buenos resultados.
+Fugaz | Empieza con F. Que dura muy poco, como una estrella que cruza el cielo.
+Fulgor | Empieza con F. Brillo intenso que emite algo luminoso.
+Fullero | Empieza con F. Persona que hace trampas en el juego.
+Funesto | Empieza con F. Que trae desgracia o tristeza.
+Fútil | Empieza con F. De poca importancia o que no vale la pena.
+Falacia | Empieza con F. Argumento engañoso que parece válido pero no lo es.
+Fanfarria | Empieza con F. Música ruidosa de trompetas y tambores para anunciar algo.
+Fatuo | Empieza con F. Engreído y presumido sin razón.
+Faquir | Empieza con F. Persona que hace actos de resistencia como acostarse sobre clavos.
+Fémur | Empieza con F. Hueso más largo del cuerpo humano, en el muslo.
+Feudo | Empieza con F. Territorio que un señor medieval concedía a un vasallo.
+Filatelia | Empieza con F. Afición a coleccionar estampillas.
+Fonética | Empieza con F. Disciplina que estudia los sonidos del lenguaje.
+Fragua | Empieza con F. Horno donde el herrero calienta los metales.
+Frontón | Empieza con F. Deporte de pelota que se juega golpeándola contra una pared.
+Fumigar | Empieza con F. Desinfectar un lugar con humo o gases para eliminar plagas.
+
+## G  (106 palabras)
+Gabinete | Empieza con G. Conjunto de ministros de un gobierno.
+Gaita | Empieza con G. Instrumento de viento con un fuelle, típico de Escocia y Galicia.
+Gallina | Empieza con G. Ave de corral que pone huevos.
+Gallo | Empieza con G. Ave de corral macho que canta al amanecer.
+Ganso | Empieza con G. Ave palmípeda de cuello largo, criada en granjas.
+Garaje | Empieza con G. Lugar donde se guardan los autos.
+Garbanzo | Empieza con G. Legumbre redonda con la que se hace el hummus.
+Garra | Empieza con G. Uña curva y afilada de algunos animales; también, empuje y entrega.
+Gaseosa | Empieza con G. Bebida dulce con burbujas.
+Gasolina | Empieza con G. Combustible líquido que usan los autos.
+Gaviota | Empieza con G. Ave marina blanca y gris que vive en la costa.
+Gelatina | Empieza con G. Postre de consistencia temblorosa hecho con colágeno.
+Gemelo | Empieza con G. Cada uno de los hermanos nacidos del mismo parto.
+Gendarme | Empieza con G. Policía, especialmente en Francia.
+Gente | Empieza con G. Conjunto de personas reunidas en un lugar o en general.
+Geranio | Empieza con G. Planta de balcón con flores rojas, rosadas o blancas.
+Girasol | Empieza con G. Flor amarilla grande que gira siguiendo al sol.
+Gol | Empieza con G. Punto que se anota cuando la pelota entra en el arco.
+Golosina | Empieza con G. Dulce o caramelo que se come por gusto más que por alimento.
+Gordo | Empieza con G. Que tiene mucha grasa o volumen.
+Gorra | Empieza con G. Prenda para la cabeza con visera.
+Gorro | Empieza con G. Prenda redonda que cubre la cabeza para protegerla del frío.
+Grabadora | Empieza con G. Aparato para registrar sonidos.
+Granada | Empieza con G. Fruta con muchos granos rojos; también, explosivo de mano.
+Granizo | Empieza con G. Lluvia de bolitas de hielo.
+Grillo | Empieza con G. Insecto que produce un chirrido característico por la noche.
+Gripe | Empieza con G. Enfermedad contagiosa con fiebre, tos y dolor de cuerpo.
+Gris | Empieza con G. Color que resulta de mezclar blanco y negro.
+Grito | Empieza con G. Sonido de voz muy fuerte.
+Guacamole | Empieza con G. Salsa mexicana hecha a base de palta.
+Guardia | Empieza con G. Persona encargada de vigilar y proteger un lugar.
+Guerrero | Empieza con G. Persona que combate en una guerra.
+Guinda | Empieza con G. Fruto rojo pequeño con carozo, parecido a la cereza.
+Guirnalda | Empieza con G. Tira de flores, hojas o adornos que se cuelga para decorar.
+Guiso | Empieza con G. Comida preparada en una olla con salsa.
+Gusto | Empieza con G. Sentido que permite percibir los sabores.
+Gaucho | Empieza con G. Hombre de campo de las pampas argentinas y uruguayas.
+Gandhi | Empieza con G. Líder pacifista que logró la independencia de la India.
+Grecia | Empieza con G. País europeo cuna de la democracia y los Juegos Olímpicos.
+Guatemala | Empieza con G. País centroamericano de cultura maya.
+Godzilla | Empieza con G. Monstruo gigante japonés que surge del mar.
+Gryffindor | Empieza con G. Casa de Hogwarts de Harry Potter.
+Gorgona | Empieza con G. Monstruo mitológico como Medusa, con serpientes en la cabeza.
+Galeón | Empieza con G. Gran barco de vela usado por los españoles para cruzar el océano.
+Ganga | Empieza con G. Cosa que se compra muy barata.
+Garantía | Empieza con G. Seguro que cubre las fallas de un producto.
+Garita | Empieza con G. Caseta de vigilancia de un guardia.
+Gazapo | Empieza con G. Error al hablar o escribir; también, cría de conejo.
+Géiser | Empieza con G. Fuente termal que lanza chorros de agua caliente.
+Genocidio | Empieza con G. Exterminio sistemático de un grupo humano.
+Germen | Empieza con G. Microorganismo que puede causar enfermedades; origen de algo.
+Gesta | Empieza con G. Hazaña heroica digna de ser recordada.
+Gesto | Empieza con G. Movimiento de la cara o las manos que expresa algo.
+Gitano | Empieza con G. Persona del pueblo romaní, tradicionalmente nómada.
+Gladiolo | Empieza con G. Planta de flores en espiga muy usada en ramos.
+Glotón | Empieza con G. Que come en exceso y con ansia.
+Gnomo | Empieza con G. Ser fantástico pequeño que vive bajo tierra y cuida tesoros.
+Gobierno | Empieza con G. Conjunto de personas que dirigen un Estado.
+Golpe | Empieza con G. Impacto fuerte de un cuerpo contra otro.
+Gong | Empieza con G. Instrumento de percusión formado por un gran disco metálico.
+Gótico | Empieza con G. Estilo arquitectónico medieval de catedrales con arcos apuntados.
+Gourmet | Empieza con G. Persona aficionada a la comida refinada.
+Grafiti | Empieza con G. Dibujo o letrero pintado en una pared pública.
+Granuja | Empieza con G. Pícaro sinvergüenza que comete pequeñas fechorías.
+Gratitud | Empieza con G. Sentimiento de agradecimiento hacia quien nos hizo un favor.
+Gravedad | Empieza con G. Fuerza que atrae los cuerpos hacia el centro de la Tierra.
+Gringo | Empieza con G. Forma coloquial de llamar a un estadounidense.
+Grotesco | Empieza con G. Ridículo y extravagante hasta el punto de causar risa o rechazo.
+Gruñido | Empieza con G. Sonido ronco que hace el cerdo o un perro enojado.
+Guarida | Empieza con G. Refugio escondido de animales o delincuentes.
+Guateque | Empieza con G. Fiesta casera con baile.
+Guijarro | Empieza con G. Piedra pequeña y redondeada por el agua.
+Guillotina | Empieza con G. Máquina para decapitar usada en la Revolución francesa.
+Gula | Empieza con G. Exceso en la comida o la bebida; uno de los pecados capitales.
+Gurú | Empieza con G. Maestro espiritual o persona experta a la que se sigue.
+Gálibo | Empieza con G. Altura máxima permitida para pasar bajo un puente o túnel.
+Gallardo | Empieza con G. Valiente y de buena presencia.
+Galimatías | Empieza con G. Lenguaje confuso e incomprensible.
+Gárgola | Empieza con G. Escultura de un monstruo en un desagüe de catedral.
+Garrote | Empieza con G. Palo grueso y fuerte.
+Gazmoño | Empieza con G. Que finge escrúpulos y devoción exagerados.
+Gélido | Empieza con G. Muy frío, helado como el hielo.
+Gentilicio | Empieza con G. Palabra que indica el origen geográfico de una persona.
+Geriatría | Empieza con G. Rama de la medicina que trata a los ancianos.
+Glosario | Empieza con G. Lista de palabras con sus definiciones.
+Glúteo | Empieza con G. Músculo que forma las nalgas.
+Gobelino | Empieza con G. Tapiz fino tejido a mano.
+Gorgojo | Empieza con G. Insecto pequeño que daña los granos almacenados.
+Gradería | Empieza con G. Conjunto de asientos escalonados de un estadio.
+Gragea | Empieza con G. Pastilla pequeña recubierta de azúcar.
+Grandilocuente | Empieza con G. Que habla con un estilo exageradamente solemne.
+Gregario | Empieza con G. Que vive en grupo o sigue a la mayoría sin criterio propio.
+Grieta | Empieza con G. Abertura alargada en una superficie.
+Grima | Empieza con G. Desagrado o dentera que causa un ruido o una cosa.
+Guadaña | Empieza con G. Herramienta de hoja curva y mango largo asociada a la Muerte.
+Guerrilla | Empieza con G. Grupo armado que lucha contra un ejército regular con ataques sorpresa.
+Guiño | Empieza con G. Gesto de cerrar un ojo como señal de complicidad.
+Gacela | Empieza con G. Antílope africano esbelto y muy veloz.
+Galápago | Empieza con G. Tortuga de agua; también, islas de Ecuador famosas por Darwin.
+Gamba | Empieza con G. Crustáceo marino parecido al camarón.
+Garza | Empieza con G. Ave zancuda de cuello largo que vive cerca del agua.
+Guepardo | Empieza con G. Felino más rápido de la Tierra.
+Galgo | Empieza con G. Raza de perro muy delgado y veloz.
+Gárrulo | Empieza con G. Que habla mucho y sin sustancia.
+Gemido | Empieza con G. Sonido de queja o dolor.
+Gimnasta | Empieza con G. Deportista que practica gimnasia.
+
+## H  (102 palabras)
+Haba | Empieza con H. Legumbre de vaina grande y granos verdes.
+Habano | Empieza con H. Cigarro puro de Cuba.
+Hablador | Empieza con H. Persona que habla mucho.
+Halcón | Empieza con H. Ave rapaz muy veloz usada en cetrería.
+Harina | Empieza con H. Polvo que resulta de moler trigo, base del pan.
+Hebilla | Empieza con H. Pieza metálica que cierra un cinturón.
+Helado | Empieza con H. Postre congelado de crema o agua con sabores.
+Helecho | Empieza con H. Planta sin flores de hojas grandes y divididas.
+Herida | Empieza con H. Lesión en la piel producida por un golpe o corte.
+Hermano | Empieza con H. Persona que tiene los mismos padres que otra.
+Herramienta | Empieza con H. Instrumento que se usa para hacer un trabajo manual.
+Hervidor | Empieza con H. Aparato eléctrico para calentar agua.
+Hiena | Empieza con H. Animal africano carroñero famoso por su risa.
+Hierba | Empieza con H. Planta pequeña de tallo tierno; pasto.
+Hierro | Empieza con H. Metal duro y resistente de color gris.
+Hígado | Empieza con H. Órgano que filtra la sangre y produce bilis.
+Higo | Empieza con H. Fruto dulce de la higuera.
+Hija | Empieza con H. Persona de sexo femenino respecto de sus padres.
+Hipo | Empieza con H. Contracción involuntaria del diafragma que produce un sonido característico.
+Hogar | Empieza con H. Casa o lugar donde se vive con la familia.
+Hombre | Empieza con H. Ser humano de sexo masculino.
+Hombro | Empieza con H. Parte del cuerpo donde se une el brazo con el tronco.
+Hormiga | Empieza con H. Insecto pequeño que vive en colonias organizadas.
+Horóscopo | Empieza con H. Predicción del futuro según los signos del zodiaco.
+Hostal | Empieza con H. Alojamiento económico para viajeros.
+Hoyo | Empieza con H. Agujero en la tierra.
+Huerto | Empieza con H. Terreno pequeño donde se cultivan verduras.
+Humano | Empieza con H. Perteneciente a la especie de las personas.
+Hurto | Empieza con H. Robo que se comete sin violencia ni intimidación.
+Hollín | Empieza con H. Polvo negro que deja el humo.
+Hámster | Empieza con H. Pequeño roedor que se tiene de mascota y corre en una rueda.
+Harry | Empieza con H. Nombre del mago protagonista de la saga de J. K. Rowling.
+Hércules | Empieza con H. Héroe mitológico famoso por su fuerza descomunal.
+Hitler | Empieza con H. Dictador alemán que inició la Segunda Guerra Mundial.
+Holanda | Empieza con H. País europeo famoso por sus tulipanes y molinos.
+Honduras | Empieza con H. País centroamericano cuya capital es Tegucigalpa.
+Hulk | Empieza con H. Superhéroe verde de Marvel que crece cuando se enoja.
+Homero | Empieza con H. Poeta griego autor de la Ilíada y la Odisea; padre de los Simpson.
+Hacienda | Empieza con H. Finca agrícola grande; también, administración de impuestos del Estado.
+Hallazgo | Empieza con H. Descubrimiento de algo valioso.
+Harapo | Empieza con H. Ropa vieja y rota.
+Hechicero | Empieza con H. Persona que hace hechizos o brujerías.
+Helio | Empieza con H. Gas más liviano que el aire con que se inflan los globos.
+Herbívoro | Empieza con H. Animal que se alimenta solo de plantas.
+Herejía | Empieza con H. Creencia contraria a los dogmas de una religión.
+Hermético | Empieza con H. Cerrado por completo; también, reservado y difícil de entender.
+Hiedra | Empieza con H. Planta trepadora de hojas verdes y brillantes.
+Higiene | Empieza con H. Limpieza y cuidado para conservar la salud.
+Hilera | Empieza con H. Fila ordenada de personas o cosas.
+Hipnosis | Empieza con H. Estado parecido al sueño inducido por sugestión.
+Hipótesis | Empieza con H. Suposición que se plantea para ser comprobada.
+Hocico | Empieza con H. Boca y nariz alargada de algunos animales.
+Hoguera | Empieza con H. Fuego grande hecho con leña al aire libre.
+Holgazán | Empieza con H. Persona perezosa que evita trabajar.
+Hongo | Empieza con H. Organismo como el champiñón, que crece en lugares húmedos.
+Honor | Empieza con H. Cualidad moral de quien actúa con dignidad.
+Horca | Empieza con H. Estructura con una soga de la que se colgaba a los condenados a muerte.
+Horizonte | Empieza con H. Línea donde parece juntarse el cielo con la tierra o el mar.
+Hormona | Empieza con H. Sustancia química que regula funciones del cuerpo.
+Hostia | Empieza con H. Pan sin levadura que se consagra en la misa.
+Hostil | Empieza con H. Que muestra enemistad o agresividad.
+Huésped | Empieza con H. Persona alojada en casa ajena o en un hotel.
+Humildad | Empieza con H. Virtud de quien no presume de sus logros.
+Hundimiento | Empieza con H. Acción de irse a pique, como el del Titanic.
+Hacinamiento | Empieza con H. Amontonamiento excesivo de personas en un lugar.
+Halagar | Empieza con H. Decir cosas agradables a alguien para complacerlo.
+Hálito | Empieza con H. Aliento o soplo suave.
+Haragán | Empieza con H. Que rehúye el trabajo.
+Hastío | Empieza con H. Aburrimiento o cansancio profundo.
+Hecatombe | Empieza con H. Desastre con muchas víctimas.
+Hedor | Empieza con H. Olor muy desagradable, como el de algo podrido.
+Hedonismo | Empieza con H. Doctrina que pone el placer como fin supremo de la vida.
+Helénico | Empieza con H. Relativo a la antigua Grecia.
+Heraldo | Empieza con H. Mensajero que anuncia algo importante.
+Herético | Empieza con H. Relativo a la herejía.
+Hermafrodita | Empieza con H. Que tiene órganos reproductores de ambos sexos.
+Heterogéneo | Empieza con H. Formado por elementos de distinta naturaleza.
+Híbrido | Empieza con H. Producto del cruce de dos especies o tecnologías distintas.
+Hidalgo | Empieza con H. Noble de rango menor en la España antigua, como Don Quijote.
+Hilaridad | Empieza con H. Risa ruidosa y contagiosa.
+Hipérbole | Empieza con H. Exageración retórica de lo que se dice.
+Hipocondríaco | Empieza con H. Persona que cree estar siempre enferma.
+Hipotermia | Empieza con H. Descenso peligroso de la temperatura corporal.
+Homicidio | Empieza con H. Acción de matar a una persona.
+Homónimo | Empieza con H. Palabra que se escribe o suena igual que otra pero significa distinto.
+Hosco | Empieza con H. Áspero y poco sociable en el trato.
+Hostigar | Empieza con H. Molestar o perseguir con insistencia.
+Huraño | Empieza con H. Que rehúye el trato con la gente.
+Hurgar | Empieza con H. Remover o escarbar en algo.
+Husmear | Empieza con H. Rastrear con el olfato; curiosear.
+Hachazo | Empieza con H. Golpe dado con un hacha.
+Hangar | Empieza con H. Galpón grande donde se guardan aviones.
+Hemorragia | Empieza con H. Salida abundante de sangre.
+Hervir | Empieza con H. Calentar un líquido hasta que burbujee.
+Himalaya | Empieza con H. Cordillera más alta del mundo, donde está el Everest.
+Hiel | Empieza con H. Bilis amarga del hígado; también, sentimiento de amargura.
+Hipódromo | Empieza con H. Lugar donde se hacen carreras de caballos.
+Hoz | Empieza con H. Herramienta de hoja curva para segar.
+Humedad | Empieza con H. Cantidad de agua o vapor en el aire o en un objeto.
+Humorista | Empieza con H. Persona que se dedica a hacer reír.
+Hidrógeno | Empieza con H. Elemento químico más liviano y abundante del universo.
+Hazmerreír | Empieza con H. Persona que es objeto de burla de todos.
+
+## I  (104 palabras)
+Ibérico | Empieza con I. Relativo a la península donde están España y Portugal.
+Icono | Empieza con I. Imagen religiosa pintada; también, símbolo pequeño en una pantalla.
+Ida | Empieza con I. Acción de ir a un lugar; lo contrario de vuelta.
+Idea | Empieza con I. Representación mental de algo.
+Ideal | Empieza con I. Modelo perfecto al que se aspira.
+Idiota | Empieza con I. Persona de poca inteligencia (insulto).
+Ignorante | Empieza con I. Que no tiene conocimientos sobre algo.
+Igual | Empieza con I. De la misma forma, tamaño o valor.
+Iluminación | Empieza con I. Conjunto de luces que alumbran un lugar.
+Imitador | Empieza con I. Persona que copia la voz o los gestos de otra.
+Impermeable | Empieza con I. Prenda que no deja pasar el agua, para la lluvia.
+Importante | Empieza con I. Que tiene mucho valor o relevancia.
+Impuesto | Empieza con I. Dinero que se paga obligatoriamente al Estado.
+Incienso | Empieza con I. Resina que desprende un olor aromático al quemarse.
+Indígena | Empieza con I. Originario del lugar donde vive.
+Infante | Empieza con I. Niño pequeño; también, hijo de un rey que no es heredero.
+Infierno | Empieza con I. Lugar de castigo eterno según varias religiones.
+Inglaterra | Empieza con I. País del Reino Unido cuya capital es Londres.
+Inmigrante | Empieza con I. Persona que llega a vivir a un país distinto del suyo.
+Inocente | Empieza con I. Que no tiene culpa.
+Inodoro | Empieza con I. Taza del baño donde se hacen las necesidades.
+Invitado | Empieza con I. Persona a la que se ha convidado a una fiesta o evento.
+Inyectar | Empieza con I. Introducir un líquido en el cuerpo con una jeringa.
+Italia | Empieza con I. País europeo con forma de bota.
+Izquierda | Empieza con I. Lado opuesto al derecho.
+India | Empieza con I. País asiático más poblado del mundo, cuna del yoga.
+Irlanda | Empieza con I. País europeo cuyo símbolo es el trébol.
+Islandia | Empieza con I. País nórdico de volcanes y géiseres.
+Israel | Empieza con I. País de Medio Oriente cuya ciudad más famosa es Jerusalén.
+Ícaro | Empieza con I. Personaje mitológico cuyas alas de cera se derritieron al volar cerca del sol.
+Iceberg | Empieza con I. Gran masa de hielo flotante que hundió al Titanic.
+Ilustrador | Empieza con I. Artista que hace dibujos para libros o revistas.
+Imperdible | Empieza con I. Alfiler de gancho con cierre; algo que no hay que perderse.
+Incisivo | Empieza con I. Diente delantero que sirve para cortar.
+Incubadora | Empieza con I. Aparato que mantiene la temperatura para bebés prematuros o huevos.
+Índice | Empieza con I. Lista de contenidos de un libro; dedo que señala.
+Infarto | Empieza con I. Ataque al corazón por la obstrucción de una arteria.
+Infección | Empieza con I. Invasión del cuerpo por microorganismos.
+Informática | Empieza con I. Ciencia que estudia el procesamiento de datos con computadores.
+Inquilino | Empieza con I. Persona que arrienda una vivienda.
+Insignia | Empieza con I. Distintivo o emblema que identifica a un grupo o cargo.
+Instinto | Empieza con I. Impulso natural que no se aprende.
+Inventor | Empieza con I. Persona que crea algo nuevo.
+Invisible | Empieza con I. Que no se puede ver.
+Iris | Empieza con I. Parte coloreada del ojo.
+Islote | Empieza con I. Isla pequeña y deshabitada.
+Itinerario | Empieza con I. Ruta o plan de un viaje.
+Ira | Empieza con I. Enojo violento que hace perder el control.
+Idolatría | Empieza con I. Adoración excesiva de algo o alguien.
+Ignominia | Empieza con I. Deshonra o humillación pública.
+Ilícito | Empieza con I. Prohibido por la ley.
+Ilustre | Empieza con I. Célebre o distinguido por sus méritos o su linaje.
+Impávido | Empieza con I. Que no muestra miedo ante el peligro.
+Impecable | Empieza con I. Sin ninguna mancha ni defecto.
+Impertinente | Empieza con I. Que molesta con lo que dice o hace fuera de lugar.
+Ímpetu | Empieza con I. Fuerza y energía con que se hace algo.
+Implacable | Empieza con I. Que no se puede calmar ni detener.
+Impune | Empieza con I. Que queda sin castigo.
+Inaudito | Empieza con I. Nunca oído antes; tan sorprendente que cuesta creerlo.
+Incauto | Empieza con I. Que se deja engañar fácilmente.
+Incesto | Empieza con I. Relación sexual entre parientes cercanos.
+Incólume | Empieza con I. Que no ha sufrido daño.
+Incordio | Empieza con I. Persona o cosa molesta.
+Incrédulo | Empieza con I. Que no cree con facilidad.
+Inercia | Empieza con I. Tendencia de un cuerpo a mantener su estado de reposo o movimiento.
+Infame | Empieza con I. Malvado y despreciable, que no tiene honra.
+Infiel | Empieza con I. Que no es fiel a su pareja.
+Ingenuo | Empieza con I. Que actúa con inocencia y sin malicia.
+Ingrato | Empieza con I. Que no agradece los favores recibidos.
+Inhóspito | Empieza con I. Poco acogedor, difícil para vivir.
+Inmune | Empieza con I. Que no puede ser afectado por una enfermedad.
+Innato | Empieza con I. Que se tiene desde el nacimiento.
+Inquisición | Empieza con I. Tribunal eclesiástico que perseguía la herejía.
+Insolente | Empieza con I. Que falta el respeto con descaro.
+Insulso | Empieza con I. Sin gracia ni sabor.
+Intrépido | Empieza con I. Que no teme a los peligros.
+Inútil | Empieza con I. Que no sirve para nada.
+Iracundo | Empieza con I. Propenso a la ira.
+Irreverente | Empieza con I. Que no muestra respeto hacia lo considerado sagrado o serio.
+Itinerante | Empieza con I. Que va de un lugar a otro.
+Ibis | Empieza con I. Ave sagrada del antiguo Egipto de pico largo y curvo.
+Idílico | Empieza con I. Hermoso y perfecto, como un idilio.
+Ignífugo | Empieza con I. Que protege contra el fuego.
+Iluso | Empieza con I. Que se ilusiona con cosas imposibles.
+Impío | Empieza con I. Que no tiene fe religiosa.
+Imberbe | Empieza con I. Que todavía no tiene barba.
+Impoluto | Empieza con I. Limpio y sin ninguna mancha.
+Improperio | Empieza con I. Insulto grave que se lanza contra alguien.
+Incipiente | Empieza con I. Que está empezando o recién comienza a desarrollarse.
+Indeleble | Empieza con I. Que no se puede borrar.
+Indómito | Empieza con I. Que no se deja dominar.
+Inextricable | Empieza con I. Tan enredado que es difícil de resolver.
+Ínfulas | Empieza con I. Presunción o vanidad de quien se cree más de lo que es.
+Inhumar | Empieza con I. Enterrar un cadáver en una tumba.
+Iniquidad | Empieza con I. Maldad o gran injusticia.
+Ínsula | Empieza con I. Isla, como la que gobernó Sancho Panza.
+Intrínseco | Empieza con I. Propio y esencial de algo.
+Inocuo | Empieza con I. Que no hace daño.
+Isósceles | Empieza con I. Triángulo con dos lados iguales.
+Ingle | Empieza con I. Zona del cuerpo donde se une el muslo con el abdomen.
+Idóneo | Empieza con I. Adecuado o apropiado para una función.
+Ilustración | Empieza con I. Movimiento cultural del siglo XVIII; también, dibujo de un libro.
+Imitación | Empieza con I. Copia de algo original.
+Infusión | Empieza con I. Bebida que se hace con hierbas en agua caliente, como el té.
+
+## J  (101 palabras)
+Jaguar | Empieza con J. Felino americano de piel con manchas, el más grande del continente.
+Jaiba | Empieza con J. Cangrejo de mar muy usado en la cocina chilena.
+Jalea | Empieza con J. Conserva dulce y transparente hecha de fruta.
+Jamón | Empieza con J. Pierna de cerdo curada o cocida.
+Japón | Empieza con J. País asiático conocido como la tierra del sol naciente.
+Jarra | Empieza con J. Recipiente con asa y pico para servir líquidos.
+Jarrón | Empieza con J. Vasija decorativa para flores.
+Jazmín | Empieza con J. Flor blanca de perfume muy intenso.
+Jazz | Empieza con J. Género musical nacido en Nueva Orleans basado en la improvisación.
+Jengibre | Empieza con J. Raíz picante y aromática usada en la cocina asiática.
+Jersey | Empieza con J. Prenda de punto con mangas que cubre el torso.
+Jesús | Empieza con J. Figura central del cristianismo.
+Joroba | Empieza con J. Bulto en la espalda, como el del camello.
+Jota | Empieza con J. Nombre de una letra del abecedario; también, baile aragonés.
+Judo | Empieza con J. Arte marcial japonés basado en proyecciones y llaves.
+Jugador | Empieza con J. Persona que participa en un juego o deporte.
+Junio | Empieza con J. Sexto mes del año.
+Jungla | Empieza con J. Selva tropical espesa llena de vegetación y animales salvajes.
+Júpiter | Empieza con J. Planeta más grande del sistema solar.
+Jurásico | Empieza con J. Período geológico de los dinosaurios que da nombre a un famoso parque.
+Jardinero | Empieza con J. Persona que cuida los jardines.
+Jamaica | Empieza con J. Isla del Caribe donde nació Bob Marley.
+Jerusalén | Empieza con J. Ciudad sagrada para judíos, cristianos y musulmanes.
+Joker | Empieza con J. Villano de los cómics de Batman, también llamado el Guasón.
+Juventus | Empieza con J. Club de fútbol italiano de Turín.
+Jurel | Empieza con J. Pez de mar muy consumido en conserva en Chile.
+Jote | Empieza con J. Ave carroñera negra muy común en Chile.
+Jeans | Empieza con J. Pantalones de mezclilla azul, también llamados vaqueros.
+Jacuzzi | Empieza con J. Bañera con chorros de agua a presión.
+Jalapeño | Empieza con J. Ají verde mexicano de tamaño mediano y picor moderado.
+Jabonera | Empieza con J. Recipiente donde se deja el jabón.
+Jaqueca | Empieza con J. Dolor de cabeza intenso.
+Jauría | Empieza con J. Grupo de perros que cazan juntos.
+Jilguero | Empieza con J. Pájaro cantor de plumaje colorido.
+Jolgorio | Empieza con J. Fiesta bulliciosa con mucha diversión.
+Jornalero | Empieza con J. Persona que trabaja por día a cambio de un jornal.
+Júbilo | Empieza con J. Alegría muy intensa que se manifiesta con entusiasmo.
+Juerga | Empieza con J. Fiesta ruidosa con bebida y baile.
+Junco | Empieza con J. Planta de tallo largo y flexible que crece en zonas húmedas.
+Jurista | Empieza con J. Persona experta en derecho.
+Justiciero | Empieza con J. Que hace justicia por su cuenta.
+Jacinto | Empieza con J. Planta de flores perfumadas en racimo.
+Jade | Empieza con J. Piedra preciosa de color verde muy apreciada en China.
+Jeque | Empieza con J. Jefe de una tribu o de un país árabe.
+Jerez | Empieza con J. Vino generoso originario de Andalucía.
+Jesuita | Empieza con J. Miembro de la Compañía de Jesús.
+Jirón | Empieza con J. Pedazo desgarrado de una tela.
+Jovial | Empieza con J. Alegre y de buen humor.
+Jubileo | Empieza con J. Celebración de un aniversario importante.
+Juglar | Empieza con J. Artista medieval que recitaba y cantaba por los pueblos.
+Juramento | Empieza con J. Promesa solemne poniendo a Dios o algo sagrado como testigo.
+Juvenil | Empieza con J. Propio de la juventud.
+Juanete | Empieza con J. Hueso que sobresale en la base del dedo gordo del pie.
+Judas | Empieza con J. Apóstol que traicionó a Jesús; sinónimo de traidor.
+Juzgado | Empieza con J. Lugar donde se imparte justicia.
+Jarana | Empieza con J. Diversión bulliciosa con música y baile.
+Jaleo | Empieza con J. Alboroto y desorden con mucho ruido.
+Jauja | Empieza con J. Lugar imaginario de abundancia y riqueza.
+Jefatura | Empieza con J. Cargo o dependencia de un jefe.
+Jerigonza | Empieza con J. Lenguaje complicado y difícil de entender.
+Jumento | Empieza con J. Burro o asno, animal de carga de orejas largas.
+Jubón | Empieza con J. Prenda ajustada antigua que cubría desde los hombros a la cintura.
+Jícara | Empieza con J. Vasija pequeña para tomar chocolate.
+Jamelgo | Empieza con J. Caballo flaco y de mal aspecto.
+Jerarca | Empieza con J. Persona de alto rango en una organización.
+Justa | Empieza con J. Combate medieval a caballo con lanzas.
+Jaripeo | Empieza con J. Fiesta de doma de toros y caballos en México.
+Jinetear | Empieza con J. Montar a caballo con destreza.
+Jitomate | Empieza con J. Nombre que se le da al tomate en México.
+Joyería | Empieza con J. Tienda donde se venden joyas.
+Juicioso | Empieza con J. Que actúa con sensatez.
+Jurar | Empieza con J. Prometer algo solemnemente poniendo a alguien por testigo.
+Justo | Empieza con J. Que actúa con justicia.
+Jabato | Empieza con J. Cría del jabalí; también, persona valiente.
+Japonés | Empieza con J. Idioma o persona de Japón.
+Jet | Empieza con J. Avión a reacción muy veloz.
+Jineta | Empieza con J. Mamífero pequeño de cuerpo alargado y cola anillada.
+Joyita | Empieza con J. Persona o cosa valiosa; dicho irónicamente, alguien que da problemas.
+Jumbo | Empieza con J. Nombre popular del avión Boeing 747.
+Jaguarundí | Empieza con J. Felino americano pequeño de pelaje uniforme.
+Jalar | Empieza con J. Tirar de algo hacia uno.
+Jardinera | Empieza con J. Prenda de pantalón con peto y tirantes; también, macetero alargado.
+Jornal | Empieza con J. Sueldo que se cobra por cada día de trabajo.
+Júnior | Empieza con J. Categoría deportiva juvenil; también, empleado de oficina en Chile.
+Juntura | Empieza con J. Lugar donde se unen dos piezas.
+Juramentado | Empieza con J. Que ha prestado juramento.
+Jovenzuelo | Empieza con J. Joven en tono despectivo o cariñoso.
+Jácara | Empieza con J. Romance alegre sobre la vida de los pícaros.
+Jaspe | Empieza con J. Piedra dura de colores veteados.
+Jarcia | Empieza con J. Conjunto de cuerdas y aparejos de un barco.
+Jilote | Empieza con J. Mazorca de maíz tierna.
+Judía | Empieza con J. Poroto o frijol, en España.
+Jerbo | Empieza con J. Pequeño roedor del desierto que salta como un canguro.
+Jamás | Empieza con J. Nunca, en ningún momento.
+Jenízaro | Empieza con J. Soldado de la guardia del sultán otomano.
+Jibia | Empieza con J. Molusco parecido al calamar, muy pescado en Chile.
+Juguetería | Empieza con J. Tienda donde se venden juguetes.
+Jenga | Empieza con J. Juego de una torre de bloques de madera que se van sacando sin que se caiga.
+Jugoso | Empieza con J. Que tiene mucho jugo.
+Jockey | Empieza con J. Jinete profesional de carreras de caballos.
+Jaimito | Empieza con J. Niño protagonista de incontables chistes pícaros.
+
+## K  (102 palabras)
+Kebab | Empieza con K. Comida turca de carne asada en un asador vertical, servida en pan.
+Kermés | Empieza con K. Fiesta popular al aire libre con juegos, rifas y comida para recaudar fondos.
+Kilogramo | Empieza con K. Unidad de masa equivalente a mil gramos.
+Kilovatio | Empieza con K. Unidad de potencia equivalente a mil vatios.
+Kimchi | Empieza con K. Plato coreano de verduras fermentadas y picantes.
+Kiosquero | Empieza con K. Persona que atiende un quiosco.
+Kínder | Empieza con K. Jardín infantil al que van los niños antes de entrar al colegio.
+Kraken | Empieza con K. Monstruo marino gigante con tentáculos de las leyendas nórdicas.
+Krill | Empieza con K. Pequeños crustáceos marinos que son el principal alimento de las ballenas.
+Kurdo | Empieza con K. Persona de un pueblo sin Estado propio repartido entre Turquía, Irak, Irán y Siria.
+Kuwait | Empieza con K. Pequeño país petrolero del golfo Pérsico.
+Kenia | Empieza con K. País africano famoso por sus safaris y sus corredores de fondo.
+Katana | Empieza con K. Sable largo y curvo de los samuráis japoneses.
+Kilt | Empieza con K. Falda escocesa de tela a cuadros que usan los hombres.
+Kremlin | Empieza con K. Fortaleza de Moscú donde está la sede del gobierno ruso.
+Kelvin | Empieza con K. Escala de temperatura cuyo cero es el cero absoluto.
+Kevlar | Empieza con K. Fibra sintética muy resistente con la que se fabrican chalecos antibalas.
+Kickboxing | Empieza con K. Deporte de combate que mezcla golpes de boxeo con patadas.
+Kitesurf | Empieza con K. Deporte acuático en que se navega sobre una tabla impulsada por una cometa.
+Kendo | Empieza con K. Arte marcial japonés de esgrima con espadas de bambú.
+Karateca | Empieza con K. Persona que practica karate.
+Kayakista | Empieza con K. Persona que rema en kayak.
+Katiuska | Empieza con K. Bota de goma alta para la lluvia.
+Kombucha | Empieza con K. Bebida fermentada de té, levemente efervescente.
+Kalashnikov | Empieza con K. Fusil de asalto soviético también conocido como AK-47.
+Kamasutra | Empieza con K. Antiguo libro indio sobre el amor y las posturas sexuales.
+Kaki | Empieza con K. Color marrón verdoso típico de los uniformes militares.
+Kibutz | Empieza con K. Comunidad agrícola colectiva de Israel.
+Kilobyte | Empieza con K. Unidad de información equivalente a unos mil bytes.
+Kirby | Empieza con K. Personaje rosado y redondo de Nintendo que absorbe a sus enemigos.
+Kratos | Empieza con K. Guerrero espartano protagonista de la saga God of War.
+Krusty | Empieza con K. Payaso de la televisión en Los Simpson.
+Kenny | Empieza con K. Personaje de South Park que muere en casi todos los capítulos.
+Krilin | Empieza con K. Mejor amigo de Gokú en Dragon Ball.
+Kentucky | Empieza con K. Estado de EE. UU. famoso por su pollo frito y sus carreras de caballos.
+Katmandú | Empieza con K. Capital de Nepal, a los pies del Himalaya.
+Kabul | Empieza con K. Capital de Afganistán, rodeada por las montañas del Hindu Kush.
+Kioto | Empieza con K. Antigua capital imperial de Japón, famosa por sus templos.
+Kiev | Empieza con K. Capital de Ucrania, a orillas del río Dniéper.
+Kafka | Empieza con K. Escritor checo autor de La metamorfosis.
+Kant | Empieza con K. Filósofo alemán autor de la Crítica de la razón pura.
+Kit | Empieza con K. Conjunto de piezas o herramientas que se venden juntas.
+Kumis | Empieza con K. Bebida de leche fermentada típica de Colombia y Asia central.
+Kilométrico | Empieza con K. Que es extremadamente largo.
+Kilohercio | Empieza con K. Unidad de frecuencia equivalente a mil hercios.
+Kepis | Empieza con K. Gorro militar cilíndrico con visera.
+Kurdistán | Empieza con K. Región de Oriente Medio habitada principalmente por kurdos.
+Kazajistán | Empieza con K. País más grande de Asia Central, con capital en Astaná.
+Kingston | Empieza con K. Capital de Jamaica, cuna del reggae.
+Kansas | Empieza con K. Estado de EE. UU. de donde era Dorothy en El mago de Oz.
+Kindle | Empieza con K. Lector de libros electrónicos de Amazon.
+Kleenex | Empieza con K. Marca de pañuelos desechables que se usa como nombre genérico.
+Kodak | Empieza con K. Histórica marca de cámaras y rollos fotográficos.
+Kawasaki | Empieza con K. Marca japonesa de motocicletas.
+Kia | Empieza con K. Marca surcoreana de automóviles.
+Kahoot | Empieza con K. Plataforma de preguntas y respuestas usada en clases.
+Kakashi | Empieza con K. Maestro ninja de cabello plateado en Naruto.
+Ken | Empieza con K. Novio de la muñeca Barbie.
+Kiss | Empieza con K. Banda de rock con las caras pintadas de blanco y negro.
+Hockey | Contiene la K. Deporte que se juega con palos curvos y una bola o disco.
+Póker | Contiene la K. Juego de cartas de apuestas donde se puede ganar con un farol.
+Rock | Contiene la K. Género musical de guitarras eléctricas nacido en los años 50.
+Punk | Contiene la K. Movimiento musical y estético de los 70, rebelde y contestatario.
+Tokio | Contiene la K. Capital de Japón y una de las ciudades más pobladas del mundo.
+Parking | Contiene la K. Palabra inglesa para el estacionamiento de autos.
+Smoking | Contiene la K. Traje de etiqueta masculino con solapas de seda.
+Snack | Contiene la K. Bocadillo o picoteo entre comidas.
+Sketch | Contiene la K. Escena cómica breve en un programa de humor.
+Shock | Contiene la K. Estado de fuerte conmoción física o emocional.
+Okupa | Contiene la K. Persona que ocupa ilegalmente una vivienda deshabitada.
+Dakar | Contiene la K. Capital de Senegal que da nombre a un famoso rally.
+Alaska | Contiene la K. Estado más grande de EE. UU., cercano al Polo Norte.
+Nike | Contiene la K. Diosa griega de la victoria y famosa marca deportiva.
+Facebook | Contiene la K. Red social creada por Mark Zuckerberg.
+TikTok | Contiene la K. Red social de videos cortos verticales.
+Skate | Contiene la K. Tabla con ruedas para hacer trucos.
+Pokémon | Contiene la K. Criaturas de bolsillo que se capturan con una pokébola.
+Pikachu | Contiene la K. Pokémon eléctrico amarillo, mascota de la saga.
+Mickey | Contiene la K. Ratón más famoso de Disney.
+Anakin | Contiene la K. Nombre de pila de Darth Vader antes de pasarse al lado oscuro.
+Sherlock | Contiene la K. Nombre del detective más famoso de la literatura, creado por Conan Doyle.
+Shakespeare | Contiene la K. Dramaturgo inglés autor de Romeo y Julieta.
+Shrek | Contiene la K. Ogro verde protagonista de una saga de DreamWorks.
+Spock | Contiene la K. Oficial vulcano de orejas puntiagudas en Star Trek.
+Rocky | Contiene la K. Boxeador interpretado por Sylvester Stallone.
+Okapi | Contiene la K. Mamífero africano pariente de la jirafa, con patas a rayas como la cebra.
+Yak | Contiene la K. Bóvido peludo del Himalaya.
+Marketing | Contiene la K. Conjunto de técnicas para vender un producto.
+Volkswagen | Contiene la K. Marca alemana de autos que fabricó el Escarabajo.
+Nokia | Contiene la K. Marca finlandesa de celulares famosa por su resistencia.
+Pakistán | Contiene la K. País asiático vecino de la India.
+Oklahoma | Contiene la K. Estado del centro de EE. UU.
+Brooklyn | Contiene la K. Distrito de Nueva York unido a Manhattan por un famoso puente.
+Ikea | Contiene la K. Cadena sueca de muebles para armar.
+Turkmenistán | Contiene la K. País de Asia Central cuya capital es Asjabad.
+Frankfurt | Contiene la K. Ciudad financiera de Alemania que da nombre a una salchicha.
+Ticket | Contiene la K. Boleto o comprobante de compra (en inglés).
+Stock | Contiene la K. Existencias de mercadería en una tienda.
+Ranking | Contiene la K. Clasificación ordenada de mayor a menor.
+Kamchatka | Empieza con K. Península volcánica del extremo oriente ruso.
+Kosovo | Empieza con K. Territorio de los Balcanes que declaró su independencia de Serbia en 2008.
+Kilimanjaro | Empieza con K. Montaña más alta de África, en Tanzania.
+
+## L  (104 palabras)
+Laberinto | Empieza con L. Lugar con caminos entrecruzados del que es difícil encontrar la salida.
+Labio | Empieza con L. Cada una de las partes carnosas que rodean la boca.
+Laboratorio | Empieza con L. Lugar equipado para hacer experimentos científicos.
+Ladrillo | Empieza con L. Bloque de arcilla cocida usado en la construcción.
+Lago | Empieza con L. Gran masa de agua dulce rodeada de tierra.
+Lana | Empieza con L. Pelo de la oveja con el que se tejen chalecos.
+Langosta | Empieza con L. Crustáceo marino de carne muy cara; también, insecto que forma plagas.
+Lanza | Empieza con L. Arma de asta larga con punta afilada.
+Lasaña | Empieza con L. Pasta en láminas con capas de carne y salsa.
+Lata | Empieza con L. Envase metálico de conservas; también, algo aburrido.
+Lavadora | Empieza con L. Máquina que lava la ropa.
+Lazo | Empieza con L. Nudo que se deshace fácilmente; cuerda para atrapar animales.
+Lechuga | Empieza con L. Verdura de hojas verdes, base de las ensaladas.
+Lechuza | Empieza con L. Ave rapaz nocturna de cara blanca en forma de corazón.
+Legumbre | Empieza con L. Fruto en vaina como los porotos, garbanzos o lentejas.
+Lenteja | Empieza con L. Legumbre pequeña y redonda con que se hace un guiso.
+Leña | Empieza con L. Trozos de madera que se queman para hacer fuego.
+Leopardo | Empieza con L. Felino de piel amarilla con manchas negras en forma de roseta.
+Libra | Empieza con L. Moneda del Reino Unido; signo del zodiaco.
+Librería | Empieza con L. Tienda donde se venden libros.
+Licuadora | Empieza con L. Electrodoméstico que tritura y mezcla alimentos.
+Liebre | Empieza con L. Mamífero parecido al conejo pero más grande y veloz.
+Lima | Empieza con L. Herramienta para alisar las uñas; capital del Perú.
+Limonada | Empieza con L. Bebida de jugo de limón con agua y azúcar.
+Linterna | Empieza con L. Lámpara portátil a pilas.
+Llama | Empieza con L. Animal andino de cuello largo; también, fuego.
+Llave | Empieza con L. Objeto de metal que abre una cerradura.
+Llavero | Empieza con L. Anillo o cadena donde se guardan las llaves.
+Lombriz | Empieza con L. Gusano de tierra alargado y sin patas.
+Loro | Empieza con L. Ave de colores vivos que puede imitar la voz humana.
+Lotería | Empieza con L. Juego de azar con boletos numerados y premios.
+Luciérnaga | Empieza con L. Insecto que emite luz por su abdomen en la noche.
+Lugar | Empieza con L. Espacio que ocupa un cuerpo; sitio.
+Lujo | Empieza con L. Abundancia de cosas caras e innecesarias.
+Londres | Empieza con L. Capital del Reino Unido.
+Lisboa | Empieza con L. Capital de Portugal, a orillas del río Tajo.
+Leonardo | Empieza con L. Nombre de pila de Da Vinci, autor de la Mona Lisa.
+Lennon | Empieza con L. Apellido del integrante de los Beatles que compuso Imagine.
+Luigi | Empieza con L. Hermano de Mario Bros, vestido de verde.
+Lego | Empieza con L. Juguete de bloques plásticos que se encajan para construir.
+Liceo | Empieza con L. Establecimiento de enseñanza media.
+Lancha | Empieza con L. Embarcación pequeña con motor.
+Látigo | Empieza con L. Instrumento de cuero largo para azotar.
+Lavaplatos | Empieza con L. Fregadero de la cocina; también, máquina que lava la loza.
+Lealtad | Empieza con L. Fidelidad hacia una persona o causa.
+Lector | Empieza con L. Persona que lee libros, diarios o cualquier texto.
+Licencia | Empieza con L. Permiso para hacer algo, como conducir.
+Licor | Empieza con L. Bebida alcohólica destilada y aromatizada.
+Ligamento | Empieza con L. Tejido que une los huesos en las articulaciones.
+Límite | Empieza con L. Línea que separa dos territorios; punto que no se puede sobrepasar.
+Limosna | Empieza con L. Dinero que se da a un necesitado.
+Lingote | Empieza con L. Barra de metal fundido, como el oro.
+Lino | Empieza con L. Planta cuya fibra se usa para hacer telas frescas.
+Litro | Empieza con L. Unidad de volumen equivalente a mil centímetros cúbicos.
+Llanto | Empieza con L. Efusión de lágrimas acompañada de lamentos.
+Llanura | Empieza con L. Terreno extenso y plano.
+Locomotora | Empieza con L. Máquina que arrastra los vagones de un tren.
+Locura | Empieza con L. Pérdida de la razón.
+Lodo | Empieza con L. Barro que se forma con la lluvia.
+Lucidez | Empieza con L. Claridad mental para pensar y entender las cosas.
+Luchador | Empieza con L. Persona que pelea en un combate; también, alguien perseverante.
+Lupa | Empieza con L. Lente de aumento para ver objetos pequeños.
+Lustro | Empieza con L. Período de cinco años.
+Labriego | Empieza con L. Persona que trabaja la tierra.
+Lacayo | Empieza con L. Criado de librea; persona servil.
+Lacónico | Empieza con L. Breve y conciso al hablar o escribir.
+Lacra | Empieza con L. Defecto o vicio grave.
+Lamento | Empieza con L. Queja con llanto o expresiones de dolor.
+Lánguido | Empieza con L. Débil, sin fuerzas ni energía.
+Lapidario | Empieza con L. Dicho breve y contundente.
+Lápida | Empieza con L. Piedra con inscripciones que cubre una tumba.
+Lapso | Empieza con L. Espacio de tiempo entre dos momentos.
+Largometraje | Empieza con L. Película de larga duración.
+Lascivo | Empieza con L. Inclinado excesivamente al placer sexual.
+Lastre | Empieza con L. Peso que estorba; carga que da estabilidad a un barco.
+Latente | Empieza con L. Que existe pero aún no se manifiesta.
+Latifundio | Empieza con L. Finca agrícola de gran extensión con un solo dueño.
+Laúd | Empieza con L. Instrumento de cuerdas con caja en forma de media pera.
+Laurel | Empieza con L. Árbol cuyas hojas se usan en la cocina y en coronas de vencedores.
+Lava | Empieza con L. Roca fundida que sale de un volcán.
+Legión | Empieza con L. Cuerpo numeroso de soldados o de personas.
+Legislador | Empieza con L. Persona que hace las leyes.
+Lepra | Empieza con L. Enfermedad infecciosa crónica que afecta la piel y los nervios.
+Letal | Empieza con L. Que causa la muerte.
+Leviatán | Empieza con L. Monstruo marino bíblico de enorme tamaño.
+Libélula | Empieza con L. Insecto de alas transparentes y cuerpo alargado.
+Libertino | Empieza con L. Que lleva una vida desenfrenada.
+Liliputiense | Empieza con L. Extremadamente pequeño, como los habitantes de Liliput en Los viajes de Gulliver.
+Linaje | Empieza con L. Ascendencia o descendencia de una familia.
+Lince | Empieza con L. Felino de orejas puntiagudas famoso por su vista aguda.
+Lisonja | Empieza con L. Alabanza exagerada para ganarse el favor de alguien.
+Litoral | Empieza con L. Franja de tierra junto al mar.
+Liturgia | Empieza con L. Conjunto de ritos de una religión.
+Lívido | Empieza con L. Amoratado o intensamente pálido.
+Logia | Empieza con L. Agrupación o lugar de reunión de los masones.
+Longevo | Empieza con L. Que vive muchos años.
+Lozano | Empieza con L. Fresco, sano y de aspecto juvenil.
+Lucero | Empieza con L. Astro brillante, especialmente el planeta Venus.
+Lucrativo | Empieza con L. Que produce ganancias o beneficios económicos.
+Lumbre | Empieza con L. Fuego encendido para calentar o cocinar.
+Lunático | Empieza con L. Que tiene cambios bruscos de humor; que actúa como loco.
+Lacrimógeno | Empieza con L. Que hace llorar, como cierto gas o una película triste.
+Latitud | Empieza con L. Distancia de un punto al ecuador terrestre.
+Levadura | Empieza con L. Hongo que hace fermentar y crecer la masa del pan.
+
+## M  (113 palabras)
+Macarrón | Empieza con M. Pasta corta y hueca.
+Maceta | Empieza con M. Recipiente con tierra para cultivar plantas.
+Machete | Empieza con M. Cuchillo grande para cortar maleza.
+Madrugada | Empieza con M. Primeras horas del día, antes del amanecer.
+Maíz | Empieza con M. Cereal de granos amarillos en mazorca.
+Maleta | Empieza con M. Valija para llevar ropa en un viaje.
+Mamut | Empieza con M. Elefante prehistórico peludo de grandes colmillos.
+Manguera | Empieza con M. Tubo flexible para regar.
+Maní | Empieza con M. Fruto seco de cáscara blanda, también llamado cacahuete.
+Mantequilla | Empieza con M. Grasa de la leche que se unta en el pan.
+Mapa | Empieza con M. Representación plana de un territorio.
+Mapache | Empieza con M. Mamífero con antifaz negro en la cara y cola anillada.
+Maratón | Empieza con M. Carrera a pie de poco más de 42 kilómetros.
+Marinero | Empieza con M. Persona que trabaja en un barco.
+Mármol | Empieza con M. Piedra caliza pulida, usada en esculturas y pisos.
+Marzo | Empieza con M. Tercer mes del año.
+Matrimonio | Empieza con M. Unión legal de dos personas.
+Mayo | Empieza con M. Quinto mes del año.
+Medalla | Empieza con M. Disco de metal que se entrega como premio.
+Medusa | Empieza con M. Animal marino gelatinoso que pica; también, gorgona de la mitología griega.
+Mejilla | Empieza con M. Parte de la cara bajo los ojos.
+Melón | Empieza con M. Fruta grande y redonda de pulpa dulce y jugosa.
+Mendigo | Empieza con M. Persona que pide limosna.
+Mentira | Empieza con M. Cosa que se dice sabiendo que es falsa.
+Menú | Empieza con M. Lista de platos de un restaurante.
+Mermelada | Empieza con M. Dulce de fruta cocida con azúcar.
+Mesero | Empieza con M. Persona que atiende las mesas en un restaurante.
+Meteorito | Empieza con M. Fragmento de roca del espacio que cae a la Tierra.
+Metro | Empieza con M. Tren subterráneo; también, unidad de longitud.
+Micrófono | Empieza con M. Aparato que capta la voz para amplificarla.
+Microondas | Empieza con M. Electrodoméstico que calienta la comida rápidamente.
+Miel | Empieza con M. Sustancia dulce que producen las abejas.
+Millonario | Empieza con M. Persona que tiene muchísimo dinero.
+Mirada | Empieza con M. Acción de mirar; expresión de los ojos.
+Misa | Empieza con M. Ceremonia religiosa católica que celebra un sacerdote.
+Mochilero | Empieza con M. Persona que viaja con poco equipaje y poco dinero.
+Molino | Empieza con M. Máquina para moler granos, movida por el viento o el agua.
+Momia | Empieza con M. Cadáver conservado con vendas, como en el antiguo Egipto.
+Mosca | Empieza con M. Insecto volador muy común y molesto.
+Mosquito | Empieza con M. Insecto pequeño que pica y chupa sangre.
+Mostaza | Empieza con M. Salsa amarilla y picante que acompaña a los completos.
+Motor | Empieza con M. Máquina que produce movimiento.
+Mueble | Empieza con M. Objeto que decora y sirve en una casa, como una silla o una mesa.
+Muela | Empieza con M. Diente posterior que sirve para triturar.
+Muñeca | Empieza con M. Juguete con forma de persona; también, articulación de la mano.
+Murciélago | Empieza con M. Mamífero volador nocturno que se orienta por ecolocación.
+Madrid | Empieza con M. Capital de España, donde juega el Real.
+Maradona | Empieza con M. Futbolista argentino autor de la Mano de Dios.
+Messi | Empieza con M. Futbolista argentino campeón del mundo en Qatar 2022.
+Marruecos | Empieza con M. País africano cuya ciudad más famosa es Marrakech.
+Medellín | Empieza con M. Segunda ciudad más grande de Colombia.
+Mafia | Empieza con M. Organización criminal secreta, como la de El Padrino.
+Magistrado | Empieza con M. Juez de un tribunal superior.
+Majestad | Empieza con M. Tratamiento que se da a los reyes.
+Malabarista | Empieza con M. Artista que lanza y recoge varios objetos en el aire.
+Maldición | Empieza con M. Deseo de que le ocurra un mal a alguien.
+Maleficio | Empieza con M. Daño causado por hechicería.
+Manada | Empieza con M. Grupo de animales de la misma especie que andan juntos.
+Mandíbula | Empieza con M. Hueso de la boca donde están los dientes inferiores.
+Manicomio | Empieza con M. Antiguo hospital para enfermos mentales.
+Mansión | Empieza con M. Casa grande y lujosa.
+Manuscrito | Empieza con M. Texto escrito a mano.
+Marea | Empieza con M. Subida y bajada del nivel del mar por la atracción de la Luna.
+Mártir | Empieza con M. Persona que muere o sufre por defender sus creencias.
+Masacre | Empieza con M. Matanza de muchas personas indefensas.
+Matón | Empieza con M. Persona que intimida a otras con la fuerza.
+Mecánico | Empieza con M. Persona que arregla vehículos y máquinas.
+Mediocre | Empieza con M. De calidad baja o regular.
+Mendaz | Empieza con M. Que miente con frecuencia.
+Mercenario | Empieza con M. Soldado que combate a cambio de dinero.
+Meridiano | Empieza con M. Línea imaginaria que une los polos de la Tierra.
+Metamorfosis | Empieza con M. Transformación de un ser en otro, como la oruga en mariposa.
+Metrópolis | Empieza con M. Ciudad grande e importante.
+Milagro | Empieza con M. Hecho extraordinario atribuido a una intervención divina.
+Minotauro | Empieza con M. Monstruo mitológico mitad hombre y mitad toro que vivía en un laberinto.
+Miope | Empieza con M. Persona que no ve bien de lejos.
+Misil | Empieza con M. Proyectil autopropulsado y guiado.
+Mitología | Empieza con M. Conjunto de mitos de un pueblo.
+Moraleja | Empieza con M. Enseñanza que deja una fábula.
+Morboso | Empieza con M. Que siente atracción por lo desagradable o macabro.
+Mordaz | Empieza con M. Que critica con ironía hiriente.
+Moribundo | Empieza con M. Que está a punto de morir.
+Mosaico | Empieza con M. Obra hecha con pequeñas piezas de colores.
+Motín | Empieza con M. Rebelión de un grupo contra la autoridad.
+Mugre | Empieza con M. Suciedad grasienta que se pega en la ropa o en las cosas.
+Multitud | Empieza con M. Gran cantidad de personas reunidas.
+Macabro | Empieza con M. Relacionado con la muerte de forma espantosa.
+Magnánimo | Empieza con M. Generoso y noble de espíritu.
+Mancebo | Empieza con M. Hombre joven; antiguamente, aprendiz de un oficio.
+Mansedumbre | Empieza con M. Suavidad y docilidad de carácter.
+Marasmo | Empieza con M. Paralización o inmovilidad total.
+Mascarón | Empieza con M. Figura tallada en la proa de los barcos antiguos.
+Mausoleo | Empieza con M. Sepulcro monumental construido para una persona importante.
+Mefistofélico | Empieza con M. Diabólico y astuto, como el demonio de Fausto.
+Mentecato | Empieza con M. Tonto, de poco juicio.
+Meticuloso | Empieza con M. Muy cuidadoso con los detalles.
+Mezquino | Empieza con M. Tacaño y egoísta, incapaz de ser generoso.
+Mezquita | Empieza con M. Templo donde rezan los musulmanes.
+Mimetismo | Empieza con M. Capacidad de algunos animales de parecerse a su entorno.
+Moho | Empieza con M. Hongo que aparece sobre la comida descompuesta.
+Monarca | Empieza con M. Rey o reina de un país.
+Monje | Empieza con M. Religioso que vive en un monasterio.
+Mordisco | Empieza con M. Acción de morder algo de una vez con los dientes.
+Mortaja | Empieza con M. Sábana con que se envuelve a un difunto.
+Mustio | Empieza con M. Marchito, como una flor sin agua; también, triste.
+Mutilar | Empieza con M. Cortar una parte del cuerpo.
+Mantra | Empieza con M. Palabra o frase que se repite al meditar.
+Magdalena | Empieza con M. Pequeño bizcocho dulce en forma de taza.
+Merengue | Empieza con M. Dulce de claras batidas con azúcar; también, ritmo caribeño.
+Mandarina | Empieza con M. Cítrico pequeño y fácil de pelar.
+Mariachi | Empieza con M. Grupo musical mexicano con trajes de charro.
+Medianoche | Empieza con M. Las doce de la noche.
+Mímica | Empieza con M. Expresión por medio de gestos, sin palabras.
+
+## N  (101 palabras)
+Nacimiento | Empieza con N. Momento en que se nace.
+Nación | Empieza con N. Conjunto de personas que comparten territorio, historia y gobierno.
+Nalga | Empieza con N. Cada una de las partes carnosas de la parte trasera del cuerpo.
+Navaja | Empieza con N. Cuchillo cuya hoja se dobla dentro del mango.
+Navidad | Empieza con N. Fiesta cristiana del 25 de diciembre.
+Neblina | Empieza con N. Niebla poco densa y baja.
+Necesidad | Empieza con N. Carencia de algo imprescindible.
+Negocio | Empieza con N. Actividad comercial con la que se busca ganar dinero.
+Neumático | Empieza con N. Rueda de goma con aire de un vehículo.
+Nevera | Empieza con N. Electrodoméstico que mantiene frescos los alimentos; refrigerador.
+Niebla | Empieza con N. Nube baja que dificulta la visibilidad.
+Niñera | Empieza con N. Persona que cuida niños.
+Nivel | Empieza con N. Altura o grado que alcanza algo.
+Nopal | Empieza con N. Cactus de hojas planas típico de México.
+Noria | Empieza con N. Rueda gigante de los parques de diversiones.
+Noviembre | Empieza con N. Penúltimo mes del año.
+Novio | Empieza con N. Persona que tiene una relación amorosa con otra.
+Nudo | Empieza con N. Lazo que se aprieta y es difícil de soltar.
+Nuez | Empieza con N. Fruto seco con forma de cerebro.
+Nutria | Empieza con N. Mamífero acuático que flota boca arriba.
+Nutrición | Empieza con N. Proceso de alimentación del organismo.
+Napoleón | Empieza con N. Emperador francés derrotado en Waterloo.
+Nemo | Empieza con N. Pez payaso protagonista de una película de Pixar.
+Neymar | Empieza con N. Delantero brasileño que jugó en el Barcelona y el PSG.
+Nirvana | Empieza con N. Banda grunge de Kurt Cobain; también, estado de paz en el budismo.
+Noruega | Empieza con N. País nórdico famoso por sus fiordos.
+Nicaragua | Empieza con N. País centroamericano con un gran lago y muchos volcanes.
+Nilo | Empieza con N. Río más largo de África, que atraviesa Egipto.
+Narciso | Empieza con N. Joven mitológico enamorado de su reflejo; también, flor.
+Nazi | Empieza con N. Seguidor del partido de Hitler.
+Néctar | Empieza con N. Jugo dulce de las flores que buscan las abejas.
+Negativo | Empieza con N. Contrario a lo positivo; también, película fotográfica revelada.
+Neón | Empieza con N. Gas noble que da luz en los letreros luminosos.
+Nevado | Empieza con N. Montaña cubierta de nieve.
+Ninfa | Empieza con N. Divinidad femenina de los bosques y las aguas.
+Níquel | Empieza con N. Metal plateado usado en monedas.
+Nómina | Empieza con N. Lista de trabajadores y sus sueldos.
+Notario | Empieza con N. Funcionario que da fe de contratos y documentos.
+Novedad | Empieza con N. Cosa nueva o reciente.
+Novena | Empieza con N. Rezo que se hace durante nueve días.
+Novillo | Empieza con N. Toro joven de dos o tres años.
+Nuca | Empieza con N. Parte posterior del cuello.
+Nudista | Empieza con N. Persona que practica el nudismo.
+Nupcias | Empieza con N. Ceremonia de boda o casamiento.
+Náufrago | Empieza con N. Persona que sobrevive a un naufragio.
+Náusea | Empieza con N. Ganas de vomitar acompañadas de malestar en el estómago.
+Navegante | Empieza con N. Persona que navega por el mar.
+Necio | Empieza con N. Tonto y terco que no entiende razones.
+Negligencia | Empieza con N. Descuido o falta de atención en una obligación.
+Némesis | Empieza con N. Enemigo principal o archienemigo.
+Neurona | Empieza con N. Célula del sistema nervioso.
+Neutral | Empieza con N. Que no toma partido por ninguna de las partes.
+Niñez | Empieza con N. Etapa de la vida de los niños.
+Noble | Empieza con N. Persona con título aristocrático; también, de buen corazón.
+Nocturno | Empieza con N. Relativo a la noche.
+Nogal | Empieza con N. Árbol que produce nueces.
+Nombre | Empieza con N. Palabra con que se designa a una persona o cosa.
+Norma | Empieza con N. Regla que se debe seguir.
+Notable | Empieza con N. Digno de atención; calificación escolar alta.
+Novicio | Empieza con N. Persona que se prepara para entrar en una orden religiosa; principiante.
+Nubarrón | Empieza con N. Nube grande y oscura que anuncia tormenta.
+Nulo | Empieza con N. Que no tiene valor o efecto.
+Nutritivo | Empieza con N. Que alimenta y aporta lo que el cuerpo necesita.
+Nativo | Empieza con N. Nacido en el lugar del que se habla.
+Nabo | Empieza con N. Raíz comestible blanca; también, persona tonta.
+Nácar | Empieza con N. Sustancia brillante del interior de las conchas.
+Naipe | Empieza con N. Cada una de las cartas de una baraja.
+Narcótico | Empieza con N. Sustancia que produce sueño o adormecimiento.
+Natalidad | Empieza con N. Número de nacimientos en un lugar y tiempo.
+Nauseabundo | Empieza con N. Que produce náuseas por su mal olor.
+Neófito | Empieza con N. Recién iniciado en una actividad o creencia.
+Nepotismo | Empieza con N. Favoritismo hacia los familiares en cargos públicos.
+Neurálgico | Empieza con N. Punto o lugar decisivo y de gran importancia.
+Nicotina | Empieza con N. Sustancia adictiva del tabaco.
+Nihilismo | Empieza con N. Doctrina que niega todo valor o sentido a la existencia.
+Nimbo | Empieza con N. Aureola sobre la cabeza de un santo; también, tipo de nube.
+Nítido | Empieza con N. Claro, limpio y bien definido.
+Nívea | Empieza con N. Blanca como la nieve.
+Nodriza | Empieza con N. Mujer que amamanta a un hijo ajeno.
+Nonagenario | Empieza con N. Persona que tiene entre noventa y noventa y nueve años.
+Nostálgico | Empieza con N. Que siente añoranza por el pasado.
+Novelesco | Empieza con N. Propio de las novelas; fantástico.
+Noveno | Empieza con N. Que ocupa el lugar número nueve.
+Nubilidad | Empieza con N. Edad en que una persona está apta para casarse.
+Nudillo | Empieza con N. Articulación de los dedos que sobresale al cerrar el puño.
+Nuncio | Empieza con N. Representante diplomático del Papa.
+Nutricionista | Empieza con N. Profesional que diseña dietas.
+Nectarina | Empieza con N. Fruta parecida al durazno pero de piel lisa.
+Nórdico | Empieza con N. Relativo a los países del norte de Europa.
+Narval | Empieza con N. Ballena del Ártico con un largo colmillo en espiral.
+Nazareno | Empieza con N. Relativo a Nazaret; también, penitente de Semana Santa.
+Neumonía | Empieza con N. Infección de los pulmones.
+Neurótico | Empieza con N. Muy nervioso y obsesivo.
+Nieta | Empieza con N. Hija del hijo o de la hija de una persona.
+Nomeolvides | Empieza con N. Flor pequeña de color azul.
+Navío | Empieza con N. Barco grande, especialmente de guerra.
+Nebuloso | Empieza con N. Cubierto de niebla; poco claro.
+Nana | Empieza con N. Canción de cuna para dormir a los bebés.
+Naranjo | Empieza con N. Árbol que da naranjas.
+Natación | Empieza con N. Deporte que consiste en desplazarse en el agua.
+Nevazón | Empieza con N. Nevada intensa y prolongada.
+
+## Ñ  (102 palabras)
+Ñaña | Empieza con Ñ. En Chile, forma cariñosa de llamar a la niñera o a una hermana.
+Ñuñoa | Empieza con Ñ. Comuna de Santiago de Chile famosa por su plaza y su Estadio Nacional.
+Ñuble | Empieza con Ñ. Región de Chile cuya capital es Chillán.
+Ñachi | Empieza con Ñ. Preparación chilena de sangre de cordero aliñada con limón y cilantro.
+Ñire | Empieza con Ñ. Árbol de los bosques patagónicos.
+Año | Contiene la Ñ. Período de doce meses.
+Baño | Contiene la Ñ. Habitación de la casa donde está el inodoro y la ducha.
+Caña | Contiene la Ñ. Tallo hueco de algunas plantas; también, sensación después de una borrachera.
+Cañón | Contiene la Ñ. Arma de fuego grande; también, paso estrecho entre montañas.
+Cariño | Contiene la Ñ. Sentimiento de afecto y amor.
+Castaña | Contiene la Ñ. Fruto seco que se come asado en invierno.
+Compañero | Contiene la Ñ. Persona que comparte una actividad con otra.
+Cuñado | Contiene la Ñ. Hermano del esposo o de la esposa.
+Daño | Contiene la Ñ. Perjuicio o dolor causado a alguien.
+Extraño | Contiene la Ñ. Desconocido o raro, que no es habitual.
+Leñador | Contiene la Ñ. Persona que corta árboles para hacer leña.
+Mañana | Contiene la Ñ. Parte del día desde el amanecer hasta el mediodía; día siguiente.
+Moño | Contiene la Ñ. Peinado en que el pelo se recoge atado sobre la cabeza.
+Montaña | Contiene la Ñ. Gran elevación natural del terreno.
+Otoño | Contiene la Ñ. Estación del año en que caen las hojas.
+Paño | Contiene la Ñ. Trozo de tela que se usa para limpiar.
+Pañal | Contiene la Ñ. Prenda absorbente que usan los bebés.
+Pañuelo | Contiene la Ñ. Pedazo de tela o papel para sonarse la nariz.
+Peña | Contiene la Ñ. Roca grande; también, reunión de amigos con música folclórica.
+Pequeño | Contiene la Ñ. De tamaño reducido o de poca edad.
+Piña | Contiene la Ñ. Fruta tropical de piel áspera y corona de hojas.
+Piñata | Contiene la Ñ. Recipiente lleno de dulces que se rompe a palos en un cumpleaños.
+Puño | Contiene la Ñ. Mano cerrada con los dedos apretados.
+Rebaño | Contiene la Ñ. Grupo de ovejas que cuida un pastor.
+Riñón | Contiene la Ñ. Órgano que filtra la sangre y produce la orina.
+Señal | Contiene la Ñ. Marca o aviso que indica algo.
+Señor | Contiene la Ñ. Tratamiento de respeto a un hombre adulto.
+Sueño | Contiene la Ñ. Ganas de dormir; también, lo que se imagina mientras se duerme.
+Tamaño | Contiene la Ñ. Dimensión o volumen que tiene algo.
+Telaraña | Contiene la Ñ. Red que teje la araña.
+Uña | Contiene la Ñ. Lámina dura en la punta de los dedos.
+Viña | Contiene la Ñ. Plantación de uvas para hacer vino.
+Pestaña | Contiene la Ñ. Pelo que crece en el borde del párpado.
+Muñeco | Contiene la Ñ. Juguete con forma humana, como los de nieve.
+Cañería | Contiene la Ñ. Conjunto de tubos por donde pasa el agua.
+Gruñón | Contiene la Ñ. Persona que se queja de todo.
+Ordeñar | Contiene la Ñ. Extraer la leche de la vaca.
+Enseñanza | Contiene la Ñ. Acción de transmitir conocimientos.
+Añejo | Contiene la Ñ. Que tiene muchos años, como un vino o un queso.
+Añil | Contiene la Ñ. Color azul oscuro entre el azul y el violeta.
+Antaño | Contiene la Ñ. En tiempos antiguos, hace mucho.
+Bañista | Contiene la Ñ. Persona que se baña en la playa o en la piscina.
+Cizaña | Contiene la Ñ. Enemistad que se siembra entre personas.
+Coñac | Contiene la Ñ. Aguardiente francés de uva envejecido en barricas.
+Cuña | Contiene la Ñ. Pieza en forma de ángulo que se usa para calzar o separar.
+Diseñador | Contiene la Ñ. Persona que crea modelos de ropa, objetos o gráficos.
+Ensueño | Contiene la Ñ. Ilusión o fantasía muy hermosa.
+Lampiño | Contiene la Ñ. Que no tiene barba ni vello.
+Mañoso | Contiene la Ñ. Que tiene mañas; en Chile, quisquilloso con la comida.
+Meñique | Contiene la Ñ. Dedo más pequeño de la mano.
+Patraña | Contiene la Ñ. Mentira o invención sin fundamento.
+Peñasco | Contiene la Ñ. Roca grande y elevada.
+Piñón | Contiene la Ñ. Semilla del pino; también, rueda dentada de una bicicleta.
+Plañidera | Contiene la Ñ. Mujer a la que se le pagaba por llorar en los funerales.
+Puñal | Contiene la Ñ. Arma blanca corta de punta afilada.
+Puñado | Contiene la Ñ. Porción de algo que cabe en una mano.
+Rasguño | Contiene la Ñ. Arañazo leve en la piel.
+Regañar | Contiene la Ñ. Reprender o retar a alguien.
+Retoño | Contiene la Ñ. Brote nuevo de una planta; también, hijo pequeño.
+Rapiña | Contiene la Ñ. Robo o saqueo violento.
+Saña | Contiene la Ñ. Furia o crueldad con que se ataca a alguien.
+Señuelo | Contiene la Ñ. Cosa que sirve para atraer o engañar.
+Tacaño | Contiene la Ñ. Que no le gusta gastar su dinero.
+Tañido | Contiene la Ñ. Sonido de una campana.
+Teñir | Contiene la Ñ. Cambiar el color del pelo o de una tela.
+Viñedo | Contiene la Ñ. Terreno plantado de vides.
+Viñeta | Contiene la Ñ. Cada uno de los cuadros de una historieta.
+Zampoña | Contiene la Ñ. Instrumento andino de cañas de distinto largo.
+Añoranza | Contiene la Ñ. Nostalgia por algo que se ha perdido.
+Bisoño | Contiene la Ñ. Inexperto o novato en un oficio.
+Castañuela | Contiene la Ñ. Instrumento de percusión de dos piezas que se toca con los dedos.
+Desengaño | Contiene la Ñ. Decepción al descubrir la verdad.
+Empañar | Contiene la Ñ. Quitar el brillo o la transparencia, como el vapor en un vidrio.
+Estaño | Contiene la Ñ. Metal blando y plateado usado para soldar.
+Leño | Contiene la Ñ. Trozo de árbol cortado.
+Muñón | Contiene la Ñ. Parte de un miembro amputado que queda unida al cuerpo.
+Pañoleta | Contiene la Ñ. Pañuelo que se usa en el cuello o la cabeza.
+Riña | Contiene la Ñ. Pelea o discusión entre dos o más personas.
+Señorita | Contiene la Ñ. Tratamiento que se da a una mujer soltera.
+Compañía | Contiene la Ñ. Persona o grupo que acompaña; también, empresa.
+Campaña | Contiene la Ñ. Conjunto de acciones para lograr un fin, como en las elecciones.
+Cáñamo | Contiene la Ñ. Planta de cuya fibra se hacen cuerdas.
+Ceño | Contiene la Ñ. Gesto de fruncir el entrecejo por enojo.
+Doña | Contiene la Ñ. Tratamiento de respeto que se da a una mujer.
+Piraña | Contiene la Ñ. Pez de río sudamericano con dientes muy afilados.
+Gañán | Contiene la Ñ. Hombre tosco y maleducado.
+Aliño | Contiene la Ñ. Condimento para sazonar las comidas.
+Añicos | Contiene la Ñ. Pedazos pequeños en que se rompe algo.
+Puñetazo | Contiene la Ñ. Golpe dado con el puño.
+Desdeñar | Contiene la Ñ. Tratar con desprecio o indiferencia a alguien.
+Pequeñez | Contiene la Ñ. Cosa insignificante o sin importancia.
+Leñera | Contiene la Ñ. Lugar donde se guarda la leña.
+Uñeta | Contiene la Ñ. Pieza pequeña para tocar la guitarra.
+Engañoso | Contiene la Ñ. Que induce a error.
+Hogaño | Contiene la Ñ. En este año o en la época actual (palabra antigua).
+Madroño | Contiene la Ñ. Arbusto de frutos rojos esféricos, símbolo de Madrid.
+Albañilería | Contiene la Ñ. Arte de construir con ladrillos y cemento.
+
+## O  (102 palabras)
+Obeso | Empieza con O. Que tiene un exceso importante de peso.
+Oca | Empieza con O. Ave parecida al ganso; también, juego de mesa con dados y casillas.
+Octubre | Empieza con O. Décimo mes del año.
+Oculista | Empieza con O. Médico especialista en los ojos.
+Odio | Empieza con O. Sentimiento de profunda antipatía hacia alguien.
+Oeste | Empieza con O. Punto cardinal por donde se pone el sol.
+Oficina | Empieza con O. Lugar de trabajo con escritorios y computadores.
+Oído | Empieza con O. Sentido que permite escuchar.
+Ojo | Empieza con O. Órgano de la vista.
+Ola | Empieza con O. Onda que se forma en la superficie del mar.
+Óleo | Empieza con O. Pintura hecha con pigmentos disueltos en aceite.
+Olfato | Empieza con O. Sentido que permite percibir los olores.
+Olivo | Empieza con O. Árbol que da aceitunas.
+Olla | Empieza con O. Recipiente hondo para cocinar.
+Olor | Empieza con O. Lo que se percibe con la nariz.
+Ombligo | Empieza con O. Cicatriz en el centro del vientre.
+Onda | Empieza con O. Ondulación que se forma en el agua o en el pelo.
+Once | Empieza con O. Número que sigue al diez; en Chile, merienda de la tarde con té y pan.
+Oreja | Empieza con O. Parte externa del oído.
+Orégano | Empieza con O. Hierba aromática muy usada en la pizza.
+Orilla | Empieza con O. Borde de un río, lago o mar.
+Oro | Empieza con O. Metal precioso amarillo; también, primer lugar de una competencia.
+Orquídea | Empieza con O. Flor exótica muy apreciada por su belleza.
+Oruga | Empieza con O. Larva de la mariposa.
+Oso | Empieza con O. Mamífero grande y peludo que hiberna en invierno.
+Ostra | Empieza con O. Molusco marino que puede producir perlas.
+Oveja | Empieza con O. Animal de granja del que se obtiene la lana.
+Ovni | Empieza con O. Objeto volador no identificado.
+Obispo | Empieza con O. Sacerdote que gobierna una diócesis.
+Oboe | Empieza con O. Instrumento de viento de madera con doble lengüeta.
+Observatorio | Empieza con O. Lugar con telescopios para estudiar el cielo.
+Obstáculo | Empieza con O. Cosa que impide o dificulta el paso.
+Ocre | Empieza con O. Color amarillo oscuro tirando a marrón.
+Octágono | Empieza con O. Polígono de ocho lados, como la señal de pare.
+Oculto | Empieza con O. Escondido, que no se ve.
+Odontólogo | Empieza con O. Médico especialista en los dientes; dentista.
+Ofrenda | Empieza con O. Regalo que se ofrece a una divinidad o en memoria de alguien.
+Ogro | Empieza con O. Gigante de los cuentos que come personas.
+Olimpo | Empieza con O. Monte donde vivían los dioses griegos.
+Ónix | Empieza con O. Piedra semipreciosa con franjas de colores.
+Opio | Empieza con O. Droga obtenida de la amapola.
+Óptica | Empieza con O. Tienda donde se venden anteojos.
+Orangután | Empieza con O. Gran simio de pelo rojizo de Borneo y Sumatra.
+Órbita | Empieza con O. Trayectoria que sigue un astro alrededor de otro.
+Orca | Empieza con O. Cetáceo blanco y negro conocido como ballena asesina.
+Orfanato | Empieza con O. Lugar donde viven los niños sin padres.
+Órgano | Empieza con O. Parte del cuerpo con una función; también, instrumento de iglesia.
+Oriente | Empieza con O. Punto cardinal por donde sale el sol.
+Origami | Empieza con O. Arte japonés de hacer figuras doblando papel.
+Ornitorrinco | Empieza con O. Mamífero australiano con pico de pato que pone huevos.
+Ortografía | Empieza con O. Reglas para escribir correctamente las palabras.
+Óscar | Empieza con O. Estatuilla dorada que premia lo mejor del cine.
+Óvalo | Empieza con O. Figura curva cerrada con forma de huevo.
+Ovillo | Empieza con O. Bola de hilo o lana enrollada.
+Oslo | Empieza con O. Capital de Noruega, donde se entrega el Nobel de la Paz.
+Odín | Empieza con O. Dios principal de la mitología nórdica, padre de Thor.
+Orión | Empieza con O. Constelación del cazador, con tres estrellas en el cinturón.
+Otelo | Empieza con O. Celoso protagonista de una tragedia de Shakespeare.
+Obelisco | Empieza con O. Monumento de piedra alto y puntiagudo, como el de Buenos Aires.
+Oaxaca | Empieza con O. Estado mexicano famoso por su gastronomía y su mezcal.
+Obama | Empieza con O. Primer presidente afroamericano de EE. UU.
+Obcecado | Empieza con O. Que se niega a ver la realidad por terquedad.
+Obediencia | Empieza con O. Cumplimiento de lo que se manda.
+Óbice | Empieza con O. Obstáculo o impedimento para hacer algo.
+Obsequio | Empieza con O. Regalo que se hace a alguien como muestra de afecto.
+Obstinado | Empieza con O. Terco, que mantiene su idea a pesar de todo.
+Ocaso | Empieza con O. Puesta del sol; también, decadencia.
+Ocio | Empieza con O. Tiempo libre para descansar o divertirse.
+Odioso | Empieza con O. Que provoca odio o rechazo.
+Ofuscado | Empieza con O. Confundido o cegado por una emoción.
+Ojeriza | Empieza con O. Antipatía o mala voluntad hacia alguien.
+Oligarquía | Empieza con O. Gobierno de unos pocos poderosos.
+Ominoso | Empieza con O. Que presagia algo malo.
+Omnipotente | Empieza con O. Que lo puede todo.
+Omnívoro | Empieza con O. Que come tanto carne como vegetales.
+Onomatopeya | Empieza con O. Palabra que imita un sonido, como ¡pum! o miau.
+Opaco | Empieza con O. Que no deja pasar la luz.
+Opíparo | Empieza con O. Abundante y espléndido, dicho de una comida.
+Oportunista | Empieza con O. Que aprovecha las circunstancias en beneficio propio.
+Opulento | Empieza con O. Muy rico y abundante.
+Orfebre | Empieza con O. Artesano que trabaja el oro y la plata.
+Osadía | Empieza con O. Atrevimiento o audacia para hacer algo arriesgado.
+Oscilar | Empieza con O. Moverse de un lado a otro como un péndulo.
+Ósculo | Empieza con O. Beso, en lenguaje formal.
+Osamenta | Empieza con O. Conjunto de huesos de un esqueleto.
+Otear | Empieza con O. Mirar a lo lejos desde un lugar alto.
+Ovíparo | Empieza con O. Animal que nace de un huevo puesto por la madre.
+Oprimido | Empieza con O. Que sufre opresión o tiranía.
+Orate | Empieza con O. Persona que ha perdido el juicio.
+Ordinario | Empieza con O. Común y corriente; también, de mal gusto.
+Orgánico | Empieza con O. Cultivado sin químicos; relativo a los seres vivos.
+Oriundo | Empieza con O. Originario de un lugar.
+Ornamento | Empieza con O. Adorno que embellece algo.
+Ortodoxo | Empieza con O. Que sigue fielmente una doctrina tradicional.
+Ostentación | Empieza con O. Exhibición presuntuosa de la riqueza.
+Obrero | Empieza con O. Trabajador manual de una fábrica o una construcción.
+Oclusión | Empieza con O. Cierre u obstrucción de un conducto.
+Ocurrencia | Empieza con O. Idea o dicho ingenioso y repentino.
+Ofidio | Empieza con O. Reptil del grupo de las serpientes.
+Oleaje | Empieza con O. Sucesión continua de olas.
+Ostión | Empieza con O. Molusco parecido a la ostra, muy apreciado en Chile.
+Optimista | Empieza con O. Que ve el lado bueno de las cosas.
+
+## P  (105 palabras)
+Padre | Empieza con P. Hombre respecto de sus hijos.
+Página | Empieza con P. Cada cara de una hoja de un libro.
+Pájaro | Empieza con P. Ave pequeña que vuela.
+Pala | Empieza con P. Herramienta para cavar o recoger tierra.
+Palabra | Empieza con P. Conjunto de letras con significado.
+Palacio | Empieza con P. Residencia grande y lujosa de un rey o gobernante.
+Palmera | Empieza con P. Árbol tropical de tronco alto y hojas en penacho.
+Paloma | Empieza con P. Ave símbolo de la paz.
+Pan | Empieza con P. Alimento horneado hecho de harina, agua y levadura.
+Panadero | Empieza con P. Persona que hace o vende pan.
+Panda | Empieza con P. Oso blanco y negro de China que come bambú.
+Pantalón | Empieza con P. Prenda que cubre cada pierna por separado.
+Pantera | Empieza con P. Felino negro de la selva.
+Pantufla | Empieza con P. Zapatilla cómoda para estar en casa.
+Papel | Empieza con P. Hoja delgada para escribir o imprimir.
+Paracaídas | Empieza con P. Equipo que frena la caída de quien salta de un avión.
+Paraguas | Empieza con P. Objeto que protege de la lluvia.
+Pared | Empieza con P. Muro que separa o rodea un espacio.
+Parque | Empieza con P. Terreno con árboles y jardines para pasear.
+Pasaporte | Empieza con P. Documento para viajar al extranjero.
+Pasillo | Empieza con P. Corredor estrecho de una casa o edificio.
+Pastel | Empieza con P. Torta dulce horneada, típica de los cumpleaños.
+Pastor | Empieza con P. Persona que cuida el ganado; también, sacerdote evangélico.
+Patín | Empieza con P. Calzado con ruedas o cuchilla para deslizarse.
+Pato | Empieza con P. Ave acuática de pico ancho que hace cuac.
+Pecho | Empieza con P. Parte delantera del tronco.
+Pegamento | Empieza con P. Sustancia para pegar cosas.
+Peine | Empieza con P. Utensilio con dientes para ordenar el pelo.
+Pelota | Empieza con P. Bola que se usa en muchos deportes.
+Peluca | Empieza con P. Cabellera postiza que se pone sobre la cabeza.
+Peluquero | Empieza con P. Persona que corta el pelo.
+Pepino | Empieza con P. Hortaliza alargada y verde con mucha agua.
+Pera | Empieza con P. Fruta con forma de gota.
+Perfume | Empieza con P. Líquido de olor agradable que se aplica en la piel.
+Periódico | Empieza con P. Diario impreso de noticias.
+Perla | Empieza con P. Joya redonda y brillante que se forma dentro de una ostra.
+Perro | Empieza con P. Mejor amigo del hombre.
+Pescador | Empieza con P. Persona que se gana la vida con la caña o la red.
+Petróleo | Empieza con P. Líquido negro del que se obtiene la gasolina.
+Piano | Empieza con P. Instrumento de teclas blancas y negras.
+Picante | Empieza con P. Que pica en la lengua, como el ají.
+Piedra | Empieza con P. Materia mineral dura que se encuentra en el suelo.
+Pierna | Empieza con P. Extremidad inferior del cuerpo.
+Pijama | Empieza con P. Ropa cómoda que se usa para dormir.
+Piloto | Empieza con P. Persona que conduce un avión o un auto de carreras.
+Pimienta | Empieza con P. Especia picante en granos negros.
+Pincel | Empieza con P. Instrumento con pelos para pintar.
+Pingüino | Empieza con P. Ave que no vuela, vive en el frío y camina como si llevara frac.
+Pintor | Empieza con P. Artista que pinta cuadros.
+Piscina | Empieza con P. Estanque artificial para nadar.
+Pistola | Empieza con P. Arma de fuego de mano.
+Pizarra | Empieza con P. Superficie donde se escribe con tiza o plumón.
+Planeta | Empieza con P. Cuerpo celeste que gira alrededor de una estrella.
+Plátano | Empieza con P. Fruta alargada y amarilla, también llamada banana.
+Plato | Empieza con P. Recipiente donde se sirve la comida.
+Pluma | Empieza con P. Cada una de las piezas que cubren el cuerpo de las aves.
+Policía | Empieza con P. Agente que vela por el orden público.
+Pollo | Empieza con P. Cría de la gallina; carne muy consumida.
+Postre | Empieza con P. Dulce que se come al final de la comida.
+Primavera | Empieza con P. Estación del año en que florecen las plantas.
+Princesa | Empieza con P. Hija de un rey.
+Profesor | Empieza con P. Persona que enseña en un colegio o universidad.
+Puente | Empieza con P. Construcción para cruzar un río o una vía.
+Puerta | Empieza con P. Abertura con una hoja que se abre para entrar o salir.
+Pulpo | Empieza con P. Molusco marino de ocho tentáculos.
+Pulga | Empieza con P. Insecto diminuto que salta y pica a perros y gatos.
+Pulmón | Empieza con P. Órgano de la respiración.
+Pulsera | Empieza con P. Joya que se lleva en la muñeca.
+París | Empieza con P. Capital de Francia, donde está la torre Eiffel.
+Perú | Empieza con P. País sudamericano donde está Machu Picchu.
+Picasso | Empieza con P. Pintor español creador del cubismo.
+Platón | Empieza con P. Filósofo griego discípulo de Sócrates.
+Plutón | Empieza con P. Antiguo noveno planeta, hoy planeta enano.
+Popeye | Empieza con P. Marinero de dibujos animados que se hace fuerte comiendo espinacas.
+Pelé | Empieza con P. Futbolista brasileño ganador de tres mundiales.
+Portugal | Empieza con P. País de la península ibérica cuya capital es Lisboa.
+Panacea | Empieza con P. Remedio que supuestamente cura todos los males.
+Pandemia | Empieza con P. Epidemia que se extiende por muchos países.
+Pánico | Empieza con P. Miedo intenso y descontrolado.
+Panteón | Empieza con P. Monumento funerario para varias personas.
+Paria | Empieza con P. Persona excluida de la sociedad.
+Patíbulo | Empieza con P. Lugar donde se ejecuta a los condenados.
+Pavor | Empieza con P. Temor muy grande que paraliza.
+Pecado | Empieza con P. Falta contra la ley religiosa.
+Penumbra | Empieza con P. Sombra débil entre la luz y la oscuridad.
+Peregrino | Empieza con P. Persona que viaja a un lugar sagrado.
+Perjurio | Empieza con P. Delito de jurar en falso ante un tribunal.
+Pesadilla | Empieza con P. Sueño que provoca angustia o miedo.
+Pésame | Empieza con P. Expresión de condolencia por la muerte de alguien.
+Petulante | Empieza con P. Presumido y engreído que se cree superior.
+Pícaro | Empieza con P. Astuto y travieso que engaña con gracia.
+Plebeyo | Empieza con P. Persona del pueblo, que no es noble.
+Pócima | Empieza con P. Bebida medicinal o mágica.
+Pólvora | Empieza con P. Mezcla explosiva usada en armas y fuegos artificiales.
+Pordiosero | Empieza con P. Mendigo que pide limosna en la calle.
+Presagio | Empieza con P. Señal que anuncia un suceso.
+Prófugo | Empieza con P. Que huye de la justicia.
+Pródigo | Empieza con P. Que gasta sin medida; también, el hijo que vuelve arrepentido.
+Profeta | Empieza con P. Persona que anuncia el futuro por inspiración divina.
+Pudor | Empieza con P. Vergüenza o recato, especialmente respecto del propio cuerpo.
+Purgatorio | Empieza con P. Lugar de purificación de las almas según el catolicismo.
+Pusilánime | Empieza con P. Cobarde, falto de ánimo.
+Pulcro | Empieza con P. Muy limpio y ordenado.
+Pragmático | Empieza con P. Que se guía por lo práctico.
+Prestidigitador | Empieza con P. Mago que hace trucos con las manos.
+
+## Q  (104 palabras)
+Quebrar | Empieza con Q. Romper algo con violencia.
+Quechua | Empieza con Q. Pueblo y lengua de los Andes, idioma del Imperio inca.
+Quehacer | Empieza con Q. Tarea u ocupación que hay que hacer, como las de la casa.
+Quena | Empieza con Q. Flauta andina de caña.
+Querido | Empieza con Q. Persona a la que se ama.
+Queroseno | Empieza con Q. Combustible derivado del petróleo usado en aviones.
+Quesadilla | Empieza con Q. Tortilla de maíz o trigo rellena de queso derretido.
+Quetzal | Empieza con Q. Ave de plumas verdes, símbolo de Guatemala.
+Quiche | Empieza con Q. Tarta salada de huevo y crema.
+Quieto | Empieza con Q. Que no se mueve.
+Quietud | Empieza con Q. Calma, falta de movimiento.
+Quijada | Empieza con Q. Mandíbula de los animales.
+Quilate | Empieza con Q. Unidad de pureza del oro y de peso de las piedras preciosas.
+Quilla | Empieza con Q. Pieza que recorre el fondo de un barco de proa a popa.
+Quimioterapia | Empieza con Q. Tratamiento contra el cáncer con medicamentos.
+Quiniela | Empieza con Q. Apuesta sobre los resultados de partidos de fútbol.
+Quinta | Empieza con Q. Casa de campo con terreno; también, nota musical.
+Quintal | Empieza con Q. Antigua unidad de peso equivalente a cien libras.
+Quinteto | Empieza con Q. Grupo musical de cinco integrantes.
+Quinto | Empieza con Q. Que ocupa el lugar número cinco.
+Quipu | Empieza con Q. Sistema de cuerdas con nudos que usaban los incas para registrar datos.
+Quiromancia | Empieza con Q. Adivinación del futuro leyendo las líneas de la mano.
+Quisco | Empieza con Q. Cactus típico del norte y centro de Chile.
+Quitasol | Empieza con Q. Sombrilla para protegerse del sol.
+Quito | Empieza con Q. Capital de Ecuador, muy cerca de la línea del ecuador.
+Quillay | Empieza con Q. Árbol nativo de Chile cuya corteza hace espuma.
+Quiltro | Empieza con Q. En Chile, perro sin raza definida.
+Quínoa | Empieza con Q. Semilla andina muy nutritiva considerada un superalimento.
+Quincho | Empieza con Q. Espacio techado para hacer asados.
+Quirquincho | Empieza con Q. Armadillo de los Andes con cuyo caparazón se hacían charangos.
+Quila | Empieza con Q. Bambú nativo de los bosques del sur de Chile.
+Quintral | Empieza con Q. Planta parásita de flores rojas que crece sobre otros árboles en Chile.
+Quemazón | Empieza con Q. Calor excesivo o ardor en la piel.
+Querendón | Empieza con Q. Muy cariñoso y que le gusta que lo quieran.
+Quejumbroso | Empieza con Q. Que se queja por todo.
+Quebranto | Empieza con Q. Gran pérdida o dolor.
+Quebradizo | Empieza con Q. Que se rompe con facilidad.
+Quetzalcóatl | Empieza con Q. Serpiente emplumada, dios de los aztecas.
+Quevedo | Empieza con Q. Poeta español del Siglo de Oro, rival de Góngora.
+Quijotesco | Empieza con Q. Idealista y soñador como Don Quijote.
+Quino | Empieza con Q. Humorista gráfico argentino creador de Mafalda.
+Quidditch | Empieza con Q. Deporte de magos sobre escobas en Harry Potter.
+Queen | Empieza con Q. Banda británica de Freddie Mercury.
+Quentin | Empieza con Q. Nombre de pila de Tarantino, director de Pulp Fiction.
+Quico | Empieza con Q. Niño de cachetes inflados, vecino del Chavo del 8.
+Quasimodo | Empieza con Q. Jorobado de Notre Dame.
+Quebec | Empieza con Q. Provincia francófona de Canadá.
+Quinceañera | Empieza con Q. Joven que celebra sus quince años.
+Quinquenio | Empieza con Q. Período de cinco años.
+Quintaesencia | Empieza con Q. Lo más puro y esencial de algo.
+Quinqué | Empieza con Q. Lámpara de aceite con tubo de cristal.
+Quilombo | Empieza con Q. En Argentina, lío o desorden.
+Quisquilla | Empieza con Q. Pequeñez sin importancia; también, camarón pequeño.
+Quitamanchas | Empieza con Q. Producto que elimina las manchas de la ropa.
+Quitanieves | Empieza con Q. Máquina que despeja la nieve de las carreteras.
+Quemarropa | Empieza con Q. A muy corta distancia, dicho de un disparo.
+Querencia | Empieza con Q. Lugar donde uno se siente a gusto y al que tiende a volver.
+Quejido | Empieza con Q. Sonido de dolor o pena.
+Quiste | Empieza con Q. Bolsa anormal con líquido que se forma en el cuerpo.
+Queque | Empieza con Q. En Chile, bizcocho horneado en molde.
+Quemado | Empieza con Q. Que ha sido consumido por el fuego.
+Quejica | Empieza con Q. Que se queja constantemente.
+Quijotada | Empieza con Q. Acción propia de un idealista ingenuo.
+Quitar | Empieza con Q. Sacar algo de un lugar.
+Quilmes | Empieza con Q. Ciudad argentina conocida por su cerveza.
+Querétaro | Empieza con Q. Estado y ciudad del centro de México.
+Quíntuple | Empieza con Q. Que es cinco veces mayor que otra cosa.
+Raqueta | Contiene la Q. Instrumento con cuerdas para golpear la pelota en el tenis.
+Paquete | Contiene la Q. Envoltorio con algo dentro.
+Máquina | Contiene la Q. Aparato que realiza un trabajo.
+Arquero | Contiene la Q. Jugador que defiende el arco; también, quien dispara flechas.
+Tanque | Contiene la Q. Vehículo blindado de guerra; también, depósito de agua.
+Bloque | Contiene la Q. Pieza grande y compacta de piedra o madera.
+Ataque | Contiene la Q. Acción de atacar a un rival o enemigo.
+Duque | Contiene la Q. Título nobiliario inmediatamente inferior al de príncipe.
+Choque | Contiene la Q. Encuentro violento de dos cosas.
+Cheque | Contiene la Q. Documento para pagar con dinero del banco.
+Enfoque | Contiene la Q. Manera de ver o tratar un tema.
+Mosquetero | Contiene la Q. Soldado armado con mosquete, como los de Dumas.
+Flequillo | Contiene la Q. Pelo que cae sobre la frente.
+Tranquilo | Contiene la Q. Calmado, sin nervios ni preocupaciones.
+Riqueza | Contiene la Q. Abundancia de bienes, dinero o recursos.
+Requesón | Contiene la Q. Queso fresco y blando.
+Parroquia | Contiene la Q. Iglesia de un barrio.
+Anarquía | Contiene la Q. Ausencia de gobierno o de orden.
+Croquis | Contiene la Q. Dibujo rápido y sin detalles.
+Raquítico | Contiene la Q. Muy delgado y débil.
+Tequila | Contiene la Q. Bebida alcohólica mexicana de agave.
+Pasquín | Contiene la Q. Escrito anónimo y satírico pegado en público.
+Quemador | Empieza con Q. Pieza de la cocina por donde sale la llama.
+Quinina | Empieza con Q. Sustancia amarga usada contra la malaria y en el agua tónica.
+Quiropráctico | Empieza con Q. Terapeuta que trata dolores manipulando la columna.
+Quillota | Empieza con Q. Ciudad chilena de la región de Valparaíso famosa por sus paltas y chirimoyas.
+Quilpué | Empieza con Q. Ciudad chilena conocida como la ciudad del sol, vecina de Villa Alemana.
+Quinchamalí | Empieza con Q. Localidad chilena famosa por su cerámica negra con dibujos blancos.
+Quilicura | Empieza con Q. Comuna del norte de Santiago.
+Quebracho | Empieza con Q. Árbol sudamericano de madera durísima.
+Quimbombó | Empieza con Q. Hortaliza africana de vainas verdes, también llamada okra.
+Maqueta | Contiene la Q. Modelo a escala de un edificio o proyecto.
+Mequetrefe | Contiene la Q. Persona entrometida y de poco provecho.
+Esquema | Contiene la Q. Representación gráfica simplificada de una idea.
+Inquieto | Contiene la Q. Que no puede estarse quieto o está preocupado.
+Boquete | Contiene la Q. Agujero o abertura en una pared.
+Banqueta | Contiene la Q. Asiento sin respaldo; también, acera en México.
+
+## R  (100 palabras)
+Rabia | Empieza con R. Enojo intenso; también, enfermedad que transmiten los perros.
+Rábano | Empieza con R. Raíz roja y picante que se come cruda.
+Raíz | Empieza con R. Parte de la planta que crece bajo tierra.
+Rama | Empieza con R. Parte del árbol que sale del tronco.
+Rana | Empieza con R. Anfibio verde que croa y salta.
+Rascacielos | Empieza con R. Edificio altísimo de muchos pisos.
+Rata | Empieza con R. Roedor grande de cola larga.
+Ratón | Empieza con R. Roedor pequeño; también, dispositivo del computador.
+Raya | Empieza con R. Línea; también, pez plano con cola en forma de látigo.
+Receta | Empieza con R. Instrucciones para preparar una comida; también, indicación médica.
+Recreo | Empieza con R. Pausa entre clases para jugar.
+Red | Empieza con R. Malla para pescar; también, conjunto de computadores conectados.
+Regadera | Empieza con R. Recipiente para regar las plantas.
+Regla | Empieza con R. Instrumento para medir y trazar líneas rectas.
+Reloj | Empieza con R. Instrumento que marca la hora.
+Remo | Empieza con R. Pala larga para impulsar un bote.
+Remolacha | Empieza con R. Raíz morada y dulce, también llamada betarraga.
+Reno | Empieza con R. Ciervo de las zonas frías que tira del trineo de Papá Noel.
+Repollo | Empieza con R. Hortaliza de hojas apretadas en forma de bola.
+Resfriado | Empieza con R. Enfermedad leve con mocos y estornudos.
+Restaurante | Empieza con R. Local donde se sirven comidas.
+Retrato | Empieza con R. Pintura o foto de una persona.
+Revista | Empieza con R. Publicación periódica con artículos y fotos.
+Rinoceronte | Empieza con R. Mamífero africano con uno o dos cuernos en la nariz.
+Río | Empieza con R. Corriente de agua que desemboca en el mar.
+Risa | Empieza con R. Expresión de alegría con sonido.
+Robot | Empieza con R. Máquina que hace tareas de forma automática.
+Roca | Empieza con R. Piedra grande y dura.
+Rodilla | Empieza con R. Articulación que une el muslo con la pierna.
+Rojo | Empieza con R. Color de la sangre.
+Rompecabezas | Empieza con R. Juego de piezas que se encajan para formar una imagen.
+Ropa | Empieza con R. Prendas con que se viste una persona.
+Rosa | Empieza con R. Flor con espinas, símbolo del amor.
+Rubio | Empieza con R. De pelo amarillo o dorado.
+Rueda | Empieza con R. Pieza circular que gira sobre un eje.
+Ruido | Empieza con R. Sonido molesto y desagradable.
+Ruleta | Empieza con R. Juego de casino con una rueda numerada y una bolita.
+Ruiseñor | Empieza con R. Pájaro famoso por su canto melodioso.
+Rusia | Empieza con R. País más extenso del mundo.
+Roma | Empieza con R. Capital de Italia, ciudad del Coliseo.
+Rapunzel | Empieza con R. Princesa de larga trenza encerrada en una torre.
+Ronaldo | Empieza con R. Apellido del delantero portugués apodado CR7.
+Rambo | Empieza con R. Soldado interpretado por Sylvester Stallone.
+Ramsés | Empieza con R. Faraón egipcio de la dinastía XIX, uno de los más poderosos.
+Rapsodia | Empieza con R. Composición musical libre, como la Bohemian de Queen.
+Rebuzno | Empieza con R. Sonido que hace el burro.
+Recluta | Empieza con R. Soldado recién incorporado al ejército.
+Refugio | Empieza con R. Lugar donde protegerse del peligro o del mal tiempo.
+Rehén | Empieza con R. Persona retenida para exigir algo a cambio.
+Relámpago | Empieza con R. Destello de luz en una tormenta.
+Reliquia | Empieza con R. Objeto de gran valor histórico o religioso.
+Remordimiento | Empieza con R. Pesar por haber hecho algo malo.
+Renegado | Empieza con R. Que abandona su religión o sus ideas.
+Réplica | Empieza con R. Copia exacta; también, respuesta.
+Reptil | Empieza con R. Animal de sangre fría como la serpiente o el lagarto.
+Réquiem | Empieza con R. Misa o música para los difuntos.
+Resaca | Empieza con R. Malestar del día siguiente después de beber mucho.
+Resurrección | Empieza con R. Volver a la vida después de muerto.
+Retórica | Empieza con R. Arte de hablar con elocuencia.
+Revancha | Empieza con R. Desquite o venganza después de una derrota.
+Ritual | Empieza con R. Conjunto de ceremonias que se repiten siempre igual.
+Rival | Empieza con R. Contrincante con quien se compite por algo.
+Rufián | Empieza con R. Persona sin honor que vive de engaños.
+Ruina | Empieza con R. Restos de un edificio destruido; también, quiebra económica.
+Rumor | Empieza con R. Noticia no confirmada que corre de boca en boca.
+Rúbrica | Empieza con R. Trazo que acompaña a la firma.
+Rapaz | Empieza con R. Ave de presa; también, muchacho joven.
+Raudo | Empieza con R. Rápido y veloz como el viento.
+Recóndito | Empieza con R. Muy escondido y oculto.
+Regocijo | Empieza con R. Alegría intensa que se manifiesta con entusiasmo.
+Reacio | Empieza con R. Que se resiste a hacer algo.
+Rencor | Empieza con R. Resentimiento persistente por una ofensa recibida.
+Reticente | Empieza con R. Que se muestra reacio o desconfiado.
+Rocambolesco | Empieza con R. Extravagante e inverosímil, lleno de giros increíbles.
+Ruin | Empieza con R. Vil y despreciable en su forma de actuar.
+Rústico | Empieza con R. Propio del campo; también, tosco y sin refinamiento.
+Rastrillo | Empieza con R. Herramienta con dientes para juntar hojas.
+Radar | Empieza con R. Sistema que detecta objetos mediante ondas.
+Ráfaga | Empieza con R. Golpe de viento fuerte y breve.
+Rally | Empieza con R. Competencia automovilística por caminos difíciles.
+Rebanada | Empieza con R. Porción delgada que se corta de algo, como el pan.
+Recluso | Empieza con R. Persona encerrada en la cárcel.
+Regata | Empieza con R. Competencia de velocidad entre embarcaciones.
+Remolino | Empieza con R. Movimiento giratorio del agua o el aire.
+Remolque | Empieza con R. Vehículo sin motor que es arrastrado por otro.
+Renacuajo | Empieza con R. Cría de la rana.
+Repisa | Empieza con R. Estante en la pared.
+Resorte | Empieza con R. Espiral de metal elástico.
+Retrovisor | Empieza con R. Espejo del auto para ver hacia atrás.
+Revólver | Empieza con R. Pistola con tambor giratorio.
+Rímel | Empieza con R. Cosmético para oscurecer las pestañas.
+Riel | Empieza con R. Barra de metal sobre la que corre el tren.
+Ron | Empieza con R. Aguardiente de caña de azúcar, base del mojito.
+Ronquido | Empieza con R. Ruido que se hace al roncar.
+Rosario | Empieza con R. Collar de cuentas para rezar.
+Rótula | Empieza con R. Hueso de la rodilla.
+Rubí | Empieza con R. Piedra preciosa de color rojo intenso.
+Rugby | Empieza con R. Deporte con balón ovalado.
+Ruta | Empieza con R. Camino o itinerario que se sigue para llegar a un lugar.
+Ratero | Empieza con R. Ladrón de poca monta.
+
+## S  (101 palabras)
+Sábado | Empieza con S. Sexto día de la semana.
+Sábana | Empieza con S. Tela que cubre la cama.
+Sacapuntas | Empieza con S. Utensilio para afilar lápices.
+Salchicha | Empieza con S. Embutido alargado de carne, típico del completo.
+Salmón | Empieza con S. Pez de carne rosada que remonta los ríos.
+Salsa | Empieza con S. Mezcla líquida para acompañar comidas; también, ritmo bailable.
+Sandía | Empieza con S. Fruta grande, verde por fuera y roja por dentro.
+Sandalia | Empieza con S. Calzado abierto para el verano.
+Sangre | Empieza con S. Líquido rojo que circula por las venas.
+Sapo | Empieza con S. Anfibio de piel rugosa; también, persona chismosa.
+Sartén | Empieza con S. Utensilio de cocina para freír.
+Sastre | Empieza con S. Persona que confecciona trajes a medida.
+Satélite | Empieza con S. Cuerpo que gira alrededor de un planeta.
+Secadora | Empieza con S. Máquina para secar la ropa o el pelo.
+Sed | Empieza con S. Ganas de beber que se sienten cuando falta agua en el cuerpo.
+Seda | Empieza con S. Tela suave y brillante hecha por un gusano.
+Semáforo | Empieza con S. Aparato con luces que regula el tránsito.
+Semana | Empieza con S. Período de siete días.
+Semilla | Empieza con S. Grano del que nace una planta.
+Sendero | Empieza con S. Camino estrecho por el bosque o la montaña.
+Serpiente | Empieza con S. Reptil sin patas que se arrastra.
+Servilleta | Empieza con S. Papel o tela para limpiarse la boca.
+Siesta | Empieza con S. Sueño breve después de almorzar.
+Silla | Empieza con S. Asiento con respaldo para una sola persona.
+Silbato | Empieza con S. Pito que usan los árbitros.
+Sirena | Empieza con S. Ser mitológico mitad mujer y mitad pez.
+Sobre | Empieza con S. Envoltorio de papel para cartas.
+Sobrino | Empieza con S. Hijo del hermano o la hermana.
+Sofá | Empieza con S. Asiento mullido para varias personas.
+Sol | Empieza con S. Estrella que ilumina y calienta la Tierra durante el día.
+Soldado | Empieza con S. Miembro del ejército que sirve a su país.
+Sombrero | Empieza con S. Prenda con ala para la cabeza.
+Sombra | Empieza con S. Silueta oscura que proyecta un cuerpo.
+Sopa | Empieza con S. Plato líquido y caliente.
+Sordo | Empieza con S. Que no oye o que oye muy poco.
+Sótano | Empieza con S. Habitación bajo el nivel del suelo.
+Submarino | Empieza con S. Barco que navega bajo el agua.
+Suegra | Empieza con S. Madre del esposo o de la esposa.
+Sudor | Empieza con S. Líquido que se expulsa por la piel al hacer calor.
+Supermercado | Empieza con S. Tienda grande de autoservicio.
+Sushi | Empieza con S. Plato japonés de arroz con pescado crudo.
+Sacerdote | Empieza con S. Persona dedicada al culto religioso.
+Safari | Empieza con S. Expedición para ver animales salvajes en África.
+Samurái | Empieza con S. Guerrero japonés que seguía un estricto código de honor.
+Santiago | Empieza con S. Capital de Chile, a los pies de la cordillera.
+Sevilla | Empieza con S. Ciudad andaluza famosa por su Feria de Abril.
+Suecia | Empieza con S. País nórdico de IKEA y ABBA.
+Suiza | Empieza con S. País europeo famoso por sus relojes y chocolates.
+Saturno | Empieza con S. Planeta de los anillos.
+Sansón | Empieza con S. Personaje bíblico cuya fuerza estaba en su pelo.
+Sócrates | Empieza con S. Filósofo griego que bebió la cicuta.
+Superman | Empieza con S. Superhéroe que viene del planeta Krypton.
+Simba | Empieza con S. León protagonista de El Rey León.
+Sahara | Empieza con S. Desierto más grande de África.
+Samba | Empieza con S. Baile típico de Brasil.
+Sacrilegio | Empieza con S. Profanación de algo sagrado.
+Sádico | Empieza con S. Que disfruta con el sufrimiento ajeno.
+Sagrado | Empieza con S. Digno de veneración religiosa.
+Salvaje | Empieza con S. Que no está domesticado.
+Sanguinario | Empieza con S. Cruel, que goza derramando sangre.
+Sarcófago | Empieza con S. Ataúd de piedra, como los de los faraones.
+Secuestro | Empieza con S. Retención de una persona para pedir rescate.
+Semblante | Empieza con S. Expresión de la cara que refleja el estado de ánimo.
+Senil | Empieza con S. Propio de la vejez.
+Sepulcro | Empieza con S. Tumba o lugar donde está enterrado un muerto.
+Sequía | Empieza con S. Largo período sin lluvia.
+Serenata | Empieza con S. Música que se toca de noche bajo una ventana.
+Sicario | Empieza con S. Asesino que mata a cambio de dinero.
+Sigilo | Empieza con S. Silencio y cuidado para no ser notado.
+Simio | Empieza con S. Mono, especialmente los grandes como el gorila o el chimpancé.
+Sinónimo | Empieza con S. Palabra que significa lo mismo que otra.
+Soberbia | Empieza con S. Orgullo excesivo; uno de los siete pecados capitales.
+Soborno | Empieza con S. Dinero que se da para corromper a alguien.
+Sofisma | Empieza con S. Argumento falso con apariencia de verdad.
+Solsticio | Empieza con S. Momento del año con el día más largo o más corto.
+Sonámbulo | Empieza con S. Persona que camina dormida.
+Soslayo | Empieza con S. De lado; de reojo.
+Sumiso | Empieza con S. Obediente que se somete sin protestar.
+Superstición | Empieza con S. Creencia irracional en la suerte o la magia.
+Susurro | Empieza con S. Voz muy baja que casi no se oye.
+Sutil | Empieza con S. Delicado y fino, difícil de notar a simple vista.
+Sabotaje | Empieza con S. Daño intencional para impedir algo.
+Sable | Empieza con S. Espada curva de un solo filo.
+Saltamontes | Empieza con S. Insecto verde que da grandes saltos.
+Salvavidas | Empieza con S. Flotador para no ahogarse.
+Sauce | Empieza con S. Árbol de ramas colgantes junto al agua.
+Sepia | Empieza con S. Molusco parecido al calamar; también, color marrón de las fotos antiguas.
+Signo | Empieza con S. Símbolo; también, cada una de las doce constelaciones del zodiaco.
+Silueta | Empieza con S. Contorno de una figura.
+Sinagoga | Empieza con S. Templo donde rezan los judíos.
+Soga | Empieza con S. Cuerda gruesa y resistente.
+Solitario | Empieza con S. Que está solo; también, juego de cartas para una persona.
+Soplete | Empieza con S. Herramienta que lanza una llama para soldar.
+Subasta | Empieza con S. Venta pública en la que gana el que ofrece más.
+Suricata | Empieza con S. Pequeño mamífero africano que se para en dos patas a vigilar.
+Sabueso | Empieza con S. Perro de olfato muy fino; también, detective.
+Sardina | Empieza con S. Pez pequeño que se vende en lata con aceite.
+Serrucho | Empieza con S. Sierra de mano con hoja ancha.
+Sacacorchos | Empieza con S. Utensilio para destapar botellas de vino.
+Sonrisa | Empieza con S. Gesto de alegría con la boca.
+Sudadera | Empieza con S. Polerón deportivo de algodón.
+
+## T  (101 palabras)
+Tabaco | Empieza con T. Planta cuyas hojas se fuman en cigarros.
+Taburete | Empieza con T. Asiento sin respaldo ni brazos.
+Taco | Empieza con T. Tortilla mexicana rellena de carne, verduras y salsa.
+Tallarín | Empieza con T. Pasta larga y plana.
+Tango | Empieza con T. Baile rioplatense de pareja.
+Tapa | Empieza con T. Pieza que cierra un recipiente.
+Tarántula | Empieza con T. Araña grande y peluda.
+Tarea | Empieza con T. Trabajo escolar para hacer en casa.
+Tarjeta | Empieza con T. Pieza rectangular de cartón o plástico, como la de crédito.
+Taza | Empieza con T. Recipiente con asa para tomar té o café.
+Techo | Empieza con T. Parte superior que cubre una casa.
+Teja | Empieza con T. Pieza de arcilla que cubre los techos.
+Teléfono | Empieza con T. Aparato para hablar a distancia.
+Telescopio | Empieza con T. Instrumento para ver objetos lejanos en el espacio.
+Televisor | Empieza con T. Aparato para ver programas de televisión.
+Tenedor | Empieza con T. Cubierto con dientes para pinchar la comida.
+Tenis | Empieza con T. Deporte con raquetas y una pelota sobre una red.
+Termómetro | Empieza con T. Instrumento que mide la temperatura.
+Ternero | Empieza con T. Cría de la vaca.
+Tesoro | Empieza con T. Conjunto de riquezas escondidas.
+Tiburón | Empieza con T. Pez marino depredador con varias filas de dientes.
+Tiempo | Empieza con T. Duración de las cosas; también, estado de la atmósfera.
+Tienda | Empieza con T. Local donde se venden productos; también, carpa.
+Tierra | Empieza con T. Tercer planeta del sistema solar, donde vivimos.
+Tigre | Empieza con T. Felino grande de piel naranja con rayas negras.
+Tijera | Empieza con T. Instrumento de dos hojas para cortar.
+Timbre | Empieza con T. Aparato que suena para llamar a la puerta.
+Tinta | Empieza con T. Líquido de color para escribir o imprimir.
+Tiza | Empieza con T. Barrita blanca para escribir en la pizarra.
+Toalla | Empieza con T. Tela absorbente para secarse después de bañarse.
+Tobillo | Empieza con T. Articulación entre el pie y la pierna.
+Tomate | Empieza con T. Fruto rojo y jugoso usado en ensaladas y salsas.
+Tormenta | Empieza con T. Tempestad con truenos y relámpagos.
+Tornillo | Empieza con T. Pieza metálica con rosca para fijar.
+Toro | Empieza con T. Macho de la vaca.
+Torre | Empieza con T. Construcción alta y estrecha.
+Tortuga | Empieza con T. Reptil con caparazón que camina muy lento.
+Tos | Empieza con T. Expulsión brusca de aire de los pulmones.
+Tostada | Empieza con T. Rebanada de pan dorada al fuego.
+Tractor | Empieza con T. Vehículo para trabajar el campo.
+Traje | Empieza con T. Conjunto de chaqueta y pantalón.
+Tren | Empieza con T. Vehículo que circula sobre rieles.
+Trigo | Empieza con T. Cereal con el que se hace la harina.
+Trineo | Empieza con T. Vehículo para deslizarse sobre la nieve.
+Trompeta | Empieza con T. Instrumento de viento de metal.
+Trueno | Empieza con T. Ruido fuerte que sigue al relámpago.
+Tucán | Empieza con T. Ave tropical de pico enorme y colorido.
+Tulipán | Empieza con T. Flor típica de Holanda.
+Tumba | Empieza con T. Lugar donde está enterrado un muerto.
+Túnel | Empieza con T. Paso subterráneo que atraviesa una montaña o pasa bajo el agua.
+Turista | Empieza con T. Persona que viaja por placer.
+Tatuaje | Empieza con T. Dibujo grabado en la piel con tinta.
+Tsunami | Empieza con T. Ola gigante causada por un terremoto submarino.
+Titanic | Empieza con T. Transatlántico que se hundió en 1912 tras chocar con un iceberg.
+Tarzán | Empieza con T. Hombre criado por monos en la selva.
+Thor | Empieza con T. Dios nórdico del trueno con su martillo.
+Turquía | Empieza con T. País entre Europa y Asia cuya ciudad más grande es Estambul.
+Troya | Empieza con T. Ciudad conquistada por los griegos gracias a un caballo de madera.
+Tutankamón | Empieza con T. Faraón niño cuya tumba se descubrió intacta.
+Tabú | Empieza con T. Tema prohibido o del que no se habla.
+Tahúr | Empieza con T. Jugador profesional de cartas, a menudo tramposo.
+Talismán | Empieza con T. Objeto que da suerte o protege.
+Tenaz | Empieza con T. Perseverante que no se rinde ante las dificultades.
+Tenebroso | Empieza con T. Oscuro y que da miedo.
+Terco | Empieza con T. Testarudo que no cambia de opinión aunque esté equivocado.
+Tétrico | Empieza con T. Triste, sombrío y lúgubre.
+Tirano | Empieza con T. Gobernante cruel y abusivo.
+Titán | Empieza con T. Gigante de la mitología griega.
+Titubeo | Empieza con T. Duda al hablar o actuar.
+Tormento | Empieza con T. Dolor físico o moral intenso.
+Tortura | Empieza con T. Dolor infligido para castigar o sacar información.
+Traición | Empieza con T. Falta a la lealtad.
+Trance | Empieza con T. Estado en que se pierde la conciencia de la realidad.
+Travesura | Empieza con T. Acción traviesa de un niño.
+Tregua | Empieza con T. Suspensión temporal de una pelea.
+Tribu | Empieza con T. Grupo social con costumbres comunes.
+Trifulca | Empieza con T. Pelea con mucho alboroto.
+Trinchera | Empieza con T. Zanja para protegerse en la guerra.
+Trueque | Empieza con T. Intercambio de cosas sin dinero.
+Truhan | Empieza con T. Sinvergüenza que vive de estafas.
+Tumulto | Empieza con T. Alboroto de mucha gente.
+Turbio | Empieza con T. Poco claro, como el agua revuelta; también, sospechoso.
+Tácito | Empieza con T. Que se entiende sin decirse.
+Taimado | Empieza con T. Astuto y disimulado para engañar.
+Tedio | Empieza con T. Aburrimiento profundo y cansador.
+Temerario | Empieza con T. Imprudente frente al peligro.
+Templario | Empieza con T. Caballero de una orden militar medieval.
+Tenue | Empieza con T. Débil y suave, como una luz que casi no alumbra.
+Tesón | Empieza con T. Firmeza y constancia para lograr algo.
+Tozudo | Empieza con T. Obstinado que se mantiene en su idea sin escuchar razones.
+Trivial | Empieza con T. Sin importancia, común y corriente.
+Turba | Empieza con T. Muchedumbre desordenada y alborotada.
+Tiara | Empieza con T. Corona alta que usan reinas, princesas y el Papa.
+Trébol | Empieza con T. Planta de tres hojas; la de cuatro trae suerte.
+Tripulante | Empieza con T. Persona que trabaja en un barco o avión.
+Trompo | Empieza con T. Juguete que gira sobre una punta.
+Tamal | Empieza con T. Masa de maíz envuelta en hojas y cocida al vapor.
+Tapir | Empieza con T. Mamífero americano con una pequeña trompa.
+Termita | Empieza con T. Insecto que se come la madera.
+Tomillo | Empieza con T. Hierba aromática usada en la cocina mediterránea.
+Topo | Empieza con T. Pequeño mamífero ciego que excava túneles.
+
+## U  (100 palabras)
+Ubre | Empieza con U. Glándula de la vaca de donde se extrae la leche.
+Úlcera | Empieza con U. Herida abierta en la piel o en el estómago.
+Último | Empieza con U. Que va al final de todos.
+Ulular | Empieza con U. Emitir su sonido el búho o el viento.
+Unicornio | Empieza con U. Caballo mitológico con un cuerno en la frente.
+Universidad | Empieza con U. Institución de educación superior.
+Uno | Empieza con U. Juego de cartas de colores en que hay que gritar su nombre al quedar con una carta.
+Untar | Empieza con U. Extender mantequilla o mermelada sobre el pan.
+Urna | Empieza con U. Caja donde se depositan los votos.
+Uruguay | Empieza con U. País sudamericano bicampeón mundial de fútbol, cuya capital es Montevideo.
+Usuario | Empieza con U. Persona que usa un servicio o un programa.
+Uva | Empieza con U. Fruto de la vid con el que se hace el vino.
+Ufano | Empieza con U. Orgulloso y satisfecho de sí mismo.
+Ukelele | Empieza con U. Guitarra pequeña de cuatro cuerdas, típica de Hawái.
+Ulises | Empieza con U. Héroe griego que tardó diez años en volver a Ítaca.
+Unidad | Empieza con U. Cada uno de los elementos de un conjunto.
+Urraca | Empieza con U. Ave blanca y negra que roba objetos brillantes.
+Uranio | Empieza con U. Elemento radiactivo usado en las centrales nucleares.
+Urano | Empieza con U. Séptimo planeta del sistema solar.
+Usura | Empieza con U. Interés excesivo cobrado por un préstamo.
+Usurero | Empieza con U. Persona que presta dinero con intereses abusivos.
+Útero | Empieza con U. Órgano femenino donde se desarrolla el feto.
+Ultramar | Empieza con U. Territorios situados al otro lado del océano.
+Ultravioleta | Empieza con U. Radiación solar invisible que broncea la piel.
+Ultrasonido | Empieza con U. Sonido inaudible usado en las ecografías.
+Umbilical | Empieza con U. Relativo al ombligo, como el cordón que une al bebé con la madre.
+Unánime | Empieza con U. Que expresa la opinión de todos sin excepción.
+Unción | Empieza con U. Acción de ungir con aceite sagrado.
+Ungir | Empieza con U. Aplicar aceite sobre alguien en una ceremonia.
+Único | Empieza con U. Solo en su especie.
+Unificar | Empieza con U. Reunir varias cosas en una sola.
+Untuoso | Empieza con U. Graso y pegajoso al tacto.
+Urbanización | Empieza con U. Conjunto residencial de casas construidas en una zona.
+Urbe | Empieza con U. Ciudad grande y muy poblada.
+Urdir | Empieza con U. Tramar un plan en secreto.
+Uretra | Empieza con U. Conducto por el que se expulsa la orina.
+Urinario | Empieza con U. Baño público con mingitorios.
+Urticaria | Empieza con U. Erupción de la piel con picazón.
+Usanza | Empieza con U. Costumbre o moda de una época.
+Usted | Empieza con U. Pronombre de trato formal.
+Usual | Empieza con U. Habitual o frecuente, que ocurre a menudo.
+Utilitario | Empieza con U. Vehículo práctico para el uso diario.
+Uzbekistán | Empieza con U. País de Asia Central donde está Samarcanda.
+Ucrania | Empieza con U. País de Europa del Este cuya capital es Kiev.
+Uganda | Empieza con U. País africano donde nace el río Nilo blanco.
+Ushuaia | Empieza con U. Ciudad argentina considerada la más austral del mundo.
+Uppercut | Empieza con U. Golpe de boxeo de abajo hacia arriba.
+Ultraligero | Empieza con U. Avioneta muy liviana para una o dos personas.
+Ulterior | Empieza con U. Que ocurre después de otra cosa.
+Uxoricida | Empieza con U. Hombre que mata a su esposa.
+Umami | Empieza con U. Quinto sabor básico, propio de alimentos como el tomate o el queso.
+Ufología | Empieza con U. Estudio de los ovnis.
+Ultramarinos | Empieza con U. Tienda de comestibles y productos de almacén.
+Ulpo | Empieza con U. Bebida chilena de harina tostada con agua o leche y azúcar.
+Uslero | Empieza con U. En Chile, rodillo de madera para estirar la masa.
+Urbanita | Empieza con U. Persona acostumbrada a vivir en la ciudad.
+Urogallo | Empieza con U. Ave grande de los bosques europeos.
+Urólogo | Empieza con U. Médico especialista en las vías urinarias.
+Útil | Empieza con U. Que sirve para algo.
+Utilería | Empieza con U. Conjunto de objetos que se usan en un escenario.
+Unicelular | Empieza con U. Organismo formado por una sola célula.
+Universal | Empieza con U. Que pertenece o se extiende a todo el mundo.
+Universitario | Empieza con U. Estudiante de la universidad.
+Unigénito | Empieza con U. Hijo único de sus padres.
+Úvula | Empieza con U. Campanilla del fondo de la garganta.
+Uniceja | Empieza con U. Ceja que se junta con la otra sobre la nariz.
+Uber | Empieza con U. Aplicación para pedir viajes en auto.
+Úrsula | Empieza con U. Bruja del mar en La Sirenita.
+Usain | Empieza con U. Nombre de pila de Bolt, el hombre más rápido del mundo.
+Unamuno | Empieza con U. Escritor español autor de Niebla.
+Utrecht | Empieza con U. Ciudad de los Países Bajos con una famosa universidad.
+Ujier | Empieza con U. Portero de un tribunal o un palacio.
+Umbría | Empieza con U. Lugar donde casi nunca da el sol.
+Ungulado | Empieza con U. Mamífero con pezuñas, como el caballo.
+Unitario | Empieza con U. Que tiene unidad o busca la unión.
+Urbanidad | Empieza con U. Cortesía y buenos modales.
+Urbanismo | Empieza con U. Disciplina que planifica las ciudades.
+Urgir | Empieza con U. Ser necesario con urgencia.
+Úrico | Empieza con U. Relativo a la orina, como el ácido que causa la gota.
+Uso | Empieza con U. Acción de usar algo.
+Usufructo | Empieza con U. Derecho a disfrutar de un bien ajeno.
+Uzi | Empieza con U. Subfusil israelí de pequeño tamaño.
+Ubérrimo | Empieza con U. Muy fértil y abundante.
+Ultimar | Empieza con U. Terminar algo o concretarlo.
+Ucronía | Empieza con U. Historia alternativa que imagina qué habría pasado si algo hubiera sido distinto.
+Ufanarse | Empieza con U. Presumir o jactarse de algo.
+Ulema | Empieza con U. Sabio de la ley islámica.
+Unir | Empieza con U. Juntar dos o más cosas.
+Uncir | Empieza con U. Atar los bueyes al yugo.
+Uróboros | Empieza con U. Serpiente que se muerde la cola, símbolo del ciclo eterno.
+Uro | Empieza con U. Bóvido salvaje de grandes cuernos, antepasado del ganado actual, extinto en el siglo XVII.
+Ultra | Empieza con U. Hincha radical y violento de un equipo de fútbol.
+Upa | Empieza con U. Palabra que se usa al levantar a un niño en brazos.
+Utopista | Empieza con U. Persona que cree en ideales imposibles.
+Uranografía | Empieza con U. Descripción del cielo y los astros.
+Ultrajante | Empieza con U. Que ofende o humilla gravemente.
+Ubicuo | Empieza con U. Que está en todas partes al mismo tiempo.
+Uniformar | Empieza con U. Hacer que varias cosas sean iguales.
+Urbanizar | Empieza con U. Convertir un terreno en ciudad.
+Urgido | Empieza con U. Que tiene prisa o necesidad.
+
+## V  (100 palabras)
+Vacuna | Empieza con V. Preparado que protege contra una enfermedad.
+Vagón | Empieza con V. Cada uno de los carros de un tren.
+Vainilla | Empieza con V. Especia aromática usada en helados y postres.
+Valija | Empieza con V. Maleta que se lleva en un viaje.
+Valle | Empieza con V. Terreno bajo entre montañas.
+Vapor | Empieza con V. Gas que se desprende del agua al hervir.
+Vaquero | Empieza con V. Persona que cuida vacas a caballo; cowboy.
+Varita | Empieza con V. Palito mágico de los magos.
+Vejez | Empieza con V. Última etapa de la vida.
+Velero | Empieza con V. Barco que se mueve con el viento.
+Vena | Empieza con V. Vaso que lleva la sangre al corazón.
+Venado | Empieza con V. Ciervo, animal de cuernos ramificados que vive en el bosque.
+Venda | Empieza con V. Tira de tela para cubrir heridas.
+Veneno | Empieza con V. Sustancia que causa daño o muerte.
+Ventilador | Empieza con V. Aparato con aspas que da aire.
+Verano | Empieza con V. Estación más calurosa del año.
+Verdura | Empieza con V. Hortaliza comestible, especialmente la de hojas verdes.
+Vereda | Empieza con V. Acera o camino estrecho.
+Verruga | Empieza con V. Pequeño bulto en la piel.
+Veterinario | Empieza con V. Médico que cura a los animales.
+Víbora | Empieza con V. Serpiente venenosa de cabeza triangular.
+Vidrio | Empieza con V. Material transparente de las ventanas.
+Viejo | Empieza con V. Que tiene mucha edad.
+Vinagre | Empieza con V. Líquido ácido para aliñar ensaladas.
+Violeta | Empieza con V. Color morado claro; también, flor.
+Virus | Empieza con V. Microorganismo que causa enfermedades como la gripe.
+Visera | Empieza con V. Parte de la gorra que protege los ojos del sol.
+Vitamina | Empieza con V. Sustancia necesaria para el organismo, presente en frutas y verduras.
+Vitrina | Empieza con V. Escaparate con vidrio donde se exhiben productos.
+Volante | Empieza con V. Rueda para dirigir un auto.
+Volcán | Empieza con V. Montaña que expulsa lava.
+Voleibol | Empieza con V. Deporte en que se golpea un balón por encima de una red.
+Voluntario | Empieza con V. Persona que trabaja sin cobrar por una causa.
+Vómito | Empieza con V. Expulsión por la boca de lo que hay en el estómago.
+Votación | Empieza con V. Elección que se decide mediante votos.
+Vuelo | Empieza con V. Desplazamiento por el aire.
+Vuelto | Empieza con V. Dinero que se devuelve al pagar con un billete mayor.
+Valparaíso | Empieza con V. Ciudad puerto de Chile famosa por sus cerros y ascensores.
+Venecia | Empieza con V. Ciudad italiana de canales y góndolas.
+Venus | Empieza con V. Segundo planeta del sistema solar; diosa romana del amor.
+Viena | Empieza con V. Capital de Austria, ciudad del vals.
+Vaticano | Empieza con V. Estado más pequeño del mundo, sede del Papa.
+Vader | Empieza con V. Apellido del villano de Star Wars, padre de Luke.
+Vikingo | Empieza con V. Guerrero navegante escandinavo de la Edad Media.
+Vivaldi | Empieza con V. Compositor italiano de Las cuatro estaciones.
+Valdivia | Empieza con V. Ciudad del sur de Chile; también, conquistador fundador de Santiago.
+Voldemort | Empieza con V. Mago oscuro enemigo de Harry Potter.
+Valquiria | Empieza con V. Guerrera de la mitología nórdica que lleva a los héroes al Valhalla.
+Vasallo | Empieza con V. Súbdito de un señor feudal.
+Vagabundo | Empieza con V. Persona que no tiene domicilio fijo.
+Valentía | Empieza con V. Coraje para enfrentar el peligro o el miedo.
+Valor | Empieza con V. Coraje; también, precio de algo.
+Vandalismo | Empieza con V. Destrucción de bienes públicos.
+Vanidad | Empieza con V. Orgullo excesivo por la propia apariencia.
+Vaticinio | Empieza con V. Predicción de lo que va a ocurrir.
+Vendaval | Empieza con V. Viento muy fuerte que sopla con violencia.
+Vendetta | Empieza con V. Venganza entre familias, típica de la mafia.
+Ventrílocuo | Empieza con V. Persona que habla sin mover los labios dando voz a un muñeco.
+Verdugo | Empieza con V. Persona que ejecuta a los condenados.
+Vergüenza | Empieza con V. Turbación por una falta o humillación.
+Versátil | Empieza con V. Que se adapta a muchas funciones.
+Vestigio | Empieza con V. Huella o resto que queda de algo.
+Vetusto | Empieza con V. Muy viejo y deteriorado por el paso del tiempo.
+Vicio | Empieza con V. Mala costumbre difícil de dejar.
+Víctima | Empieza con V. Persona que sufre un daño.
+Vigía | Empieza con V. Persona que vigila desde un lugar alto.
+Vigilia | Empieza con V. Estado de estar despierto; también, víspera de una fiesta religiosa.
+Virtud | Empieza con V. Cualidad moral buena, como la honestidad o la paciencia.
+Virrey | Empieza con V. Representante del rey en una colonia.
+Virulento | Empieza con V. Muy violento o maligno.
+Visceral | Empieza con V. Que surge de un sentimiento profundo e intenso.
+Visionario | Empieza con V. Que se anticipa al futuro.
+Vitalicio | Empieza con V. Que dura toda la vida.
+Vituperio | Empieza con V. Insulto o crítica severa.
+Vocación | Empieza con V. Inclinación hacia una profesión.
+Volátil | Empieza con V. Que se evapora fácilmente; inestable.
+Voluble | Empieza con V. Que cambia de opinión con facilidad.
+Vorágine | Empieza con V. Remolino; situación agitada y confusa.
+Vulgar | Empieza con V. Común u ordinario; también, de mal gusto.
+Vulnerable | Empieza con V. Que puede ser dañado fácilmente.
+Vudú | Empieza con V. Religión de origen africano asociada a muñecos con alfileres.
+Vals | Empieza con V. Baile de salón en compás de tres tiempos.
+Vaivén | Empieza con V. Movimiento de ida y vuelta.
+Vasija | Empieza con V. Recipiente de barro o cerámica para guardar líquidos.
+Velorio | Empieza con V. Reunión para acompañar a un difunto.
+Velocímetro | Empieza con V. Aparato que indica la velocidad del auto.
+Vendimia | Empieza con V. Cosecha de la uva.
+Ventisca | Empieza con V. Tormenta de viento y nieve.
+Vertedero | Empieza con V. Lugar donde se acumula la basura.
+Vesícula | Empieza con V. Pequeña bolsa del cuerpo, como la biliar.
+Víspera | Empieza con V. Día anterior a otro.
+Vitral | Empieza con V. Ventana de vidrios de colores.
+Vizcacha | Empieza con V. Roedor andino parecido a un conejo de cola larga.
+Vodka | Empieza con V. Aguardiente ruso transparente de alta graduación.
+Volantín | Empieza con V. En Chile, cometa que se eleva con hilo en septiembre.
+Vuvuzela | Empieza con V. Trompeta de plástico muy ruidosa del Mundial de Sudáfrica.
+Vedette | Empieza con V. Artista principal de un espectáculo de revista.
+Vegano | Empieza con V. Persona que no consume productos de origen animal.
+Vehículo | Empieza con V. Medio de transporte, como un auto o un camión.
+Vértebra | Empieza con V. Cada uno de los huesos de la columna.
+
+## W  (100 palabras)
+Wallaby | Empieza con W. Marsupial australiano parecido a un canguro pequeño.
+Waterloo | Empieza con W. Batalla en que fue derrotado Napoleón.
+Watson | Empieza con W. Ayudante y amigo de Sherlock Holmes.
+Wembley | Empieza con W. Mítico estadio de fútbol de Londres.
+Wellington | Empieza con W. Capital de Nueva Zelanda.
+Wendy | Empieza con W. Niña que viaja al País de Nunca Jamás con Peter Pan.
+Westminster | Empieza con W. Palacio de Londres donde funciona el Parlamento británico.
+WhatsApp | Empieza con W. Aplicación de mensajería del teléfono.
+Wikipedia | Empieza con W. Enciclopedia libre en internet.
+Wimbledon | Empieza con W. Torneo de tenis sobre césped en Londres.
+Windows | Empieza con W. Sistema operativo de Microsoft.
+Wolverine | Empieza con W. Mutante de garras metálicas de los X-Men.
+Woody | Empieza con W. Vaquero protagonista de Toy Story.
+Wookiee | Empieza con W. Especie peluda de Chewbacca en Star Wars.
+Wyoming | Empieza con W. Estado de EE. UU. donde está Yellowstone.
+Wisconsin | Empieza con W. Estado de EE. UU. famoso por sus quesos.
+Wally | Empieza con W. Personaje de lentes y polera a rayas que hay que encontrar en los libros.
+Warhol | Empieza con W. Artista pop famoso por sus latas de sopa Campbell.
+Wii | Empieza con W. Consola de Nintendo con control de movimiento.
+Wolfgang | Empieza con W. Nombre de pila de Mozart.
+Woodstock | Empieza con W. Mítico festival de música de 1969.
+Walter | Empieza con W. Nombre de pila de White, profesor de química de Breaking Bad.
+Wilson | Empieza con W. Pelota que es amiga de Tom Hanks en Náufrago.
+Wanda | Empieza con W. Bruja Escarlata de Marvel.
+Waze | Empieza con W. Aplicación de navegación con alertas de tráfico.
+Weekend | Empieza con W. Fin de semana, en inglés.
+Whopper | Empieza con W. Hamburguesa emblemática de Burger King.
+Wombat | Empieza con W. Marsupial australiano robusto que vive en madrigueras.
+Wonka | Empieza con W. Dueño de la fábrica de chocolate en la novela de Roald Dahl.
+Wario | Empieza con W. Rival de Mario vestido de amarillo y morado.
+Winnie | Empieza con W. Nombre del osito Pooh.
+Wrap | Empieza con W. Tortilla enrollada con relleno.
+Wakeboard | Empieza con W. Deporte acuático con tabla remolcada por una lancha.
+Wagyu | Empieza con W. Carne de res japonesa muy cara y marmoleada.
+Woofer | Empieza con W. Parlante para los sonidos graves.
+Webinar | Empieza con W. Seminario o charla por internet.
+Wushu | Empieza con W. Arte marcial chino, también conocido como kung-fu moderno.
+Windsor | Empieza con W. Casa real británica a la que pertenece el rey Carlos.
+Winterfell | Empieza con W. Castillo de los Stark en Game of Thrones.
+Westeros | Empieza con W. Continente donde transcurre Game of Thrones.
+Wednesday | Empieza con W. Hija de los Locos Addams con serie propia en Netflix, en inglés.
+Wayne | Empieza con W. Apellido de Bruce, la identidad secreta de Batman.
+Wilma | Empieza con W. Esposa de Pedro Picapiedra.
+Wright | Empieza con W. Apellido de los hermanos que hicieron volar el primer avión.
+Waluigi | Empieza con W. Rival de Luigi vestido de morado.
+Waikiki | Empieza con W. Playa famosa de Honolulu.
+Mowgli | Contiene la W. Niño criado por lobos en El libro de la selva.
+Kowalski | Contiene la W. Pingüino científico de Madagascar.
+Zimbabwe | Contiene la W. País africano donde están las cataratas Victoria.
+Malawi | Contiene la W. País africano con un gran lago.
+Ottawa | Contiene la W. Capital de Canadá, en la provincia de Ontario.
+Iowa | Contiene la W. Estado agrícola de EE. UU.
+Twist | Contiene la W. Baile de los años 60 que se hace girando las caderas.
+Swing | Contiene la W. Estilo de jazz bailable de los años 30.
+Switch | Contiene la W. Consola portátil de Nintendo.
+Twix | Contiene la W. Chocolate con dos barritas de galleta y caramelo.
+Tweet | Contiene la W. Mensaje corto publicado en Twitter.
+Password | Contiene la W. Contraseña para entrar a una cuenta, en inglés.
+Malware | Contiene la W. Programa malicioso que daña el computador.
+Firewall | Contiene la W. Cortafuegos que protege una red informática.
+Cowboy | Contiene la W. Vaquero del oeste estadounidense, en inglés.
+Bowie | Contiene la W. Apellido del cantante de Starman.
+Schwarzenegger | Contiene la W. Actor austríaco protagonista de Terminator.
+Sawyer | Contiene la W. Apellido de Tom, personaje de Mark Twain.
+Newcastle | Contiene la W. Ciudad inglesa con un club de fútbol de camiseta a rayas.
+Edward | Contiene la W. Nombre del vampiro de Crepúsculo.
+Lewandowski | Contiene la W. Goleador polaco del Bayern y del Barcelona.
+Rowling | Contiene la W. Autora de Harry Potter.
+Hawking | Contiene la W. Físico británico que estudió los agujeros negros.
+Sherwood | Contiene la W. Bosque de Robin Hood.
+Yellowstone | Contiene la W. Parque nacional de EE. UU. famoso por sus géiseres.
+Bowser | Contiene la W. Tortuga villana que secuestra a la princesa Peach.
+Glasgow | Contiene la W. Ciudad más grande de Escocia.
+Delaware | Contiene la W. Primer estado de EE. UU. en ratificar la Constitución.
+Swatch | Contiene la W. Marca suiza de relojes de plástico.
+Network | Contiene la W. Red de contactos o de computadores, en inglés.
+Showman | Contiene la W. Persona que anima un espectáculo.
+Bowl | Contiene la W. Plato hondo, en inglés; también, la final del fútbol americano.
+Crawl | Contiene la W. Estilo de natación de brazadas alternadas.
+Twitch | Contiene la W. Plataforma de transmisiones en vivo de videojuegos.
+Download | Contiene la W. Palabra en inglés para la descarga de un archivo.
+Jigsaw | Contiene la W. Muñeco villano de la saga Saw.
+Twilight | Contiene la W. Nombre en inglés de la saga Crepúsculo.
+Workshop | Empieza con W. Taller práctico en el que se aprende haciendo.
+Wafer | Empieza con W. Galleta delgada y crujiente rellena de crema.
+Willy | Empieza con W. Orca protagonista de una película de los 90 en la que un niño la ayuda a volver al mar.
+Warcraft | Empieza con W. Saga de videojuegos de estrategia de orcos y humanos.
+Watchmen | Empieza con W. Novela gráfica de Alan Moore sobre superhéroes.
+Wolfsburgo | Empieza con W. Ciudad alemana sede de Volkswagen.
+Wilde | Empieza con W. Apellido del escritor Oscar, autor de El retrato de Dorian Gray.
+Woolf | Empieza con W. Apellido de la escritora Virginia.
+Walkie | Empieza con W. Radio portátil para hablar a distancia.
+Whitney | Empieza con W. Nombre de la cantante Houston.
+Wanderers | Empieza con W. Club de fútbol de Valparaíso, el más antiguo de Chile en actividad.
+Swahili | Contiene la W. Lengua bantú hablada en Kenia y Tanzania.
+Sweater | Contiene la W. Prenda de lana tejida que se pone sobre la camisa, en inglés.
+Newsletter | Contiene la W. Boletín informativo que se envía por correo electrónico.
+Hawaiana | Contiene la W. Sandalia de goma con una tira entre los dedos, también llamada chala.
+Weimaraner | Empieza con W. Raza de perro de caza alemana de pelaje gris plateado.
+Wolverhampton | Empieza con W. Ciudad inglesa cuyo club de fútbol es conocido como los Wolves.
+
+## X  (101 palabras)
+Xerografía | Empieza con X. Técnica de fotocopiado en seco.
+Xilófago | Empieza con X. Insecto que se alimenta de madera.
+Xbox | Empieza con X. Consola de videojuegos de Microsoft.
+Xena | Empieza con X. Princesa guerrera de una serie de los 90.
+Xavier | Empieza con X. Apellido del profesor que dirige a los X-Men.
+Xochimilco | Empieza con X. Lugar de México famoso por sus trajineras en canales.
+Xiaomi | Empieza con X. Marca china de celulares.
+Xilema | Empieza con X. Tejido de las plantas que transporta el agua.
+Xalapa | Empieza con X. Capital del estado mexicano de Veracruz.
+Xenomorfo | Empieza con X. Criatura de la saga Alien.
+Xerox | Empieza con X. Marca de fotocopiadoras que se volvió sinónimo de fotocopia.
+Xavi | Empieza con X. Exmediocampista del Barcelona y la selección española.
+Excusa | Contiene la X. Motivo que se da para justificar algo.
+Exótico | Contiene la X. Extranjero y llamativo, que viene de un lugar lejano.
+Experto | Contiene la X. Persona que sabe mucho de algo.
+Explorador | Contiene la X. Persona que recorre lugares desconocidos.
+Exprimidor | Contiene la X. Utensilio para sacar el jugo de las frutas.
+Extintor | Contiene la X. Aparato para apagar incendios.
+Extranjero | Contiene la X. Persona que viene de otro país.
+Exterior | Contiene la X. Parte de afuera de algo.
+Extremo | Contiene la X. Último o más lejano.
+Exigente | Contiene la X. Que pide mucho a los demás o a sí mismo.
+Expediente | Contiene la X. Conjunto de documentos sobre un asunto.
+Experimento | Contiene la X. Prueba para comprobar algo.
+Excavadora | Contiene la X. Máquina de construcción que cava y remueve tierra.
+Exagerado | Contiene la X. Que agranda las cosas más allá de lo real.
+Excelente | Contiene la X. Muy bueno, de la mejor calidad.
+Excomunión | Contiene la X. Expulsión de la Iglesia.
+Exabrupto | Contiene la X. Salida de tono brusca.
+Exacto | Contiene la X. Preciso, sin errores ni diferencias.
+Excremento | Contiene la X. Restos de comida que el cuerpo expulsa; caca.
+Exportar | Contiene la X. Vender productos a otro país.
+Exequias | Contiene la X. Honras fúnebres que se hacen a un difunto.
+Exégesis | Contiene la X. Interpretación de un texto.
+Exonerar | Contiene la X. Liberar de una obligación o culpa.
+Exorbitante | Contiene la X. Excesivo, especialmente un precio.
+Expiar | Contiene la X. Pagar una culpa mediante un castigo o sacrificio.
+Expoliar | Contiene la X. Despojar a alguien de sus bienes con violencia.
+Extorsión | Contiene la X. Amenaza para obtener dinero.
+Extravagante | Contiene la X. Muy raro y llamativo.
+Extrovertido | Contiene la X. Sociable y comunicativo, que se abre fácilmente a los demás.
+Exuberante | Contiene la X. Abundante en exceso, como la vegetación de la selva.
+Exultante | Contiene la X. Muy alegre y entusiasmado.
+Taxista | Contiene la X. Persona que conduce un auto de alquiler con taxímetro.
+Sexto | Contiene la X. Que ocupa el lugar número seis.
+Sexteto | Contiene la X. Grupo de seis músicos.
+Texto | Contiene la X. Conjunto de palabras escritas.
+Textil | Contiene la X. Relativo a las telas.
+Textura | Contiene la X. Sensación que da una superficie al tacto.
+Contexto | Contiene la X. Entorno de un hecho.
+Pretexto | Contiene la X. Excusa falsa que se da para no hacer algo.
+Reflexión | Contiene la X. Acción de pensar detenidamente.
+Conexión | Contiene la X. Unión entre dos cosas.
+Anexo | Contiene la X. Añadido a otra cosa.
+Nexo | Contiene la X. Vínculo o unión entre dos cosas.
+Léxico | Contiene la X. Vocabulario de un idioma.
+Tórax | Contiene la X. Parte del cuerpo entre el cuello y el abdomen; pecho.
+Relax | Contiene la X. Descanso total del cuerpo y la mente.
+Fax | Contiene la X. Aparato que envía documentos por teléfono.
+Látex | Contiene la X. Material elástico de los guantes.
+Bórax | Contiene la X. Mineral usado para hacer slime.
+Dúplex | Contiene la X. Departamento de dos pisos.
+Sílex | Contiene la X. Piedra usada en la prehistoria para hacer herramientas.
+Ántrax | Contiene la X. Enfermedad infecciosa grave causada por una bacteria.
+Rolex | Contiene la X. Marca suiza de relojes de lujo.
+Ajax | Contiene la X. Héroe griego; también, club de fútbol de Ámsterdam.
+Astérix | Contiene la X. Pequeño galo que bebe una poción mágica.
+Obélix | Contiene la X. Galo gordo que cayó en la marmita de poción mágica.
+Félix | Contiene la X. Nombre de un famoso gato negro de dibujos animados.
+Rex | Contiene la X. Perro policía de una serie austriaca.
+Pixar | Contiene la X. Estudio de animación de Toy Story.
+Botox | Contiene la X. Toxina que se inyecta para borrar arrugas.
+Mixto | Contiene la X. Formado por elementos distintos.
+Próximo | Contiene la X. Siguiente o cercano en el tiempo o el espacio.
+Máximo | Contiene la X. Lo más grande posible.
+Auxilio | Contiene la X. Ayuda que se pide en un momento de peligro.
+Excéntrico | Contiene la X. Raro y extravagante en sus costumbres.
+Sexagenario | Contiene la X. Persona entre sesenta y sesenta y nueve años.
+Flexible | Contiene la X. Que se dobla fácilmente.
+Laxante | Contiene la X. Medicamento que facilita ir al baño.
+Paroxismo | Contiene la X. Exaltación extrema de una emoción.
+Sintaxis | Contiene la X. Parte de la gramática que estudia cómo se ordenan las palabras.
+Praxis | Contiene la X. Práctica, en contraposición a la teoría.
+Profilaxis | Contiene la X. Conjunto de medidas para prevenir enfermedades.
+Taxidermista | Contiene la X. Persona que diseca animales.
+Toxina | Contiene la X. Sustancia venenosa producida por un ser vivo.
+Luxemburgo | Contiene la X. Pequeño país europeo cuya capital lleva su mismo nombre.
+Bruxismo | Contiene la X. Hábito de apretar los dientes al dormir.
+Hexágono | Contiene la X. Polígono de seis lados.
+Maxilar | Contiene la X. Hueso de la mandíbula.
+Excalibur | Contiene la X. Espada del rey Arturo.
+Excel | Contiene la X. Programa de hojas de cálculo de Microsoft.
+Nixon | Contiene la X. Presidente de EE. UU. que renunció por el caso Watergate.
+Marx | Contiene la X. Filósofo autor de El capital.
+Exhalar | Contiene la X. Expulsar el aire de los pulmones.
+Exento | Contiene la X. Libre de una obligación.
+Expreso | Contiene la X. Tren rápido; también, café concentrado.
+Explicar | Contiene la X. Dar a entender algo.
+Exhibición | Contiene la X. Muestra pública de algo para que la gente lo vea.
+Expectativa | Contiene la X. Esperanza de conseguir o de que ocurra algo.
+Explosivo | Contiene la X. Sustancia capaz de estallar violentamente, como la dinamita.
+
+## Y  (100 palabras)
+Yanqui | Empieza con Y. Forma coloquial de llamar a un estadounidense.
+Yen | Empieza con Y. Moneda oficial de Japón.
+Yerba | Empieza con Y. Hierba con la que se prepara el mate.
+Yoyó | Empieza con Y. Juguete que sube y baja por un hilo.
+Yuyo | Empieza con Y. Maleza o hierba silvestre.
+Yaguareté | Empieza con Y. Nombre guaraní del jaguar.
+Yámana | Empieza con Y. Pueblo originario de los canales australes de Chile.
+Yarará | Empieza con Y. Serpiente venenosa de Sudamérica.
+Yapa | Empieza con Y. Pequeño extra que se regala con una compra.
+Yesca | Empieza con Y. Material seco que se enciende fácilmente.
+Yeti | Empieza con Y. Abominable hombre de las nieves del Himalaya.
+Yoda | Empieza con Y. Maestro jedi verde y pequeño.
+Yogui | Empieza con Y. Persona que practica yoga.
+Yucatán | Empieza con Y. Península mexicana donde está Chichén Itzá.
+Yemen | Empieza con Y. País del sur de la península arábiga.
+Yokohama | Empieza con Y. Ciudad portuaria de Japón.
+Yungay | Empieza con Y. Batalla de 1839 que celebra un famoso himno chileno.
+Yelmo | Empieza con Y. Casco de una armadura.
+Yermo | Empieza con Y. Terreno inhabitado y sin cultivar.
+Yute | Empieza con Y. Fibra vegetal para hacer sacos.
+Yuxtaposición | Empieza con Y. Colocación de una cosa junto a otra.
+Yacer | Empieza con Y. Estar tendido o enterrado.
+Yaya | Empieza con Y. Abuela, en lenguaje familiar.
+Yunta | Empieza con Y. Par de bueyes que trabajan juntos.
+Yuppie | Empieza con Y. Joven profesional urbano de altos ingresos.
+Yonqui | Empieza con Y. Adicto a las drogas.
+Yoko | Empieza con Y. Nombre de pila de Ono, esposa de John Lennon.
+Yorkshire | Empieza con Y. Raza de perro pequeño y peludo de origen inglés.
+Yamaha | Empieza con Y. Marca japonesa de motos e instrumentos.
+Yahoo | Empieza con Y. Antiguo buscador de internet.
+YouTube | Empieza con Y. Plataforma de internet para ver y subir videos.
+Yoshi | Empieza con Y. Dinosaurio verde amigo de Mario.
+Yin | Empieza con Y. Fuerza femenina y oscura que complementa al yang.
+Yugoslavia | Empieza con Y. Antiguo país de los Balcanes.
+Yakuza | Empieza con Y. Mafia japonesa cuyos miembros llevan grandes tatuajes.
+Yogurtera | Empieza con Y. Aparato para hacer yogur casero.
+Yodado | Empieza con Y. Que contiene yodo, como la sal.
+Yesero | Empieza con Y. Persona que trabaja con yeso.
+Yacente | Empieza con Y. Que está tendido, como una estatua sobre una tumba.
+Yaraví | Empieza con Y. Canto melancólico de origen andino.
+Yucateco | Empieza con Y. Persona nacida en Yucatán, México.
+Yegüada | Empieza con Y. Manada de yeguas y caballos.
+Yesería | Empieza con Y. Fábrica o tienda donde se trabaja el yeso.
+Ayuda | Contiene la Y. Auxilio que se presta.
+Ley | Contiene la Y. Norma dictada por la autoridad.
+Hoy | Contiene la Y. El día presente, en que estamos.
+Rayuela | Contiene la Y. Juego de saltar sobre casillas dibujadas en el suelo.
+Bayeta | Contiene la Y. Paño absorbente para limpiar superficies.
+Cayena | Contiene la Y. Pimienta roja en polvo muy picante.
+Cayo | Contiene la Y. Isla pequeña y arenosa del Caribe.
+Ayuntamiento | Contiene la Y. Municipalidad o gobierno de una ciudad, en España.
+Boya | Contiene la Y. Objeto flotante que señala algo en el agua.
+Bayoneta | Contiene la Y. Cuchillo que se ajusta al cañón de un fusil.
+Cobaya | Contiene la Y. Conejillo de Indias, roedor usado en experimentos.
+Maya | Contiene la Y. Civilización precolombina de Centroamérica.
+Mayúscula | Contiene la Y. Letra de mayor tamaño.
+Paraguay | Contiene la Y. País sudamericano bilingüe en guaraní y español.
+Guayaba | Contiene la Y. Fruta tropical de pulpa rosada.
+Guayabera | Contiene la Y. Camisa caribeña con bolsillos y pliegues.
+Soya | Contiene la Y. Legumbre con la que se hace la leche vegetal.
+Playstation | Contiene la Y. Consola de videojuegos de Sony.
+Cuy | Contiene la Y. Cobayo andino que se come en Perú.
+Payador | Contiene la Y. Cantor popular chileno que improvisa versos.
+Chirimoya | Contiene la Y. Fruta verde de pulpa blanca y dulce.
+Tramoya | Contiene la Y. Maquinaria del teatro; también, enredo.
+Claraboya | Contiene la Y. Ventana en el techo.
+Hoyuelo | Contiene la Y. Hoyito en la mejilla o el mentón.
+Mayólica | Contiene la Y. Loza esmaltada y decorada con colores.
+Sydney | Contiene la Y. Ciudad australiana de la famosa Ópera.
+Bombay | Contiene la Y. Ciudad india, hoy Mumbai.
+Monterrey | Contiene la Y. Ciudad del norte de México.
+Yesterday | Empieza con Y. Canción de los Beatles.
+Ayudante | Contiene la Y. Persona que ayuda a otra en su trabajo.
+Cayado | Contiene la Y. Bastón curvo que usan los pastores.
+Huayno | Contiene la Y. Música y baile andino.
+Leguleyo | Contiene la Y. Abogado de poca categoría.
+Bayern | Contiene la Y. Club de fútbol de Múnich.
+Ensayista | Contiene la Y. Escritor de textos breves en prosa donde expone sus ideas sobre un tema.
+Mayorista | Contiene la Y. Comerciante que vende en grandes cantidades.
+Yupi | Empieza con Y. Exclamación que se usa para expresar alegría.
+Yo | Empieza con Y. Pronombre de primera persona.
+Yanomami | Empieza con Y. Pueblo indígena de la Amazonía.
+Yatagán | Empieza con Y. Sable turco de hoja curva.
+Yerbabuena | Empieza con Y. Planta aromática con la que se prepara el mojito.
+Yarda | Empieza con Y. Unidad de longitud inglesa equivalente a unos noventa y un centímetros.
+Yupana | Empieza con Y. Ábaco de piedra o madera que usaban los incas para contar.
+Yakarta | Empieza con Y. Capital de Indonesia, en la isla de Java.
+Yanacona | Empieza con Y. Indígena que servía de forma personal a los españoles en la Colonia.
+Yibuti | Empieza con Y. Pequeño país del Cuerno de África a orillas del mar Rojo.
+Yokozuna | Empieza con Y. Máximo rango que puede alcanzar un luchador de sumo.
+Yuri | Empieza con Y. Nombre de pila de Gagarin, el primer humano en viajar al espacio.
+Yukón | Empieza con Y. Territorio del noroeste de Canadá famoso por su fiebre del oro.
+Yosemite | Empieza con Y. Parque nacional de California famoso por sus secuoyas y paredes de granito.
+Yuan | Empieza con Y. Moneda oficial de China.
+Yeísmo | Empieza con Y. Costumbre de pronunciar igual la elle y la ye.
+Yerro | Empieza con Y. Equivocación o falta cometida por ignorancia o descuido.
+Yerto | Empieza con Y. Rígido, tieso, especialmente por el frío o la muerte.
+Yantar | Empieza con Y. Antiguamente, comer o la comida misma.
+Yeltsin | Empieza con Y. Primer presidente de Rusia tras la caída de la Unión Soviética.
+Yerbatero | Empieza con Y. Curandero que receta hierbas medicinales; también, vendedor de yerba mate.
+
+## Z  (101 palabras)
+Zafiro | Empieza con Z. Piedra preciosa de color azul intenso.
+Zafra | Empieza con Z. Cosecha de la caña de azúcar.
+Zaga | Empieza con Z. Parte trasera; defensa de un equipo.
+Zaguán | Empieza con Z. Entrada de una casa.
+Zalamero | Empieza con Z. Que hace halagos exagerados.
+Zambullida | Empieza con Z. Acción de lanzarse al agua de cabeza.
+Zancudo | Empieza con Z. Mosquito de patas largas que pica de noche.
+Zancadilla | Empieza con Z. Acción de poner la pierna para hacer caer a alguien.
+Zar | Empieza con Z. Título del emperador de Rusia.
+Zarpar | Empieza con Z. Salir un barco del puerto.
+Zarzamora | Empieza con Z. Fruto silvestre negro parecido a la mora.
+Zarzuela | Empieza con Z. Género teatral musical español.
+Zeta | Empieza con Z. Última letra del abecedario.
+Zinc | Empieza con Z. Metal de color blanco azulado usado para galvanizar techos.
+Zodiaco | Empieza con Z. Conjunto de doce signos astrológicos.
+Zombi | Empieza con Z. Muerto que vuelve a la vida y camina sin voluntad propia.
+Zona | Empieza con Z. Área o parte delimitada de un territorio.
+Zoom | Empieza con Z. Acercamiento de la imagen de una cámara; también, plataforma de videollamadas.
+Zopilote | Empieza con Z. Buitre americano de plumaje negro que come carroña.
+Zozobra | Empieza con Z. Inquietud o angustia ante un peligro.
+Zueco | Empieza con Z. Zapato de madera holandés.
+Zulú | Empieza con Z. Pueblo guerrero del sur de África.
+Zumba | Empieza con Z. Baile aeróbico de ritmos latinos.
+Zumbido | Empieza con Z. Ruido que hacen las abejas.
+Zurdo | Empieza con Z. Que usa la mano izquierda.
+Zurcir | Empieza con Z. Coser un roto en la ropa.
+Zurra | Empieza con Z. Paliza o castigo a golpes.
+Zutano | Empieza con Z. Persona cualquiera, después de fulano y mengano.
+Zafarrancho | Empieza con Z. Desorden o riña con mucho alboroto.
+Zafio | Empieza con Z. Tosco y grosero en sus modales.
+Zahorí | Empieza con Z. Persona que encuentra agua bajo tierra.
+Zaherir | Empieza con Z. Humillar o herir a alguien con palabras.
+Zambo | Empieza con Z. De piernas torcidas hacia afuera.
+Zascandil | Empieza con Z. Persona inquieta y entrometida.
+Zeus | Empieza con Z. Dios principal del Olimpo.
+Zelda | Empieza con Z. Princesa de la saga de Link.
+Zidane | Empieza con Z. Futbolista francés del cabezazo en la final de 2006.
+Zuckerberg | Empieza con Z. Apellido del creador de Facebook.
+Zúrich | Empieza con Z. Ciudad más grande de Suiza.
+Zambia | Empieza con Z. País africano vecino de Zimbabue.
+Zaragoza | Empieza con Z. Ciudad española a orillas del Ebro.
+Zapatero | Empieza con Z. Persona que arregla zapatos.
+Zapatería | Empieza con Z. Tienda donde se compra calzado.
+Zoólogo | Empieza con Z. Científico que estudia los animales.
+Zarina | Empieza con Z. Esposa del zar o emperatriz de Rusia.
+Zigurat | Empieza con Z. Templo escalonado de Mesopotamia.
+Zurrón | Empieza con Z. Bolsa de cuero de los pastores.
+Zapping | Empieza con Z. Cambiar de canal sin parar.
+Zorzal | Empieza con Z. Pájaro cantor común en Chile.
+Zíper | Empieza con Z. Cierre de cremallera de una prenda o un bolso.
+Zoco | Empieza con Z. Mercado típico de los países árabes.
+Zote | Empieza con Z. Persona torpe e ignorante.
+Zambomba | Empieza con Z. Instrumento navideño que se frota.
+Zigoto | Empieza con Z. Célula resultante de la fecundación.
+Cazuela | Contiene la Z. Guiso chileno de carne, papas y zapallo.
+Cruz | Contiene la Z. Figura de dos líneas que se cortan.
+Calzoncillo | Contiene la Z. Prenda de ropa interior masculina.
+Caza | Contiene la Z. Actividad de perseguir y capturar animales salvajes con armas o trampas.
+Esperanza | Contiene la Z. Confianza en que ocurra algo bueno.
+Feliz | Contiene la Z. Que siente felicidad y alegría.
+Luz | Contiene la Z. Lo que permite ver.
+Mazorca | Contiene la Z. Espiga del maíz donde están pegados los granos.
+Mezcla | Contiene la Z. Unión de varias cosas.
+Paz | Contiene la Z. Ausencia de guerra o de conflicto entre personas o países.
+Plaza | Contiene la Z. Espacio público abierto en una ciudad.
+Pereza | Contiene la Z. Flojera o falta de ganas de hacer algo; pecado capital.
+Perdiz | Contiene la Z. Ave de caza de cuerpo regordete que vive en el campo.
+Trozo | Contiene la Z. Pedazo o parte de algo que se ha cortado.
+Vez | Contiene la Z. Cada una de las ocasiones en que ocurre algo.
+Actriz | Contiene la Z. Mujer que interpreta personajes en el cine o el teatro.
+Emperatriz | Contiene la Z. Mujer que gobierna un imperio o esposa del emperador.
+Tristeza | Contiene la Z. Sentimiento de pena y desánimo.
+Pobreza | Contiene la Z. Falta de dinero y recursos para vivir.
+Pescuezo | Contiene la Z. Cuello de un animal o, en tono coloquial, de una persona.
+Mozo | Contiene la Z. Camarero que atiende las mesas; también, hombre joven.
+Bozal | Contiene la Z. Correa que se pone en el hocico de un perro.
+Buzo | Contiene la Z. Persona que bucea bajo el agua con equipo especial.
+Calabozo | Contiene la Z. Celda de una cárcel o comisaría donde se encierra a los detenidos.
+Chorizo | Contiene la Z. Embutido de carne de cerdo condimentado con pimentón.
+Choza | Contiene la Z. Cabaña rústica hecha con ramas, paja o barro.
+Gozo | Contiene la Z. Alegría o placer intenso.
+Mazo | Contiene la Z. Martillo grande de madera.
+Matiz | Contiene la Z. Cada uno de los tonos que puede tener un mismo color.
+Lienzo | Contiene la Z. Tela preparada sobre la que se pinta un cuadro.
+Plazo | Contiene la Z. Tiempo para hacer algo.
+Pedazo | Contiene la Z. Parte o porción que se separa de algo.
+Rezo | Contiene la Z. Oración que se dirige a Dios o a un santo.
+Tenaza | Contiene la Z. Herramienta de metal con dos brazos para agarrar o arrancar clavos.
+Vizconde | Contiene la Z. Título nobiliario inferior al de conde.
+Lazarillo | Contiene la Z. Guía de un ciego.
+Andaluz | Contiene la Z. Persona nacida en Andalucía, al sur de España.
+Zancada | Empieza con Z. Paso largo que se da al caminar o correr.
+Zamba | Empieza con Z. Danza folclórica argentina que se baila agitando un pañuelo.
+Zafar | Empieza con Z. Librarse de una situación difícil o comprometida.
+Zalea | Empieza con Z. Piel de oveja curtida que conserva la lana.
+Zarpa | Empieza con Z. Mano de un animal con dedos y garras, como la del león.
+Zarcillo | Empieza con Z. Arete; también, tallo con que se enredan las plantas trepadoras.
+Zonzo | Empieza con Z. Tonto, de poca gracia o entendimiento.
+Zarzaparrilla | Empieza con Z. Planta trepadora con cuya raíz se prepara una bebida refrescante.
+Zapatear | Empieza con Z. Golpear el suelo con los pies al ritmo de la música, como en la cueca.
+Zamarra | Empieza con Z. Chaqueta de piel con su lana o pelo.

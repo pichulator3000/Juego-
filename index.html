@@ -375,6 +375,60 @@
       return (typeof item === 'string') ? { text: item, answer: null } : item;
     }
 
+    // --- Pasapalabra: sin repetir palabras entre jugadores ni entre partidas del mismo dispositivo ---
+    var PASA_USED_KEY = 'copete_pasapalabra_usadas';
+
+    function pasaWordKey(answer){
+      return String(answer || '').trim().toLowerCase()
+        .replace(/ñ/g, '\u0001').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\u0001/g, 'ñ');
+    }
+
+    function loadPasaUsed(){
+      try {
+        var raw = JSON.parse(localStorage.getItem(PASA_USED_KEY) || '{}');
+        return (raw && typeof raw === 'object') ? raw : {};
+      } catch(e){ return {}; }
+    }
+
+    function savePasaUsed(used){
+      try { localStorage.setItem(PASA_USED_KEY, JSON.stringify(used)); } catch(e){}
+    }
+
+    // Devuelve { letra: [palabra jugador 0, palabra jugador 1, ...] }.
+    // Prioriza palabras nunca jugadas en este dispositivo; cuando se agotan las de una letra,
+    // se reinicia el historial de esa letra. Nunca repite una palabra dentro de la misma jugada
+    // (salvo que la letra tenga menos palabras distintas que jugadores).
+    function pickPasapalabraWords(letters, nPlayers){
+      var used = loadPasaUsed();
+      var result = {};
+      letters.forEach(function(l){
+        var seen = {};
+        var pool = (PASAPALABRA_WORDS[l] || []).filter(function(q){
+          var k = pasaWordKey(q && q.answer);
+          if (!k || seen[k]) return false;
+          seen[k] = true;
+          return true;
+        });
+        if (!pool.length) pool = [{ text: "Empieza con " + l, answer: "..." }];
+
+        var usedSet = {};
+        (used[l] || []).forEach(function(k){ usedSet[k] = true; });
+        var fresh = shuffle(pool.filter(function(q){ return !usedSet[pasaWordKey(q.answer)]; }));
+        var old = shuffle(pool.filter(function(q){ return usedSet[pasaWordKey(q.answer)]; }));
+
+        var picks = fresh.slice(0, nPlayers);
+        var resetLetter = picks.length < nPlayers;
+        if (resetLetter) picks = picks.concat(old.slice(0, nPlayers - picks.length));
+        while (picks.length < nPlayers) picks.push(pool[Math.floor(Math.random() * pool.length)]);
+
+        var pickedKeys = picks.map(function(q){ return pasaWordKey(q.answer); });
+        used[l] = resetLetter ? pickedKeys : (used[l] || []).concat(pickedKeys);
+        result[l] = picks;
+      });
+      savePasaUsed(used);
+      return result;
+    }
+
     function saveHistoryToStorage(){
       try { localStorage.setItem('copete_history', JSON.stringify(state.history)); } catch(e){}
     }
@@ -1242,10 +1296,10 @@
         }
         if (state.selectedMode === 'pasapalabra'){
           var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('');
-          state.roscos = state.players.map(function() {
+          var picksByLetter = pickPasapalabraWords(letters, state.players.length);
+          state.roscos = state.players.map(function(_, p) {
             var questions = letters.map(function(l) {
-              var pool = PASAPALABRA_WORDS[l] || [{text: "Empieza con " + l, answer: "..."}];
-              var q = pool[Math.floor(Math.random() * pool.length)];
+              var q = picksByLetter[l][p];
               return { letter: l, text: q.text, answer: q.answer, status: 'pending' };
             });
             return { questions: questions, currentIndex: 0, active: false, finished: false };
