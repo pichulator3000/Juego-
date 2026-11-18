@@ -1,1374 +1,1071 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
 <title>Copetapp</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<meta name="theme-color" content="#150C2B" />
+<meta name="theme-color" content="#0C0D16" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 <style>
+  /* ================= tokens ================= */
   :root{
     color-scheme: dark;
-    --ink:#150C2B;
-    --ink-2:#1E1240;
-    --surface:#211539;
-    --surface-2:#2C1B4C;
-    --line: rgba(248,244,255,.12);
-    --line-strong: rgba(248,244,255,.22);
-    --pink:#FF3D8F;
-    --pink-deep:#93104F;
-    --lime:#D8FF3E;
-    --lime-deep:#8FB000;
-    --cyan:#2FE6C4;
-    --cyan-deep:#0E9A7F;
-    --violet:#8B5CF6;
-    --violet-deep:#4E2FA9;
-    --cloud:#F8F4FF;
-    --muted:#B6A6DA;
 
-    --cat-nunca-1: var(--violet);      --cat-nunca-2: #5B3FD6;
-    --cat-juegos-1: var(--cyan);       --cat-juegos-2: #12B596;
-    --cat-cultura-1: var(--lime);      --cat-cultura-2: #A8D61E;
-    --cat-trago-1: var(--pink);        --cat-trago-2: var(--violet);
-    --cat-regala-1: var(--cyan);       --cat-regala-2: var(--lime);
-    --cat-evento-1: var(--pink);       --cat-evento-2: var(--lime); --cat-evento-3: var(--cyan);
-    --cat-impostor-word-1: var(--lime); --cat-impostor-word-2: #A8D61E;
-    --cat-impostor-spy-1: var(--pink);  --cat-impostor-spy-2: #93104F;
-    --cat-incomoda-1: #40E0D0;          --cat-incomoda-2: #008B8B;
+    --bg:#0C0D16;
+    --surface:#151726;
+    --surface-2:#1C1F32;
+    --surface-3:#25293F;
+    --line: rgb(255 255 255 / .08);
+    --line-strong: rgb(255 255 255 / .16);
 
-    --font-display: ui-rounded, "SF Pro Rounded", -apple-system, "Segoe UI", sans-serif;
-    --font-body: -apple-system, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
-    --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
-    --font-gothic: "Century Gothic", Futura, var(--font-display);
+    --text:#F3F4F8;
+    --text-2:#B9BDD0;
+    --text-3:#959AB3;
 
-    --text-xs: 11px; --text-sm: 13px; --text-base: 15px; --text-lg: clamp(17px, 4.6vw, 19px);
-    --text-xl: clamp(26px, 8vw, 32px); --text-display: clamp(30px, 9.5vw, 38px);
+    --accent:#F2B84B;
+    --accent-ink:#1C1404;
+    --success:#3DD68C;
+    --success-ink:#062114;
+    --danger:#FF6B6B;
+    --danger-ink:#2A0606;
 
-    --r-sm: 12px; --r-md: 16px; --r-lg: 20px; --r-xl: 26px;
-    --shadow-sm: 0 2px 8px -2px rgba(9,4,24,.35);
-    --shadow-md: 0 10px 24px -10px rgba(9,4,24,.5);
-    --shadow-card: 0 24px 48px -20px rgba(9,4,24,.65), 0 2px 10px -2px rgba(9,4,24,.4);
-    --ease-spring: cubic-bezier(.22,1.12,.36,1);
+    /* Colores de tema de trivia (los usa data/deck.js por nombre) */
+    --violet:#8B7CF6;
+    --cyan:#2CC5D2;
+    --cyan-deep:#1FA393;
+    --pink:#EC6AA8;
+    --lime:#A6D64A;
+
+    --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, Roboto, sans-serif;
+    --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", system-ui, Roboto, sans-serif;
+    --font-mono: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, monospace;
+
+    --r-sm:10px; --r-md:14px; --r-lg:20px; --r-xl:26px;
+    --shadow-1: 0 1px 2px rgb(0 0 0 / .3);
+    --shadow-2: 0 12px 32px -12px rgb(0 0 0 / .6), 0 2px 6px rgb(0 0 0 / .25);
+    --ease: cubic-bezier(.2,.8,.2,1);
+    --target: 44px;
   }
 
-  *{ box-sizing:border-box; -webkit-tap-highlight-color: transparent; }
-  html,body{ height:100%; }
+  /* ================= base ================= */
+  *, *::before, *::after{ box-sizing:border-box; }
+  html{ -webkit-text-size-adjust:100%; }
   body{
     margin:0;
     min-height:100dvh;
-    background: radial-gradient(120% 60% at 50% -10%, var(--surface-2), var(--ink) 55%);
-    color:var(--cloud);
-    font-family: var(--font-body);
-    font-size: var(--text-base);
-    line-height: 1.35;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    overflow-x:hidden;
-    overscroll-behavior-y:none;
-    position:relative;
+    background:
+      radial-gradient(90% 50% at 50% -10%, rgb(242 184 75 / .09), transparent 70%),
+      var(--bg);
+    color:var(--text);
+    font-family:var(--font);
+    font-size:1rem;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+    -webkit-tap-highlight-color:transparent;
+    overflow-wrap:break-word;
+  }
+  h1, h2, h3, p{ margin:0; }
+  h1, h2{ text-wrap:balance; }
+  button, input{ font:inherit; color:inherit; }
+  button{ cursor:pointer; }
+  :focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+  #app:focus{ outline:none; }
+
+  .visually-hidden{
+    position:absolute; width:1px; height:1px; margin:-1px; padding:0; border:0;
+    overflow:hidden; clip-path:inset(50%); white-space:nowrap;
   }
 
-  body::before{
-    content:''; position:fixed; inset:0; z-index:0; pointer-events:none; opacity:.05; mix-blend-mode:overlay;
-    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
-  }
+  .ico{ width:1.25em; height:1.25em; flex:none; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
 
-  .blob{ position:fixed; border-radius:50%; filter: blur(78px); opacity:.28; pointer-events:none; z-index:0; will-change:transform; }
-  .blob-a{ width:60vw; height:60vw; max-width:420px; max-height:420px; background:var(--pink); top:-14%; left:-18%; }
-  .blob-b{ width:55vw; height:55vw; max-width:380px; max-height:380px; background:var(--cyan); bottom:-16%; right:-16%; }
-  .blob-c{ width:40vw; height:40vw; max-width:300px; max-height:300px; background:var(--violet); bottom:22%; left:-8%; opacity:.2; }
-  @media (prefers-reduced-motion: no-preference){
-    .blob-a{ animation: float-a 22s ease-in-out infinite; }
-    .blob-b{ animation: float-b 26s ease-in-out infinite; }
-    .blob-c{ animation: float-c 19s ease-in-out infinite; }
-  }
-  @keyframes float-a{ 0%,100%{ transform:translate(0,0) scale(1);} 50%{ transform:translate(6vw,5vh) scale(1.08);} }
-  @keyframes float-b{ 0%,100%{ transform:translate(0,0) scale(1);} 50%{ transform:translate(-5vw,-6vh) scale(1.06);} }
-  @keyframes float-c{ 0%,100%{ transform:translate(0,0);} 50%{ transform:translate(4vw,-4vh);} }
-
+  /* ================= shell ================= */
   .app-shell{
-    position:relative; z-index:1;
-    width:100%; max-width:480px; margin:0 auto;
-    min-height:100dvh;
+    width:100%; max-width:480px; margin:0 auto; min-height:100dvh;
     display:flex; flex-direction:column;
-    padding-top: max(28px, env(safe-area-inset-top));
-    padding-bottom: max(22px, env(safe-area-inset-bottom));
+    padding-top: max(16px, env(safe-area-inset-top));
+    padding-bottom: max(16px, env(safe-area-inset-bottom));
     padding-left: max(20px, env(safe-area-inset-left));
     padding-right: max(20px, env(safe-area-inset-right));
   }
+  .app{ flex:1; display:flex; flex-direction:column; }
+  .screen{ flex:1; display:flex; flex-direction:column; }
 
-  .app{ flex:1; }
-
-  .setup-top{ display:flex; align-items:center; justify-content:space-between; gap:10px; }
-  .brand{ font-family: var(--font-display); font-weight:900; letter-spacing:-.025em; font-size:var(--text-display); line-height:1;
-    background: linear-gradient(100deg, var(--pink), var(--lime) 85%);
-    -webkit-background-clip:text; background-clip:text; color:transparent;
-    filter: drop-shadow(0 6px 18px rgba(255,61,143,.22)); }
-  .section-label{ font-family:var(--font-display); font-weight:700; font-size:var(--text-xs); letter-spacing:.09em; text-transform:uppercase; color:var(--muted); margin: 24px 0 10px; display:flex; align-items:center; gap:6px; }
-  .section-label .count{ font-family:var(--font-mono); background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:1px 8px; font-size:11px; color:var(--cloud); font-weight:500; letter-spacing:0; text-transform:none; font-variant-numeric:tabular-nums; }
-
-  button{ font: inherit; -webkit-tap-highlight-color:transparent; cursor:pointer; }
-  button:active{ transform:scale(.96); }
-  button, .switch .thumb, .chip{ transition: transform .15s var(--ease-spring), background-color .18s ease, border-color .18s ease, box-shadow .18s ease, opacity .18s ease; }
-
-  .player-form{ display:flex; gap:8px; margin-top:8px; }
-  .player-form input{
-    flex:1; min-width:0; background:var(--surface); border:1px solid var(--line); border-radius:var(--r-sm);
-    padding:12px 14px; color:var(--cloud); font-size:16px; font-family:var(--font-body);
-    transition: border-color .18s ease, background-color .18s ease;
+  /* ================= barra superior ================= */
+  .topbar{
+    display:grid; grid-template-columns:var(--target) 1fr var(--target); align-items:center; gap:8px;
+    min-height:var(--target); margin-bottom:8px;
   }
-  .player-form input::placeholder{ color:var(--muted); }
-  .player-form input:focus-visible{ outline:2px solid var(--pink); outline-offset:1px; border-color:var(--pink); }
+  .topbar-title{ text-align:center; font-family:var(--font-display); font-weight:650; font-size:1.0625rem; letter-spacing:-.01em; }
+  .icon-btn{
+    inline-size:var(--target); block-size:var(--target);
+    display:inline-flex; align-items:center; justify-content:center;
+    border-radius:12px; border:1px solid var(--line); background:var(--surface); color:var(--text);
+    transition:background-color .15s ease, transform .15s var(--ease);
+  }
+  .icon-btn:active{ transform:scale(.94); background:var(--surface-2); }
+  .pill{
+    justify-self:center; display:inline-flex; align-items:center; gap:6px;
+    padding:6px 12px; border-radius:999px; background:var(--surface); border:1px solid var(--line);
+    font-size:.8125rem; font-weight:600; color:var(--text-2); font-variant-numeric:tabular-nums;
+  }
+
+  /* ================= botones ================= */
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    min-block-size:52px; padding:12px 18px; border-radius:var(--r-md); border:1px solid transparent;
+    font-weight:650; font-size:1rem; letter-spacing:-.005em;
+    transition:transform .15s var(--ease), background-color .15s ease, opacity .15s ease;
+  }
+  .btn:active:not(:disabled){ transform:scale(.97); }
+  .btn-block{ width:100%; }
+  .btn-primary{ background:var(--accent); color:var(--accent-ink); box-shadow:0 8px 24px -10px rgb(242 184 75 / .55); }
+  .btn-primary:disabled{ background:var(--surface-3); color:var(--text-3); box-shadow:none; cursor:not-allowed; }
+  .btn-secondary{ background:var(--surface-2); border-color:var(--line-strong); color:var(--text); }
+  .btn-success{ background:var(--success); color:var(--success-ink); }
+  .btn-danger{ background:var(--danger); color:var(--danger-ink); }
+
+  /* ================= inicio ================= */
+  .home{ justify-content:center; gap:32px; padding-block:24px; }
+  .brand{ display:flex; flex-direction:column; align-items:center; gap:14px; text-align:center; }
+  .brand-mark{
+    inline-size:64px; block-size:64px; border-radius:18px; display:grid; place-items:center;
+    background:linear-gradient(145deg, #F7CB72, var(--accent) 55%, #D9962A);
+    color:var(--accent-ink); font-family:var(--font-display); font-weight:800; font-size:2rem;
+    box-shadow:0 14px 36px -12px rgb(242 184 75 / .6), inset 0 1px 0 rgb(255 255 255 / .35);
+  }
+  .brand h1{ font-family:var(--font-display); font-weight:800; font-size:clamp(2rem, 1.4rem + 3vw, 2.5rem); letter-spacing:-.03em; line-height:1.1; }
+  .brand p{ color:var(--text-2); font-size:.9375rem; max-width:30ch; }
+
+  .mode-list{ display:grid; gap:12px; }
+  .mode-card{
+    display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:16px;
+    width:100%; padding:18px; text-align:left;
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--r-lg);
+    box-shadow:var(--shadow-1);
+    transition:transform .15s var(--ease), border-color .15s ease, background-color .15s ease;
+  }
+  .mode-card:active{ transform:scale(.98); background:var(--surface-2); }
+  @media (hover:hover){ .mode-card:hover{ border-color:var(--line-strong); } }
+  .mode-icon{
+    inline-size:52px; block-size:52px; border-radius:14px; display:grid; place-items:center; font-size:1.5rem;
+    background:color-mix(in oklab, var(--tone) 18%, var(--surface-2)); color:var(--tone);
+    border:1px solid color-mix(in oklab, var(--tone) 35%, transparent);
+  }
+  .mode-icon .ico{ width:28px; height:28px; }
+  .mode-card strong{ display:block; font-size:1.0625rem; font-weight:650; letter-spacing:-.01em; }
+  .mode-desc{ display:block; color:var(--text-2); font-size:.875rem; margin-top:2px; line-height:1.4; }
+  .mode-card .chev{ color:var(--text-3); }
+
+  /* ================= setup ================= */
+  .section{ margin-top:24px; }
+  .section-head{ display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:10px; }
+  .section-title{ font-size:.8125rem; font-weight:650; letter-spacing:.04em; text-transform:uppercase; color:var(--text-2); }
+  .section-meta{ font-size:.8125rem; color:var(--text-3); font-variant-numeric:tabular-nums; }
+  .help{ color:var(--text-3); font-size:.8125rem; margin-top:10px; line-height:1.45; }
+
+  .player-form{ display:flex; gap:8px; }
+  .field{
+    flex:1; min-width:0; min-block-size:var(--target);
+    background:var(--surface); border:1px solid var(--line-strong); border-radius:var(--r-md);
+    padding:12px 14px; font-size:max(1rem, 1em);
+    transition:border-color .15s ease, background-color .15s ease;
+  }
+  .field::placeholder{ color:var(--text-3); }
+  .field:focus-visible{ outline:2px solid var(--accent); outline-offset:0; border-color:transparent; }
   .add-btn{
-    width:46px; height:46px; border-radius:var(--r-sm); border:none; flex-shrink:0;
-    background: linear-gradient(135deg, var(--pink), var(--violet));
-    color:#fff; font-size:20px; font-weight:700; display:flex; align-items:center; justify-content:center;
-    box-shadow: var(--shadow-sm);
+    inline-size:52px; min-block-size:var(--target); flex:none; border-radius:var(--r-md); border:none;
+    background:var(--accent); color:var(--accent-ink); display:grid; place-items:center;
   }
-  .add-btn:active{ transform:scale(.92) rotate(-4deg); }
-  .add-btn:focus-visible{ outline:2px solid var(--lime); outline-offset:2px; }
+  .add-btn:active{ transform:scale(.94); }
 
-  .players-grid{ display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+  .chips{ display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
   .chip{
-    display:flex; align-items:center; gap:7px; background:var(--surface); border:1px solid var(--line);
-    border-radius:24px; padding:6px 10px 6px 6px; font-size:14px;
-    animation: chip-in .3s var(--ease-spring) both;
+    display:inline-flex; align-items:center; gap:8px; padding:4px 4px 4px 4px;
+    background:var(--surface); border:1px solid var(--line); border-radius:999px; font-size:.9375rem; font-weight:500;
   }
   @media (prefers-reduced-motion: no-preference){
-    @keyframes chip-in{ 0%{ opacity:0; transform:scale(.7); } 100%{ opacity:1; transform:scale(1); } }
+    .chip{ animation:pop-in .25s var(--ease) both; }
   }
-  .chip:hover{ border-color:var(--line-strong); }
-  .chip .avatar{ width:24px; height:24px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:800; color:var(--ink); flex-shrink:0; }
-  .chip button{ background:none; border:none; color:var(--muted); font-size:15px; line-height:1; padding:2px; }
-  .chip button:focus-visible{ outline:2px solid var(--pink); border-radius:50%; }
-  .empty-hint{ font-size:13px; color:var(--muted); margin-top:10px; }
-
-  .mode-card{
-    display:flex; align-items:center; gap:12px; background:var(--surface); border:1px solid var(--line);
-    border-radius:var(--r-lg); padding:14px; margin-bottom:10px; box-shadow: var(--shadow-sm);
+  @keyframes pop-in{ from{ opacity:0; transform:scale(.9); } to{ opacity:1; transform:none; } }
+  .chip-remove{
+    inline-size:32px; block-size:32px; border-radius:999px; border:none; background:transparent; color:var(--text-3);
+    display:grid; place-items:center; position:relative;
   }
-  .mode-icon{ width:42px; height:42px; border-radius:13px; display:flex; align-items:center; justify-content:center; font-size:21px; flex-shrink:0; }
-  .mode-copy{ flex:1; min-width:0; }
-  .mode-copy strong{ display:block; font-size:15px; }
-  .mode-copy span{ display:block; font-size:12.5px; color:var(--muted); margin-top:1px; }
-
-  .drink-config{ display:flex; flex-direction:column; gap:8px; background:var(--surface); border:1px solid var(--line); border-radius:var(--r-lg); padding:6px 14px; box-shadow:var(--shadow-sm); }
-  .drink-row{ display:flex; align-items:center; justify-content:space-between; gap:12px; padding:10px 0; border-bottom:1px solid var(--line); }
-  .drink-row:last-child{ border-bottom:none; }
-  .drink-row span{ font-size:13.5px; color:var(--cloud); }
-  .drink-input{
-    width:56px; flex-shrink:0; text-align:center; background:var(--surface-2); border:1px solid var(--line);
-    border-radius:10px; padding:8px 4px; color:var(--cloud); font-family:var(--font-mono); font-size:15px;
-    font-variant-numeric:tabular-nums; transition:border-color .18s ease;
+  .chip-remove::after{ content:""; position:absolute; inset:-6px; } /* área táctil ≥44px */
+  .chip-remove:active{ background:var(--surface-3); }
+  .avatar{
+    inline-size:28px; block-size:28px; border-radius:999px; flex:none; display:grid; place-items:center;
+    background:var(--c); color:#0C0D16; font-weight:750; font-size:.8125rem;
   }
-  .drink-input:focus-visible{ outline:2px solid var(--pink); outline-offset:1px; border-color:var(--pink); }
 
-  .switch{ position:relative; width:48px; height:28px; flex-shrink:0; }
-  .switch input{ position:absolute; inset:0; opacity:0; margin:0; cursor:pointer; z-index:1; }
-  .switch .track{ position:absolute; inset:0; border-radius:16px; background:var(--surface-2); border:1px solid var(--line); transition:background .25s ease; }
-  .switch .thumb{ position:absolute; top:2px; left:2px; width:22px; height:22px; border-radius:50%; background:var(--cloud); transition:transform .28s var(--ease-spring); box-shadow:0 2px 4px rgba(0,0,0,.3); }
-  .switch input:checked + .track{ background:var(--cyan); }
-  .switch input:checked + .track + .thumb{ transform:translateX(20px); }
-
-  .segmented{ display:flex; background:var(--surface); border:1px solid var(--line); border-radius:var(--r-sm); padding:4px; gap:4px; }
-  .segmented button{
-    flex:1; border:none; background:transparent; color:var(--muted); font-family:var(--font-body); font-weight:600;
-    font-size:14px; padding:10px 0; border-radius:10px; transition:background .18s ease, color .18s ease, transform .15s var(--ease-spring);
+  .topics{ display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:10px; }
+  .topic{
+    position:relative; display:flex; align-items:center; gap:10px; min-block-size:64px; padding:10px 12px;
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--r-md); cursor:pointer;
+    transition:border-color .15s ease, background-color .15s ease, transform .15s var(--ease);
   }
-  .segmented button.active{ background: linear-gradient(135deg, var(--pink), var(--violet)); color:#fff; box-shadow: var(--shadow-sm); }
-  .card-copy{ font-size:12.5px; color:var(--muted); margin-top:8px; }
-
-  .start-btn{
-    width:100%; margin-top:26px; border:none; border-radius:var(--r-md); padding:17px;
-    font-family:var(--font-display); font-weight:800; font-size:17px; color:var(--ink);
-    background: linear-gradient(100deg, var(--lime), var(--cyan));
-    box-shadow: 0 14px 28px -10px rgba(216,255,62,.45);
-    transition: transform .15s var(--ease-spring), box-shadow .2s ease, opacity .2s ease;
+  .topic:active{ transform:scale(.98); }
+  .topic-icon{
+    inline-size:38px; block-size:38px; border-radius:10px; flex:none; display:grid; place-items:center; font-size:1.25rem;
+    background:color-mix(in oklab, var(--topic-color) 20%, var(--surface-2));
   }
-  .start-btn:disabled{ opacity:.35; box-shadow:none; }
-  .start-hint{ text-align:center; font-size:12px; color:var(--muted); margin-top:8px; }
+  .topic-name{ font-size:.875rem; font-weight:600; line-height:1.25; }
+  .topic-count{ display:block; color:var(--text-3); font-size:.75rem; font-weight:400; margin-top:2px; font-variant-numeric:tabular-nums; }
+  .topic-check{
+    position:absolute; top:8px; right:8px; inline-size:20px; block-size:20px; border-radius:999px;
+    display:grid; place-items:center; font-size:.75rem;
+    border:1.5px solid var(--line-strong); color:transparent;
+  }
+  .topic:has(:checked){ border-color:var(--topic-color); background:color-mix(in oklab, var(--topic-color) 10%, var(--surface)); }
+  .topic:has(:checked) .topic-check{ background:var(--topic-color); border-color:var(--topic-color); color:#0C0D16; }
+  .topic:has(:focus-visible){ outline:2px solid var(--accent); outline-offset:2px; }
+  .topic:has(:disabled){ opacity:.45; cursor:not-allowed; }
 
-  .welcome-screen{ display:flex; flex-direction:column; align-items:center; justify-content:center; flex:1; text-align:center; padding:20px; }
-  .welcome-btn{ width:100%; max-width:320px; }
+  .mode-note{
+    margin-top:12px; padding:12px 14px; border-radius:var(--r-md);
+    background:var(--surface); border:1px solid var(--line); color:var(--text-2); font-size:.8125rem; line-height:1.45;
+  }
+  .mode-note strong{ color:var(--text); font-weight:600; }
 
-  .mode-blocks{ display:flex; flex-direction:column; gap:12px; width:100%; max-width:440px; margin-top:8px; }
-  .mode-block{ display:flex; align-items:center; gap:16px; background:var(--surface); border:1px solid var(--line); border-radius:var(--r-lg); padding:18px; text-align:left; box-shadow:var(--shadow-sm); transition:transform .15s var(--ease-spring), border-color .18s ease, box-shadow .18s ease; }
-  .mode-block-icon{ width:56px; height:56px; border-radius:16px; display:flex; align-items:center; justify-content:center; font-size:26px; flex-shrink:0; }
-  .mode-block[data-mode="pre"] .mode-block-icon{ background:radial-gradient(circle at 30% 30%, var(--cyan), var(--cyan-deep)); }
-  .mode-block[data-mode="disco"] .mode-block-icon{ background:conic-gradient(from 0deg, var(--pink), var(--violet), var(--cyan), var(--lime), var(--pink)); }
-  .mode-block[data-mode="cultura"] .mode-block-icon{ background:radial-gradient(circle at 30% 30%, var(--lime), var(--lime-deep)); }
-  .mode-block-info{ flex:1; min-width:0; }
-  .mode-block-info strong{ display:block; font-size:16px; margin-bottom:2px; }
-  .mode-block-info span{ font-size:13px; color:var(--muted); line-height:1.3; }
+  .cta-bar{
+    position:sticky; bottom:0; margin-top:auto; padding-top:24px;
+    padding-bottom:max(4px, env(safe-area-inset-bottom));
+    background:linear-gradient(to bottom, transparent, var(--bg) 40%);
+  }
+  .cta-hint{ text-align:center; color:var(--text-3); font-size:.8125rem; margin-top:8px; min-block-size:1.2em; }
 
-  .topbar{ display:flex; align-items:center; justify-content:space-between; padding-top:4px; }
-  .icon-btn{ width:40px; height:40px; border-radius:12px; background:var(--surface); border:1px solid var(--line); color:var(--cloud); font-size:16px; display:flex; align-items:center; justify-content:center; }
-  .round-badge{ font-family:var(--font-mono); font-size:12px; color:var(--muted); background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:6px 12px; font-variant-numeric:tabular-nums; }
-  .mode-flags{ display:flex; gap:6px; }
-  .mode-flags span{ width:30px; height:30px; border-radius:10px; background:var(--surface); border:1px solid var(--line); display:flex; align-items:center; justify-content:center; font-size:13px; opacity:.3; }
-  .mode-flags span.on{ opacity:1; transform:scale(1.05); }
+  /* ================= ajustes ================= */
+  .group{ background:var(--surface); border:1px solid var(--line); border-radius:var(--r-lg); overflow:hidden; }
+  .row{ display:flex; align-items:center; justify-content:space-between; gap:12px; padding:12px 16px; min-block-size:56px; }
+  .row + .row{ border-top:1px solid var(--line); }
+  .row-label{ font-size:.9375rem; }
+  .row-label small{ display:block; color:var(--text-3); font-size:.8125rem; }
+  .num{
+    inline-size:84px; min-block-size:var(--target); text-align:center; border-radius:var(--r-sm);
+    background:var(--surface-2); border:1px solid var(--line-strong);
+    font-family:var(--font-mono); font-size:max(1rem, 1em); font-variant-numeric:tabular-nums;
+  }
+  .num:focus-visible{ outline:2px solid var(--accent); outline-offset:0; }
+  .status-msg{ margin-top:10px; font-size:.875rem; color:var(--success); }
 
-  .rail{ display:flex; gap:10px; overflow-x:auto; padding:16px 2px 6px; scrollbar-width:none; scroll-snap-type:x proximity; }
+  /* ================= partida: jugadores ================= */
+  .rail{ display:flex; gap:14px; overflow-x:auto; padding:10px 2px 12px; scrollbar-width:none; scroll-snap-type:x proximity; }
   .rail::-webkit-scrollbar{ display:none; }
-  .rail-player{ display:flex; flex-direction:column; align-items:center; gap:5px; flex-shrink:0; opacity:.5; scroll-snap-align:center; }
-  .rail-player.current{ opacity:1; transform:scale(1.1); }
-  .rail-player .avatar{ width:38px; height:38px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:800; color:var(--ink); }
-  .rail-player.current .avatar{ box-shadow:0 0 0 2px var(--ink), 0 0 0 4px var(--pink), 0 0 14px -2px var(--pink); }
-  .rail-player small{ font-size:10px; color:var(--muted); max-width:44px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .rail-player{ display:flex; flex-direction:column; align-items:center; gap:6px; flex:none; inline-size:56px; scroll-snap-align:center; opacity:.55; transition:opacity .2s ease; }
+  .rail-player .avatar{ inline-size:40px; block-size:40px; font-size:.9375rem; transition:box-shadow .2s ease; }
+  .rail-player.current{ opacity:1; }
+  .rail-player.current .avatar{ box-shadow:0 0 0 2px var(--bg), 0 0 0 4px var(--accent); }
+  .rail-player.out{ opacity:.35; }
+  .rail-player.out .avatar{ filter:grayscale(1); }
+  .rail-name{ font-size:.75rem; color:var(--text-2); max-inline-size:56px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .rail-player.current .rail-name{ color:var(--text); font-weight:600; }
+  .life{ inline-size:40px; block-size:4px; border-radius:999px; background:var(--surface-3); overflow:hidden; }
+  .life > span{ display:block; block-size:100%; inline-size:var(--life); background:var(--success); border-radius:inherit; }
+  .life.low > span{ background:var(--danger); }
+  .badges{ display:flex; flex-wrap:wrap; justify-content:center; gap:3px; min-block-size:4px; }
+  .badge-dot{ inline-size:16px; block-size:16px; border-radius:6px; display:grid; place-items:center; font-size:.625rem; background:color-mix(in oklab, var(--topic-color) 35%, var(--surface-2)); }
 
-  .stage-wrap{ margin-top:18px; perspective:1200px; }
-  .turn-glow{ font-family:var(--font-display); font-weight:700; font-size:13px; color:#fff; background:rgba(0,0,0,.28); padding:4px 14px; border-radius:20px; margin-bottom:10px; box-shadow:0 0 10px rgba(255,255,255,.45); }
-  .turn-glow-name{ font-family:var(--font-mono); font-weight:800; text-transform:uppercase; }
+  .status-line{ display:flex; justify-content:center; gap:8px; margin-top:4px; }
+  .status-line .heart{ color:var(--pink); }
 
-  .flip-card{ position:relative; width:100%; aspect-ratio:3/3.9; margin-top:16px; transform-style:preserve-3d; transition:transform .65s cubic-bezier(.2,.9,.25,1); filter:drop-shadow(var(--shadow-card)); }
+  /* ================= carta de trivia ================= */
+  .stage{ margin-top:10px; perspective:1400px; }
+  .tap-target{ display:block; width:100%; padding:0; border:0; background:none; text-align:inherit; border-radius:var(--r-xl); }
+  .flip-card{
+    position:relative; width:100%; aspect-ratio:4/5; max-block-size:58dvh; margin-inline:auto;
+    transform-style:preserve-3d; transition:transform .6s var(--ease);
+  }
   .flip-card.flipped{ transform:rotateY(180deg); }
-  .face{ position:absolute; inset:0; border-radius:var(--r-xl); backface-visibility:hidden; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:24px; text-align:center; overflow-y:auto; scrollbar-width:none; }
+  @media (prefers-reduced-motion: reduce){ .flip-card{ transition:none; } }
+  .face{
+    position:absolute; inset:0; border-radius:var(--r-xl); backface-visibility:hidden; -webkit-backface-visibility:hidden;
+    display:flex; flex-direction:column; padding:24px; overflow-y:auto; scrollbar-width:none;
+    border:1px solid var(--line); box-shadow:var(--shadow-2);
+  }
   .face::-webkit-scrollbar{ display:none; }
-  .face-front{ background: radial-gradient(120% 100% at 50% 0%, var(--surface-2), var(--surface)); border:1px solid var(--line); }
-  .face-front .mark{ font-family:var(--font-display); font-size:46px; font-weight:900; color:var(--muted); opacity:.45; }
-  .face-front .tap-hint{ margin-top:10px; font-size:13px; color:var(--muted); font-weight:600; }
-  .face-back{ transform:rotateY(180deg); color:var(--ink); }
-  .face-back.cat-nunca{ background: linear-gradient(160deg, var(--cat-nunca-1), var(--cat-nunca-2)); color:#fff; }
-  .face-back.cat-juegos{ background: linear-gradient(160deg, var(--cat-juegos-1), var(--cat-juegos-2)); }
-  .face-back.cat-cultura{ background: linear-gradient(160deg, var(--cat-cultura-1), var(--cat-cultura-2)); }
-  .face-back.cat-trago{ background: linear-gradient(155deg, var(--cat-trago-1), var(--cat-trago-2)); color:#fff; }
-  .face-back.cat-regala{ background: linear-gradient(155deg, var(--cat-regala-1), var(--cat-regala-2)); }
-  .face-back.cat-evento{ background: linear-gradient(120deg, var(--cat-evento-1), var(--cat-evento-2) 55%, var(--cat-evento-3)); }
-  .face-back.cat-espia-word{ background: linear-gradient(160deg, var(--cat-impostor-word-1), var(--cat-impostor-word-2)); }
-  .face-back.cat-espia-spy{ background: linear-gradient(160deg, var(--cat-impostor-spy-1), var(--cat-impostor-spy-2)); color:#fff; }
-  .face-back.cat-papu{ background: linear-gradient(160deg, var(--pink), var(--pink-deep)); color:#fff; }
-  .face-back.cat-incomoda{ background: linear-gradient(160deg, var(--cat-incomoda-1), var(--cat-incomoda-2)); color:#fff; }
+  .face-front{
+    align-items:center; justify-content:center; text-align:center; gap:10px;
+    background:
+      radial-gradient(120% 80% at 50% 0%, rgb(242 184 75 / .10), transparent 60%),
+      var(--surface);
+  }
+  .face-front .eyebrow{ color:var(--text-3); font-size:.8125rem; font-weight:600; letter-spacing:.06em; text-transform:uppercase; }
+  .face-front .who{ font-family:var(--font-display); font-size:clamp(1.75rem, 1.2rem + 3vw, 2.25rem); font-weight:750; letter-spacing:-.02em; line-height:1.15; }
+  .face-front .hint{ display:inline-flex; align-items:center; gap:6px; margin-top:18px; color:var(--text-2); font-size:.875rem; padding:8px 14px; border-radius:999px; background:var(--surface-2); border:1px solid var(--line); }
+  .face-back{
+    transform:rotateY(180deg); background:var(--surface); gap:16px;
+    border-top:4px solid var(--topic-color, var(--accent));
+  }
+  .topic-tag{
+    align-self:flex-start; display:inline-flex; align-items:center; gap:6px;
+    padding:5px 10px; border-radius:999px; font-size:.8125rem; font-weight:600;
+    background:color-mix(in oklab, var(--topic-color, var(--accent)) 18%, var(--surface-2)); color:var(--text);
+  }
+  .question{ font-family:var(--font-display); font-size:clamp(1.25rem, 1rem + 1.4vw, 1.5rem); font-weight:650; line-height:1.3; letter-spacing:-.01em; text-wrap:pretty; margin-block:auto; }
+  .answer{ border-top:1px solid var(--line); padding-top:14px; }
+  .answer-label{ color:var(--text-3); font-size:.75rem; font-weight:600; letter-spacing:.06em; text-transform:uppercase; }
+  .answer-text{ color:var(--accent); font-size:1.125rem; font-weight:650; margin-top:2px; }
+  @media (prefers-reduced-motion: no-preference){
+    .answer, .actions{ animation:rise .3s var(--ease) both; }
+  }
+  @keyframes rise{ from{ opacity:0; transform:translateY(6px); } to{ opacity:1; transform:none; } }
 
-  .cat-badge{ font-family:var(--font-mono); font-size:11px; letter-spacing:.08em; text-transform:uppercase; background:rgba(0,0,0,.18); padding:5px 11px; border-radius:20px; }
-  .cat-emoji{ font-size:34px; margin-top:14px; }
-  .challenge-text{ font-family:var(--font-gothic); font-weight:700; text-transform:uppercase; font-size:var(--text-lg); margin-top:12px; line-height:1.3; }
-  .challenge-sub{ font-family:var(--font-body); font-weight:500; font-size:var(--text-sm); margin-top:10px; line-height:1.5; opacity:.85; }
-  .game-topic{ font-family:var(--font-display); font-weight:700; font-size:var(--text-base); margin-top:8px; padding:8px 14px; background:rgba(255,255,255,.1); border-radius:var(--r-sm); text-align:center; }
-  .answer-block{ margin-top:14px; padding-top:14px; border-top:1px dashed rgba(0,0,0,.2); }
-  .player-life{ display:flex; align-items:center; gap:4px; font-size:11px; font-family:var(--font-mono); font-weight:700; padding:2px 8px; border-radius:12px; background:rgba(255,255,255,.1); }
-  .player-life.eliminated{ background:rgba(255,61,143,.2); color:var(--pink); }
-  .rail-player.eliminated{ opacity:.4; }
-  .rail-player.eliminated .avatar{ opacity:.3; filter:grayscale(1); }
+  .actions{ display:grid; gap:10px; margin-top:14px; }
+  .actions.two{ grid-template-columns:1fr 1fr; }
 
-  .play-actions{ display:grid; gap:9px; margin-top:18px; }
-  .play-actions.hidden{ display:none; }
-  .btn-primary{ border:none; border-radius:var(--r-md); padding:15px; font-family:var(--font-display); font-weight:800; font-size:15px; color:var(--ink); background:linear-gradient(100deg, var(--lime), var(--cyan)); box-shadow:var(--shadow-sm); }
-  .btn-ghost{ border:1px solid var(--line); background:var(--surface); border-radius:var(--r-md); padding:13px; font-family:var(--font-body); font-weight:600; font-size:14px; color:var(--cloud); }
-  .tap-target{ background:none; border:none; padding:0; width:100%; display:block; }
-  .rosco-letter { font-family:var(--font-display); font-size:86px; font-weight:900; color:var(--cyan); text-align:center; line-height:1; margin-bottom:4px; }
-  .rosco-timer { font-family:var(--font-mono); font-size:38px; font-weight:700; color:var(--lime); text-align:center; margin-bottom:14px; }
-  .rosco-actions { display:grid; grid-template-columns:1fr 1.2fr 1fr; gap:8px; margin-top:20px; }
-  .rosco-actions button { padding:14px 4px; font-weight:800; border-radius:var(--r-sm); border:none; font-family:var(--font-display); font-size:14px; }
-  .btn-acerto { background:var(--lime); color:var(--ink); }
-  .btn-pasa { background:var(--cyan); color:var(--ink); }
-  .btn-error { background:var(--pink); color:#fff; }
-  .trivia-topics{ display:grid; grid-template-columns:repeat(2,1fr); gap:8px; margin-top:10px; }
-  .trivia-topic{ position:relative; display:flex; align-items:center; gap:8px; min-height:58px; padding:10px; border:1px solid var(--line); border-radius:var(--r-md); background:var(--surface); color:var(--cloud); text-align:left; cursor:pointer; }
-  .trivia-topic input{ position:absolute; opacity:0; pointer-events:none; }
-  .trivia-topic:has(input:checked){ border-color:var(--topic-color); background:color-mix(in srgb, var(--topic-color) 24%, var(--surface)); box-shadow:0 0 0 1px var(--topic-color); }
-  .trivia-topic-icon{ font-size:23px; }
-  .trivia-topic-name{ font-size:12px; font-weight:700; }
-  .trivia-topic-count{ display:block; color:var(--muted); font-size:10px; font-weight:400; margin-top:2px; }
-  .trivia-badges{ display:flex; flex-wrap:wrap; justify-content:center; gap:4px; margin-top:4px; }
-  .trivia-badge{ border-radius:10px; padding:3px 7px; font-size:10px; color:var(--ink); font-weight:800; }
-  .trivia-question-card{ margin-top:18px; background:radial-gradient(120% 100% at 50% 0%, var(--surface-2), var(--surface)); border:1px solid var(--line); border-radius:var(--r-xl); padding:24px 20px; box-shadow:var(--shadow-card); text-align:center; }
-  .trivia-question-card .challenge-text{ margin-top:18px; }
-  .trivia-question-card .answer-block{ width:100%; }
-  .trivia-verdict{ display:grid; grid-template-columns:1fr 1fr; gap:9px; width:100%; margin-top:18px; }
-  .trivia-verdict button{ min-height:48px; border:none; border-radius:var(--r-md); font-family:var(--font-display); font-size:14px; font-weight:800; box-shadow:var(--shadow-sm); }
-  .trivia-verdict .btn-error{ background:linear-gradient(135deg,var(--pink),var(--pink-deep)); color:#fff; }
-  .trivia-verdict .btn-acerto{ background:linear-gradient(135deg,var(--lime),var(--cyan)); color:var(--ink); }
-  .trivia-card-back{ color:var(--cloud); text-shadow:0 2px 8px rgba(9,4,24,.5); }
-  .trivia-card-back .cat-badge{ background:rgba(0,0,0,.24); color:var(--cloud); text-shadow:none; }
-  .trivia-card-back .challenge-text{ color:var(--cloud); }
-  .trivia-card-back .challenge-sub{ color:var(--cloud); }
-  .trivia-card-back .answer-block{ border-top-color:rgba(248,244,255,.35); }
+  /* ================= resultados ================= */
+  .result{
+    margin-top:12px; padding:32px 24px; border-radius:var(--r-xl); text-align:center;
+    background:radial-gradient(120% 70% at 50% 0%, rgb(242 184 75 / .14), transparent 65%), var(--surface);
+    border:1px solid var(--line); box-shadow:var(--shadow-2);
+  }
+  .result .trophy{ inline-size:64px; block-size:64px; margin:0 auto 14px; border-radius:20px; display:grid; place-items:center; background:var(--accent); color:var(--accent-ink); }
+  .result .trophy .ico{ width:32px; height:32px; }
+  .result h2{ font-family:var(--font-display); font-size:1.75rem; font-weight:800; letter-spacing:-.02em; }
+  .result p{ color:var(--text-2); margin-top:6px; }
+  .scoreboard{ list-style:none; margin:20px 0 0; padding:0; text-align:left; }
+  .scoreboard li{ display:grid; grid-template-columns:28px 1fr auto auto; gap:12px; align-items:center; padding:12px 4px; border-top:1px solid var(--line); font-variant-numeric:tabular-nums; }
+  .scoreboard .rank{ color:var(--text-3); font-weight:650; }
+  .scoreboard li:first-child .rank{ color:var(--accent); }
+  .scoreboard .muted{ color:var(--text-3); font-size:.875rem; }
+
+  /* ================= pasapalabra ================= */
+  .rosco{
+    position:relative; inline-size:min(78vw, 300px); aspect-ratio:1; margin:8px auto 0;
+  }
+  .rosco::before{ content:""; position:absolute; inset:7%; border-radius:50%; border:1px dashed var(--line-strong); }
+  .rosco-letter{
+    --r:43%;
+    position:absolute; left:calc(50% + cos(var(--a)) * var(--r)); top:calc(50% + sin(var(--a)) * var(--r));
+    translate:-50% -50%; inline-size:28px; block-size:28px; border-radius:999px; display:grid; place-items:center;
+    font-size:.75rem; font-weight:750; background:var(--surface-2); color:var(--text-2); border:1px solid var(--line-strong);
+  }
+  .rosco-letter.correct{ background:var(--success); color:var(--success-ink); border-color:transparent; }
+  .rosco-letter.error{ background:var(--danger); color:var(--danger-ink); border-color:transparent; text-decoration:line-through; }
+  .rosco-letter.current{ box-shadow:0 0 0 2px var(--bg), 0 0 0 4px var(--accent); color:var(--text); }
+  .rosco-center{ position:absolute; inset:24%; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:2px; }
+  .rosco-center .who{ font-family:var(--font-display); font-size:1.25rem; font-weight:750; line-height:1.15; }
+  .rosco-center .muted{ color:var(--text-3); font-size:.8125rem; }
+  .tally{ display:flex; justify-content:center; gap:16px; margin-top:14px; font-size:.875rem; color:var(--text-2); font-variant-numeric:tabular-nums; }
+  .tally span{ display:inline-flex; align-items:center; gap:6px; }
+  .tally .ok{ color:var(--success); }
+  .tally .ko{ color:var(--danger); }
+
+  .pasa-head{ display:flex; align-items:center; justify-content:space-between; gap:12px; margin-top:6px; }
+  .big-letter{
+    inline-size:72px; block-size:72px; border-radius:20px; display:grid; place-items:center;
+    background:var(--accent); color:var(--accent-ink); font-family:var(--font-display); font-size:2.5rem; font-weight:800;
+  }
+  .timer{ font-family:var(--font-mono); font-size:2.25rem; font-weight:700; font-variant-numeric:tabular-nums; letter-spacing:-.02em; }
+  .timer.is-low{ color:var(--danger); }
+  .pasa-card{ margin-top:14px; padding:22px; border-radius:var(--r-xl); background:var(--surface); border:1px solid var(--line); box-shadow:var(--shadow-2); }
+  .pasa-card .question{ margin:0; }
+  .pasa-card .answer{ margin-top:16px; }
+  .actions.three{ grid-template-columns:1fr 1fr 1fr; }
+  .actions.three .btn{ flex-direction:column; gap:4px; padding:10px 6px; font-size:.875rem; min-block-size:64px; }
+
+  @media (forced-colors: active){
+    .btn, .icon-btn, .mode-card, .topic, .chip, .face, .result, .pasa-card, .group{ border:1px solid CanvasText; }
+    .rosco-letter.current{ outline:2px solid Highlight; }
+  }
 </style>
+</head>
+<body>
 
-<div class="blob blob-a"></div>
-<div class="blob blob-b"></div>
-<div class="blob blob-c"></div>
+<!-- Íconos: un único sprite inline, reutilizado con <use> -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+  <symbol id="i-settings" viewBox="0 0 24 24"><path d="M4 7h9M17 7h3M4 12h3M11 12h9M4 17h11M19 17h1"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="17" cy="17" r="2"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol>
+  <symbol id="i-redo" viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.34-5.66"/><path d="M20 4v5h-5"/></symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0V4z"/><path d="M8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8 20h8M9.5 17h5"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 20.5s-7.5-4.6-7.5-10.4A4.3 4.3 0 0 1 12 7.4a4.3 4.3 0 0 1 7.5 2.7c0 5.8-7.5 10.4-7.5 10.4z"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.5 1.1 1.3 1.1 2.1V16h5v-.1c0-.8.4-1.6 1.1-2.1A6 6 0 0 0 12 3z"/></symbol>
+  <symbol id="i-rosco" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke-dasharray="2.2 2.6"/><path d="M9.3 15.5L12 8.5l2.7 7M10.2 13.2h3.6"/></symbol>
+  <symbol id="i-tap" viewBox="0 0 24 24"><path d="M9 11V5.5a1.5 1.5 0 0 1 3 0V11m0-1.5a1.5 1.5 0 0 1 3 0V11m0-.5a1.5 1.5 0 0 1 3 0V15a6 6 0 0 1-6 6h-.6a6 6 0 0 1-4.6-2.2L4.6 16a1.5 1.5 0 0 1 2.3-1.9L9 16"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+</svg>
 
-<div class="app-shell">
-  <div class="app" id="app"></div>
-</div>
+<main class="app-shell">
+  <div class="app" id="app" tabindex="-1"></div>
+</main>
 
 <script src="data/deck.js"></script>
-<script src="data/eventos.js"></script>
-<script src="data/espiapalabras.js"></script>
 <script src="data/pasapalabra.js"></script>
 <script>
-  (function(){
-    var AVATAR_COLORS = ['var(--pink)','var(--lime)','var(--cyan)','var(--violet)'];
+(function(){
+  'use strict';
 
-    var EVENTOS_ALEATORIOS = window.EVENTOS_ALEATORIOS || [];
-    var DECK = window.DECK || {};
-    var ESPIA_WORDS = window.ESPIA_WORDS || { normal: [], futbol: [] };
-    var PASAPALABRA_WORDS = window.PASAPALABRA_WORDS || {};
+  var DECK = window.DECK || {};
+  var TRIVIA = DECK.trivia || {};
+  var PASAPALABRA_WORDS = window.PASAPALABRA_WORDS || {};
+  var LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  var AVATAR_COLORS = ['var(--accent)', 'var(--cyan)', 'var(--pink)', 'var(--violet)', 'var(--lime)', '#F59E73'];
+  var MAX_TOPICS = 6;
+  var COMPETITIVE_MIN_TOPICS = 4;
 
-    function initSpecials(){
-      return {
-        cardsDrawn: 0,
-        greetingShown: false,
-        opusShown: false,
-        timeoutShown: false,
-        bookerShown: false,
-        espejitoShown: false,
-        nextCascada: 22,
-        reyKCount: 0,
-        reyKNextEligible: 20
-      };
+  var TOPIC_NAMES = {
+    cine: 'Cine', series_tv: 'Series y TV', Disney: 'Disney', musica: 'Música', futbol: 'Fútbol',
+    historia_geografia: 'Historia y Geografía', ciencia: 'Ciencia', superheroes: 'Superhéroes', papu: 'Modo Papu'
+  };
+  var MODES = {
+    cultura: { title: 'Cultura No General', desc: 'Trivia por temas: vidas o carrera por chapas.', icon: 'bulb', tone: 'var(--violet)' },
+    pasapalabra: { title: 'Pasapalabra', desc: 'El rosco contrarreloj, una palabra por letra.', icon: 'rosco', tone: 'var(--cyan)' }
+  };
+
+  var state = {
+    screen: 'home',            // home | setup | ajustes | play
+    selectedMode: null,        // cultura | pasapalabra
+    players: [],
+    settings: { culturaDamage: 20, pasapalabraTime: 120 },
+    modoHistoria: false,
+    modoPapu: false,
+    trucoMensaje: '',
+    selectedTopics: [],
+    triviaScores: [],
+    triviaBadges: [],
+    triviaTopicQueues: [],
+    triviaRound: null,
+    triviaWinner: null,
+    triviaLives: [],
+    turn: 0,
+    round: 1,
+    flipped: false,
+    card: null,
+    answerShown: false,
+    history: {},
+    roscos: [],
+    playerTimers: []
+  };
+
+  var app = document.getElementById('app');
+
+  /* ---------------- utilidades ---------------- */
+  function esc(s){ return String(s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+  function initials(name){ return name.trim().slice(0, 1).toUpperCase(); }
+  function icon(name){ return '<svg class="ico" aria-hidden="true" focusable="false"><use href="#i-' + name + '"/></svg>'; }
+  function topicName(key){ return TOPIC_NAMES[key] || key.replace(/_/g, ' ').replace(/\b\w/g, function(c){ return c.toUpperCase(); }); }
+  function topicColor(key){ return (TRIVIA[key] && TRIVIA[key].color) || 'var(--accent)'; }
+  function shuffle(arr){
+    var a = arr.slice();
+    for (var i = a.length - 1; i > 0; i--){
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = a[i]; a[i] = a[j]; a[j] = tmp;
     }
-
-    var state = {
-      players: [],
-      futbol: false,
-      disco: false,
-      culturaEnabled: true,
-      includeCulturaInPre: false,
-      modoAmigos: false,
-      modoHistoria: false,
-      modoPapu: false,
-      trucoMensaje: '',
-      drinkConfig: { greeting: 4, eventMin: 2, eventMax: 4, nuncaMin: 2, nuncaMax: 3, maxDrinks: 5, culturaDamage: 20, pasapalabraTime: 120 },
-      cards: null,
-      screen: 'welcome',
-      selectedMode: null,
-      selectedTopics: [],
-      triviaScores: [],
-      triviaBadges: [],
-      triviaTopicQueues: [],
-      triviaRound: null,
-      triviaWinner: null,
-      triviaLives: [],
-      turn: 0,
-      round: 1,
-      flipped: false,
-      card: null,
-      answerShown: false,
-      espia: null,
-      wordDrop: null,
-      naming: null,
-      lastCategory: null,
-      history: {},
-      specials: initSpecials(),
-      playerLives: [],
-      culturaEliminated: []
-    };
-
-    var app = document.getElementById('app');
-
-    function initials(name){ return name.trim().slice(0,1).toUpperCase(); }
-    function esc(s){ return s.replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
-
-    function canStart(){ return state.players.length >= 2 && (state.selectedMode === 'cultura' ? state.selectedTopics.length >= 1 : state.cards !== null); }
-
-    function isCompetitiveTrivia(){ return state.selectedTopics.length >= 4; }
-
-    function shuffle(arr){
-      var a = arr.slice();
-      for (var i = a.length - 1; i > 0; i--){
-        var j = Math.floor(Math.random() * (i + 1));
-        var tmp = a[i]; a[i] = a[j]; a[j] = tmp;
-      }
-      return a;
+    return a;
+  }
+  function toEntry(item){ return (typeof item === 'string') ? { text: item, answer: null } : item; }
+  function identityOf(item){
+    if (typeof item === 'string') return item;
+    if (item.text !== undefined) return item.text;
+    return JSON.stringify(item);
+  }
+  function saveHistoryToStorage(){
+    try { localStorage.setItem('copete_history', JSON.stringify(state.history)); } catch(e){}
+  }
+  function pickWithHistory(historyKey, weightedEntries){
+    var used = state.history[historyKey] || (state.history[historyKey] = []);
+    var avail = weightedEntries.filter(function(e){ return used.indexOf(identityOf(e.item)) === -1; });
+    if (avail.length === 0){ used.length = 0; avail = weightedEntries; }
+    var total = avail.reduce(function(sum, e){ return sum + e.w; }, 0);
+    var r = Math.random() * total;
+    var picked = avail[avail.length - 1].item;
+    for (var i = 0; i < avail.length; i++){
+      r -= avail[i].w;
+      if (r <= 0){ picked = avail[i].item; break; }
     }
+    used.push(identityOf(picked));
+    saveHistoryToStorage();
+    return picked;
+  }
 
-    function toEntry(item){
-      return (typeof item === 'string') ? { text: item, answer: null } : item;
-    }
+  function canStart(){
+    if (state.players.length < 2) return false;
+    if (state.selectedMode === 'cultura') return state.selectedTopics.length >= 1;
+    return true;
+  }
+  function startHint(){
+    if (state.players.length < 2) return 'Agrega al menos 2 jugadores.';
+    if (state.selectedMode === 'cultura' && !state.selectedTopics.length) return 'Elige al menos un tema.';
+    return '';
+  }
 
-    // --- Pasapalabra: sin repetir palabras entre jugadores ni entre partidas del mismo dispositivo ---
-    var PASA_USED_KEY = 'copete_pasapalabra_usadas';
-
-    function pasaWordKey(answer){
-      return String(answer || '').trim().toLowerCase()
-        .replace(/ñ/g, '\u0001').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\u0001/g, 'ñ');
-    }
-
-    function loadPasaUsed(){
-      try {
-        var raw = JSON.parse(localStorage.getItem(PASA_USED_KEY) || '{}');
-        return (raw && typeof raw === 'object') ? raw : {};
-      } catch(e){ return {}; }
-    }
-
-    function savePasaUsed(used){
-      try { localStorage.setItem(PASA_USED_KEY, JSON.stringify(used)); } catch(e){}
-    }
-
-    // Devuelve { letra: [palabra jugador 0, palabra jugador 1, ...] }.
-    // Prioriza palabras nunca jugadas en este dispositivo; cuando se agotan las de una letra,
-    // se reinicia el historial de esa letra. Nunca repite una palabra dentro de la misma jugada
-    // (salvo que la letra tenga menos palabras distintas que jugadores).
-    function pickPasapalabraWords(letters, nPlayers){
-      var used = loadPasaUsed();
-      var result = {};
-      letters.forEach(function(l){
-        var seen = {};
-        var pool = (PASAPALABRA_WORDS[l] || []).filter(function(q){
-          var k = pasaWordKey(q && q.answer);
-          if (!k || seen[k]) return false;
-          seen[k] = true;
-          return true;
-        });
-        if (!pool.length) pool = [{ text: "Empieza con " + l, answer: "..." }];
-
-        var usedSet = {};
-        (used[l] || []).forEach(function(k){ usedSet[k] = true; });
-        var fresh = shuffle(pool.filter(function(q){ return !usedSet[pasaWordKey(q.answer)]; }));
-        var old = shuffle(pool.filter(function(q){ return usedSet[pasaWordKey(q.answer)]; }));
-
-        var picks = fresh.slice(0, nPlayers);
-        var resetLetter = picks.length < nPlayers;
-        if (resetLetter) picks = picks.concat(old.slice(0, nPlayers - picks.length));
-        while (picks.length < nPlayers) picks.push(pool[Math.floor(Math.random() * pool.length)]);
-
-        var pickedKeys = picks.map(function(q){ return pasaWordKey(q.answer); });
-        used[l] = resetLetter ? pickedKeys : (used[l] || []).concat(pickedKeys);
-        result[l] = picks;
-      });
-      savePasaUsed(used);
-      return result;
-    }
-
-    function saveHistoryToStorage(){
-      try { localStorage.setItem('copete_history', JSON.stringify(state.history)); } catch(e){}
-    }
-
-    function identityOf(item){
-      if (typeof item === 'string') return item;
-      if (item.text !== undefined) return item.text;
-      if (item.name !== undefined) return item.name;
-      return JSON.stringify(item);
-    }
-
-    function pickWithHistory(historyKey, weightedEntries){
-      var used = state.history[historyKey] || (state.history[historyKey] = []);
-      var avail = weightedEntries.filter(function(e){ return used.indexOf(identityOf(e.item)) === -1; });
-      if (avail.length === 0){ used.length = 0; avail = weightedEntries; }
-      var total = avail.reduce(function(sum, e){ return sum + e.w; }, 0);
-      var r = Math.random() * total;
-      var picked = avail[avail.length - 1].item;
-      for (var i = 0; i < avail.length; i++){
-        r -= avail[i].w;
-        if (r <= 0){ picked = avail[i].item; break; }
-      }
-      used.push(identityOf(picked));
-      saveHistoryToStorage();
-      return picked;
-    }
-
-    function weightedPick(catKey, cat){
-      var entries = [];
-      if (cat.items) {
-        cat.items.forEach(function(it){ entries.push({ item: toEntry(it), w: (it && typeof it === 'object' && it.weight) || 1 }); });
-      }
-      if (state.futbol && cat.futbol){
-        cat.futbol.forEach(function(it){ entries.push({ item: toEntry(it), w: 1 }); });
-      }
-      if (cat.disco){
-        var discoWeight = state.disco ? 3 : 0.2;
-        cat.disco.forEach(function(it){ entries.push({ item: toEntry(it), w: discoWeight }); });
-      }
-      if (state.modoAmigos && cat.amigos){
-        cat.amigos.forEach(function(it){ entries.push({ item: toEntry(it), w: 2 }); });
-      }
-      return pickWithHistory(catKey, entries);
-    }
-
-    function weightedChoice(arr, weightFn){
-      var total = arr.reduce(function(sum, it){ return sum + weightFn(it); }, 0);
-      var r = Math.random() * total;
-      for (var i = 0; i < arr.length; i++){
-        r -= weightFn(arr[i]);
-        if (r <= 0) return arr[i];
-      }
-      return arr[arr.length - 1];
-    }
-
-    function makeCard(fields){
-      return Object.assign({ cat:null, icon:null, text:null, sub:null, answer:null, isSpy:false, special:null, rounds:null, topics:null, image:null }, fields);
-    }
-
-    function discoDouble(n){ return state.disco ? Math.min(n * 2, state.drinkConfig.maxDrinks) : n; }
-
-    function weightedRandomInRange(min, max){
-      if (max <= min) return min;
-      var span = max - min + 1;
-      var total = 0, i;
-      for (i = 0; i < span; i++) total += (span - i);
-      var r = Math.random() * total;
-      for (i = 0; i < span; i++){
-        r -= (span - i);
-        if (r <= 0) return min + i;
-      }
-      return min;
-    }
-
-    function randomDrinkCount(){
-      return discoDouble(weightedRandomInRange(state.drinkConfig.eventMin, state.drinkConfig.eventMax));
-    }
-
-    function applyDiscoDrinks(text){
-      if (!state.disco) return text;
-      return text.replace(/^(\d+)(\s*tragos?\s+por\s+cada)/i, function(m, num, rest){
-        return discoDouble(parseInt(num, 10)) + rest;
-      });
-    }
-
-    function randomNuncaDrinks(){
-      return discoDouble(weightedRandomInRange(state.drinkConfig.nuncaMin, state.drinkConfig.nuncaMax));
-    }
-
-    function resolveEvent(template){
-      var turnPlayer = state.players[state.turn];
-      var others = state.players.filter(function(p){ return p !== turnPlayer; });
-      var p1 = others.length ? others[Math.floor(Math.random() * others.length)] : turnPlayer;
-      var remaining = others.filter(function(p){ return p !== p1; });
-      var p2 = remaining.length ? remaining[Math.floor(Math.random() * remaining.length)] : p1;
-
-      return applyDiscoDrinks(template
-        .replace(/\{jugador1\}/g, p1.name)
-        .replace(/\{jugador2\}/g, p2.name)
-        .replace(/\{jugador\}/g, turnPlayer.name)
-        .replace(/\bX\b/g, function(){ return String(randomDrinkCount()); }));
-    }
-
-    var CATEGORY_WEIGHT = { evento: 8, nunca: 1, cultura: 0.5, trago: 1, regala: 1, juegos: 2 };
-    var DISABLED_CATEGORIES = ['regala'];
-
-    function activeCategoryKeys(){
-      var mode = state.selectedMode;
-      if (state.modoHistoria) return ['historia'];
-      if (state.modoPapu) return ['papu'];
-      if (mode === 'cultura') return ['cultura'];
-      if (mode === 'disco'){
-        var keys = ['evento', 'trago', 'juegos'];
-        if (state.culturaEnabled) keys.push('cultura');
-        return keys;
-      }
-      return Object.keys(DECK).filter(function(k){
-        if (DISABLED_CATEGORIES.indexOf(k) !== -1) return false;
-        if (k === 'trago' && !state.futbol) return false;
-        if (k === 'cultura' && !state.culturaEnabled) return false;
+  /* ---------------- Pasapalabra: sin repetir palabras ---------------- */
+  var PASA_USED_KEY = 'copete_pasapalabra_usadas';
+  function pasaWordKey(answer){
+    return String(answer || '').trim().toLowerCase()
+      .replace(/ñ/g, '\u0001').normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\u0001/g, 'ñ');
+  }
+  function loadPasaUsed(){
+    try {
+      var raw = JSON.parse(localStorage.getItem(PASA_USED_KEY) || '{}');
+      return (raw && typeof raw === 'object') ? raw : {};
+    } catch(e){ return {}; }
+  }
+  function savePasaUsed(used){
+    try { localStorage.setItem(PASA_USED_KEY, JSON.stringify(used)); } catch(e){}
+  }
+  // Devuelve { letra: [palabra jugador 0, palabra jugador 1, ...] }. Prioriza palabras
+  // nunca jugadas en este dispositivo; al agotarse una letra, reinicia solo esa letra.
+  function pickPasapalabraWords(letters, nPlayers){
+    var used = loadPasaUsed();
+    var result = {};
+    letters.forEach(function(l){
+      var seen = {};
+      var pool = (PASAPALABRA_WORDS[l] || []).filter(function(q){
+        var k = pasaWordKey(q && q.answer);
+        if (!k || seen[k]) return false;
+        seen[k] = true;
         return true;
       });
-    }
+      if (!pool.length) pool = [{ text: 'Empieza con ' + l, answer: '...' }];
+      var usedSet = {};
+      (used[l] || []).forEach(function(k){ usedSet[k] = true; });
+      var fresh = shuffle(pool.filter(function(q){ return !usedSet[pasaWordKey(q.answer)]; }));
+      var old = shuffle(pool.filter(function(q){ return usedSet[pasaWordKey(q.answer)]; }));
+      var picks = fresh.slice(0, nPlayers);
+      var resetLetter = picks.length < nPlayers;
+      if (resetLetter) picks = picks.concat(old.slice(0, nPlayers - picks.length));
+      while (picks.length < nPlayers) picks.push(pool[Math.floor(Math.random() * pool.length)]);
+      var pickedKeys = picks.map(function(q){ return pasaWordKey(q.answer); });
+      used[l] = resetLetter ? pickedKeys : (used[l] || []).concat(pickedKeys);
+      result[l] = picks;
+    });
+    savePasaUsed(used);
+    return result;
+  }
 
-    var SPECIAL_CARD_META = {
-      greeting: { label: '¡Salud!' },
-      opus: { label: 'OPUS' },
-      cascada: { label: 'Cascada' },
-      timeout: { label: 'TIMEOUT' },
-      booker: { label: 'Booker T' },
-      'rey-k': { label: 'Rey K' },
-      espejito: { label: 'Espejito' }
-    };
-    var SPECIAL_EVENTS = {
-      opus: { minCard: 20, chance: 0.35 },
-      timeout: { minCard: 28, chance: 0.35 },
-      booker: { minCard: 30, chance: 0.35 },
-      cascada: { every: 22 },
-      espejito: { minCard: 15, chance: 0.35 }
-    };
-    var REY_K_ORDINALES = ['Primer', 'Segundo', 'Tercer', 'Cuarto'];
-    var REY_K_PREGUNTAS = ['¿Cómo se mata?', '¿Dónde se mata?', '¿Con quién se mata?', '¡Se acabó! Todos matan la piscola o el trago'];
-    var REY_K_PALOS = ['♠', '♥', '♦', '♣'];
+  /* ---------------- Pasapalabra: rosco y reloj ---------------- */
+  var roscoTimerInterval = null;
 
-    function buildReyKCard(n){
-      return makeCard({
-        cat: 'evento', icon: '👑',
-        text: REY_K_ORDINALES[n-1] + ' Rey ' + REY_K_PALOS[(n-1) % REY_K_PALOS.length],
-        sub: REY_K_PREGUNTAS[n-1],
-        special: 'rey-k'
-      });
-    }
-
-    function scheduleTimeoutAlarm(){
-      setTimeout(function(){
-        var banner = document.createElement('div');
-        banner.className = 'timeout-banner';
-        banner.innerHTML = '<span>⏱️ ¡TIMEOUT! Vasos vacíos</span>';
-        var closeBtn = document.createElement('button');
-        closeBtn.type = 'button';
-        closeBtn.textContent = '✕';
-        closeBtn.addEventListener('click', function(){ banner.remove(); });
-        banner.appendChild(closeBtn);
-        document.body.appendChild(banner);
-      }, 5 * 60 * 1000);
-    }
-
-    function drawChallenge(){
-      var sp = state.specials;
-
-      if (state.modoHistoria || state.modoPapu){
-        var secretKey = state.modoHistoria ? 'historia_geografia' : 'papu';
-        var secretCat = DECK.trivia[secretKey] || DECK.trivia.cine;
-        var secretEntries = secretCat.questions.map(function(item){ return { item: toEntry(item), w: 1 }; });
-        var secretEntry = pickWithHistory(secretKey, secretEntries);
-        state.card = makeCard({ cat: secretKey, icon: secretCat.icon, text: secretEntry.text, answer: secretEntry.answer || null });
-        return;
-      }
-
-      if (state.selectedMode === 'cultura'){
-        var cat = DECK.cultura;
-        var entry = weightedPick('cultura', cat);
-        var cardText = entry.text;
-        state.card = makeCard({ cat: 'cultura', icon: cat.icon, text: cardText, answer: entry.answer || null, special: entry.special || null });
-        return;
-      }
-
-      if (!sp.greetingShown){
-        sp.greetingShown = true;
-        state.card = makeCard({ cat: 'evento', icon: '🥂', text: 'Para empezar, todos ' + discoDouble(state.drinkConfig.greeting) + ' tragos', special: 'greeting' });
-        return;
-      }
-
-      sp.cardsDrawn++;
-
-      if (sp.reyKCount < 4 && sp.cardsDrawn >= sp.reyKNextEligible && Math.random() < 0.25){
-        sp.reyKCount++;
-        sp.reyKNextEligible = sp.cardsDrawn + 20;
-        state.card = buildReyKCard(sp.reyKCount);
-        return;
-      }
-
-      var opusCfg = SPECIAL_EVENTS.opus;
-      if (!sp.opusShown && sp.cardsDrawn >= opusCfg.minCard && Math.random() < opusCfg.chance){
-        sp.opusShown = true;
-        state.card = makeCard({ cat: 'evento', icon: '💿', text: 'OPUS', special: 'opus' });
-        return;
-      }
-
-      var espCfg = SPECIAL_EVENTS.espejito;
-      if (!sp.espejitoShown && sp.cardsDrawn >= espCfg.minCard && Math.random() < espCfg.chance){
-        sp.espejitoShown = true;
-        state.card = makeCard({ cat: 'evento', icon: '🪞', text: 'Espejito rebotín', sub: 'La próxima vez que te toque tomar puedes desviar los tragos a alguien más.', special: 'espejito' });
-        return;
-      }
-
-      var toCfg = SPECIAL_EVENTS.timeout;
-      if (!sp.timeoutShown && sp.cardsDrawn >= toCfg.minCard && Math.random() < toCfg.chance){
-        sp.timeoutShown = true;
-        state.card = makeCard({ cat: 'evento', icon: '⏱️', text: 'TIMEOUT', sub: 'En 5 minutos todos sus vasos deben estar vacíos', special: 'timeout' });
-        scheduleTimeoutAlarm();
-        return;
-      }
-
-      var keys = activeCategoryKeys();
-      var candidateKeys = keys.filter(function(k){ return k !== state.lastCategory; });
-      if (candidateKeys.length === 0) candidateKeys = keys;
-      var catKey = weightedChoice(candidateKeys, function(k){ return CATEGORY_WEIGHT[k] || 1; });
-      state.lastCategory = catKey;
-      var cat = DECK[catKey];
-
-      if (catKey === 'evento'){
-        var eventEntry = EVENTOS_ALEATORIOS[Math.floor(Math.random() * EVENTOS_ALEATORIOS.length)];
-        var eventText = resolveEvent(eventEntry);
-        state.card = makeCard({ cat: catKey, icon: '🎉', text: eventText });
-        return;
-      }
-
-      if (catKey === 'juegos'){
-        var pool = cat.items.filter(function(g){ return !g.needsCards || state.cards === 'si'; });
-        var gameEntries = pool.map(function(g){ return { item: g, w: g.weight || 1 }; });
-        var game = pickWithHistory('juegos', gameEntries);
-        var gameTopic = (game.topics && game.topics.length) ? game.topics[Math.floor(Math.random() * game.topics.length)] : null;
-        state.card = makeCard({ cat: catKey, icon: game.icon, text: game.name, sub: game.rules, isSpy: game.name === 'Impostor', topic: gameTopic });
-        return;
-      }
-
-      var entry = weightedPick(catKey, cat);
-      var cardText = applyDiscoDrinks(entry.text);
-      var cardSub = entry.sub || null;
-      if (catKey === 'nunca') cardText += ' — el que lo haya hecho toma ' + randomNuncaDrinks();
-      state.card = makeCard({ cat: catKey, icon: cat.icon, text: cardText, sub: cardSub, answer: entry.answer || null, special: entry.special || null, rounds: entry.rounds || null, topics: entry.topics || null, image: entry.image || null });
-    }
-
-    function resolveEspiaWord(template){
-      if (template === '(Uno de los jugadores al azar)'){
-        var p = state.players[Math.floor(Math.random() * state.players.length)];
-        return p.name;
-      }
-      if (template.indexOf('(jugador aleatorio)') !== -1){
-        var p2 = state.players[Math.floor(Math.random() * state.players.length)];
-        return template.replace(/\(jugador aleatorio\)/g, p2.name);
-      }
-      return template;
-    }
-
-    function startEspia(){
-      var pool = ESPIA_WORDS.normal.slice();
-      if (state.futbol && ESPIA_WORDS.futbol) pool = pool.concat(ESPIA_WORDS.futbol);
-      var template = pool[Math.floor(Math.random() * pool.length)];
-      var word = resolveEspiaWord(template);
-      var order = shuffle(state.players.map(function(_, i){ return i; }));
-      var impostorCount = Math.min(state.players.length > 6 ? 2 : 1, order.length);
-      var spyIndexes = shuffle(state.players.map(function(_, i){ return i; })).slice(0, impostorCount);
-      state.espia = { word: word, spyIndexes: spyIndexes, order: order, step: 0, revealed: false };
-    }
-
-    var roscoTimerInterval = null;
-
-    function startRoscoTimer() {
-      if (roscoTimerInterval) clearInterval(roscoTimerInterval);
-      state.roscos[state.turn].active = true;
-      roscoTimerInterval = setInterval(function(){
-        if (!state.roscos[state.turn].active) return;
-        state.playerTimers[state.turn]--;
-        if (state.playerTimers[state.turn] <= 0){
-          state.playerTimers[state.turn] = 0;
-          state.roscos[state.turn].questions.forEach(function(question){
-            if (question.status === 'pending') question.status = 'error';
-          });
-          checkRoscoEnd();
-          nextRoscoPlayer();
-        } else {
-          var timerElement = document.querySelector('.rosco-timer');
-          if (timerElement) timerElement.textContent = state.playerTimers[state.turn] + 's';
-          else render();
-        }
-      }, 1000);
-    }
-
-    function stopRoscoTimer() {
-      state.roscos[state.turn].active = false;
-      if (roscoTimerInterval) clearInterval(roscoTimerInterval);
-    }
-
-    function advanceRoscoIndex() {
-      var r = state.roscos[state.turn];
-      var startIdx = r.currentIndex;
-      for (var i = 1; i <= r.questions.length; i++) {
-        var idx = (startIdx + i) % r.questions.length;
-        if (r.questions[idx].status === 'pending') {
-          r.currentIndex = idx;
-          return true;
-        }
-      }
-      return false; 
-    }
-
-    function checkRoscoEnd() {
-      var r = state.roscos[state.turn];
-      var pending = r.questions.filter(function(q){ return q.status === 'pending'; }).length;
-      if (pending === 0) {
-        stopRoscoTimer();
-        r.finished = true;
-        return true;
-      }
-      return false;
-    }
-
-    function nextRoscoPlayer() {
-      stopRoscoTimer();
-      advanceRoscoIndex(); 
-      var attempts = 0;
-      do {
-        state.turn = (state.turn + 1) % state.players.length;
-        attempts++;
-      } while (state.roscos[state.turn].finished && attempts < state.players.length);
-      render();
-    }
-
-    function renderPasapalabraRosco(r) {
-      var letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
-      var center = 50;
-      var radius = 43;
-      return '<div style="position:relative; width:min(82vw,300px); aspect-ratio:1; margin:6px auto 0; border:2px solid rgba(248,244,255,.18); border-radius:50%;">' +
-        letters.map(function(letter, i){
-          var angle = (i / letters.length) * Math.PI * 2 - Math.PI / 2;
-          var x = center + Math.cos(angle) * radius;
-          var y = center + Math.sin(angle) * radius;
-          var question = r.questions[i];
-          var color = question.status === 'correct' ? 'var(--lime)' : question.status === 'error' ? 'var(--pink)' : 'var(--muted)';
-          return '<span style="position:absolute; left:' + x + '%; top:' + y + '%; transform:translate(-50%,-50%); width:26px; height:26px; display:flex; align-items:center; justify-content:center; border-radius:50%; color:' + color + '; background:rgba(21,12,43,.72); font-family:var(--font-display); font-size:12px; font-weight:800;">' + letter + '</span>';
-        }).join('') +
-        '<span style="position:absolute; inset:35%; display:flex; align-items:center; justify-content:center; color:var(--cloud); font-family:var(--font-mono); font-size:11px; letter-spacing:.08em;">ROSCO</span>' +
-      '</div>';
-    }
-
-    function renderPasapalabraStage() {
-      var allFinished = state.roscos.every(function(r) { return r.finished; });
-      if (allFinished) {
-        var scoreboard = state.roscos.map(function(rosco, i){
-          return {
-            name: state.players[i].name,
-            correct: rosco.questions.filter(function(question){ return question.status === 'correct'; }).length,
-            time: state.playerTimers[i]
-          };
-        }).sort(function(a, b){ return b.correct - a.correct || b.time - a.time; });
-        var scoreboardHtml = scoreboard.map(function(player, i){
-          return '<div style="display:grid; grid-template-columns:28px 1fr auto auto; gap:8px; align-items:center; padding:10px 0; border-bottom:1px solid rgba(21,12,43,.18); text-align:left;">' +
-            '<strong>' + (i + 1) + '.</strong><span>' + esc(player.name) + '</span><span>' + player.correct + ' aciertos</span><span>' + player.time + 's</span>' +
-          '</div>';
-        }).join('');
-        return '<div class="stage-wrap"><div class="face face-back cat-cultura" style="position:static; transform:none; aspect-ratio:auto; min-height:340px; justify-content:flex-start; padding:24px;"><div class="cat-emoji">🏆</div><div class="challenge-text">¡Juego Terminado!</div><div class="challenge-sub" style="margin-bottom:12px;">Marcador final</div><div style="width:100%; font-size:13px;">' + scoreboardHtml + '</div></div><div class="play-actions"><button class="btn-primary" data-action="back-setup">Volver a modos</button></div></div>';
-      }
-      var r = state.roscos[state.turn];
-      var q = r.questions[r.currentIndex];
-      var timer = state.playerTimers[state.turn];
-      var html = '<div class="stage-wrap"><div class="face face-back cat-juegos" style="position:static; transform:none; aspect-ratio:3/4.2; justify-content:flex-start; padding-top:40px;">';
-      html += '<div class="rosco-timer">' + timer + 's</div>';
-      html += '<div class="rosco-letter">' + q.letter + '</div>';
-
-      if (!r.active) {
-        html += renderPasapalabraRosco(r);
-         html += '<div class="challenge-text" style="margin-top:20px;">Turno de ' + esc(state.players[state.turn].name) + '</div>';
-         html += '<div class="challenge-sub">Pásale el teléfono.</div>';
-         html += '</div><div class="play-actions"><button class="btn-primary" data-action="pasa-start">Empezar / Continuar</button></div></div>';
-      } else {
-         html += '<div class="challenge-text" style="font-size:16px; margin-top:10px;">' + esc(q.text) + '</div>';
-         html += '<div class="challenge-sub" style="font-size:14px; margin-top:12px; opacity:1; color:var(--lime);">Rta: ' + esc(q.answer) + '</div>';
-         html += '</div>'; 
-         html += '<div class="rosco-actions">';
-         html += '<button class="btn-error" data-action="pasa-error">✗ Error</button>';
-         html += '<button class="btn-pasa" data-action="pasa-pasapalabra">↻ Pasapalabra</button>';
-         html += '<button class="btn-acerto" data-action="pasa-acerto">✓ Acertó</button>';
-         html += '</div></div>';
-      }
-      return html;
-    }
-
-    window.addPlayerFromForm = function() {
-      var input = document.getElementById('player-input');
-      if (input && input.value.trim()) {
-        var name = input.value.trim();
-        var color = AVATAR_COLORS[state.players.length % AVATAR_COLORS.length];
-        state.players.push({ name: name, color: color });
-        input.value = '';
-        input.focus();
-        var countEl = document.querySelector('.section-label .count');
-        if (countEl) countEl.textContent = state.players.length;
-        var grid = document.querySelector('.players-grid');
-        if (grid) {
-          grid.insertAdjacentHTML('beforeend', 
-            '<div class="chip">' +
-              '<span class="avatar" style="background:' + color + '">' + esc(initials(name)) + '</span>' +
-              '<span>' + esc(name) + '</span>' +
-              '<button data-action="remove-player" data-idx="' + (state.players.length - 1) + '" aria-label="Quitar ' + esc(name) + '">✕</button>' +
-            '</div>'
-          );
-        }
-        var emptyHint = document.querySelector('.empty-hint');
-        if (emptyHint) emptyHint.remove();
-        if (canStart()) {
-          var startBtn = document.querySelector('.start-btn');
-          if (startBtn) startBtn.removeAttribute('disabled');
-          var startHint = document.querySelector('.start-hint');
-          if (startHint) startHint.style.display = 'none';
-        }
-      }
-    };
-
-    function triviaQuestionCount(topic){
-      return topic.questions.length;
-    }
-
-    function renderTriviaTopicPicker(){
-      var topics = Object.keys(DECK.trivia);
-      return '<div class="section-label" style="margin-top:20px;">Temas de Trivia <span class="count">' + state.selectedTopics.length + '/6</span></div>' +
-        '<div class="trivia-topics">' + topics.map(function(key){
-          var topic = DECK.trivia[key];
-          return '<label class="trivia-topic" style="--topic-color:' + topic.color + ';">' +
-            '<input type="checkbox" data-action="toggle-trivia-topic" data-topic="' + key + '" ' + (state.selectedTopics.indexOf(key) !== -1 ? 'checked' : '') + ' />' +
-            '<span class="trivia-topic-icon">' + topic.icon + '</span><span class="trivia-topic-name">' + key.replace('_', ' ').replace(/\b\w/g, function(c){ return c.toUpperCase(); }) + '<span class="trivia-topic-count">' + triviaQuestionCount(topic) + ' preguntas</span></span>' +
-          '</label>';
-        }).join('') +
-        '</div>' + (state.selectedTopics.length === 0 ? '<div class="start-hint">Elige al menos un tema para continuar.</div>' : '');
-    }
-
-    function renderPlayerSetup(){
-      var mode = state.selectedMode;
-      var modeLabels = { pre: 'Modo Pre', disco: 'Modo Disco', cultura: 'Modo Cultura No General', pasapalabra: 'Modo Pasapalabra' };
-      var triviaPicker = mode === 'cultura' ? renderTriviaTopicPicker() : '';
-      var chips = state.players.map(function(p, i){
-        return '<div class="chip">' +
-          '<span class="avatar" style="background:' + p.color + '">' + esc(initials(p.name)) + '</span>' +
-          '<span>' + esc(p.name) + '</span>' +
-          '<button data-action="remove-player" data-idx="' + i + '" aria-label="Quitar ' + esc(p.name) + '">✕</button>' +
-          '</div>';
-      }).join('');
-
-      var culturaBtn = '';
-      if (mode === 'pre'){
-        culturaBtn =
-          '<div class="cultura-toggle" style="margin-top:16px; display:flex; flex-direction:column; align-items:flex-start;">' +
-            '<label class="switch">' +
-              '<input type="checkbox" data-action="toggle-cultura" ' + (state.culturaEnabled ? 'checked' : '') + ' />' +
-              '<span class="track"></span><span class="thumb"></span>' +
-            '</label>' +
-            '<div class="card-copy" style="margin-top:8px; text-align:left;">' +
-              (state.culturaEnabled ? 'Se mezclarán preguntas de Cultura No General en la partida.' : 'Activa para añadir trivia y ¿Quién es? de Cultura No General.') +
-            '</div>' +
-          '</div>';
-      }
-
-      var cardsSegmented = '';
-      var needsCards = (mode === 'pre' || mode === 'disco'); 
-      if (needsCards){
-        cardsSegmented =
-          '<div class="section-label" style="margin-top:20px;">¿Tienen un mazo de cartas a mano?</div>' +
-          '<div class="segmented">' +
-            '<button data-action="set-cards" data-value="si" class="' + (state.cards === 'si' ? 'active' : '') + '">Sí</button>' +
-            '<button data-action="set-cards" data-value="no" class="' + (state.cards === 'no' ? 'active' : '') + '">No</button>' +
-          '</div>' +
-          '<div class="card-copy">' + (state.cards === 'si' ? 'Sumamos juegos de cartas.' : state.cards === 'no' ? 'Sin problema, los juegos de cartas no van a salir.' : 'Elige una opción para continuar.') + '</div>';
-      } else {
-        state.cards = 'no'; 
-      }
-
-      app.innerHTML =
-        '<div class="setup-top">' +
-          '<button class="icon-btn" data-action="back-mode-select" aria-label="Volver a modos">‹</button>' +
-          '<div class="brand" style="font-size:var(--text-lg); text-align:center; flex:1; margin:0 10px; line-height:1.1;">' + esc(modeLabels[mode]) + '</div>' +
-          '<button class="icon-btn" data-action="open-ajustes" aria-label="Ajustes">⚙️</button>' +
-        '</div>' +
-        '<div class="section-label">Jugadores <span class="count">' + state.players.length + '</span></div>' +
-        '<form class="player-form" onsubmit="event.preventDefault(); window.addPlayerFromForm();">' +
-          '<input id="player-input" type="text" placeholder="Nombre del jugador" maxlength="16" autocomplete="off" />' +
-          '<button class="add-btn" type="submit" aria-label="Agregar jugador">＋</button>' +
-        '</form>' +
-        '<div class="players-grid">' + chips + '</div>' +
-        (state.players.length < 2 ? '<div class="empty-hint">Agrega al menos 2 jugadores para empezar.</div>' : '') +
-        triviaPicker + culturaBtn + cardsSegmented +
-        '<button class="start-btn" data-action="start" ' + (canStart() ? '' : 'disabled') + '>Empezar</button>' +
-        (canStart() ? '' : '<div class="start-hint">Faltan jugadores' + (needsCards ? ' o responder sobre las cartas' : '') + '.</div>');
-    }
-
-    function drinkRow(label, field, min, max){
-      min = min || 1;
-      max = max || 100;
-      return '<label class="drink-row"><span>' + esc(label) + '</span>' +
-        '<input class="drink-input" type="number" inputmode="numeric" min="' + min + '" max="' + max + '" ' +
-        'data-action="set-drink-config" data-field="' + field + '" value="' + state.drinkConfig[field] + '" /></label>';
-    }
-
-    function renderAjustes(){
-      var mode = state.selectedMode;
-      var modeSettings = '';
-      if (mode === 'pasapalabra') {
-        modeSettings =
-          '<div class="section-label">Pasapalabra</div>' +
-          '<div class="drink-config">' +
-            drinkRow('Tiempo por jugador (segundos)', 'pasapalabraTime', 30, 600) +
-          '</div>';
-      } else if (mode === 'cultura') {
-        modeSettings =
-          '<div class="section-label">Cultura</div>' +
-          '<div class="drink-config">' +
-            drinkRow('Daño por error', 'culturaDamage') +
-          '</div>';
-      } else if (mode === 'pre' || mode === 'disco') {
-        modeSettings =
-          '<div class="section-label">Configurador de tragos</div>' +
-          '<div class="drink-config">' +
-            drinkRow('Tragos para empezar', 'greeting') +
-            drinkRow('Evento aleatorio — mínimo', 'eventMin') +
-            drinkRow('Evento aleatorio — máximo', 'eventMax') +
-            drinkRow('Nunca nunca — mínimo', 'nuncaMin') +
-            drinkRow('Nunca nunca — máximo', 'nuncaMax') +
-            drinkRow('Tope máximo (con modo disco x2)', 'maxDrinks') +
-          '</div>';
-      }
-
-      app.innerHTML =
-        '<div class="setup-top">' +
-          '<button class="icon-btn" data-action="close-ajustes" aria-label="Volver">‹</button>' +
-          '<div class="brand" style="font-size:var(--text-xl); text-align:center; flex:1; margin:0 10px; line-height:1.1;">Ajustes</div>' +
-          '<div style="width:40px;"></div>' +
-        '</div>' +
-        modeSettings +
-        '<div class="section-label">Zona Privada</div>' +
-        '<div class="mode-card">' +
-          '<div class="mode-icon" style="background:radial-gradient(circle at 30% 30%, var(--pink), var(--pink-deep));">🔒</div>' +
-          '<div class="mode-copy"><strong>Trucos</strong><span>Introduce una clave para activar un modo secreto.</span></div>' +
-        '</div>' +
-        '<div class="player-form" style="margin-top:10px;">' +
-          '<input id="truco-input" type="text" placeholder="Clave secreta" autocomplete="off" />' +
-          '<button class="add-btn" type="button" data-action="apply-truco" aria-label="Activar clave">✓</button>' +
-        '</div>' +
-        (state.trucoMensaje ? '<div class="card-copy" style="color:var(--lime);">' + esc(state.trucoMensaje) + '</div>' : '');
-    }
-
-    function renderWelcome(){
-      app.innerHTML =
-        '<div class="welcome-screen">' +
-          '<div class="brand">Copetapp</div>' +
-          '<button class="start-btn welcome-btn" data-action="go-mode-select">Jugar</button>' +
-        '</div>';
-    }
-
-    function renderModeSelect(){
-      app.innerHTML =
-        '<div class="welcome-screen">' +
-          '<div class="brand">Copetapp</div>' +
-          '<div class="section-label" style="margin-top:16px;">Elige un modo</div>' +
-          '<div class="mode-blocks">' +
-            '<button class="mode-block" data-action="select-mode" data-mode="pre">' +
-              '<div class="mode-block-icon">🍻</div>' +
-              '<div class="mode-block-info"><strong>Modo Pre</strong><span>El modo clásico</span></div>' +
-            '</button>' +
-            '<button class="mode-block" data-action="select-mode" data-mode="disco">' +
-              '<div class="mode-block-icon">🪩</div>' +
-              '<div class="mode-block-info"><strong>Modo Disco</strong><span>Fiesta pura</span></div>' +
-            '</button>' +
-            '<button class="mode-block" data-action="select-mode" data-mode="cultura">' +
-              '<div class="mode-block-icon">🧠</div>' +
-              '<div class="mode-block-info"><strong>Modo Cultura No General</strong><span>Solo trivia</span></div>' +
-            '</button>' +
-            '<button class="mode-block" data-action="select-mode" data-mode="pasapalabra">' +
-              '<div class="mode-block-icon" style="background:radial-gradient(circle at 30% 30%, var(--violet), var(--violet-deep));">🔠</div>' +
-              '<div class="mode-block-info"><strong>Modo Pasapalabra</strong><span>El rosco contrarreloj</span></div>' +
-            '</button>' +
-          '</div>' +
-          '<button class="btn-ghost" style="margin-top:16px;" data-action="back-welcome">Volver</button>' +
-        '</div>';
-    }
-
-    function renderEspiaStage(){
-      var e = state.espia;
-      if (e.step >= e.order.length){
-        return (
-          '<div class="stage-wrap">' +
-            '<div class="face face-back cat-juegos" style="position:static; transform:none; aspect-ratio:3/2.2;">' +
-              '<span class="cat-badge">Impostor</span><div class="cat-emoji">🎭</div>' +
-              '<div class="challenge-text">¡Todos vieron su carta!</div>' +
-            '</div>' +
-            '<div class="play-actions"><button class="btn-primary" data-action="finish-espia">Listo, siguiente turno</button></div>' +
-          '</div>'
-        );
-      }
-      var player = state.players[e.order[e.step]];
-      var isSpy = e.spyIndexes.indexOf(e.order[e.step]) !== -1;
-      var passGlow = '<div class="turn-glow">Pásale el teléfono a <span class="turn-glow-name">' + esc(player.name) + '</span></div>';
-      var backFace = isSpy
-        ? '<div class="face face-back cat-espia-spy">' + passGlow + '<span class="cat-badge">Impostor</span><div class="cat-emoji">🎭</div><div class="challenge-text">Eres el Impostor</div></div>'
-        : '<div class="face face-back cat-espia-word">' + passGlow + '<span class="cat-badge">Palabra secreta</span><div class="cat-emoji">🔎</div><div class="challenge-text">' + esc(e.word) + '</div></div>';
-
-      return (
-        '<div class="stage-wrap">' +
-          '<button class="tap-target" data-action="reveal-espia">' +
-            '<div class="flip-card ' + (e.revealed ? 'flipped' : '') + '">' +
-              '<div class="face face-front">' + passGlow + '<div class="mark">🤫</div><div class="tap-hint">Toca cuando tengas el teléfono</div></div>' +
-              backFace +
-            '</div>' +
-          '</button>' +
-          '<div class="play-actions ' + (e.revealed ? '' : 'hidden') + '"><button class="btn-primary" data-action="next-espia-step">Listo</button></div>' +
-        '</div>'
-      );
-    }
-
-    function renderCulturaElimination(turnGlowHtml, topbar, rail){
-      var meta = DECK.cultura || { label: 'Cultura', cls: 'cat-cultura' };
-      var aliveIndexes = state.players.map(function(_, i){ return i; }).filter(function(i){ return !state.culturaEliminated[i]; });
-      if (aliveIndexes.length <= 1){
-        var winner = aliveIndexes.length === 1 ? state.players[aliveIndexes[0]] : null;
-        app.innerHTML = topbar + '<div class="rail">' + rail + '</div>' +
-          '<div class="stage-wrap"><div class="face face-back cat-cultura" style="position:static; transform:none; aspect-ratio:3/2.2;"><div class="cat-emoji">🏆</div><div class="challenge-text">¡GANADOR!</div><div class="challenge-sub">' + (winner ? esc(winner.name) : 'Nadie') + '</div></div>' +
-          '<div class="play-actions"><button class="btn-primary" data-action="back-setup">Volver</button></div></div>';
-        return;
-      }
-      var mediaHtml = state.card ? (state.card.image ? '<div class="who-photo"><img src="' + esc(state.card.image) + '" onerror="this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';"><div class="who-photo-fallback">👤</div></div>' : '<div class="cat-emoji">' + state.card.icon + '</div>') : '';
-      
-      var backFace = '<div class="face face-back ' + meta.cls + '">' + turnGlowHtml + '<span class="cat-badge">' + esc(meta.label) + '</span>' +
-        mediaHtml +
-        '<div class="challenge-text">' + esc(state.card ? state.card.text : '') + '</div>' +
-        (state.card && state.card.answer && state.answerShown ? '<div class="answer-block"><div class="challenge-sub">' + esc(state.card.answer) + '</div></div>' : '') +
-        '</div>';
-      var actionsHtml = !state.answerShown 
-        ? '<button class="btn-ghost" data-action="show-answer">Mostrar respuesta</button>'
-        : '<div class="cultura-verdict"><button class="btn-primary" data-action="cultura-correct">✓ Acertó</button><button class="btn-primary" data-action="cultura-wrong">✗ Falló</button></div>';
-
-      app.innerHTML = topbar + '<div class="rail">' + rail + '</div>' +
-        '<div class="stage-wrap"><button class="tap-target" data-action="reveal"><div class="flip-card ' + (state.flipped ? 'flipped' : '') + '"><div class="face face-front">' + turnGlowHtml + '<div class="mark">?</div></div>' + backFace + '</div></button>' +
-        '<div class="play-actions ' + (state.flipped ? '' : 'hidden') + '">' + actionsHtml + '</div></div>';
-    }
-
-    function triviaTopicName(key){
-      if (key === 'historia_geografia') return 'Historia y Geografía';
-      return key.replace('_', ' ').replace(/\b\w/g, function(c){ return c.toUpperCase(); });
-    }
-
-    function chooseTriviaQuestion(topicKey){
-      var topic = DECK.trivia[topicKey];
-      if (!topic.questions.length){
-        return { topic: topicKey, subtema: 'Pendiente', empty: true, question: { text: 'Este tema todavía no tiene preguntas.', answer: null } };
-      }
-      var historyKey = 'trivia-questions-' + topicKey;
-      var used = state.history[historyKey] || (state.history[historyKey] = []);
-      var question = pickWithHistory(historyKey, topic.questions.map(function(item){ return { item: toEntry(item), w: 1 }; }));
-      return { topic: topicKey, question: question };
-    }
-
-    function refillTriviaTopicQueues(){
-      state.triviaTopicQueues = state.players.map(function(){ return shuffle(state.selectedTopics); });
-    }
-
-    function nextTriviaQuestion(){
-      if (!state.triviaTopicQueues.length) refillTriviaTopicQueues();
-      var queue = state.triviaTopicQueues[state.turn];
-      if (!queue.length){
-        if (state.triviaTopicQueues.every(function(playerQueue){ return playerQueue.length === 0; })) refillTriviaTopicQueues();
-        queue = state.triviaTopicQueues[state.turn];
-      }
-      return chooseTriviaQuestion(queue.shift());
-    }
-
-    function renderTriviaBadges(playerIndex){
-      var badges = state.triviaBadges[playerIndex] || [];
-      return badges.map(function(key){ return '<span class="trivia-badge" style="background:' + DECK.trivia[key].color + ';">' + DECK.trivia[key].icon + '</span>'; }).join('');
-    }
-
-    function renderTriviaLives(playerIndex){
-      if (isCompetitiveTrivia()) return '';
-      return '<span class="player-life">❤ ' + state.triviaLives[playerIndex] + '</span>';
-    }
-
-    function triviaVictory(){
-      return state.triviaWinner !== null;
-    }
-
-    function renderTriviaPlay(topbar, rail){
-      var playerRail = '<div class="rail">' + rail + '</div>';
-      var alive = state.players.map(function(_, i){ return i; }).filter(function(i){ return state.triviaLives[i] > 0; });
-      if ((!isCompetitiveTrivia() && alive.length <= 1) || triviaVictory()){
-        var winner = state.players[state.triviaWinner];
-        if (!isCompetitiveTrivia()) winner = state.players[alive[0]];
-        return topbar + playerRail + '<div class="stage-wrap"><div class="face face-back cat-cultura" style="position:static; transform:none; aspect-ratio:auto; min-height:360px; padding:26px;"><div class="cat-emoji">👑</div><div class="challenge-text">¡' + esc(winner.name) + ' gana!</div><div class="challenge-sub">' + (isCompetitiveTrivia() ? 'Consiguió todas las chapas de Trivia.' : 'Fue el último jugador con vida.') + '</div><div class="trivia-badges">' + (isCompetitiveTrivia() ? renderTriviaBadges(state.triviaWinner) : '') + '</div></div><div class="play-actions"><button class="btn-primary" data-action="back-setup">Volver a modos</button></div></div>';
-      }
-      if (!state.triviaRound) state.triviaRound = nextTriviaQuestion();
-      var round = state.triviaRound;
-      var topic = round.topic ? DECK.trivia[round.topic] : null;
-      var answer = round.question.answer && state.answerShown
-        ? '<div class="answer-block"><div class="challenge-sub">' + esc(round.question.answer) + '</div></div>'
-        : '';
-      var actions = state.answerShown
-        ? '<div class="trivia-verdict"><button class="btn-error" data-action="trivia-wrong">✗ Falló</button><button class="btn-acerto" data-action="trivia-correct">✓ Acertó</button></div>'
-        : round.empty
-          ? '<div class="play-actions"><button class="btn-ghost" data-action="trivia-skip">Siguiente tema</button></div>'
-          : '<div class="play-actions"><button class="btn-ghost" data-action="show-answer">Mostrar respuesta</button></div>';
-      var card = '<button class="tap-target" data-action="trivia-reveal"><div class="flip-card ' + (state.flipped ? 'flipped' : '') + '">' +
-        '<div class="face face-front">' +
-          '<div class="turn-glow">Turno de <span class="turn-glow-name">' + esc(state.players[state.turn].name) + '</span></div>' +
-          '<div class="mark">?</div><div class="tap-hint">Toca para revelar</div>' +
-        '</div>' +
-        '<div class="face face-back trivia-card-back" style="background:linear-gradient(160deg,' + topic.color + ',var(--surface));">' +
-          '<span class="cat-badge">' + topic.icon + ' ' + esc(triviaTopicName(round.topic)) + '</span>' +
-          '<div class="challenge-text">' + esc(round.question.text) + '</div>' + answer +
-        '</div>' +
-      '</div></button>';
-      return topbar + playerRail + '<div class="stage-wrap">' + (!isCompetitiveTrivia() ? '<div class="round-badge" style="display:inline-block; margin-bottom:10px;">❤ ' + state.triviaLives[state.turn] + ' vidas · Daño: ' + state.drinkConfig.culturaDamage + '</div>' : '') + card + (state.flipped ? actions : '') + '</div>';
-    }
-
-    function advanceTriviaTurn(correct){
-      var round = state.triviaRound;
-      if (correct){
-        if (isCompetitiveTrivia()){
-          var scores = state.triviaScores[state.turn];
-          scores[round.topic] += 1;
-          if (scores[round.topic] >= 3 && state.triviaBadges[state.turn].indexOf(round.topic) === -1) state.triviaBadges[state.turn].push(round.topic);
-          if (state.triviaBadges[state.turn].length === state.selectedTopics.length){
-            state.triviaWinner = state.turn;
-            state.triviaRound = null;
-            render();
-            return;
-          }
-        }
-      } else if (!isCompetitiveTrivia()) {
-        state.triviaLives[state.turn] = Math.max(0, state.triviaLives[state.turn] - Number(state.drinkConfig.culturaDamage || 0));
-        if (state.triviaLives[state.turn] === 0) state.culturaEliminated[state.turn] = true;
-      }
-      state.triviaRound = null;
-      state.answerShown = false;
-      var attempts = 0;
-      do {
-        state.turn = (state.turn + 1) % state.players.length;
-        attempts++;
-      } while (!isCompetitiveTrivia() && state.triviaLives[state.turn] <= 0 && attempts < state.players.length);
-      state.round += 1;
-      if (!isCompetitiveTrivia() && state.triviaLives.filter(function(life){ return life > 0; }).length <= 1){
-        state.triviaRound = null;
-      }
-      render();
-    }
-
-    function renderPlay(){
-      var current = state.players[state.turn];
-      var turnGlowHtml = '<div class="turn-glow"><span class="turn-glow-name">' + esc(current.name) + '</span></div>';
-      var rail = state.players.map(function(p, i){
-        return '<div class="rail-player ' + (i === state.turn ? 'current' : '') + '"><span class="avatar" style="background:' + p.color + '">' + esc(initials(p.name)) + '</span><small>' + esc(p.name) + '</small>' + renderTriviaLives(i) + '<div class="trivia-badges">' + renderTriviaBadges(i) + '</div></div>';
-      }).join('');
-
-      var topbar = '<div class="topbar"><button class="icon-btn" data-action="back-setup">‹</button><span class="round-badge">Ronda ' + state.round + '</span></div>';
-
-      if (state.espia){ app.innerHTML = topbar + renderEspiaStage(); return; }
-      if (state.selectedMode === 'pasapalabra'){ app.innerHTML = topbar + '<div class="rail">' + rail + '</div>' + renderPasapalabraStage(); return; }
-      if (state.selectedMode === 'cultura' && !state.modoHistoria && !state.modoPapu){ app.innerHTML = renderTriviaPlay(topbar, rail); return; }
-
-      var backFace = '';
-      var actionsHtml = '';
-      if (state.card){
-        var meta = DECK[state.card.cat] || {
-          historia: { label: 'Historia', cls: 'cat-cultura' },
-          papu: { label: 'Modo Papu', cls: 'cat-papu' }
-        }[state.card.cat] || { label: 'Carta', cls: 'cat-juegos' };
-        backFace = '<div class="face face-back ' + meta.cls + '">' + turnGlowHtml + '<span class="cat-badge">' + esc(meta.label) + '</span><div class="challenge-text">' + esc(state.card.text) + '</div>' + (state.card.sub ? '<div class="challenge-sub">' + esc(state.card.sub) + '</div>' : '') + '</div>';
-        actionsHtml = '<button class="btn-primary" data-action="next-turn">Siguiente turno</button>';
-      } else {
-        backFace = '<div class="face face-back cat-nunca"></div>';
-      }
-
-      app.innerHTML = topbar + '<div class="rail">' + rail + '</div>' +
-        '<div class="stage-wrap"><button class="tap-target" data-action="reveal"><div class="flip-card ' + (state.flipped ? 'flipped' : '') + '"><div class="face face-front">' + turnGlowHtml + '<div class="mark">?</div><div class="tap-hint">Toca para revelar</div></div>' + backFace + '</div></button>' +
-        '<div class="play-actions ' + (state.flipped ? '' : 'hidden') + '">' + actionsHtml + '</div></div>';
-    }
-
-    function render(){
-      if (state.screen === 'welcome') renderWelcome();
-      else if (state.screen === 'mode-select') renderModeSelect();
-      else if (state.screen === 'player-setup') renderPlayerSetup();
-      else if (state.screen === 'ajustes') renderAjustes();
-      else renderPlay();
-    }
-
-    app.addEventListener('click', function(e){
-      var t = e.target.closest('[data-action]');
-      if (!t) return;
-      var action = t.getAttribute('data-action');
-
-      if (action === 'go-mode-select'){ state.screen = 'mode-select'; render(); }
-      else if (action === 'back-welcome'){ state.screen = 'welcome'; render(); }
-      else if (action === 'back-mode-select'){ state.screen = 'mode-select'; render(); }
-      else if (action === 'open-ajustes'){ state.screen = 'ajustes'; render(); }
-      else if (action === 'close-ajustes'){ state.screen = 'player-setup'; render(); }
-      else if (action === 'apply-truco'){
-        var input = document.getElementById('truco-input');
-        var key = input ? input.value.trim().toLowerCase().replace(/\s+/g, '') : '';
-        state.modoHistoria = false;
-        state.modoPapu = false;
-        state.modoAmigos = false;
-        if (key === 'historia' || key === 'modohistoria') {
-          state.modoHistoria = true;
-          state.trucoMensaje = 'Modo Historia activado.';
-        } else if (key === 'papu' || key === 'modopapu') {
-          state.modoPapu = true;
-          state.trucoMensaje = 'Modo Papu activado.';
-        } else if (key === 'amigos' || key === 'modoamigos') {
-          state.modoAmigos = true;
-          state.trucoMensaje = 'Cartas privadas activadas.';
-        } else {
-          state.trucoMensaje = 'Clave no reconocida.';
-        }
-        state.lastCategory = null;
-        render();
-      }
-      else if (action === 'select-mode'){
-        state.selectedMode = t.getAttribute('data-mode');
-        state.players = [];
-        state.selectedTopics = state.selectedMode === 'cultura' ? [] : state.selectedTopics;
-        state.screen = 'player-setup';
-        render();
-      } else if (action === 'remove-player'){
-        state.players.splice(Number(t.getAttribute('data-idx')), 1);
-        render();
-      } else if (action === 'set-cards'){
-        state.cards = t.getAttribute('data-value');
-        render();
-      } else if (action === 'start'){
-        if (!canStart()) return;
-        state.screen = 'play';
-        state.turn = 0;
-        state.round = 1;
-        state.flipped = false;
-        state.card = null;
-        if (state.selectedMode === 'cultura'){
-          state.triviaScores = state.players.map(function(){
-            var scores = {};
-            state.selectedTopics.forEach(function(topic){ scores[topic] = 0; });
-            return scores;
-          });
-          state.triviaBadges = state.players.map(function(){ return []; });
-          state.triviaLives = state.players.map(function(){ return 100; });
-          state.culturaEliminated = state.players.map(function(){ return false; });
-          state.history = {};
-          refillTriviaTopicQueues();
-          state.triviaRound = null;
-          state.triviaWinner = null;
-        }
-        if (state.selectedMode === 'pasapalabra'){
-          var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('');
-          var picksByLetter = pickPasapalabraWords(letters, state.players.length);
-          state.roscos = state.players.map(function(_, p) {
-            var questions = letters.map(function(l) {
-              var q = picksByLetter[l][p];
-              return { letter: l, text: q.text, answer: q.answer, status: 'pending' };
-            });
-            return { questions: questions, currentIndex: 0, active: false, finished: false };
-          });
-          var pasapalabraTime = Number(state.drinkConfig.pasapalabraTime) || 120;
-          state.playerTimers = state.players.map(function(){ return pasapalabraTime; });
-        }
-        render();
-      } else if (action === 'back-setup'){ state.screen = 'mode-select'; render(); }
-      else if (action === 'trivia-skip'){
-        advanceTriviaTurn(false);
-      } else if (action === 'trivia-correct'){
-        advanceTriviaTurn(true);
-      } else if (action === 'trivia-wrong'){
-        advanceTriviaTurn(false);
-      } else if (action === 'trivia-reveal'){
-        if (state.flipped) return;
-        state.flipped = true;
-        state.answerShown = false;
-        render();
-      }
-      else if (action === 'reveal'){
-        if (state.flipped) return;
-        drawChallenge();
-        state.flipped = true;
-        state.answerShown = false;
-        render();
-      } else if (action === 'show-answer'){ state.answerShown = true; render(); }
-      else if (action === 'next-turn'){
-        state.turn = (state.turn + 1) % state.players.length;
-        state.round += 1;
-        state.flipped = false;
-        state.card = null;
-        render();
-      } else if (action === 'pasa-start') { startRoscoTimer(); render(); }
-      else if (action === 'pasa-acerto') {
-        var r = state.roscos[state.turn];
-        r.questions[r.currentIndex].status = 'correct';
-        if (!checkRoscoEnd()) { advanceRoscoIndex(); render(); }
-        else { nextRoscoPlayer(); }
-      } else if (action === 'pasa-error' || action === 'pasa-pasapalabra') {
-        var r = state.roscos[state.turn];
-        r.questions[r.currentIndex].status = action === 'pasa-error' ? 'error' : 'pending';
-        if (action === 'pasa-error') checkRoscoEnd();
+  function startRoscoTimer(){
+    if (roscoTimerInterval) clearInterval(roscoTimerInterval);
+    state.roscos[state.turn].active = true;
+    roscoTimerInterval = setInterval(function(){
+      if (state.screen !== 'play' || !state.roscos[state.turn] || !state.roscos[state.turn].active) return;
+      state.playerTimers[state.turn]--;
+      if (state.playerTimers[state.turn] <= 0){
+        state.playerTimers[state.turn] = 0;
+        state.roscos[state.turn].questions.forEach(function(q){ if (q.status === 'pending') q.status = 'error'; });
+        checkRoscoEnd();
         nextRoscoPlayer();
-      } else if (action === 'start-espia'){ startEspia(); render(); }
-      else if (action === 'reveal-espia'){ state.espia.revealed = true; render(); }
-      else if (action === 'next-espia-step'){ state.espia.step += 1; state.espia.revealed = false; render(); }
-      else if (action === 'finish-espia'){ state.espia = null; state.turn = (state.turn + 1) % state.players.length; render(); }
-    });
-
-    app.addEventListener('change', function(e){
-      var target = e.target;
-      var action = target.getAttribute('data-action');
-      if (action === 'set-drink-config'){
-        var field = target.getAttribute('data-field');
-        var value = Number(target.value);
-        if (Number.isFinite(value)) state.drinkConfig[field] = value;
-      } else if (action === 'toggle-cultura') {
-        state.culturaEnabled = target.checked;
-      } else if (action === 'toggle-trivia-topic') {
-        var topic = target.getAttribute('data-topic');
-        if (target.checked && state.selectedTopics.length < 6) state.selectedTopics.push(topic);
-        else if (!target.checked) state.selectedTopics = state.selectedTopics.filter(function(key){ return key !== topic; });
-        else target.checked = false;
-        render();
+      } else {
+        var el = document.querySelector('.timer');
+        if (el){
+          el.textContent = formatTime(state.playerTimers[state.turn]);
+          el.classList.toggle('is-low', state.playerTimers[state.turn] <= 10);
+        } else render();
       }
-    });
-
+    }, 1000);
+  }
+  function stopRoscoTimer(){
+    if (state.roscos[state.turn]) state.roscos[state.turn].active = false;
+    if (roscoTimerInterval) clearInterval(roscoTimerInterval);
+    roscoTimerInterval = null;
+  }
+  function advanceRoscoIndex(){
+    var r = state.roscos[state.turn];
+    for (var i = 1; i <= r.questions.length; i++){
+      var idx = (r.currentIndex + i) % r.questions.length;
+      if (r.questions[idx].status === 'pending'){ r.currentIndex = idx; return true; }
+    }
+    return false;
+  }
+  function checkRoscoEnd(){
+    var r = state.roscos[state.turn];
+    var pending = r.questions.filter(function(q){ return q.status === 'pending'; }).length;
+    if (pending === 0){ stopRoscoTimer(); r.finished = true; return true; }
+    return false;
+  }
+  function nextRoscoPlayer(){
+    stopRoscoTimer();
+    advanceRoscoIndex();
+    var attempts = 0;
+    do {
+      state.turn = (state.turn + 1) % state.players.length;
+      attempts++;
+    } while (state.roscos[state.turn].finished && attempts < state.players.length);
     render();
-  })();
+  }
+  function formatTime(s){ var m = Math.floor(s / 60), r = s % 60; return m + ':' + (r < 10 ? '0' : '') + r; }
+  function roscoCounts(r){
+    var c = { correct: 0, error: 0, pending: 0 };
+    r.questions.forEach(function(q){ c[q.status]++; });
+    return c;
+  }
+
+  /* ---------------- Trivia ---------------- */
+  function isCompetitiveTrivia(){ return state.selectedTopics.length >= COMPETITIVE_MIN_TOPICS; }
+
+  function chooseTriviaQuestion(topicKey){
+    var topic = TRIVIA[topicKey];
+    if (!topic || !topic.questions.length){
+      return { topic: topicKey, empty: true, question: { text: 'Este tema todavía no tiene preguntas.', answer: null } };
+    }
+    var question = pickWithHistory('trivia-questions-' + topicKey, topic.questions.map(function(item){ return { item: toEntry(item), w: 1 }; }));
+    return { topic: topicKey, question: question };
+  }
+  function refillTriviaTopicQueues(){
+    state.triviaTopicQueues = state.players.map(function(){ return shuffle(state.selectedTopics); });
+  }
+  function nextTriviaQuestion(){
+    // Trucos: Modo Historia / Modo Papu fuerzan un único tema.
+    if (state.modoHistoria) return chooseTriviaQuestion('historia_geografia');
+    if (state.modoPapu) return chooseTriviaQuestion(TRIVIA.papu ? 'papu' : 'cine');
+    if (!state.triviaTopicQueues.length) refillTriviaTopicQueues();
+    var queue = state.triviaTopicQueues[state.turn];
+    if (!queue.length){
+      if (state.triviaTopicQueues.every(function(q){ return q.length === 0; })) refillTriviaTopicQueues();
+      queue = state.triviaTopicQueues[state.turn];
+    }
+    return chooseTriviaQuestion(queue.shift());
+  }
+  function advanceTriviaTurn(correct){
+    var round = state.triviaRound;
+    if (correct){
+      if (isCompetitiveTrivia() && state.triviaScores[state.turn][round.topic] !== undefined){
+        var scores = state.triviaScores[state.turn];
+        scores[round.topic] += 1;
+        if (scores[round.topic] >= 3 && state.triviaBadges[state.turn].indexOf(round.topic) === -1) state.triviaBadges[state.turn].push(round.topic);
+        if (state.triviaBadges[state.turn].length === state.selectedTopics.length){
+          state.triviaWinner = state.turn;
+          state.triviaRound = null;
+          render();
+          return;
+        }
+      }
+    } else if (!isCompetitiveTrivia()){
+      state.triviaLives[state.turn] = Math.max(0, state.triviaLives[state.turn] - Number(state.settings.culturaDamage || 0));
+    }
+    state.triviaRound = null;
+    state.answerShown = false;
+    state.flipped = false;
+    var attempts = 0;
+    do {
+      state.turn = (state.turn + 1) % state.players.length;
+      attempts++;
+    } while (!isCompetitiveTrivia() && state.triviaLives[state.turn] <= 0 && attempts < state.players.length);
+    state.round += 1;
+    render();
+  }
+
+  /* ---------------- vistas ---------------- */
+  function topbar(opts){
+    return '<header class="topbar">' +
+      (opts.back ? '<button type="button" class="icon-btn" data-action="' + opts.back + '" aria-label="' + esc(opts.backLabel || 'Volver') + '">' + icon('back') + '</button>' : '<span></span>') +
+      (opts.pill ? '<span class="pill">' + opts.pill + '</span>' : '<h1 class="topbar-title">' + esc(opts.title || '') + '</h1>') +
+      (opts.right || '<span></span>') +
+    '</header>';
+  }
+
+  function renderHome(){
+    var cards = Object.keys(MODES).map(function(key){
+      var m = MODES[key];
+      return '<button type="button" class="mode-card" data-action="select-mode" data-mode="' + key + '">' +
+        '<span class="mode-icon" style="--tone:' + m.tone + '">' + icon(m.icon) + '</span>' +
+        '<span><strong>' + esc(m.title) + '</strong><span class="mode-desc">' + esc(m.desc) + '</span></span>' +
+        '<span class="chev">' + icon('chev') + '</span>' +
+      '</button>';
+    }).join('');
+    app.innerHTML =
+      '<section class="screen home">' +
+        '<div class="brand">' +
+          '<div class="brand-mark" aria-hidden="true">C</div>' +
+          '<h1>Copetapp</h1>' +
+        '</div>' +
+        '<div><h2 class="section-title" style="margin-bottom:10px;">Elige un modo</h2><div class="mode-list">' + cards + '</div></div>' +
+      '</section>';
+  }
+
+  function renderTopicPicker(){
+    var keys = Object.keys(TRIVIA).filter(function(k){ return k !== 'papu'; });
+    var full = state.selectedTopics.length >= MAX_TOPICS;
+    var tiles = keys.map(function(key){
+      var t = TRIVIA[key];
+      var checked = state.selectedTopics.indexOf(key) !== -1;
+      return '<label class="topic" style="--topic-color:' + t.color + '">' +
+        '<input class="visually-hidden" type="checkbox" data-action="toggle-topic" data-topic="' + esc(key) + '"' + (checked ? ' checked' : '') + (full && !checked ? ' disabled' : '') + ' />' +
+        '<span class="topic-icon" aria-hidden="true">' + t.icon + '</span>' +
+        '<span class="topic-name">' + esc(topicName(key)) + '<span class="topic-count">' + t.questions.length + ' preguntas</span></span>' +
+        '<span class="topic-check" aria-hidden="true">' + icon('check') + '</span>' +
+      '</label>';
+    }).join('');
+    var n = state.selectedTopics.length;
+    var note = n === 0 ? 'Elige entre 1 y ' + MAX_TOPICS + ' temas.'
+      : (n >= COMPETITIVE_MIN_TOPICS
+        ? '<strong>Carrera por chapas:</strong> gana quien consiga 3 aciertos en cada tema elegido.'
+        : '<strong>Modo vidas:</strong> todos parten con 100. Cada error resta ' + esc(String(state.settings.culturaDamage)) + '. Gana el último en pie. Con ' + COMPETITIVE_MIN_TOPICS + ' temas o más se juega por chapas.');
+    return '<fieldset class="section" style="border:0; padding:0; margin-inline:0; min-width:0;">' +
+      '<legend class="section-head" style="width:100%; padding:0;"><span class="section-title">Temas</span></legend>' +
+      '<p class="section-meta" style="margin:-6px 0 10px;">' + n + ' de ' + MAX_TOPICS + ' elegidos</p>' +
+      '<div class="topics">' + tiles + '</div>' +
+      '<p class="mode-note">' + note + '</p>' +
+    '</fieldset>';
+  }
+
+  function renderSetup(){
+    var mode = MODES[state.selectedMode];
+    var chips = state.players.map(function(p, i){
+      return '<li class="chip"><span class="avatar" style="--c:' + p.color + '" aria-hidden="true">' + esc(initials(p.name)) + '</span>' +
+        '<span>' + esc(p.name) + '</span>' +
+        '<button type="button" class="chip-remove" data-action="remove-player" data-idx="' + i + '" aria-label="Quitar a ' + esc(p.name) + '">' + icon('x') + '</button></li>';
+    }).join('');
+    var hint = startHint();
+    app.innerHTML =
+      '<section class="screen">' +
+        topbar({ back: 'go-home', backLabel: 'Volver al inicio', title: mode.title,
+          right: '<button type="button" class="icon-btn" data-action="open-ajustes" aria-label="Ajustes">' + icon('settings') + '</button>' }) +
+        '<div class="section">' +
+          '<div class="section-head"><h2 class="section-title">Jugadores</h2><span class="section-meta">' + state.players.length + '</span></div>' +
+          '<form class="player-form" data-form="add-player">' +
+            '<label for="player-input" class="visually-hidden">Nombre del jugador</label>' +
+            '<input class="field" id="player-input" name="player" type="text" placeholder="Nombre del jugador" maxlength="16" autocomplete="off" autocapitalize="words" enterkeyhint="done" />' +
+            '<button class="add-btn" type="submit" aria-label="Agregar jugador">' + icon('plus') + '</button>' +
+          '</form>' +
+          (chips ? '<ul class="chips" style="list-style:none; padding:0; margin-block-end:0;">' + chips + '</ul>' : '<p class="help">Escribe un nombre y toca + para sumar jugadores.</p>') +
+        '</div>' +
+        (state.selectedMode === 'cultura' ? renderTopicPicker() : '') +
+        (state.selectedMode === 'pasapalabra'
+          ? '<p class="mode-note">Cada jugador tiene su propio rosco de 26 letras y <strong>' + formatTime(state.settings.pasapalabraTime) + '</strong> de tiempo. Quien sostiene el teléfono lee la definición y marca la respuesta.</p>'
+          : '') +
+        '<div class="cta-bar">' +
+          '<button type="button" class="btn btn-primary btn-block" data-action="start"' + (canStart() ? '' : ' disabled') + '>Empezar partida</button>' +
+          '<p class="cta-hint" aria-live="polite">' + esc(hint) + '</p>' +
+        '</div>' +
+      '</section>';
+  }
+
+  function numberRow(label, sub, field, min, max){
+    var id = 'set-' + field;
+    return '<div class="row"><label class="row-label" for="' + id + '">' + esc(label) + (sub ? '<small>' + esc(sub) + '</small>' : '') + '</label>' +
+      '<input class="num" id="' + id + '" type="number" inputmode="numeric" min="' + min + '" max="' + max + '" data-action="set-setting" data-field="' + field + '" value="' + state.settings[field] + '" /></div>';
+  }
+
+  function renderAjustes(){
+    var modeSettings = state.selectedMode === 'pasapalabra'
+      ? numberRow('Tiempo por jugador', 'En segundos', 'pasapalabraTime', 30, 600)
+      : numberRow('Daño por error', 'Vida que se pierde al fallar (modo vidas)', 'culturaDamage', 1, 100);
+    app.innerHTML =
+      '<section class="screen">' +
+        topbar({ back: 'close-ajustes', backLabel: 'Volver', title: 'Ajustes' }) +
+        '<div class="section"><h2 class="section-title" style="margin-bottom:10px;">' + esc(MODES[state.selectedMode].title) + '</h2>' +
+          '<div class="group">' + modeSettings + '</div></div>' +
+        (state.selectedMode === 'cultura'
+          ? '<div class="section"><h2 class="section-title" style="margin-bottom:10px;">Trucos</h2>' +
+              '<form class="player-form" data-form="truco">' +
+                '<label for="truco-input" class="visually-hidden">Clave secreta</label>' +
+                '<input class="field" id="truco-input" type="text" placeholder="Clave secreta" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="done" />' +
+                '<button class="add-btn" type="submit" aria-label="Activar clave">' + icon('lock') + '</button>' +
+              '</form>' +
+              '<p class="status-msg" role="status">' + esc(state.trucoMensaje) + '</p>' +
+            '</div>'
+          : '') +
+      '</section>';
+  }
+
+  function renderRail(){
+    var showLives = state.selectedMode === 'cultura' && !isCompetitiveTrivia();
+    var showBadges = state.selectedMode === 'cultura' && isCompetitiveTrivia();
+    return '<ol class="rail" aria-label="Jugadores" style="list-style:none; margin:0;">' + state.players.map(function(p, i){
+      var out = showLives && state.triviaLives[i] <= 0;
+      var extra = '';
+      if (showLives){
+        var life = state.triviaLives[i];
+        extra = '<span class="life' + (life <= 40 ? ' low' : '') + '" style="--life:' + life + '%"><span></span></span><span class="visually-hidden">' + life + ' de vida</span>';
+      } else if (showBadges){
+        extra = '<span class="badges">' + (state.triviaBadges[i] || []).map(function(k){
+          return '<span class="badge-dot" style="--topic-color:' + topicColor(k) + '" title="' + esc(topicName(k)) + '">' + TRIVIA[k].icon + '</span>';
+        }).join('') + '</span>';
+      }
+      return '<li class="rail-player' + (i === state.turn ? ' current' : '') + (out ? ' out' : '') + '"' + (i === state.turn ? ' aria-current="true"' : '') + '>' +
+        '<span class="avatar" style="--c:' + p.color + '" aria-hidden="true">' + esc(initials(p.name)) + '</span>' +
+        '<span class="rail-name">' + esc(p.name) + '</span>' + extra + '</li>';
+    }).join('') + '</ol>';
+  }
+
+  function resultCard(title, sub, extra){
+    return '<div class="result"><div class="trophy">' + icon('trophy') + '</div><h2>' + title + '</h2><p>' + sub + '</p>' + (extra || '') + '</div>' +
+      '<div class="actions"><button type="button" class="btn btn-primary btn-block" data-action="play-again">Jugar otra vez</button>' +
+      '<button type="button" class="btn btn-secondary btn-block" data-action="go-home">Volver al inicio</button></div>';
+  }
+
+  function renderTriviaPlay(){
+    var bar = topbar({ back: 'leave-game', backLabel: 'Salir de la partida', pill: 'Ronda ' + state.round });
+    var alive = state.players.map(function(_, i){ return i; }).filter(function(i){ return state.triviaLives[i] > 0; });
+    var finishedLives = !isCompetitiveTrivia() && alive.length <= 1;
+    if (finishedLives || state.triviaWinner !== null){
+      var winner = finishedLives ? state.players[alive[0]] : state.players[state.triviaWinner];
+      var sub = isCompetitiveTrivia() ? 'Consiguió las chapas de todos los temas.' : 'Fue el último jugador con vida.';
+      return bar + renderRail() + resultCard(winner ? '¡' + esc(winner.name) + ' gana!' : 'Sin ganador', sub);
+    }
+    if (!state.triviaRound) state.triviaRound = nextTriviaQuestion();
+    var round = state.triviaRound;
+    var color = topicColor(round.topic);
+    var t = TRIVIA[round.topic];
+    var player = state.players[state.turn];
+
+    var status = !isCompetitiveTrivia()
+      ? '<div class="status-line"><span class="pill"><span class="heart">' + icon('heart') + '</span> ' + state.triviaLives[state.turn] + ' · −' + esc(String(state.settings.culturaDamage)) + ' por error</span></div>'
+      : '<div class="status-line"><span class="pill">' + (t ? t.icon + ' ' : '') + (state.triviaScores[state.turn][round.topic] || 0) + ' / 3 en ' + esc(topicName(round.topic)) + '</span></div>';
+
+    var answer = round.question.answer && state.answerShown
+      ? '<div class="answer"><div class="answer-label">Respuesta</div><div class="answer-text">' + esc(round.question.answer) + '</div></div>' : '';
+
+    var card =
+      '<button type="button" class="tap-target" data-action="trivia-reveal" aria-label="' + (state.flipped ? 'Pregunta revelada' : 'Revelar la pregunta de ' + esc(player.name)) + '">' +
+        '<div class="flip-card' + (state.flipped ? ' flipped' : '') + '" style="--topic-color:' + color + '">' +
+          '<div class="face face-front"' + (state.flipped ? ' aria-hidden="true"' : '') + '>' +
+            '<span class="eyebrow">Turno de</span><span class="who">' + esc(player.name) + '</span>' +
+            '<span class="hint">' + icon('tap') + 'Toca para ver la pregunta</span>' +
+          '</div>' +
+          '<div class="face face-back"' + (state.flipped ? '' : ' aria-hidden="true"') + '>' +
+            '<span class="topic-tag">' + (t ? t.icon + ' ' : '') + esc(topicName(round.topic)) + '</span>' +
+            '<p class="question">' + esc(round.question.text) + '</p>' + answer +
+          '</div>' +
+        '</div>' +
+      '</button>';
+
+    var actions = '';
+    if (state.flipped){
+      if (state.answerShown || !round.question.answer){
+        actions = round.empty
+          ? '<div class="actions"><button type="button" class="btn btn-secondary btn-block" data-action="trivia-skip">Siguiente</button></div>'
+          : '<div class="actions two">' +
+              '<button type="button" class="btn btn-danger" data-action="trivia-wrong">' + icon('x') + 'Falló</button>' +
+              '<button type="button" class="btn btn-success" data-action="trivia-correct">' + icon('check') + 'Acertó</button>' +
+            '</div>';
+      } else {
+        actions = '<div class="actions"><button type="button" class="btn btn-secondary btn-block" data-action="show-answer">Mostrar respuesta</button></div>';
+      }
+    }
+    return bar + renderRail() + status + '<div class="stage">' + card + '</div>' + actions;
+  }
+
+  function renderRosco(r){
+    var c = roscoCounts(r);
+    var letters = r.questions.map(function(q, i){
+      var cls = q.status === 'correct' ? ' correct' : q.status === 'error' ? ' error' : '';
+      if (i === r.currentIndex && q.status === 'pending') cls += ' current';
+      return '<span class="rosco-letter' + cls + '" style="--a:' + (i / r.questions.length * 360 - 90) + 'deg">' + q.letter + '</span>';
+    }).join('');
+    return '<div class="rosco" role="img" aria-label="Rosco: ' + c.correct + ' aciertos, ' + c.error + ' errores, ' + c.pending + ' pendientes">' + letters +
+      '<div class="rosco-center"><span class="muted">Turno de</span><span class="who">' + esc(state.players[state.turn].name) + '</span><span class="muted">' + formatTime(state.playerTimers[state.turn]) + ' restantes</span></div>' +
+    '</div>' +
+    '<div class="tally"><span class="ok">' + icon('check') + c.correct + ' aciertos</span><span class="ko">' + icon('x') + c.error + ' errores</span><span>' + c.pending + ' pendientes</span></div>';
+  }
+
+  function renderPasapalabraPlay(){
+    var bar = topbar({ back: 'leave-game', backLabel: 'Salir de la partida', pill: 'Pasapalabra' });
+    var allFinished = state.roscos.every(function(r){ return r.finished; });
+    if (allFinished){
+      var board = state.roscos.map(function(r, i){
+        return { name: state.players[i].name, correct: roscoCounts(r).correct, time: state.playerTimers[i] };
+      }).sort(function(a, b){ return b.correct - a.correct || b.time - a.time; });
+      var list = '<ol class="scoreboard">' + board.map(function(p, i){
+        return '<li><span class="rank">' + (i + 1) + '</span><span>' + esc(p.name) + '</span><span>' + p.correct + ' ✓</span><span class="muted">' + formatTime(p.time) + '</span></li>';
+      }).join('') + '</ol>';
+      var tied = board.length > 1 && board[1].correct === board[0].correct && board[1].time === board[0].time;
+      return bar + resultCard(tied ? '¡Empate!' : '¡' + esc(board[0].name) + ' gana!', 'Marcador final', list);
+    }
+    var r = state.roscos[state.turn];
+    var q = r.questions[r.currentIndex];
+    var time = state.playerTimers[state.turn];
+    if (!r.active){
+      return bar + renderRail() + renderRosco(r) +
+        '<div class="actions" style="margin-top:20px;"><button type="button" class="btn btn-primary btn-block" data-action="pasa-start">' +
+          (roscoCounts(r).pending === 26 ? 'Empezar turno de ' : 'Continuar con ') + esc(state.players[state.turn].name) + '</button>' +
+        '<p class="cta-hint">Pásale el teléfono a quien va a leer las definiciones.</p></div>';
+    }
+    return bar +
+      '<div class="pasa-head">' +
+        '<div class="big-letter" aria-label="Letra ' + q.letter + '">' + q.letter + '</div>' +
+        '<div style="text-align:right;"><div class="timer' + (time <= 10 ? ' is-low' : '') + '" role="timer">' + formatTime(time) + '</div>' +
+        '<div class="section-meta">' + esc(state.players[state.turn].name) + '</div></div>' +
+      '</div>' +
+      '<div class="pasa-card">' +
+        '<p class="question">' + esc(q.text) + '</p>' +
+        '<div class="answer"><div class="answer-label">Respuesta · solo para quien lee</div><div class="answer-text">' + esc(q.answer) + '</div></div>' +
+      '</div>' +
+      '<div class="actions three">' +
+        '<button type="button" class="btn btn-danger" data-action="pasa-error">' + icon('x') + 'Error</button>' +
+        '<button type="button" class="btn btn-secondary" data-action="pasa-pasapalabra">' + icon('redo') + 'Pasapalabra</button>' +
+        '<button type="button" class="btn btn-success" data-action="pasa-acerto">' + icon('check') + 'Acierto</button>' +
+      '</div>';
+  }
+
+  function renderPlay(){
+    app.innerHTML = '<section class="screen">' +
+      (state.selectedMode === 'pasapalabra' ? renderPasapalabraPlay() : renderTriviaPlay()) +
+    '</section>';
+  }
+
+  /* ---------------- render + foco ---------------- */
+  // render() reemplaza #app entero: si el control enfocado (ej. el campo de
+  // jugador) tiene un equivalente en el DOM nuevo, se vuelve a enfocar para
+  // que el teclado del teléfono no se cierre.
+  function focusSelectorFor(el){
+    if (!el || el === app || !app.contains(el)) return null;
+    if (el.id) return '#' + el.id;
+    var action = el.getAttribute('data-action');
+    if (!action) return null;
+    var sel = '[data-action="' + action + '"]';
+    ['data-field', 'data-topic', 'data-idx', 'data-mode'].forEach(function(attr){
+      var v = el.getAttribute(attr);
+      if (v !== null) sel += '[' + attr + '="' + v.replace(/"/g, '\\"') + '"]';
+    });
+    return sel;
+  }
+  function render(){
+    var refocus = focusSelectorFor(document.activeElement);
+    if (state.screen === 'home') renderHome();
+    else if (state.screen === 'setup') renderSetup();
+    else if (state.screen === 'ajustes') renderAjustes();
+    else renderPlay();
+    if (refocus){
+      var target = app.querySelector(refocus);
+      if (target) target.focus();
+    }
+  }
+
+  // Cambio de pantalla: transición nativa si existe, y foco a la vista nueva
+  // para que teclado y VoiceOver no queden en un botón que ya no existe.
+  var reduceMotion = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
+  function go(screen){
+    if (state.screen === 'play' && screen !== 'play') stopRoscoTimer();
+    state.screen = screen;
+    var hadFocus = app.contains(document.activeElement);
+    function focusView(){ if (hadFocus && !app.contains(document.activeElement)) app.focus(); }
+    if (document.startViewTransition && !(reduceMotion && reduceMotion.matches)){
+      document.startViewTransition(render).finished.finally(focusView);
+    } else {
+      render();
+      focusView();
+    }
+  }
+
+  function startGame(){
+    state.turn = 0;
+    state.round = 1;
+    state.flipped = false;
+    state.answerShown = false;
+    if (state.selectedMode === 'cultura'){
+      state.triviaScores = state.players.map(function(){
+        var s = {};
+        state.selectedTopics.forEach(function(k){ s[k] = 0; });
+        return s;
+      });
+      state.triviaBadges = state.players.map(function(){ return []; });
+      state.triviaLives = state.players.map(function(){ return 100; });
+      state.history = {};
+      refillTriviaTopicQueues();
+      state.triviaRound = null;
+      state.triviaWinner = null;
+    } else {
+      var picks = pickPasapalabraWords(LETTERS, state.players.length);
+      state.roscos = state.players.map(function(_, p){
+        return {
+          questions: LETTERS.map(function(l){ var q = picks[l][p]; return { letter: l, text: q.text, answer: q.answer, status: 'pending' }; }),
+          currentIndex: 0, active: false, finished: false
+        };
+      });
+      var time = Number(state.settings.pasapalabraTime) || 120;
+      state.playerTimers = state.players.map(function(){ return time; });
+    }
+    go('play');
+  }
+
+  /* ---------------- eventos ---------------- */
+  app.addEventListener('submit', function(e){
+    var form = e.target.getAttribute('data-form');
+    if (!form) return;
+    e.preventDefault();
+    if (form === 'add-player'){
+      var input = document.getElementById('player-input');
+      var name = input && input.value.trim();
+      if (!name) return;
+      state.players.push({ name: name, color: AVATAR_COLORS[state.players.length % AVATAR_COLORS.length] });
+      render();
+    } else if (form === 'truco'){
+      var key = (document.getElementById('truco-input').value || '').trim().toLowerCase().replace(/\s+/g, '');
+      state.modoHistoria = key === 'historia' || key === 'modohistoria';
+      state.modoPapu = key === 'papu' || key === 'modopapu';
+      state.trucoMensaje = state.modoHistoria ? 'Modo Historia activado.' : state.modoPapu ? 'Modo Papu activado.' : 'Clave no reconocida.';
+      render();
+    }
+  });
+
+  app.addEventListener('change', function(e){
+    var t = e.target;
+    var action = t.getAttribute('data-action');
+    if (action === 'set-setting'){
+      var field = t.getAttribute('data-field');
+      var v = Math.round(Number(t.value));
+      var min = Number(t.min), max = Number(t.max);
+      if (Number.isFinite(v)) state.settings[field] = Math.min(max, Math.max(min, v));
+      t.value = state.settings[field];
+    } else if (action === 'toggle-topic'){
+      var topic = t.getAttribute('data-topic');
+      if (t.checked && state.selectedTopics.length < MAX_TOPICS) state.selectedTopics.push(topic);
+      else if (!t.checked) state.selectedTopics = state.selectedTopics.filter(function(k){ return k !== topic; });
+      render();
+    }
+  });
+
+  app.addEventListener('click', function(e){
+    var t = e.target.closest('[data-action]');
+    if (!t || t.tagName === 'INPUT') return;
+    var action = t.getAttribute('data-action');
+
+    if (action === 'select-mode'){
+      state.selectedMode = t.getAttribute('data-mode');
+      go('setup');
+    }
+    else if (action === 'go-home'){ go('home'); }
+    else if (action === 'open-ajustes'){ go('ajustes'); }
+    else if (action === 'close-ajustes'){ go('setup'); }
+    else if (action === 'remove-player'){
+      state.players.splice(Number(t.getAttribute('data-idx')), 1);
+      state.players.forEach(function(p, i){ p.color = AVATAR_COLORS[i % AVATAR_COLORS.length]; });
+      render();
+    }
+    else if (action === 'start'){ if (canStart()) startGame(); }
+    else if (action === 'leave-game'){
+      if (confirm('¿Salir de la partida? Se perderá el progreso.')) go('setup');
+    }
+    else if (action === 'play-again'){ startGame(); }
+    // trivia
+    else if (action === 'trivia-reveal'){
+      if (state.flipped) return;
+      state.flipped = true;
+      state.answerShown = false;
+      render();
+    }
+    else if (action === 'show-answer'){ state.answerShown = true; render(); }
+    else if (action === 'trivia-correct'){ advanceTriviaTurn(true); }
+    else if (action === 'trivia-wrong'){ advanceTriviaTurn(false); }
+    else if (action === 'trivia-skip'){ state.triviaRound = null; state.flipped = false; render(); }
+    // pasapalabra
+    else if (action === 'pasa-start'){ startRoscoTimer(); render(); }
+    else if (action === 'pasa-acerto'){
+      var r = state.roscos[state.turn];
+      r.questions[r.currentIndex].status = 'correct';
+      if (!checkRoscoEnd()){ advanceRoscoIndex(); render(); }
+      else nextRoscoPlayer();
+    }
+    else if (action === 'pasa-error' || action === 'pasa-pasapalabra'){
+      var r2 = state.roscos[state.turn];
+      r2.questions[r2.currentIndex].status = action === 'pasa-error' ? 'error' : 'pending';
+      if (action === 'pasa-error') checkRoscoEnd();
+      nextRoscoPlayer();
+    }
+  });
+
+  render();
+})();
 </script>
+</body>
+</html>
